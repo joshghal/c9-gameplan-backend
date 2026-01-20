@@ -1,0 +1,1799 @@
+{
+  "generated": "2026-01-19",
+  "source": "33 VCT matches (Feb 2024 - Aug 2025)",
+  "total_kills_analyzed": 12029,
+  "player_behaviors": {
+    "cloud9": [
+      {
+        "id": "91",
+        "name": "vanity",
+        "team": "Cloud9",
+        "aggression": 1.0,
+        "accuracy": 0.0,
+        "clutch_factor": 0.42,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 0.8906519489479131,
+          "initiator": 0.10934805105208692
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.45977011494252873,
+          "phantom": 0.1839080459770115,
+          "classic": 0.1103448275862069,
+          "stinger": 0.041379310344827586,
+          "bulldog": 0.03908045977011494,
+          "sheriff": 0.03908045977011494,
+          "guardian": 0.034482758620689655,
+          "odin": 0.03218390804597701,
+          "spectre": 0.029885057471264367,
+          "operator": 0.029885057471264367
+        },
+        "avg_engagement_distance": 1596.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3253.0,
+        "eco_efficiency": 143.25
+      },
+      {
+        "id": "10636",
+        "name": "OXY",
+        "team": "Cloud9",
+        "aggression": 1.0,
+        "accuracy": 0.266,
+        "clutch_factor": 0.555,
+        "primary_role": "duelist",
+        "role_distribution": {
+          "duelist": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.535361216730038,
+          "phantom": 0.09125475285171103,
+          "operator": 0.0699619771863118,
+          "ghost": 0.061596958174904945,
+          "sheriff": 0.05779467680608365,
+          "guardian": 0.04638783269961977,
+          "outlaw": 0.04182509505703422,
+          "classic": 0.03878326996197719,
+          "stinger": 0.030418250950570342,
+          "shorty": 0.026615969581749048
+        },
+        "avg_engagement_distance": 1665.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3777.0,
+        "eco_efficiency": 406.14
+      },
+      {
+        "id": "706",
+        "name": "wippie",
+        "team": "Cloud9",
+        "aggression": 0.281,
+        "accuracy": 0.0,
+        "clutch_factor": 0.545,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 0.6428571428571429,
+          "controller": 0.35714285714285715
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.6142857142857143,
+          "spectre": 0.11428571428571428,
+          "ghost": 0.08571428571428572,
+          "classic": 0.07142857142857142,
+          "bulldog": 0.05714285714285714,
+          "sheriff": 0.04285714285714286,
+          "stinger": 0.014285714285714285
+        },
+        "avg_engagement_distance": 1876.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 2693.0,
+        "eco_efficiency": 27.11
+      },
+      {
+        "id": "1193",
+        "name": "xeppaa",
+        "team": "Cloud9",
+        "aggression": 1.0,
+        "accuracy": 0.241,
+        "clutch_factor": 0.48,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "sentinel": 0.34519867549668876,
+          "initiator": 0.5132450331125827,
+          "duelist": 0.11899834437086093,
+          "controller": 0.02255794701986755
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.5518157661647476,
+          "vandal": 0.17891939769707707,
+          "ghost": 0.07617360496014172,
+          "classic": 0.06731620903454384,
+          "bulldog": 0.05137289636846767,
+          "stinger": 0.04074402125775022,
+          "sheriff": 0.010628875110717449,
+          "shorty": 0.00974313551815766,
+          "spectre": 0.0070859167404783,
+          "guardian": 0.006200177147918512
+        },
+        "avg_engagement_distance": 1636.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3324.0,
+        "eco_efficiency": 350.48
+      },
+      {
+        "id": "11969",
+        "name": "Jakee",
+        "team": "Cloud9",
+        "aggression": 0.226,
+        "accuracy": 0.0,
+        "clutch_factor": 0.39,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.5901639344262295,
+          "phantom": 0.18032786885245902,
+          "classic": 0.04918032786885246,
+          "bulldog": 0.04918032786885246,
+          "guardian": 0.04918032786885246,
+          "ghost": 0.03278688524590164,
+          "sheriff": 0.03278688524590164,
+          "judge": 0.01639344262295082
+        },
+        "avg_engagement_distance": 1696.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3268.0,
+        "eco_efficiency": 18.97
+      },
+      {
+        "id": "725",
+        "name": "moose",
+        "team": "Cloud9",
+        "aggression": 1.0,
+        "accuracy": 0.0,
+        "clutch_factor": 0.495,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.5642317380352645,
+          "phantom": 0.1561712846347607,
+          "classic": 0.07304785894206549,
+          "ghost": 0.05289672544080604,
+          "bulldog": 0.04534005037783375,
+          "odin": 0.042821158690176324,
+          "stinger": 0.022670025188916875,
+          "sheriff": 0.020151133501259445,
+          "guardian": 0.012594458438287154,
+          "spectre": 0.010075566750629723
+        },
+        "avg_engagement_distance": 1903.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3223.0,
+        "eco_efficiency": 126.9
+      },
+      {
+        "id": "11968",
+        "name": "Runi",
+        "team": "Cloud9",
+        "aggression": 1.0,
+        "accuracy": 0.0,
+        "clutch_factor": 0.475,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 0.5265508684863524,
+          "initiator": 0.47344913151364765
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.68,
+          "sheriff": 0.1,
+          "classic": 0.06,
+          "ghost": 0.06,
+          "guardian": 0.0275,
+          "spectre": 0.0275,
+          "odin": 0.0225,
+          "operator": 0.0075,
+          "phantom": 0.0075,
+          "bulldog": 0.0075
+        },
+        "avg_engagement_distance": 2087.0,
+        "preferred_distance_category": "long",
+        "avg_loadout": 3210.0,
+        "eco_efficiency": 128.97
+      },
+      {
+        "id": "2348",
+        "name": "neT",
+        "team": "Cloud9",
+        "aggression": 1.0,
+        "accuracy": 0.31,
+        "clutch_factor": 0.45,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 0.5949316170555109,
+          "controller": 0.40506838294448916
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.5035460992907801,
+          "vandal": 0.18085106382978725,
+          "ghost": 0.09397163120567376,
+          "sheriff": 0.04609929078014184,
+          "classic": 0.044326241134751775,
+          "stinger": 0.040780141843971635,
+          "bulldog": 0.040780141843971635,
+          "guardian": 0.02127659574468085,
+          "judge": 0.01950354609929078,
+          "shorty": 0.008865248226950355
+        },
+        "avg_engagement_distance": 1742.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3519.0,
+        "eco_efficiency": 165.1
+      },
+      {
+        "id": "1195",
+        "name": "mitch",
+        "team": "Cloud9",
+        "aggression": 1.0,
+        "accuracy": 0.205,
+        "clutch_factor": 0.435,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 0.9522835719154737,
+          "controller": 0.047716428084526245
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.5452898550724637,
+          "vandal": 0.15942028985507245,
+          "classic": 0.07246376811594203,
+          "bulldog": 0.06159420289855073,
+          "ghost": 0.05615942028985507,
+          "sheriff": 0.04891304347826087,
+          "guardian": 0.02355072463768116,
+          "stinger": 0.012681159420289856,
+          "operator": 0.010869565217391304,
+          "shorty": 0.009057971014492754
+        },
+        "avg_engagement_distance": 1821.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3623.0,
+        "eco_efficiency": 158.43
+      },
+      {
+        "id": "10612",
+        "name": "v1c",
+        "team": "Cloud9",
+        "aggression": 1.0,
+        "accuracy": 0.298,
+        "clutch_factor": 0.54,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 0.9789538842463633,
+          "duelist": 0.021046115753636643
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.555886736214605,
+          "phantom": 0.15648286140089418,
+          "ghost": 0.06408345752608048,
+          "bulldog": 0.06110283159463487,
+          "classic": 0.05514157973174367,
+          "guardian": 0.03427719821162444,
+          "stinger": 0.029806259314456036,
+          "sheriff": 0.026825633383010434,
+          "judge": 0.011922503725782414,
+          "shorty": 0.004470938897168405
+        },
+        "avg_engagement_distance": 1684.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3515.0,
+        "eco_efficiency": 191.75
+      }
+    ],
+    "opponents": [
+      {
+        "id": "2641",
+        "name": "jzz",
+        "team": "FUT",
+        "aggression": 0.199,
+        "accuracy": 0.0,
+        "clutch_factor": 0.485,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 0.6194029850746269,
+          "duelist": 0.3805970149253731
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.5,
+          "bulldog": 0.17857142857142858,
+          "phantom": 0.11904761904761904,
+          "ghost": 0.07142857142857142,
+          "spectre": 0.047619047619047616,
+          "classic": 0.03571428571428571,
+          "guardian": 0.023809523809523808,
+          "frenzy": 0.011904761904761904,
+          "sheriff": 0.011904761904761904
+        },
+        "avg_engagement_distance": 1604.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3257.0,
+        "eco_efficiency": 27.02
+      },
+      {
+        "id": "59",
+        "name": "frz",
+        "team": "FUT",
+        "aggression": 0.231,
+        "accuracy": 0.0,
+        "clutch_factor": 0.47,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 0.6456310679611651,
+          "controller": 0.35436893203883496
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.5189873417721519,
+          "ghost": 0.10126582278481013,
+          "spectre": 0.08860759493670886,
+          "classic": 0.06329113924050633,
+          "guardian": 0.06329113924050633,
+          "sheriff": 0.05063291139240506,
+          "phantom": 0.0379746835443038,
+          "bulldog": 0.02531645569620253,
+          "operator": 0.02531645569620253,
+          "stinger": 0.02531645569620253
+        },
+        "avg_engagement_distance": 1974.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 2840.0,
+        "eco_efficiency": 28.17
+      },
+      {
+        "id": "2837",
+        "name": "artziN",
+        "team": "FUT",
+        "aggression": 1.0,
+        "accuracy": 0.205,
+        "clutch_factor": 0.42,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 0.5108359133126935,
+          "duelist": 0.30959752321981426,
+          "sentinel": 0.1021671826625387,
+          "controller": 0.07739938080495357
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.4864864864864865,
+          "phantom": 0.11486486486486487,
+          "stinger": 0.06756756756756757,
+          "guardian": 0.060810810810810814,
+          "sheriff": 0.05405405405405406,
+          "operator": 0.05405405405405406,
+          "ghost": 0.0472972972972973,
+          "classic": 0.0472972972972973,
+          "shorty": 0.04054054054054054,
+          "bucky": 0.02702702702702703
+        },
+        "avg_engagement_distance": 1611.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3457.0,
+        "eco_efficiency": 48.31
+      },
+      {
+        "id": "1814",
+        "name": "rglmeister",
+        "team": "FUT",
+        "aggression": 0.234,
+        "accuracy": 0.0,
+        "clutch_factor": 0.505,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.42857142857142855,
+          "phantom": 0.24675324675324675,
+          "sheriff": 0.07792207792207792,
+          "classic": 0.06493506493506493,
+          "bulldog": 0.06493506493506493,
+          "guardian": 0.06493506493506493,
+          "ghost": 0.05194805194805195
+        },
+        "avg_engagement_distance": 1585.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3178.0,
+        "eco_efficiency": 24.23
+      },
+      {
+        "id": "266",
+        "name": "mazin",
+        "team": "FUT",
+        "aggression": 0.263,
+        "accuracy": 0.0,
+        "clutch_factor": 0.33,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "controller": 0.415929203539823,
+          "initiator": 0.584070796460177
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.6779661016949152,
+          "bulldog": 0.13559322033898305,
+          "classic": 0.0847457627118644,
+          "judge": 0.03389830508474576,
+          "marshal": 0.01694915254237288,
+          "guardian": 0.01694915254237288,
+          "ghost": 0.01694915254237288,
+          "phantom": 0.01694915254237288
+        },
+        "avg_engagement_distance": 1848.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3194.0,
+        "eco_efficiency": 18.47
+      },
+      {
+        "id": "291",
+        "name": "crashies",
+        "team": "Evil Geniuses",
+        "aggression": 1.0,
+        "accuracy": 0.0,
+        "clutch_factor": 0.485,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 0.8213256484149856,
+          "controller": 0.1786743515850144
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.42105263157894735,
+          "odin": 0.15789473684210525,
+          "classic": 0.10526315789473684,
+          "ghost": 0.08771929824561403,
+          "guardian": 0.07017543859649122,
+          "phantom": 0.07017543859649122,
+          "sheriff": 0.03508771929824561,
+          "spectre": 0.017543859649122806,
+          "ares": 0.017543859649122806,
+          "stinger": 0.017543859649122806
+        },
+        "avg_engagement_distance": 2173.0,
+        "preferred_distance_category": "long",
+        "avg_loadout": 3232.0,
+        "eco_efficiency": 19.49
+      },
+      {
+        "id": "290",
+        "name": "Victor",
+        "team": "Evil Geniuses",
+        "aggression": 1.0,
+        "accuracy": 0.0,
+        "clutch_factor": 0.59,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 0.5918367346938775,
+          "duelist": 0.40816326530612246
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.5487804878048781,
+          "operator": 0.12195121951219512,
+          "ghost": 0.08536585365853659,
+          "classic": 0.08536585365853659,
+          "sheriff": 0.04878048780487805,
+          "bulldog": 0.04878048780487805,
+          "stinger": 0.024390243902439025,
+          "guardian": 0.012195121951219513,
+          "odin": 0.012195121951219513,
+          "phantom": 0.012195121951219513
+        },
+        "avg_engagement_distance": 1875.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3515.0,
+        "eco_efficiency": 24.75
+      },
+      {
+        "id": "297",
+        "name": "Ethan",
+        "team": "Evil Geniuses",
+        "aggression": 1.0,
+        "accuracy": 0.221,
+        "clutch_factor": 0.49,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 0.7094918504314478,
+          "controller": 0.21476510067114093,
+          "duelist": 0.07574304889741132
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.42702702702702705,
+          "vandal": 0.2918918918918919,
+          "classic": 0.07027027027027027,
+          "stinger": 0.05405405405405406,
+          "ghost": 0.03783783783783784,
+          "guardian": 0.032432432432432434,
+          "bulldog": 0.032432432432432434,
+          "sheriff": 0.021621621621621623,
+          "outlaw": 0.016216216216216217,
+          "frenzy": 0.016216216216216217
+        },
+        "avg_engagement_distance": 1775.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3310.0,
+        "eco_efficiency": 58.91
+      },
+      {
+        "id": "11334",
+        "name": "Demon1",
+        "team": "Evil Geniuses",
+        "aggression": 1.0,
+        "accuracy": 0.492,
+        "clutch_factor": 0.55,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 0.6343612334801763,
+          "duelist": 0.3656387665198238
+        },
+        "primary_weapon": "operator",
+        "weapon_preference": {
+          "operator": 0.3333333333333333,
+          "vandal": 0.31666666666666665,
+          "guardian": 0.11666666666666667,
+          "sheriff": 0.1,
+          "classic": 0.06666666666666667,
+          "ghost": 0.06666666666666667
+        },
+        "avg_engagement_distance": 1974.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 4181.0,
+        "eco_efficiency": 16.02
+      },
+      {
+        "id": "2343",
+        "name": "tex",
+        "team": "2GAME",
+        "aggression": 1.0,
+        "accuracy": 0.299,
+        "clutch_factor": 0.355,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 0.9089316987740805,
+          "controller": 0.09106830122591944
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.4777777777777778,
+          "phantom": 0.2,
+          "sheriff": 0.06666666666666667,
+          "classic": 0.05555555555555555,
+          "ghost": 0.044444444444444446,
+          "guardian": 0.044444444444444446,
+          "operator": 0.044444444444444446,
+          "stinger": 0.022222222222222223,
+          "bulldog": 0.022222222222222223,
+          "outlaw": 0.022222222222222223
+        },
+        "avg_engagement_distance": 1820.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3838.0,
+        "eco_efficiency": 23.97
+      },
+      {
+        "id": "207",
+        "name": "kiNgg",
+        "team": "2GAME",
+        "aggression": 1.0,
+        "accuracy": 0.307,
+        "clutch_factor": 0.52,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 0.8290155440414507,
+          "duelist": 0.17098445595854922
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.416,
+          "phantom": 0.232,
+          "sheriff": 0.112,
+          "ghost": 0.096,
+          "classic": 0.04,
+          "guardian": 0.032,
+          "bulldog": 0.024,
+          "spectre": 0.016,
+          "outlaw": 0.016,
+          "stinger": 0.016
+        },
+        "avg_engagement_distance": 1695.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3435.0,
+        "eco_efficiency": 37.26
+      },
+      {
+        "id": "2515",
+        "name": "C0M",
+        "team": "2GAME",
+        "aggression": 1.0,
+        "accuracy": 0.243,
+        "clutch_factor": 0.34,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 0.7683397683397684,
+          "controller": 0.23166023166023167
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.48148148148148145,
+          "vandal": 0.14814814814814814,
+          "odin": 0.07407407407407407,
+          "bulldog": 0.06172839506172839,
+          "stinger": 0.06172839506172839,
+          "ghost": 0.04938271604938271,
+          "sheriff": 0.037037037037037035,
+          "guardian": 0.037037037037037035,
+          "bucky": 0.024691358024691357,
+          "classic": 0.024691358024691357
+        },
+        "avg_engagement_distance": 1899.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3857.0,
+        "eco_efficiency": 22.3
+      },
+      {
+        "id": "14",
+        "name": "aspas",
+        "team": "2GAME",
+        "aggression": 1.0,
+        "accuracy": 0.297,
+        "clutch_factor": 0.725,
+        "primary_role": "duelist",
+        "role_distribution": {
+          "duelist": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.3689839572192513,
+          "phantom": 0.3048128342245989,
+          "operator": 0.11229946524064172,
+          "guardian": 0.058823529411764705,
+          "sheriff": 0.058823529411764705,
+          "ghost": 0.0481283422459893,
+          "outlaw": 0.0213903743315508,
+          "shorty": 0.0106951871657754,
+          "classic": 0.0106951871657754,
+          "bulldog": 0.0053475935828877
+        },
+        "avg_engagement_distance": 1794.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3965.0,
+        "eco_efficiency": 50.95
+      },
+      {
+        "id": "2347",
+        "name": "JAWGEMO",
+        "team": "The Guard",
+        "aggression": 1.0,
+        "accuracy": 0.25,
+        "clutch_factor": 0.535,
+        "primary_role": "duelist",
+        "role_distribution": {
+          "duelist": 0.9164490861618799,
+          "initiator": 0.0835509138381201
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.3945578231292517,
+          "phantom": 0.2108843537414966,
+          "stinger": 0.11564625850340136,
+          "classic": 0.07482993197278912,
+          "frenzy": 0.05442176870748299,
+          "guardian": 0.047619047619047616,
+          "ghost": 0.034013605442176874,
+          "judge": 0.027210884353741496,
+          "sheriff": 0.02040816326530612,
+          "operator": 0.02040816326530612
+        },
+        "avg_engagement_distance": 1495.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3652.0,
+        "eco_efficiency": 44.91
+      },
+      {
+        "id": "303",
+        "name": "NaturE",
+        "team": "The Guard",
+        "aggression": 1.0,
+        "accuracy": 0.231,
+        "clutch_factor": 0.36,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 0.7485604606525912,
+          "controller": 0.2514395393474088
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.4430379746835443,
+          "classic": 0.16455696202531644,
+          "bulldog": 0.0759493670886076,
+          "vandal": 0.0759493670886076,
+          "guardian": 0.06329113924050633,
+          "sheriff": 0.06329113924050633,
+          "spectre": 0.0379746835443038,
+          "stinger": 0.0379746835443038,
+          "odin": 0.02531645569620253,
+          "ghost": 0.012658227848101266
+        },
+        "avg_engagement_distance": 1581.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3281.0,
+        "eco_efficiency": 24.38
+      },
+      {
+        "id": "306",
+        "name": "Derrek",
+        "team": "The Guard",
+        "aggression": 1.0,
+        "accuracy": 0.267,
+        "clutch_factor": 0.465,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.4606741573033708,
+          "phantom": 0.24719101123595505,
+          "spectre": 0.0449438202247191,
+          "sheriff": 0.0449438202247191,
+          "ghost": 0.0449438202247191,
+          "bulldog": 0.0449438202247191,
+          "guardian": 0.033707865168539325,
+          "classic": 0.033707865168539325,
+          "stinger": 0.02247191011235955,
+          "operator": 0.02247191011235955
+        },
+        "avg_engagement_distance": 2154.0,
+        "preferred_distance_category": "long",
+        "avg_loadout": 4010.0,
+        "eco_efficiency": 23.69
+      },
+      {
+        "id": "307",
+        "name": "supamen",
+        "team": "The Guard",
+        "aggression": 1.0,
+        "accuracy": 0.314,
+        "clutch_factor": 0.42,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.34375,
+          "phantom": 0.3333333333333333,
+          "guardian": 0.10416666666666667,
+          "sheriff": 0.0625,
+          "classic": 0.052083333333333336,
+          "spectre": 0.03125,
+          "shorty": 0.03125,
+          "judge": 0.020833333333333332,
+          "stinger": 0.010416666666666666,
+          "ghost": 0.010416666666666666
+        },
+        "avg_engagement_distance": 1581.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3660.0,
+        "eco_efficiency": 26.23
+      },
+      {
+        "id": "296",
+        "name": "Asuna",
+        "team": "EDward Gaming",
+        "aggression": 1.0,
+        "accuracy": 0.274,
+        "clutch_factor": 0.62,
+        "primary_role": "duelist",
+        "role_distribution": {
+          "duelist": 0.5491525423728814,
+          "sentinel": 0.23389830508474577,
+          "initiator": 0.21694915254237288
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.576271186440678,
+          "phantom": 0.1694915254237288,
+          "ghost": 0.06779661016949153,
+          "stinger": 0.06779661016949153,
+          "classic": 0.06779661016949153,
+          "sheriff": 0.03389830508474576,
+          "bulldog": 0.01694915254237288
+        },
+        "avg_engagement_distance": 2177.0,
+        "preferred_distance_category": "long",
+        "avg_loadout": 3463.0,
+        "eco_efficiency": 18.19
+      },
+      {
+        "id": "727",
+        "name": "bang",
+        "team": "EDward Gaming",
+        "aggression": 1.0,
+        "accuracy": 0.268,
+        "clutch_factor": 0.59,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 1.0
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.6666666666666666,
+          "classic": 0.0962962962962963,
+          "bulldog": 0.08888888888888889,
+          "stinger": 0.05185185185185185,
+          "ghost": 0.037037037037037035,
+          "sheriff": 0.022222222222222223,
+          "guardian": 0.022222222222222223,
+          "vandal": 0.007407407407407408,
+          "shorty": 0.007407407407407408
+        },
+        "avg_engagement_distance": 1575.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3876.0,
+        "eco_efficiency": 35.35
+      },
+      {
+        "id": "2361",
+        "name": "Cryo",
+        "team": "EDward Gaming",
+        "aggression": 1.0,
+        "accuracy": 0.391,
+        "clutch_factor": 0.755,
+        "primary_role": "duelist",
+        "role_distribution": {
+          "duelist": 0.748792270531401,
+          "controller": 0.25120772946859904
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.55,
+          "operator": 0.1125,
+          "ghost": 0.1,
+          "vandal": 0.1,
+          "sheriff": 0.05,
+          "stinger": 0.0375,
+          "guardian": 0.025,
+          "shorty": 0.025
+        },
+        "avg_engagement_distance": 1821.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 4009.0,
+        "eco_efficiency": 22.2
+      },
+      {
+        "id": "2341",
+        "name": "eeiu",
+        "team": "EDward Gaming",
+        "aggression": 1.0,
+        "accuracy": 0.419,
+        "clutch_factor": 0.64,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.7241379310344828,
+          "ghost": 0.08620689655172414,
+          "sheriff": 0.06896551724137931,
+          "classic": 0.05172413793103448,
+          "phantom": 0.034482758620689655,
+          "bulldog": 0.034482758620689655
+        },
+        "avg_engagement_distance": 2152.0,
+        "preferred_distance_category": "long",
+        "avg_loadout": 3610.0,
+        "eco_efficiency": 17.73
+      },
+      {
+        "id": "51",
+        "name": "Khalil",
+        "team": "KR\u00dc",
+        "aggression": 1.0,
+        "accuracy": 0.237,
+        "clutch_factor": 0.465,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 1.0
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.6923076923076923,
+          "classic": 0.09230769230769231,
+          "bulldog": 0.06153846153846154,
+          "ghost": 0.06153846153846154,
+          "sheriff": 0.03076923076923077,
+          "stinger": 0.03076923076923077,
+          "shorty": 0.03076923076923077
+        },
+        "avg_engagement_distance": 1783.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3362.0,
+        "eco_efficiency": 19.63
+      },
+      {
+        "id": "3314",
+        "name": "havoc",
+        "team": "KR\u00dc",
+        "aggression": 1.0,
+        "accuracy": 0.269,
+        "clutch_factor": 0.445,
+        "primary_role": "duelist",
+        "role_distribution": {
+          "duelist": 0.576036866359447,
+          "sentinel": 0.423963133640553
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.49295774647887325,
+          "sheriff": 0.1267605633802817,
+          "phantom": 0.11267605633802817,
+          "ghost": 0.09859154929577464,
+          "guardian": 0.08450704225352113,
+          "bulldog": 0.028169014084507043,
+          "odin": 0.014084507042253521,
+          "operator": 0.014084507042253521,
+          "frenzy": 0.014084507042253521,
+          "stinger": 0.014084507042253521
+        },
+        "avg_engagement_distance": 1894.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3112.0,
+        "eco_efficiency": 22.81
+      },
+      {
+        "id": "52",
+        "name": "nzr",
+        "team": "KR\u00dc",
+        "aggression": 1.0,
+        "accuracy": 0.25,
+        "clutch_factor": 0.525,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.6351351351351351,
+          "ghost": 0.12162162162162163,
+          "guardian": 0.05405405405405406,
+          "stinger": 0.05405405405405406,
+          "sheriff": 0.05405405405405406,
+          "phantom": 0.04054054054054054,
+          "bulldog": 0.013513513513513514,
+          "judge": 0.013513513513513514,
+          "classic": 0.013513513513513514
+        },
+        "avg_engagement_distance": 1940.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3121.0,
+        "eco_efficiency": 25.63
+      },
+      {
+        "id": "1192",
+        "name": "leaf",
+        "team": "Leviat\u00e1n",
+        "aggression": 1.0,
+        "accuracy": 0.245,
+        "clutch_factor": 0.625,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 0.9313725490196079,
+          "controller": 0.06862745098039216
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.5128205128205128,
+          "stinger": 0.09615384615384616,
+          "phantom": 0.08974358974358974,
+          "classic": 0.08974358974358974,
+          "ghost": 0.0641025641025641,
+          "odin": 0.04487179487179487,
+          "sheriff": 0.04487179487179487,
+          "outlaw": 0.02564102564102564,
+          "marshal": 0.019230769230769232,
+          "operator": 0.01282051282051282
+        },
+        "avg_engagement_distance": 1783.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3220.0,
+        "eco_efficiency": 52.48
+      },
+      {
+        "id": "2351",
+        "name": "JonahP",
+        "team": "Leviat\u00e1n",
+        "aggression": 1.0,
+        "accuracy": 0.251,
+        "clutch_factor": 0.49,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "controller": 0.2408500590318772,
+          "initiator": 0.6894923258559622,
+          "sentinel": 0.06965761511216056
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.4177215189873418,
+          "phantom": 0.2974683544303797,
+          "ghost": 0.10759493670886076,
+          "classic": 0.05063291139240506,
+          "guardian": 0.0379746835443038,
+          "spectre": 0.02531645569620253,
+          "sheriff": 0.0189873417721519,
+          "bulldog": 0.0189873417721519,
+          "stinger": 0.012658227848101266,
+          "outlaw": 0.012658227848101266
+        },
+        "avg_engagement_distance": 1718.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3359.0,
+        "eco_efficiency": 48.23
+      },
+      {
+        "id": "2349",
+        "name": "valyn",
+        "team": "Leviat\u00e1n",
+        "aggression": 1.0,
+        "accuracy": 0.208,
+        "clutch_factor": 0.52,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.5337078651685393,
+          "stinger": 0.16292134831460675,
+          "phantom": 0.15168539325842698,
+          "classic": 0.056179775280898875,
+          "ghost": 0.03932584269662921,
+          "bulldog": 0.028089887640449437,
+          "guardian": 0.016853932584269662,
+          "sheriff": 0.0056179775280898875,
+          "spectre": 0.0056179775280898875
+        },
+        "avg_engagement_distance": 1706.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3634.0,
+        "eco_efficiency": 48.98
+      },
+      {
+        "id": "2353",
+        "name": "trent",
+        "team": "Leviat\u00e1n",
+        "aggression": 1.0,
+        "accuracy": 0.285,
+        "clutch_factor": 0.59,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.41975308641975306,
+          "phantom": 0.21604938271604937,
+          "classic": 0.08024691358024691,
+          "bulldog": 0.07407407407407407,
+          "ghost": 0.06790123456790123,
+          "odin": 0.043209876543209874,
+          "sheriff": 0.043209876543209874,
+          "guardian": 0.030864197530864196,
+          "stinger": 0.018518518518518517,
+          "shorty": 0.006172839506172839
+        },
+        "avg_engagement_distance": 1909.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3370.0,
+        "eco_efficiency": 51.63
+      },
+      {
+        "id": "14940",
+        "name": "icy",
+        "team": "Leviat\u00e1n",
+        "aggression": 1.0,
+        "accuracy": 0.28,
+        "clutch_factor": 0.555,
+        "primary_role": "duelist",
+        "role_distribution": {
+          "duelist": 0.6932584269662921,
+          "sentinel": 0.2550561797752809,
+          "initiator": 0.051685393258426963
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.47101449275362317,
+          "phantom": 0.14492753623188406,
+          "ghost": 0.09420289855072464,
+          "sheriff": 0.06521739130434782,
+          "bulldog": 0.06521739130434782,
+          "classic": 0.057971014492753624,
+          "guardian": 0.036231884057971016,
+          "operator": 0.036231884057971016,
+          "judge": 0.014492753623188406,
+          "outlaw": 0.014492753623188406
+        },
+        "avg_engagement_distance": 1768.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3633.0,
+        "eco_efficiency": 42.66
+      },
+      {
+        "id": "287",
+        "name": "zekken",
+        "team": "Shopify Rebellion",
+        "aggression": 1.0,
+        "accuracy": 0.243,
+        "clutch_factor": 0.675,
+        "primary_role": "duelist",
+        "role_distribution": {
+          "duelist": 1.0
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.48366013071895425,
+          "vandal": 0.1895424836601307,
+          "sheriff": 0.06535947712418301,
+          "stinger": 0.058823529411764705,
+          "outlaw": 0.058823529411764705,
+          "classic": 0.0392156862745098,
+          "operator": 0.032679738562091505,
+          "ghost": 0.032679738562091505,
+          "shorty": 0.026143790849673203,
+          "bucky": 0.013071895424836602
+        },
+        "avg_engagement_distance": 1801.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3910.0,
+        "eco_efficiency": 42.97
+      },
+      {
+        "id": "2512",
+        "name": "johnqt",
+        "team": "Shopify Rebellion",
+        "aggression": 1.0,
+        "accuracy": 0.254,
+        "clutch_factor": 0.585,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 0.4274952919020716,
+          "sentinel": 0.4256120527306968,
+          "initiator": 0.14689265536723164
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.5371900826446281,
+          "vandal": 0.1322314049586777,
+          "ghost": 0.10743801652892562,
+          "classic": 0.06611570247933884,
+          "sheriff": 0.04132231404958678,
+          "stinger": 0.04132231404958678,
+          "bulldog": 0.03305785123966942,
+          "spectre": 0.01652892561983471,
+          "odin": 0.01652892561983471,
+          "guardian": 0.008264462809917356
+        },
+        "avg_engagement_distance": 1895.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3465.0,
+        "eco_efficiency": 36.08
+      },
+      {
+        "id": "94",
+        "name": "Zellsis",
+        "team": "Shopify Rebellion",
+        "aggression": 1.0,
+        "accuracy": 0.214,
+        "clutch_factor": 0.625,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 0.7710196779964222,
+          "initiator": 0.13059033989266547,
+          "controller": 0.09838998211091235
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.5895522388059702,
+          "classic": 0.13432835820895522,
+          "vandal": 0.12686567164179105,
+          "stinger": 0.04477611940298507,
+          "sheriff": 0.03731343283582089,
+          "bulldog": 0.029850746268656716,
+          "ghost": 0.014925373134328358,
+          "operator": 0.007462686567164179,
+          "judge": 0.007462686567164179,
+          "shorty": 0.007462686567164179
+        },
+        "avg_engagement_distance": 1487.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3407.0,
+        "eco_efficiency": 39.92
+      },
+      {
+        "id": "74432",
+        "name": "FNS",
+        "team": "Evil Geniuses",
+        "aggression": 1.0,
+        "accuracy": 0.232,
+        "clutch_factor": 0.415,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 1.0
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.5142857142857142,
+          "vandal": 0.21904761904761905,
+          "ghost": 0.10476190476190476,
+          "stinger": 0.05714285714285714,
+          "classic": 0.0380952380952381,
+          "bulldog": 0.0380952380952381,
+          "spectre": 0.02857142857142857
+        },
+        "avg_engagement_distance": 1632.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3288.0,
+        "eco_efficiency": 31.93
+      },
+      {
+        "id": "2340",
+        "name": "s0m",
+        "team": "Evil Geniuses",
+        "aggression": 1.0,
+        "accuracy": 0.267,
+        "clutch_factor": 0.67,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.5025641025641026,
+          "phantom": 0.24615384615384617,
+          "stinger": 0.05128205128205128,
+          "classic": 0.046153846153846156,
+          "bulldog": 0.046153846153846156,
+          "ghost": 0.03076923076923077,
+          "sheriff": 0.02564102564102564,
+          "operator": 0.020512820512820513,
+          "judge": 0.015384615384615385,
+          "shorty": 0.015384615384615385
+        },
+        "avg_engagement_distance": 1692.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3835.0,
+        "eco_efficiency": 52.41
+      },
+      {
+        "id": "10985",
+        "name": "mta",
+        "team": "Rex Regum Qeon",
+        "aggression": 1.0,
+        "accuracy": 0.0,
+        "clutch_factor": 0.58,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 0.49393939393939396,
+          "sentinel": 0.3242424242424242,
+          "controller": 0.18181818181818182
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.6753246753246753,
+          "ghost": 0.07792207792207792,
+          "sheriff": 0.06493506493506493,
+          "phantom": 0.05194805194805195,
+          "classic": 0.05194805194805195,
+          "guardian": 0.03896103896103896,
+          "bulldog": 0.025974025974025976,
+          "spectre": 0.012987012987012988
+        },
+        "avg_engagement_distance": 1524.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3343.0,
+        "eco_efficiency": 23.93
+      },
+      {
+        "id": "208",
+        "name": "Melser",
+        "team": "Rex Regum Qeon",
+        "aggression": 1.0,
+        "accuracy": 0.0,
+        "clutch_factor": 0.57,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.7733333333333333,
+          "classic": 0.12,
+          "ghost": 0.05333333333333334,
+          "bulldog": 0.02666666666666667,
+          "guardian": 0.013333333333333334,
+          "spectre": 0.013333333333333334
+        },
+        "avg_engagement_distance": 1701.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3261.0,
+        "eco_efficiency": 23.0
+      },
+      {
+        "id": "3078",
+        "name": "Shyy",
+        "team": "Rex Regum Qeon",
+        "aggression": 1.0,
+        "accuracy": 0.0,
+        "clutch_factor": 0.565,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 0.8666666666666667,
+          "controller": 0.13333333333333333
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.7468354430379747,
+          "ghost": 0.11392405063291139,
+          "guardian": 0.0379746835443038,
+          "sheriff": 0.02531645569620253,
+          "classic": 0.02531645569620253,
+          "bulldog": 0.02531645569620253,
+          "operator": 0.012658227848101266,
+          "stinger": 0.012658227848101266
+        },
+        "avg_engagement_distance": 1916.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3209.0,
+        "eco_efficiency": 24.62
+      },
+      {
+        "id": "77",
+        "name": "keznitdeuS",
+        "team": "Rex Regum Qeon",
+        "aggression": 1.0,
+        "accuracy": 0.0,
+        "clutch_factor": 0.655,
+        "primary_role": "duelist",
+        "role_distribution": {
+          "duelist": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.6375,
+          "operator": 0.1375,
+          "sheriff": 0.1,
+          "guardian": 0.05,
+          "phantom": 0.05,
+          "ghost": 0.025
+        },
+        "avg_engagement_distance": 2183.0,
+        "preferred_distance_category": "long",
+        "avg_loadout": 3980.0,
+        "eco_efficiency": 23.12
+      },
+      {
+        "id": "48",
+        "name": "heat",
+        "team": "Rex Regum Qeon",
+        "aggression": 1.0,
+        "accuracy": 0.39,
+        "clutch_factor": 0.565,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 0.6216216216216216,
+          "controller": 0.3281853281853282,
+          "sentinel": 0.05019305019305019
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.7183098591549296,
+          "phantom": 0.08450704225352113,
+          "guardian": 0.06338028169014084,
+          "sheriff": 0.04929577464788732,
+          "ghost": 0.04929577464788732,
+          "bulldog": 0.02112676056338028,
+          "stinger": 0.007042253521126761,
+          "classic": 0.007042253521126761
+        },
+        "avg_engagement_distance": 1770.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3819.0,
+        "eco_efficiency": 37.44
+      },
+      {
+        "id": "2358",
+        "name": "mada",
+        "team": "Evil Geniuses",
+        "aggression": 1.0,
+        "accuracy": 0.241,
+        "clutch_factor": 0.555,
+        "primary_role": "duelist",
+        "role_distribution": {
+          "duelist": 1.0
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.44,
+          "vandal": 0.248,
+          "ghost": 0.072,
+          "stinger": 0.064,
+          "classic": 0.048,
+          "sheriff": 0.048,
+          "judge": 0.024,
+          "bucky": 0.024,
+          "operator": 0.016,
+          "spectre": 0.016
+        },
+        "avg_engagement_distance": 1529.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3738.0,
+        "eco_efficiency": 37.45
+      },
+      {
+        "id": "10630",
+        "name": "Verno",
+        "team": "Evil Geniuses",
+        "aggression": 1.0,
+        "accuracy": 0.285,
+        "clutch_factor": 0.53,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.6666666666666666,
+          "phantom": 0.09722222222222222,
+          "ghost": 0.09722222222222222,
+          "classic": 0.05555555555555555,
+          "bulldog": 0.041666666666666664,
+          "stinger": 0.013888888888888888,
+          "sheriff": 0.013888888888888888,
+          "spectre": 0.013888888888888888
+        },
+        "avg_engagement_distance": 1722.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3617.0,
+        "eco_efficiency": 21.01
+      },
+      {
+        "id": "3320",
+        "name": "cortezia",
+        "team": "FUT",
+        "aggression": 1.0,
+        "accuracy": 0.374,
+        "clutch_factor": 0.505,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.6391752577319587,
+          "phantom": 0.10309278350515463,
+          "ghost": 0.08247422680412371,
+          "guardian": 0.061855670103092786,
+          "sheriff": 0.05154639175257732,
+          "stinger": 0.020618556701030927,
+          "classic": 0.010309278350515464,
+          "shorty": 0.010309278350515464,
+          "outlaw": 0.010309278350515464,
+          "bulldog": 0.010309278350515464
+        },
+        "avg_engagement_distance": 1812.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3533.0,
+        "eco_efficiency": 27.74
+      },
+      {
+        "id": "629",
+        "name": "xenom",
+        "team": "FUT",
+        "aggression": 1.0,
+        "accuracy": 0.306,
+        "clutch_factor": 0.51,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.75,
+          "ghost": 0.11363636363636363,
+          "sheriff": 0.03409090909090909,
+          "guardian": 0.03409090909090909,
+          "classic": 0.022727272727272728,
+          "operator": 0.022727272727272728,
+          "stinger": 0.011363636363636364,
+          "outlaw": 0.011363636363636364
+        },
+        "avg_engagement_distance": 1968.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3699.0,
+        "eco_efficiency": 23.79
+      },
+      {
+        "id": "2513",
+        "name": "brawk",
+        "team": "Evil Geniuses",
+        "aggression": 1.0,
+        "accuracy": 0.199,
+        "clutch_factor": 0.645,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 0.7443609022556391,
+          "sentinel": 0.2556390977443609
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.4,
+          "odin": 0.2222222222222222,
+          "sheriff": 0.12222222222222222,
+          "bulldog": 0.07777777777777778,
+          "ghost": 0.06666666666666667,
+          "guardian": 0.044444444444444446,
+          "vandal": 0.03333333333333333,
+          "classic": 0.022222222222222223,
+          "stinger": 0.011111111111111112
+        },
+        "avg_engagement_distance": 1897.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3756.0,
+        "eco_efficiency": 26.09
+      },
+      {
+        "id": "11013",
+        "name": "N4RRATE",
+        "team": "Shopify Rebellion",
+        "aggression": 1.0,
+        "accuracy": 0.246,
+        "clutch_factor": 0.59,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 1.0
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.7272727272727273,
+          "vandal": 0.07272727272727272,
+          "classic": 0.06363636363636363,
+          "stinger": 0.06363636363636363,
+          "ghost": 0.02727272727272727,
+          "shorty": 0.01818181818181818,
+          "sheriff": 0.01818181818181818,
+          "bulldog": 0.00909090909090909
+        },
+        "avg_engagement_distance": 1617.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 3863.0,
+        "eco_efficiency": 29.25
+      },
+      {
+        "id": "866",
+        "name": "yay",
+        "team": "The Guard",
+        "aggression": 1.0,
+        "accuracy": 0.319,
+        "clutch_factor": 0.64,
+        "primary_role": "duelist",
+        "role_distribution": {
+          "duelist": 0.3858267716535433,
+          "sentinel": 0.36220472440944884,
+          "controller": 0.25196850393700787
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.4146341463414634,
+          "sheriff": 0.14634146341463414,
+          "operator": 0.13414634146341464,
+          "ghost": 0.07317073170731707,
+          "outlaw": 0.07317073170731707,
+          "guardian": 0.06097560975609756,
+          "phantom": 0.036585365853658534,
+          "bulldog": 0.024390243902439025,
+          "marshal": 0.024390243902439025,
+          "shorty": 0.012195121951219513
+        },
+        "avg_engagement_distance": 2088.0,
+        "preferred_distance_category": "long",
+        "avg_loadout": 3959.0,
+        "eco_efficiency": 21.98
+      },
+      {
+        "id": "10621",
+        "name": "okeanos",
+        "team": "2GAME",
+        "aggression": 1.0,
+        "accuracy": 0.295,
+        "clutch_factor": 0.69,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 0.5681818181818182,
+          "duelist": 0.4318181818181818
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.7272727272727273,
+          "guardian": 0.13636363636363635,
+          "outlaw": 0.045454545454545456,
+          "shorty": 0.030303030303030304,
+          "stinger": 0.030303030303030304,
+          "classic": 0.015151515151515152,
+          "ghost": 0.015151515151515152
+        },
+        "avg_engagement_distance": 1631.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 4543.0,
+        "eco_efficiency": 14.53
+      },
+      {
+        "id": "14826",
+        "name": "Sato",
+        "team": "2GAME",
+        "aggression": 1.0,
+        "accuracy": 0.309,
+        "clutch_factor": 0.62,
+        "primary_role": "duelist",
+        "role_distribution": {
+          "duelist": 1.0
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.42857142857142855,
+          "vandal": 0.1746031746031746,
+          "sheriff": 0.09523809523809523,
+          "bulldog": 0.07936507936507936,
+          "ghost": 0.07936507936507936,
+          "outlaw": 0.06349206349206349,
+          "guardian": 0.031746031746031744,
+          "shorty": 0.015873015873015872,
+          "marshal": 0.015873015873015872,
+          "stinger": 0.015873015873015872
+        },
+        "avg_engagement_distance": 1660.0,
+        "preferred_distance_category": "medium",
+        "avg_loadout": 4116.0,
+        "eco_efficiency": 16.28
+      }
+    ]
+  },
+  "role_patterns": [
+    {
+      "role": "controller",
+      "avg_kills_per_round": 182.5,
+      "avg_deaths_per_round": 180.312,
+      "avg_first_kill_rate": 12.75,
+      "avg_headshot_rate": 0.203,
+      "avg_engagement_distance": 1741.0,
+      "position_variance": 153.0,
+      "weapon_distribution": {
+        "vandal": 0.4747191011235955,
+        "phantom": 0.21137640449438203,
+        "classic": 0.0663623595505618,
+        "ghost": 0.04915730337078652,
+        "sheriff": 0.0449438202247191
+      }
+    },
+    {
+      "role": "duelist",
+      "avg_kills_per_round": 236.0,
+      "avg_deaths_per_round": 203.333,
+      "avg_first_kill_rate": 36.25,
+      "avg_headshot_rate": 0.262,
+      "avg_engagement_distance": 1823.0,
+      "position_variance": 220.0,
+      "weapon_distribution": {
+        "vandal": 0.4516,
+        "phantom": 0.1812,
+        "operator": 0.064,
+        "sheriff": 0.0624,
+        "ghost": 0.0616
+      }
+    },
+    {
+      "role": "initiator",
+      "avg_kills_per_round": 187.474,
+      "avg_deaths_per_round": 196.684,
+      "avg_first_kill_rate": 14.474,
+      "avg_headshot_rate": 0.207,
+      "avg_engagement_distance": 1808.0,
+      "position_variance": 194.0,
+      "weapon_distribution": {
+        "phantom": 0.39841456253669993,
+        "vandal": 0.2985907222548444,
+        "ghost": 0.06547269524368761,
+        "classic": 0.06194950088079859,
+        "bulldog": 0.049911920140927775
+      }
+    },
+    {
+      "role": "sentinel",
+      "avg_kills_per_round": 173.545,
+      "avg_deaths_per_round": 177.727,
+      "avg_first_kill_rate": 16.0,
+      "avg_headshot_rate": 0.152,
+      "avg_engagement_distance": 1802.0,
+      "position_variance": 134.0,
+      "weapon_distribution": {
+        "vandal": 0.3988127361036158,
+        "phantom": 0.28332433890987585,
+        "ghost": 0.07501349163518618,
+        "classic": 0.062061521856449,
+        "sheriff": 0.037776578521316787
+      }
+    }
+  ],
+  "combat_parameters": {
+    "close_range_max": 1200,
+    "medium_range_max": 2200,
+    "long_range_max": 4000,
+    "close_range_hs_rate": 0.3,
+    "medium_range_hs_rate": 0.25,
+    "long_range_hs_rate": 0.18,
+    "weapon_accuracy_modifier": {
+      "ghost": 1.12,
+      "classic": 1.33,
+      "bulldog": 0.99,
+      "spectre": 1.29,
+      "stinger": 1.4,
+      "vandal": 1.0,
+      "shorty": 3.3,
+      "phantom": 1.07,
+      "sheriff": 0.94,
+      "guardian": 0.86,
+      "marshal": 0.79,
+      "operator": 0.71,
+      "frenzy": 1.45,
+      "outlaw": 0.72,
+      "judge": 2.33,
+      "odin": 0.88,
+      "ares": 1.39,
+      "bucky": 2.65,
+      "melee": 6.41
+    },
+    "weapon_effective_range": {
+      "ghost": 2100.0,
+      "classic": 1774.0,
+      "bulldog": 2373.0,
+      "spectre": 1823.0,
+      "stinger": 1684.0,
+      "vandal": 2355.0,
+      "shorty": 714.0,
+      "phantom": 2200.0,
+      "sheriff": 2502.0,
+      "guardian": 2734.0,
+      "marshal": 2988.0,
+      "operator": 3313.0,
+      "frenzy": 1625.0,
+      "outlaw": 3293.0,
+      "judge": 1010.0,
+      "odin": 2688.0,
+      "ares": 1696.0,
+      "bucky": 889.0,
+      "melee": 367.0
+    }
+  }
+}

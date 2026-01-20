@@ -1,0 +1,287 @@
+{
+  "trade_insights": {
+    "total_kills": 12029,
+    "total_trades": 3036,
+    "trade_rate": 0.25239005736137665,
+    "avg_trade_time_seconds": 1.7198982222278127,
+    "trade_probability_by_time": {
+      "0-1s": 0.39624505928853754,
+      "1-2s": 0.2598814229249012,
+      "2-3s": 0.1373517786561265,
+      "3-5s": 0.20652173913043478
+    },
+    "cumulative_trade_probability": {
+      "by_1s": 0.39624505928853754,
+      "by_2s": 0.6561264822134387,
+      "by_3s": 0.7934782608695652,
+      "by_5s": 1.0
+    },
+    "sample_trade_distances": [
+      {
+        "original_distance": 1333.50541545778,
+        "trade_distance": 2326.0530048465575,
+        "trade_time": 0.8559999465942383
+      },
+      {
+        "original_distance": 2326.0530048465575,
+        "trade_distance": 1625.687420195829,
+        "trade_time": 3.0810000896453857
+      },
+      {
+        "original_distance": 1099.9445638575005,
+        "trade_distance": 4432.2884951754595,
+        "trade_time": 1.938999891281128
+      },
+      {
+        "original_distance": 875.6014004788857,
+        "trade_distance": 4432.2884951754595,
+        "trade_time": 0.7030000686645508
+      },
+      {
+        "original_distance": 2167.8354422740413,
+        "trade_distance": 1605.7643561471796,
+        "trade_time": 3.2980000972747803
+      },
+      {
+        "original_distance": 1605.7643561471796,
+        "trade_distance": 576.5689326167704,
+        "trade_time": 0.04199981689453125
+      },
+      {
+        "original_distance": 576.5689326167704,
+        "trade_distance": 2346.8427046990646,
+        "trade_time": 0.14400005340576172
+      },
+      {
+        "original_distance": 2678.6497873600683,
+        "trade_distance": 2976.0585932237523,
+        "trade_time": 0.2669999599456787
+      },
+      {
+        "original_distance": 999.5748296504377,
+        "trade_distance": 1096.247375779476,
+        "trade_time": 0.34399986267089844
+      },
+      {
+        "original_distance": 1096.247375779476,
+        "trade_distance": 3152.594782000108,
+        "trade_time": 0.45399999618530273
+      }
+    ],
+    "insight": "40% of trades happen within 1 second. Model trade windows, not trade bonuses."
+  },
+  "economy_insights": {
+    "win_rates": {
+      "full_buy": 0.509705248023005,
+      "force_buy": 0.42216358839050133,
+      "half_buy": 0.49809885931558934,
+      "eco": 0.54
+    },
+    "relative_to_full_buy": {
+      "force_buy_penalty": 0.08754165963250365,
+      "half_buy_penalty": 0.011606388707415649,
+      "eco_penalty": -0.03029475197699505
+    },
+    "sample_sizes": {
+      "full_buy": 2782,
+      "force_buy": 379,
+      "half_buy": 263,
+      "eco": 50
+    },
+    "insight": "Force buy is only 9% worse than full buy. Model weapon damage, not buy type."
+  },
+  "role_insights": {
+    "by_role": {
+      "duelist": {
+        "engagement_distance": 1777.0,
+        "headshot_rate": 0.233,
+        "first_kill_aggression": 0.15,
+        "trade_kill_rate": 0.341,
+        "aggression_level": 0.8,
+        "entry_probability": 0.6,
+        "clutch_success_rate": 0.35,
+        "aim_advantage": 0.16500000000000004
+      },
+      "initiator": {
+        "engagement_distance": 1783.0,
+        "headshot_rate": 0.19,
+        "first_kill_aggression": 0.074,
+        "trade_kill_rate": 0.281,
+        "aggression_level": 0.5,
+        "entry_probability": 0.3,
+        "clutch_success_rate": 0.3,
+        "aim_advantage": -0.050000000000000044
+      },
+      "controller": {
+        "engagement_distance": 1814.0,
+        "headshot_rate": 0.196,
+        "first_kill_aggression": 0.071,
+        "trade_kill_rate": 0.299,
+        "aggression_level": 0.3,
+        "entry_probability": 0.1,
+        "clutch_success_rate": 0.25,
+        "aim_advantage": -0.020000000000000018
+      },
+      "sentinel": {
+        "engagement_distance": 1793.0,
+        "headshot_rate": 0.133,
+        "first_kill_aggression": 0.089,
+        "trade_kill_rate": 0.288,
+        "aggression_level": 0.2,
+        "entry_probability": 0.05,
+        "clutch_success_rate": 0.4,
+        "aim_advantage": -0.33499999999999996
+      }
+    },
+    "key_differences": {
+      "duelist_vs_sentinel_hs": 0.1,
+      "duelist_vs_sentinel_entry": 0.5499999999999999,
+      "sentinel_clutch_advantage": 0.050000000000000044
+    },
+    "insight": "Sentinels have 40% clutch rate vs 35% for duelists. Clutch success is role-dependent."
+  },
+  "positioning_insights": {
+    "top_danger_zones": [
+      {
+        "map": "haven",
+        "zone": "a_site",
+        "kill_rate": 0.22406639004149378,
+        "death_rate": 0.1991701244813278,
+        "kd_ratio": 1.125,
+        "attack_presence": 0.2925311203319502,
+        "defense_presence": 0.7074688796680498
+      },
+      {
+        "map": "bind",
+        "zone": "b_long",
+        "kill_rate": 0.18310746927198235,
+        "death_rate": 0.17901040025212733,
+        "kd_ratio": 1.022887323943662,
+        "attack_presence": 0.44752600063031833,
+        "defense_presence": 0.5524739993696817
+      },
+      {
+        "map": "haven",
+        "zone": "c_site",
+        "kill_rate": 0.1747269890795632,
+        "death_rate": 0.1856474258970359,
+        "kd_ratio": 0.9411764705882353,
+        "attack_presence": 0.23868954758190328,
+        "defense_presence": 0.7613104524180967
+      },
+      {
+        "map": "abyss",
+        "zone": "t_spawn",
+        "kill_rate": 0.17663817663817663,
+        "death_rate": 0.18233618233618235,
+        "kd_ratio": 0.96875,
+        "attack_presence": 0.5470085470085471,
+        "defense_presence": 0.452991452991453
+      },
+      {
+        "map": "corrode",
+        "zone": "t_spawn",
+        "kill_rate": 0.18518518518518517,
+        "death_rate": 0.16898148148148148,
+        "kd_ratio": 1.095890410958904,
+        "attack_presence": 0.49074074074074076,
+        "defense_presence": 0.5092592592592593
+      },
+      {
+        "map": "split",
+        "zone": "b_site",
+        "kill_rate": 0.17672413793103448,
+        "death_rate": 0.17672413793103448,
+        "kd_ratio": 1.0,
+        "attack_presence": 0.5193965517241379,
+        "defense_presence": 0.48060344827586204
+      },
+      {
+        "map": "bind",
+        "zone": "t_spawn",
+        "kill_rate": 0.11538461538461539,
+        "death_rate": 0.23076923076923078,
+        "kd_ratio": 0.5,
+        "attack_presence": 0.17307692307692307,
+        "defense_presence": 0.8269230769230769
+      },
+      {
+        "map": "bind",
+        "zone": "a_bath",
+        "kill_rate": 0.17586206896551723,
+        "death_rate": 0.16896551724137931,
+        "kd_ratio": 1.0408163265306123,
+        "attack_presence": 0.4793103448275862,
+        "defense_presence": 0.5206896551724138
+      },
+      {
+        "map": "sunset",
+        "zone": "t_spawn",
+        "kill_rate": 0.17647058823529413,
+        "death_rate": 0.16806722689075632,
+        "kd_ratio": 1.05,
+        "attack_presence": 0.3697478991596639,
+        "defense_presence": 0.6302521008403361
+      },
+      {
+        "map": "sunset",
+        "zone": "ct_spawn",
+        "kill_rate": 0.16638078902229847,
+        "death_rate": 0.17495711835334476,
+        "kd_ratio": 0.9509803921568627,
+        "attack_presence": 0.3567753001715266,
+        "defense_presence": 0.6432246998284734
+      }
+    ],
+    "safest_zones": [
+      {
+        "map": "split",
+        "zone": "vents",
+        "kill_rate": 0.06779661016949153,
+        "death_rate": 0.05084745762711865,
+        "kd_ratio": 1.3333333333333333,
+        "attack_presence": 0.9322033898305084,
+        "defense_presence": 0.06779661016949153
+      },
+      {
+        "map": "lotus",
+        "zone": "b_lower",
+        "kill_rate": 0.07042253521126761,
+        "death_rate": 0.06602112676056338,
+        "kd_ratio": 1.0666666666666667,
+        "attack_presence": 0.7473591549295775,
+        "defense_presence": 0.25264084507042256
+      },
+      {
+        "map": "split",
+        "zone": "b_heaven",
+        "kill_rate": 0.08333333333333333,
+        "death_rate": 0.05555555555555555,
+        "kd_ratio": 1.5,
+        "attack_presence": 0.9027777777777778,
+        "defense_presence": 0.09722222222222222
+      },
+      {
+        "map": "bind",
+        "zone": "b_garden",
+        "kill_rate": 0.06884681583476764,
+        "death_rate": 0.07917383820998279,
+        "kd_ratio": 0.8695652173913043,
+        "attack_presence": 0.8846815834767642,
+        "defense_presence": 0.1153184165232358
+      },
+      {
+        "map": "lotus",
+        "zone": "b_upper",
+        "kill_rate": 0.0732484076433121,
+        "death_rate": 0.08598726114649681,
+        "kd_ratio": 0.8518518518518519,
+        "attack_presence": 0.7404458598726115,
+        "defense_presence": 0.25955414012738853
+      }
+    ],
+    "avg_engagement_distance_units": 1983.8370996183228,
+    "avg_engagement_distance_meters": 19.83837099618323,
+    "insight": "Average engagement at 1984 units (~19.8m). Combat is mid-range focused."
+  }
+}

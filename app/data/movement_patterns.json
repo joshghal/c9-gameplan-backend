@@ -1,0 +1,3742 @@
+{
+  "generated": "2026-01-19",
+  "total_samples": 84063,
+  "maps_analyzed": [
+    "bind",
+    "split",
+    "lotus",
+    "abyss",
+    "haven",
+    "fracture",
+    "sunset",
+    "pearl",
+    "icebox",
+    "ascent",
+    "corrode"
+  ],
+  "zone_statistics": {
+    "bind": {
+      "b_site": {
+        "zone_name": "b_site",
+        "total_samples": 3270,
+        "kill_samples": 460,
+        "death_samples": 475,
+        "ability_samples": 2335,
+        "by_role": {
+          "unknown": 3270
+        },
+        "by_side": {
+          "attack": 1566,
+          "defense": 1704
+        },
+        "by_phase": {
+          "early": 3270
+        }
+      },
+      "b_long": {
+        "zone_name": "b_long",
+        "total_samples": 3173,
+        "kill_samples": 581,
+        "death_samples": 568,
+        "ability_samples": 2024,
+        "by_role": {
+          "unknown": 3173
+        },
+        "by_side": {
+          "defense": 1753,
+          "attack": 1420
+        },
+        "by_phase": {
+          "early": 3173
+        }
+      },
+      "b_garden": {
+        "zone_name": "b_garden",
+        "total_samples": 581,
+        "kill_samples": 40,
+        "death_samples": 46,
+        "ability_samples": 495,
+        "by_role": {
+          "unknown": 581
+        },
+        "by_side": {
+          "attack": 514,
+          "defense": 67
+        },
+        "by_phase": {
+          "early": 581
+        }
+      },
+      "hookah": {
+        "zone_name": "hookah",
+        "total_samples": 412,
+        "kill_samples": 37,
+        "death_samples": 37,
+        "ability_samples": 338,
+        "by_role": {
+          "unknown": 412
+        },
+        "by_side": {
+          "attack": 357,
+          "defense": 55
+        },
+        "by_phase": {
+          "early": 412
+        }
+      },
+      "a_short": {
+        "zone_name": "a_short",
+        "total_samples": 143,
+        "kill_samples": 24,
+        "death_samples": 19,
+        "ability_samples": 100,
+        "by_role": {
+          "unknown": 143
+        },
+        "by_side": {
+          "attack": 63,
+          "defense": 80
+        },
+        "by_phase": {
+          "early": 143
+        }
+      },
+      "a_bath": {
+        "zone_name": "a_bath",
+        "total_samples": 290,
+        "kill_samples": 51,
+        "death_samples": 49,
+        "ability_samples": 190,
+        "by_role": {
+          "unknown": 290
+        },
+        "by_side": {
+          "defense": 151,
+          "attack": 139
+        },
+        "by_phase": {
+          "early": 290
+        }
+      },
+      "a_site": {
+        "zone_name": "a_site",
+        "total_samples": 511,
+        "kill_samples": 61,
+        "death_samples": 60,
+        "ability_samples": 390,
+        "by_role": {
+          "unknown": 511
+        },
+        "by_side": {
+          "attack": 361,
+          "defense": 150
+        },
+        "by_phase": {
+          "early": 511
+        }
+      },
+      "t_spawn": {
+        "zone_name": "t_spawn",
+        "total_samples": 52,
+        "kill_samples": 6,
+        "death_samples": 12,
+        "ability_samples": 34,
+        "by_role": {
+          "unknown": 52
+        },
+        "by_side": {
+          "defense": 43,
+          "attack": 9
+        },
+        "by_phase": {
+          "early": 52
+        }
+      },
+      "ct_spawn": {
+        "zone_name": "ct_spawn",
+        "total_samples": 819,
+        "kill_samples": 138,
+        "death_samples": 132,
+        "ability_samples": 549,
+        "by_role": {
+          "unknown": 819
+        },
+        "by_side": {
+          "defense": 545,
+          "attack": 274
+        },
+        "by_phase": {
+          "early": 819
+        }
+      }
+    },
+    "split": {
+      "ct_spawn": {
+        "zone_name": "ct_spawn",
+        "total_samples": 520,
+        "kill_samples": 79,
+        "death_samples": 83,
+        "ability_samples": 358,
+        "by_role": {
+          "unknown": 520
+        },
+        "by_side": {
+          "defense": 352,
+          "attack": 168
+        },
+        "by_phase": {
+          "early": 520
+        }
+      },
+      "vents": {
+        "zone_name": "vents",
+        "total_samples": 59,
+        "kill_samples": 4,
+        "death_samples": 3,
+        "ability_samples": 52,
+        "by_role": {
+          "unknown": 59
+        },
+        "by_side": {
+          "attack": 55,
+          "defense": 4
+        },
+        "by_phase": {
+          "early": 59
+        }
+      },
+      "b_heaven": {
+        "zone_name": "b_heaven",
+        "total_samples": 72,
+        "kill_samples": 6,
+        "death_samples": 4,
+        "ability_samples": 62,
+        "by_role": {
+          "unknown": 72
+        },
+        "by_side": {
+          "attack": 65,
+          "defense": 7
+        },
+        "by_phase": {
+          "early": 72
+        }
+      },
+      "a_site": {
+        "zone_name": "a_site",
+        "total_samples": 539,
+        "kill_samples": 84,
+        "death_samples": 83,
+        "ability_samples": 372,
+        "by_role": {
+          "unknown": 539
+        },
+        "by_side": {
+          "attack": 292,
+          "defense": 247
+        },
+        "by_phase": {
+          "early": 539
+        }
+      },
+      "b_site": {
+        "zone_name": "b_site",
+        "total_samples": 464,
+        "kill_samples": 82,
+        "death_samples": 82,
+        "ability_samples": 300,
+        "by_role": {
+          "unknown": 464
+        },
+        "by_side": {
+          "attack": 241,
+          "defense": 223
+        },
+        "by_phase": {
+          "early": 464
+        }
+      },
+      "a_ramp": {
+        "zone_name": "a_ramp",
+        "total_samples": 44,
+        "kill_samples": 2,
+        "death_samples": 2,
+        "ability_samples": 40,
+        "by_role": {
+          "unknown": 44
+        },
+        "by_side": {
+          "attack": 44
+        },
+        "by_phase": {
+          "early": 44
+        }
+      },
+      "mail": {
+        "zone_name": "mail",
+        "total_samples": 17,
+        "kill_samples": 0,
+        "death_samples": 0,
+        "ability_samples": 17,
+        "by_role": {
+          "unknown": 17
+        },
+        "by_side": {
+          "attack": 16,
+          "defense": 1
+        },
+        "by_phase": {
+          "early": 17
+        }
+      }
+    },
+    "lotus": {
+      "c_main": {
+        "zone_name": "c_main",
+        "total_samples": 5030,
+        "kill_samples": 775,
+        "death_samples": 769,
+        "ability_samples": 3486,
+        "by_role": {
+          "unknown": 5030
+        },
+        "by_side": {
+          "defense": 3517,
+          "attack": 1513
+        },
+        "by_phase": {
+          "early": 5030
+        }
+      },
+      "c_site": {
+        "zone_name": "c_site",
+        "total_samples": 4640,
+        "kill_samples": 762,
+        "death_samples": 778,
+        "ability_samples": 3100,
+        "by_role": {
+          "unknown": 4640
+        },
+        "by_side": {
+          "defense": 2610,
+          "attack": 2030
+        },
+        "by_phase": {
+          "early": 4640
+        }
+      },
+      "c_mound": {
+        "zone_name": "c_mound",
+        "total_samples": 1487,
+        "kill_samples": 167,
+        "death_samples": 180,
+        "ability_samples": 1140,
+        "by_role": {
+          "unknown": 1487
+        },
+        "by_side": {
+          "attack": 865,
+          "defense": 622
+        },
+        "by_phase": {
+          "early": 1487
+        }
+      },
+      "b_upper": {
+        "zone_name": "b_upper",
+        "total_samples": 628,
+        "kill_samples": 46,
+        "death_samples": 54,
+        "ability_samples": 528,
+        "by_role": {
+          "unknown": 628
+        },
+        "by_side": {
+          "attack": 465,
+          "defense": 163
+        },
+        "by_phase": {
+          "early": 628
+        }
+      },
+      "t_spawn": {
+        "zone_name": "t_spawn",
+        "total_samples": 2632,
+        "kill_samples": 266,
+        "death_samples": 256,
+        "ability_samples": 2110,
+        "by_role": {
+          "unknown": 2632
+        },
+        "by_side": {
+          "attack": 2018,
+          "defense": 614
+        },
+        "by_phase": {
+          "early": 2632
+        }
+      },
+      "b_lower": {
+        "zone_name": "b_lower",
+        "total_samples": 1136,
+        "kill_samples": 80,
+        "death_samples": 75,
+        "ability_samples": 981,
+        "by_role": {
+          "unknown": 1136
+        },
+        "by_side": {
+          "attack": 849,
+          "defense": 287
+        },
+        "by_phase": {
+          "early": 1136
+        }
+      },
+      "b_site": {
+        "zone_name": "b_site",
+        "total_samples": 334,
+        "kill_samples": 31,
+        "death_samples": 33,
+        "ability_samples": 270,
+        "by_role": {
+          "unknown": 334
+        },
+        "by_side": {
+          "attack": 219,
+          "defense": 115
+        },
+        "by_phase": {
+          "early": 334
+        }
+      },
+      "ct_spawn": {
+        "zone_name": "ct_spawn",
+        "total_samples": 2468,
+        "kill_samples": 340,
+        "death_samples": 320,
+        "ability_samples": 1808,
+        "by_role": {
+          "unknown": 2468
+        },
+        "by_side": {
+          "attack": 1097,
+          "defense": 1371
+        },
+        "by_phase": {
+          "early": 2468
+        }
+      },
+      "a_main": {
+        "zone_name": "a_main",
+        "total_samples": 753,
+        "kill_samples": 92,
+        "death_samples": 97,
+        "ability_samples": 564,
+        "by_role": {
+          "unknown": 753
+        },
+        "by_side": {
+          "defense": 223,
+          "attack": 530
+        },
+        "by_phase": {
+          "early": 753
+        }
+      },
+      "a_site": {
+        "zone_name": "a_site",
+        "total_samples": 1012,
+        "kill_samples": 127,
+        "death_samples": 128,
+        "ability_samples": 757,
+        "by_role": {
+          "unknown": 1012
+        },
+        "by_side": {
+          "defense": 498,
+          "attack": 514
+        },
+        "by_phase": {
+          "early": 1012
+        }
+      },
+      "a_rubble": {
+        "zone_name": "a_rubble",
+        "total_samples": 341,
+        "kill_samples": 40,
+        "death_samples": 36,
+        "ability_samples": 265,
+        "by_role": {
+          "unknown": 341
+        },
+        "by_side": {
+          "defense": 144,
+          "attack": 197
+        },
+        "by_phase": {
+          "early": 341
+        }
+      }
+    },
+    "abyss": {
+      "b_site": {
+        "zone_name": "b_site",
+        "total_samples": 1041,
+        "kill_samples": 167,
+        "death_samples": 151,
+        "ability_samples": 723,
+        "by_role": {
+          "unknown": 1041
+        },
+        "by_side": {
+          "defense": 649,
+          "attack": 392
+        },
+        "by_phase": {
+          "early": 1041
+        }
+      },
+      "t_spawn": {
+        "zone_name": "t_spawn",
+        "total_samples": 351,
+        "kill_samples": 62,
+        "death_samples": 64,
+        "ability_samples": 225,
+        "by_role": {
+          "unknown": 351
+        },
+        "by_side": {
+          "attack": 192,
+          "defense": 159
+        },
+        "by_phase": {
+          "early": 351
+        }
+      },
+      "mid": {
+        "zone_name": "mid",
+        "total_samples": 568,
+        "kill_samples": 67,
+        "death_samples": 74,
+        "ability_samples": 427,
+        "by_role": {
+          "unknown": 568
+        },
+        "by_side": {
+          "attack": 435,
+          "defense": 133
+        },
+        "by_phase": {
+          "early": 568
+        }
+      },
+      "a_site": {
+        "zone_name": "a_site",
+        "total_samples": 774,
+        "kill_samples": 126,
+        "death_samples": 129,
+        "ability_samples": 519,
+        "by_role": {
+          "unknown": 774
+        },
+        "by_side": {
+          "defense": 372,
+          "attack": 402
+        },
+        "by_phase": {
+          "early": 774
+        }
+      },
+      "ct_spawn": {
+        "zone_name": "ct_spawn",
+        "total_samples": 544,
+        "kill_samples": 54,
+        "death_samples": 58,
+        "ability_samples": 432,
+        "by_role": {
+          "unknown": 544
+        },
+        "by_side": {
+          "defense": 272,
+          "attack": 272
+        },
+        "by_phase": {
+          "early": 544
+        }
+      }
+    },
+    "haven": {
+      "a_site": {
+        "zone_name": "a_site",
+        "total_samples": 482,
+        "kill_samples": 108,
+        "death_samples": 96,
+        "ability_samples": 278,
+        "by_role": {
+          "unknown": 482
+        },
+        "by_side": {
+          "defense": 341,
+          "attack": 141
+        },
+        "by_phase": {
+          "early": 482
+        }
+      },
+      "c_link": {
+        "zone_name": "c_link",
+        "total_samples": 469,
+        "kill_samples": 67,
+        "death_samples": 54,
+        "ability_samples": 348,
+        "by_role": {
+          "unknown": 469
+        },
+        "by_side": {
+          "attack": 227,
+          "defense": 242
+        },
+        "by_phase": {
+          "early": 469
+        }
+      },
+      "garage": {
+        "zone_name": "garage",
+        "total_samples": 436,
+        "kill_samples": 48,
+        "death_samples": 59,
+        "ability_samples": 329,
+        "by_role": {
+          "unknown": 436
+        },
+        "by_side": {
+          "attack": 310,
+          "defense": 126
+        },
+        "by_phase": {
+          "early": 436
+        }
+      },
+      "b_window": {
+        "zone_name": "b_window",
+        "total_samples": 405,
+        "kill_samples": 64,
+        "death_samples": 53,
+        "ability_samples": 288,
+        "by_role": {
+          "unknown": 405
+        },
+        "by_side": {
+          "defense": 308,
+          "attack": 97
+        },
+        "by_phase": {
+          "early": 405
+        }
+      },
+      "c_long": {
+        "zone_name": "c_long",
+        "total_samples": 2551,
+        "kill_samples": 377,
+        "death_samples": 371,
+        "ability_samples": 1803,
+        "by_role": {
+          "unknown": 2551
+        },
+        "by_side": {
+          "attack": 1270,
+          "defense": 1281
+        },
+        "by_phase": {
+          "early": 2551
+        }
+      },
+      "c_site": {
+        "zone_name": "c_site",
+        "total_samples": 641,
+        "kill_samples": 112,
+        "death_samples": 119,
+        "ability_samples": 410,
+        "by_role": {
+          "unknown": 641
+        },
+        "by_side": {
+          "attack": 153,
+          "defense": 488
+        },
+        "by_phase": {
+          "early": 641
+        }
+      },
+      "ct_spawn": {
+        "zone_name": "ct_spawn",
+        "total_samples": 36,
+        "kill_samples": 5,
+        "death_samples": 2,
+        "ability_samples": 29,
+        "by_role": {
+          "unknown": 36
+        },
+        "by_side": {
+          "defense": 35,
+          "attack": 1
+        },
+        "by_phase": {
+          "early": 36
+        }
+      },
+      "a_short": {
+        "zone_name": "a_short",
+        "total_samples": 391,
+        "kill_samples": 62,
+        "death_samples": 63,
+        "ability_samples": 266,
+        "by_role": {
+          "unknown": 391
+        },
+        "by_side": {
+          "defense": 222,
+          "attack": 169
+        },
+        "by_phase": {
+          "early": 391
+        }
+      },
+      "a_long": {
+        "zone_name": "a_long",
+        "total_samples": 1403,
+        "kill_samples": 204,
+        "death_samples": 221,
+        "ability_samples": 978,
+        "by_role": {
+          "unknown": 1403
+        },
+        "by_side": {
+          "attack": 849,
+          "defense": 554
+        },
+        "by_phase": {
+          "early": 1403
+        }
+      },
+      "mid": {
+        "zone_name": "mid",
+        "total_samples": 419,
+        "kill_samples": 34,
+        "death_samples": 40,
+        "ability_samples": 345,
+        "by_role": {
+          "unknown": 419
+        },
+        "by_side": {
+          "attack": 317,
+          "defense": 102
+        },
+        "by_phase": {
+          "early": 419
+        }
+      },
+      "b_site": {
+        "zone_name": "b_site",
+        "total_samples": 114,
+        "kill_samples": 16,
+        "death_samples": 17,
+        "ability_samples": 81,
+        "by_role": {
+          "unknown": 114
+        },
+        "by_side": {
+          "defense": 99,
+          "attack": 15
+        },
+        "by_phase": {
+          "early": 114
+        }
+      },
+      "t_spawn": {
+        "zone_name": "t_spawn",
+        "total_samples": 1160,
+        "kill_samples": 154,
+        "death_samples": 156,
+        "ability_samples": 850,
+        "by_role": {
+          "unknown": 1160
+        },
+        "by_side": {
+          "attack": 748,
+          "defense": 412
+        },
+        "by_phase": {
+          "early": 1160
+        }
+      }
+    },
+    "fracture": {
+      "b_site": {
+        "zone_name": "b_site",
+        "total_samples": 2556,
+        "kill_samples": 389,
+        "death_samples": 391,
+        "ability_samples": 1776,
+        "by_role": {
+          "unknown": 2556
+        },
+        "by_side": {
+          "defense": 1324,
+          "attack": 1232
+        },
+        "by_phase": {
+          "early": 2556
+        }
+      },
+      "t_spawn": {
+        "zone_name": "t_spawn",
+        "total_samples": 843,
+        "kill_samples": 148,
+        "death_samples": 132,
+        "ability_samples": 563,
+        "by_role": {
+          "unknown": 843
+        },
+        "by_side": {
+          "defense": 555,
+          "attack": 288
+        },
+        "by_phase": {
+          "early": 843
+        }
+      },
+      "mid": {
+        "zone_name": "mid",
+        "total_samples": 713,
+        "kill_samples": 102,
+        "death_samples": 117,
+        "ability_samples": 494,
+        "by_role": {
+          "unknown": 713
+        },
+        "by_side": {
+          "attack": 431,
+          "defense": 282
+        },
+        "by_phase": {
+          "early": 713
+        }
+      },
+      "a_site": {
+        "zone_name": "a_site",
+        "total_samples": 474,
+        "kill_samples": 66,
+        "death_samples": 65,
+        "ability_samples": 343,
+        "by_role": {
+          "unknown": 474
+        },
+        "by_side": {
+          "attack": 378,
+          "defense": 96
+        },
+        "by_phase": {
+          "early": 474
+        }
+      }
+    },
+    "sunset": {
+      "a_site": {
+        "zone_name": "a_site",
+        "total_samples": 681,
+        "kill_samples": 85,
+        "death_samples": 86,
+        "ability_samples": 510,
+        "by_role": {
+          "unknown": 681
+        },
+        "by_side": {
+          "attack": 415,
+          "defense": 266
+        },
+        "by_phase": {
+          "early": 681
+        }
+      },
+      "t_spawn": {
+        "zone_name": "t_spawn",
+        "total_samples": 119,
+        "kill_samples": 21,
+        "death_samples": 20,
+        "ability_samples": 78,
+        "by_role": {
+          "unknown": 119
+        },
+        "by_side": {
+          "defense": 75,
+          "attack": 44
+        },
+        "by_phase": {
+          "early": 119
+        }
+      },
+      "ct_spawn": {
+        "zone_name": "ct_spawn",
+        "total_samples": 583,
+        "kill_samples": 97,
+        "death_samples": 102,
+        "ability_samples": 384,
+        "by_role": {
+          "unknown": 583
+        },
+        "by_side": {
+          "defense": 375,
+          "attack": 208
+        },
+        "by_phase": {
+          "early": 583
+        }
+      },
+      "mid": {
+        "zone_name": "mid",
+        "total_samples": 343,
+        "kill_samples": 42,
+        "death_samples": 40,
+        "ability_samples": 261,
+        "by_role": {
+          "unknown": 343
+        },
+        "by_side": {
+          "attack": 175,
+          "defense": 168
+        },
+        "by_phase": {
+          "early": 343
+        }
+      },
+      "b_site": {
+        "zone_name": "b_site",
+        "total_samples": 530,
+        "kill_samples": 81,
+        "death_samples": 78,
+        "ability_samples": 371,
+        "by_role": {
+          "unknown": 530
+        },
+        "by_side": {
+          "defense": 247,
+          "attack": 283
+        },
+        "by_phase": {
+          "early": 530
+        }
+      }
+    },
+    "pearl": {
+      "b_site": {
+        "zone_name": "b_site",
+        "total_samples": 1408,
+        "kill_samples": 208,
+        "death_samples": 191,
+        "ability_samples": 1009,
+        "by_role": {
+          "unknown": 1408
+        },
+        "by_side": {
+          "defense": 947,
+          "attack": 461
+        },
+        "by_phase": {
+          "early": 1408
+        }
+      },
+      "t_spawn": {
+        "zone_name": "t_spawn",
+        "total_samples": 682,
+        "kill_samples": 112,
+        "death_samples": 113,
+        "ability_samples": 457,
+        "by_role": {
+          "unknown": 682
+        },
+        "by_side": {
+          "defense": 374,
+          "attack": 308
+        },
+        "by_phase": {
+          "early": 682
+        }
+      },
+      "mid": {
+        "zone_name": "mid",
+        "total_samples": 631,
+        "kill_samples": 50,
+        "death_samples": 59,
+        "ability_samples": 522,
+        "by_role": {
+          "unknown": 631
+        },
+        "by_side": {
+          "attack": 499,
+          "defense": 132
+        },
+        "by_phase": {
+          "early": 631
+        }
+      },
+      "ct_spawn": {
+        "zone_name": "ct_spawn",
+        "total_samples": 669,
+        "kill_samples": 79,
+        "death_samples": 81,
+        "ability_samples": 509,
+        "by_role": {
+          "unknown": 669
+        },
+        "by_side": {
+          "attack": 398,
+          "defense": 271
+        },
+        "by_phase": {
+          "early": 669
+        }
+      },
+      "a_site": {
+        "zone_name": "a_site",
+        "total_samples": 440,
+        "kill_samples": 61,
+        "death_samples": 66,
+        "ability_samples": 313,
+        "by_role": {
+          "unknown": 440
+        },
+        "by_side": {
+          "attack": 289,
+          "defense": 151
+        },
+        "by_phase": {
+          "early": 440
+        }
+      }
+    },
+    "icebox": {
+      "t_spawn": {
+        "zone_name": "t_spawn",
+        "total_samples": 779,
+        "kill_samples": 121,
+        "death_samples": 111,
+        "ability_samples": 547,
+        "by_role": {
+          "unknown": 779
+        },
+        "by_side": {
+          "defense": 508,
+          "attack": 271
+        },
+        "by_phase": {
+          "early": 779
+        }
+      },
+      "a_site": {
+        "zone_name": "a_site",
+        "total_samples": 3458,
+        "kill_samples": 476,
+        "death_samples": 505,
+        "ability_samples": 2477,
+        "by_role": {
+          "unknown": 3458
+        },
+        "by_side": {
+          "defense": 1277,
+          "attack": 2181
+        },
+        "by_phase": {
+          "early": 3458
+        }
+      },
+      "mid": {
+        "zone_name": "mid",
+        "total_samples": 2152,
+        "kill_samples": 359,
+        "death_samples": 349,
+        "ability_samples": 1444,
+        "by_role": {
+          "unknown": 2152
+        },
+        "by_side": {
+          "defense": 1060,
+          "attack": 1092
+        },
+        "by_phase": {
+          "early": 2152
+        }
+      },
+      "b_site": {
+        "zone_name": "b_site",
+        "total_samples": 2392,
+        "kill_samples": 372,
+        "death_samples": 367,
+        "ability_samples": 1653,
+        "by_role": {
+          "unknown": 2392
+        },
+        "by_side": {
+          "defense": 1277,
+          "attack": 1115
+        },
+        "by_phase": {
+          "early": 2392
+        }
+      },
+      "ct_spawn": {
+        "zone_name": "ct_spawn",
+        "total_samples": 1797,
+        "kill_samples": 227,
+        "death_samples": 223,
+        "ability_samples": 1347,
+        "by_role": {
+          "unknown": 1797
+        },
+        "by_side": {
+          "defense": 999,
+          "attack": 798
+        },
+        "by_phase": {
+          "early": 1797
+        }
+      }
+    },
+    "ascent": {
+      "a_tree": {
+        "zone_name": "a_tree",
+        "total_samples": 317,
+        "kill_samples": 38,
+        "death_samples": 29,
+        "ability_samples": 250,
+        "by_role": {
+          "unknown": 317
+        },
+        "by_side": {
+          "attack": 251,
+          "defense": 66
+        },
+        "by_phase": {
+          "early": 317
+        }
+      },
+      "a_site": {
+        "zone_name": "a_site",
+        "total_samples": 1663,
+        "kill_samples": 197,
+        "death_samples": 184,
+        "ability_samples": 1282,
+        "by_role": {
+          "unknown": 1663
+        },
+        "by_side": {
+          "attack": 1243,
+          "defense": 420
+        },
+        "by_phase": {
+          "early": 1663
+        }
+      },
+      "ct_spawn": {
+        "zone_name": "ct_spawn",
+        "total_samples": 2233,
+        "kill_samples": 321,
+        "death_samples": 336,
+        "ability_samples": 1576,
+        "by_role": {
+          "unknown": 2233
+        },
+        "by_side": {
+          "defense": 1426,
+          "attack": 807
+        },
+        "by_phase": {
+          "early": 2233
+        }
+      },
+      "b_site": {
+        "zone_name": "b_site",
+        "total_samples": 2956,
+        "kill_samples": 453,
+        "death_samples": 446,
+        "ability_samples": 2057,
+        "by_role": {
+          "unknown": 2956
+        },
+        "by_side": {
+          "defense": 1581,
+          "attack": 1375
+        },
+        "by_phase": {
+          "early": 2956
+        }
+      },
+      "catwalk": {
+        "zone_name": "catwalk",
+        "total_samples": 301,
+        "kill_samples": 50,
+        "death_samples": 37,
+        "ability_samples": 214,
+        "by_role": {
+          "unknown": 301
+        },
+        "by_side": {
+          "attack": 225,
+          "defense": 76
+        },
+        "by_phase": {
+          "early": 301
+        }
+      },
+      "mid_top": {
+        "zone_name": "mid_top",
+        "total_samples": 429,
+        "kill_samples": 45,
+        "death_samples": 53,
+        "ability_samples": 331,
+        "by_role": {
+          "unknown": 429
+        },
+        "by_side": {
+          "attack": 269,
+          "defense": 160
+        },
+        "by_phase": {
+          "early": 429
+        }
+      },
+      "b_market": {
+        "zone_name": "b_market",
+        "total_samples": 349,
+        "kill_samples": 41,
+        "death_samples": 47,
+        "ability_samples": 261,
+        "by_role": {
+          "unknown": 349
+        },
+        "by_side": {
+          "attack": 224,
+          "defense": 125
+        },
+        "by_phase": {
+          "early": 349
+        }
+      },
+      "mid": {
+        "zone_name": "mid",
+        "total_samples": 1141,
+        "kill_samples": 146,
+        "death_samples": 160,
+        "ability_samples": 835,
+        "by_role": {
+          "unknown": 1141
+        },
+        "by_side": {
+          "attack": 743,
+          "defense": 398
+        },
+        "by_phase": {
+          "early": 1141
+        }
+      },
+      "b_main": {
+        "zone_name": "b_main",
+        "total_samples": 2488,
+        "kill_samples": 403,
+        "death_samples": 411,
+        "ability_samples": 1674,
+        "by_role": {
+          "unknown": 2488
+        },
+        "by_side": {
+          "defense": 1504,
+          "attack": 984
+        },
+        "by_phase": {
+          "early": 2488
+        }
+      },
+      "t_spawn": {
+        "zone_name": "t_spawn",
+        "total_samples": 379,
+        "kill_samples": 61,
+        "death_samples": 54,
+        "ability_samples": 264,
+        "by_role": {
+          "unknown": 379
+        },
+        "by_side": {
+          "attack": 184,
+          "defense": 195
+        },
+        "by_phase": {
+          "early": 379
+        }
+      },
+      "a_main": {
+        "zone_name": "a_main",
+        "total_samples": 840,
+        "kill_samples": 128,
+        "death_samples": 126,
+        "ability_samples": 586,
+        "by_role": {
+          "unknown": 840
+        },
+        "by_side": {
+          "defense": 423,
+          "attack": 417
+        },
+        "by_phase": {
+          "early": 840
+        }
+      }
+    },
+    "corrode": {
+      "mid": {
+        "zone_name": "mid",
+        "total_samples": 1604,
+        "kill_samples": 172,
+        "death_samples": 182,
+        "ability_samples": 1250,
+        "by_role": {
+          "unknown": 1604
+        },
+        "by_side": {
+          "attack": 1021,
+          "defense": 583
+        },
+        "by_phase": {
+          "early": 1604
+        }
+      },
+      "ct_spawn": {
+        "zone_name": "ct_spawn",
+        "total_samples": 852,
+        "kill_samples": 96,
+        "death_samples": 96,
+        "ability_samples": 660,
+        "by_role": {
+          "unknown": 852
+        },
+        "by_side": {
+          "defense": 421,
+          "attack": 431
+        },
+        "by_phase": {
+          "early": 852
+        }
+      },
+      "a_site": {
+        "zone_name": "a_site",
+        "total_samples": 1691,
+        "kill_samples": 278,
+        "death_samples": 267,
+        "ability_samples": 1146,
+        "by_role": {
+          "unknown": 1691
+        },
+        "by_side": {
+          "defense": 778,
+          "attack": 913
+        },
+        "by_phase": {
+          "early": 1691
+        }
+      },
+      "b_site": {
+        "zone_name": "b_site",
+        "total_samples": 1926,
+        "kill_samples": 316,
+        "death_samples": 324,
+        "ability_samples": 1286,
+        "by_role": {
+          "unknown": 1926
+        },
+        "by_side": {
+          "defense": 1148,
+          "attack": 778
+        },
+        "by_phase": {
+          "early": 1926
+        }
+      },
+      "t_spawn": {
+        "zone_name": "t_spawn",
+        "total_samples": 432,
+        "kill_samples": 80,
+        "death_samples": 73,
+        "ability_samples": 279,
+        "by_role": {
+          "unknown": 432
+        },
+        "by_side": {
+          "attack": 212,
+          "defense": 220
+        },
+        "by_phase": {
+          "early": 432
+        }
+      }
+    }
+  },
+  "zone_transitions": {
+    "bind": [
+      {
+        "from_zone": "b_site",
+        "to_zone": "b_long",
+        "count": 545,
+        "probability": 0.625
+      },
+      {
+        "from_zone": "b_long",
+        "to_zone": "b_site",
+        "count": 490,
+        "probability": 0.663
+      },
+      {
+        "from_zone": "b_long",
+        "to_zone": "b_garden",
+        "count": 151,
+        "probability": 0.204
+      },
+      {
+        "from_zone": "b_garden",
+        "to_zone": "b_long",
+        "count": 145,
+        "probability": 0.391
+      },
+      {
+        "from_zone": "b_garden",
+        "to_zone": "b_site",
+        "count": 131,
+        "probability": 0.353
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "b_site",
+        "count": 113,
+        "probability": 0.471
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "ct_spawn",
+        "count": 109,
+        "probability": 0.125
+      },
+      {
+        "from_zone": "hookah",
+        "to_zone": "b_site",
+        "count": 108,
+        "probability": 0.406
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "b_garden",
+        "count": 108,
+        "probability": 0.124
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "ct_spawn",
+        "count": 98,
+        "probability": 0.519
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "a_site",
+        "count": 94,
+        "probability": 0.392
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "hookah",
+        "count": 73,
+        "probability": 0.084
+      },
+      {
+        "from_zone": "hookah",
+        "to_zone": "b_garden",
+        "count": 68,
+        "probability": 0.256
+      },
+      {
+        "from_zone": "b_long",
+        "to_zone": "hookah",
+        "count": 66,
+        "probability": 0.089
+      },
+      {
+        "from_zone": "b_garden",
+        "to_zone": "hookah",
+        "count": 49,
+        "probability": 0.132
+      },
+      {
+        "from_zone": "a_bath",
+        "to_zone": "a_short",
+        "count": 39,
+        "probability": 0.433
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "a_site",
+        "count": 36,
+        "probability": 0.041
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "b_site",
+        "count": 33,
+        "probability": 0.175
+      },
+      {
+        "from_zone": "hookah",
+        "to_zone": "b_long",
+        "count": 32,
+        "probability": 0.12
+      },
+      {
+        "from_zone": "a_short",
+        "to_zone": "a_bath",
+        "count": 28,
+        "probability": 0.326
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "hookah",
+        "count": 26,
+        "probability": 0.138
+      },
+      {
+        "from_zone": "a_bath",
+        "to_zone": "a_site",
+        "count": 23,
+        "probability": 0.256
+      },
+      {
+        "from_zone": "hookah",
+        "to_zone": "ct_spawn",
+        "count": 22,
+        "probability": 0.083
+      },
+      {
+        "from_zone": "a_short",
+        "to_zone": "b_garden",
+        "count": 21,
+        "probability": 0.244
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "a_bath",
+        "count": 21,
+        "probability": 0.111
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "hookah",
+        "count": 21,
+        "probability": 0.087
+      },
+      {
+        "from_zone": "a_short",
+        "to_zone": "hookah",
+        "count": 20,
+        "probability": 0.233
+      },
+      {
+        "from_zone": "hookah",
+        "to_zone": "a_site",
+        "count": 18,
+        "probability": 0.068
+      },
+      {
+        "from_zone": "b_garden",
+        "to_zone": "a_short",
+        "count": 14,
+        "probability": 0.038
+      },
+      {
+        "from_zone": "b_garden",
+        "to_zone": "a_bath",
+        "count": 14,
+        "probability": 0.038
+      },
+      {
+        "from_zone": "a_bath",
+        "to_zone": "b_garden",
+        "count": 10,
+        "probability": 0.111
+      },
+      {
+        "from_zone": "b_garden",
+        "to_zone": "t_spawn",
+        "count": 10,
+        "probability": 0.027
+      },
+      {
+        "from_zone": "b_long",
+        "to_zone": "a_bath",
+        "count": 9,
+        "probability": 0.012
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "a_short",
+        "count": 9,
+        "probability": 0.048
+      },
+      {
+        "from_zone": "a_bath",
+        "to_zone": "t_spawn",
+        "count": 9,
+        "probability": 0.1
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "b_garden",
+        "count": 9,
+        "probability": 0.273
+      },
+      {
+        "from_zone": "hookah",
+        "to_zone": "a_short",
+        "count": 9,
+        "probability": 0.034
+      },
+      {
+        "from_zone": "hookah",
+        "to_zone": "a_bath",
+        "count": 8,
+        "probability": 0.03
+      },
+      {
+        "from_zone": "a_short",
+        "to_zone": "t_spawn",
+        "count": 7,
+        "probability": 0.081
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "a_bath",
+        "count": 7,
+        "probability": 0.212
+      },
+      {
+        "from_zone": "b_long",
+        "to_zone": "a_site",
+        "count": 7,
+        "probability": 0.009
+      },
+      {
+        "from_zone": "b_long",
+        "to_zone": "ct_spawn",
+        "count": 6,
+        "probability": 0.008
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "a_short",
+        "count": 6,
+        "probability": 0.182
+      },
+      {
+        "from_zone": "a_bath",
+        "to_zone": "hookah",
+        "count": 6,
+        "probability": 0.067
+      },
+      {
+        "from_zone": "b_garden",
+        "to_zone": "a_site",
+        "count": 5,
+        "probability": 0.013
+      },
+      {
+        "from_zone": "a_short",
+        "to_zone": "a_site",
+        "count": 5,
+        "probability": 0.058
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "b_long",
+        "count": 5,
+        "probability": 0.152
+      },
+      {
+        "from_zone": "b_long",
+        "to_zone": "a_short",
+        "count": 5,
+        "probability": 0.007
+      },
+      {
+        "from_zone": "b_long",
+        "to_zone": "t_spawn",
+        "count": 5,
+        "probability": 0.007
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "hookah",
+        "count": 4,
+        "probability": 0.121
+      }
+    ],
+    "split": [
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "a_site",
+        "count": 90,
+        "probability": 0.425
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "ct_spawn",
+        "count": 90,
+        "probability": 0.526
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "b_site",
+        "count": 88,
+        "probability": 0.415
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "ct_spawn",
+        "count": 87,
+        "probability": 0.524
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "a_site",
+        "count": 47,
+        "probability": 0.283
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "b_site",
+        "count": 44,
+        "probability": 0.257
+      },
+      {
+        "from_zone": "b_heaven",
+        "to_zone": "b_site",
+        "count": 23,
+        "probability": 0.523
+      },
+      {
+        "from_zone": "a_ramp",
+        "to_zone": "a_site",
+        "count": 18,
+        "probability": 0.6
+      },
+      {
+        "from_zone": "vents",
+        "to_zone": "ct_spawn",
+        "count": 15,
+        "probability": 0.357
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "vents",
+        "count": 14,
+        "probability": 0.084
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "b_heaven",
+        "count": 14,
+        "probability": 0.066
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "a_ramp",
+        "count": 13,
+        "probability": 0.076
+      },
+      {
+        "from_zone": "vents",
+        "to_zone": "b_site",
+        "count": 12,
+        "probability": 0.286
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "b_heaven",
+        "count": 11,
+        "probability": 0.066
+      },
+      {
+        "from_zone": "b_heaven",
+        "to_zone": "ct_spawn",
+        "count": 11,
+        "probability": 0.25
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "vents",
+        "count": 10,
+        "probability": 0.058
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "b_heaven",
+        "count": 10,
+        "probability": 0.058
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "vents",
+        "count": 9,
+        "probability": 0.042
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "a_ramp",
+        "count": 8,
+        "probability": 0.038
+      },
+      {
+        "from_zone": "vents",
+        "to_zone": "b_heaven",
+        "count": 6,
+        "probability": 0.143
+      },
+      {
+        "from_zone": "vents",
+        "to_zone": "a_site",
+        "count": 6,
+        "probability": 0.143
+      },
+      {
+        "from_zone": "a_ramp",
+        "to_zone": "ct_spawn",
+        "count": 6,
+        "probability": 0.2
+      },
+      {
+        "from_zone": "b_heaven",
+        "to_zone": "a_site",
+        "count": 6,
+        "probability": 0.136
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "a_ramp",
+        "count": 5,
+        "probability": 0.03
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "mail",
+        "count": 4,
+        "probability": 0.023
+      },
+      {
+        "from_zone": "b_heaven",
+        "to_zone": "vents",
+        "count": 3,
+        "probability": 0.068
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "mail",
+        "count": 3,
+        "probability": 0.014
+      },
+      {
+        "from_zone": "mail",
+        "to_zone": "ct_spawn",
+        "count": 3,
+        "probability": 0.25
+      },
+      {
+        "from_zone": "mail",
+        "to_zone": "vents",
+        "count": 3,
+        "probability": 0.25
+      },
+      {
+        "from_zone": "vents",
+        "to_zone": "a_ramp",
+        "count": 2,
+        "probability": 0.048
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "mail",
+        "count": 2,
+        "probability": 0.012
+      },
+      {
+        "from_zone": "mail",
+        "to_zone": "b_site",
+        "count": 2,
+        "probability": 0.167
+      },
+      {
+        "from_zone": "mail",
+        "to_zone": "a_site",
+        "count": 2,
+        "probability": 0.167
+      },
+      {
+        "from_zone": "a_ramp",
+        "to_zone": "b_heaven",
+        "count": 2,
+        "probability": 0.067
+      },
+      {
+        "from_zone": "mail",
+        "to_zone": "a_ramp",
+        "count": 2,
+        "probability": 0.167
+      },
+      {
+        "from_zone": "a_ramp",
+        "to_zone": "b_site",
+        "count": 2,
+        "probability": 0.067
+      },
+      {
+        "from_zone": "b_heaven",
+        "to_zone": "mail",
+        "count": 1,
+        "probability": 0.023
+      },
+      {
+        "from_zone": "a_ramp",
+        "to_zone": "vents",
+        "count": 1,
+        "probability": 0.033
+      },
+      {
+        "from_zone": "vents",
+        "to_zone": "mail",
+        "count": 1,
+        "probability": 0.024
+      },
+      {
+        "from_zone": "a_ramp",
+        "to_zone": "mail",
+        "count": 1,
+        "probability": 0.033
+      }
+    ],
+    "lotus": [
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "c_main",
+        "count": 533,
+        "probability": 0.468
+      },
+      {
+        "from_zone": "c_site",
+        "to_zone": "c_main",
+        "count": 493,
+        "probability": 0.34
+      },
+      {
+        "from_zone": "c_main",
+        "to_zone": "c_site",
+        "count": 492,
+        "probability": 0.356
+      },
+      {
+        "from_zone": "c_main",
+        "to_zone": "t_spawn",
+        "count": 462,
+        "probability": 0.334
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "c_site",
+        "count": 333,
+        "probability": 0.443
+      },
+      {
+        "from_zone": "c_site",
+        "to_zone": "ct_spawn",
+        "count": 294,
+        "probability": 0.203
+      },
+      {
+        "from_zone": "c_mound",
+        "to_zone": "c_site",
+        "count": 252,
+        "probability": 0.311
+      },
+      {
+        "from_zone": "c_mound",
+        "to_zone": "c_main",
+        "count": 246,
+        "probability": 0.303
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "a_site",
+        "count": 237,
+        "probability": 0.316
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "ct_spawn",
+        "count": 236,
+        "probability": 0.496
+      },
+      {
+        "from_zone": "c_main",
+        "to_zone": "c_mound",
+        "count": 213,
+        "probability": 0.154
+      },
+      {
+        "from_zone": "c_site",
+        "to_zone": "c_mound",
+        "count": 186,
+        "probability": 0.128
+      },
+      {
+        "from_zone": "c_site",
+        "to_zone": "t_spawn",
+        "count": 178,
+        "probability": 0.123
+      },
+      {
+        "from_zone": "b_lower",
+        "to_zone": "c_site",
+        "count": 174,
+        "probability": 0.242
+      },
+      {
+        "from_zone": "b_lower",
+        "to_zone": "c_mound",
+        "count": 170,
+        "probability": 0.236
+      },
+      {
+        "from_zone": "b_lower",
+        "to_zone": "t_spawn",
+        "count": 164,
+        "probability": 0.228
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "b_lower",
+        "count": 164,
+        "probability": 0.144
+      },
+      {
+        "from_zone": "c_site",
+        "to_zone": "b_lower",
+        "count": 137,
+        "probability": 0.095
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "c_mound",
+        "count": 137,
+        "probability": 0.12
+      },
+      {
+        "from_zone": "c_main",
+        "to_zone": "b_lower",
+        "count": 125,
+        "probability": 0.09
+      },
+      {
+        "from_zone": "c_mound",
+        "to_zone": "t_spawn",
+        "count": 122,
+        "probability": 0.15
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "ct_spawn",
+        "count": 117,
+        "probability": 0.506
+      },
+      {
+        "from_zone": "b_upper",
+        "to_zone": "b_lower",
+        "count": 107,
+        "probability": 0.284
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "c_site",
+        "count": 96,
+        "probability": 0.084
+      },
+      {
+        "from_zone": "c_mound",
+        "to_zone": "b_lower",
+        "count": 96,
+        "probability": 0.118
+      },
+      {
+        "from_zone": "a_main",
+        "to_zone": "t_spawn",
+        "count": 75,
+        "probability": 0.311
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "b_upper",
+        "count": 71,
+        "probability": 0.062
+      },
+      {
+        "from_zone": "b_lower",
+        "to_zone": "c_main",
+        "count": 69,
+        "probability": 0.096
+      },
+      {
+        "from_zone": "b_upper",
+        "to_zone": "t_spawn",
+        "count": 68,
+        "probability": 0.18
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "b_site",
+        "count": 67,
+        "probability": 0.089
+      },
+      {
+        "from_zone": "a_rubble",
+        "to_zone": "a_main",
+        "count": 66,
+        "probability": 0.287
+      },
+      {
+        "from_zone": "c_site",
+        "to_zone": "b_upper",
+        "count": 61,
+        "probability": 0.042
+      },
+      {
+        "from_zone": "c_site",
+        "to_zone": "a_site",
+        "count": 55,
+        "probability": 0.038
+      },
+      {
+        "from_zone": "c_main",
+        "to_zone": "b_upper",
+        "count": 54,
+        "probability": 0.039
+      },
+      {
+        "from_zone": "a_main",
+        "to_zone": "a_rubble",
+        "count": 54,
+        "probability": 0.224
+      },
+      {
+        "from_zone": "a_rubble",
+        "to_zone": "b_upper",
+        "count": 54,
+        "probability": 0.235
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "a_main",
+        "count": 53,
+        "probability": 0.047
+      },
+      {
+        "from_zone": "a_main",
+        "to_zone": "a_site",
+        "count": 52,
+        "probability": 0.216
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "c_site",
+        "count": 52,
+        "probability": 0.109
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "a_rubble",
+        "count": 50,
+        "probability": 0.105
+      },
+      {
+        "from_zone": "b_lower",
+        "to_zone": "ct_spawn",
+        "count": 46,
+        "probability": 0.064
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "a_main",
+        "count": 46,
+        "probability": 0.097
+      },
+      {
+        "from_zone": "a_rubble",
+        "to_zone": "a_site",
+        "count": 44,
+        "probability": 0.191
+      },
+      {
+        "from_zone": "b_lower",
+        "to_zone": "b_upper",
+        "count": 40,
+        "probability": 0.056
+      },
+      {
+        "from_zone": "b_upper",
+        "to_zone": "b_site",
+        "count": 37,
+        "probability": 0.098
+      },
+      {
+        "from_zone": "b_upper",
+        "to_zone": "a_rubble",
+        "count": 35,
+        "probability": 0.093
+      },
+      {
+        "from_zone": "b_upper",
+        "to_zone": "a_site",
+        "count": 32,
+        "probability": 0.085
+      },
+      {
+        "from_zone": "b_upper",
+        "to_zone": "c_site",
+        "count": 31,
+        "probability": 0.082
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "b_lower",
+        "count": 30,
+        "probability": 0.04
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "a_rubble",
+        "count": 30,
+        "probability": 0.026
+      }
+    ],
+    "abyss": [
+      {
+        "from_zone": "mid",
+        "to_zone": "b_site",
+        "count": 112,
+        "probability": 0.439
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "mid",
+        "count": 106,
+        "probability": 0.355
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "a_site",
+        "count": 88,
+        "probability": 0.476
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "b_site",
+        "count": 83,
+        "probability": 0.449
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "ct_spawn",
+        "count": 82,
+        "probability": 0.274
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "mid",
+        "count": 80,
+        "probability": 0.544
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "ct_spawn",
+        "count": 78,
+        "probability": 0.394
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "t_spawn",
+        "count": 73,
+        "probability": 0.286
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "mid",
+        "count": 61,
+        "probability": 0.308
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "a_site",
+        "count": 56,
+        "probability": 0.187
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "t_spawn",
+        "count": 55,
+        "probability": 0.184
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "a_site",
+        "count": 53,
+        "probability": 0.208
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "b_site",
+        "count": 53,
+        "probability": 0.361
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "b_site",
+        "count": 48,
+        "probability": 0.242
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "ct_spawn",
+        "count": 17,
+        "probability": 0.067
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "t_spawn",
+        "count": 11,
+        "probability": 0.056
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "ct_spawn",
+        "count": 8,
+        "probability": 0.054
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "mid",
+        "count": 8,
+        "probability": 0.043
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "a_site",
+        "count": 6,
+        "probability": 0.041
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "t_spawn",
+        "count": 6,
+        "probability": 0.032
+      }
+    ],
+    "haven": [
+      {
+        "from_zone": "a_long",
+        "to_zone": "t_spawn",
+        "count": 204,
+        "probability": 0.468
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "a_long",
+        "count": 199,
+        "probability": 0.456
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "c_long",
+        "count": 190,
+        "probability": 0.436
+      },
+      {
+        "from_zone": "c_long",
+        "to_zone": "t_spawn",
+        "count": 189,
+        "probability": 0.333
+      },
+      {
+        "from_zone": "c_long",
+        "to_zone": "c_site",
+        "count": 111,
+        "probability": 0.196
+      },
+      {
+        "from_zone": "c_site",
+        "to_zone": "c_long",
+        "count": 92,
+        "probability": 0.312
+      },
+      {
+        "from_zone": "c_link",
+        "to_zone": "c_long",
+        "count": 88,
+        "probability": 0.284
+      },
+      {
+        "from_zone": "garage",
+        "to_zone": "mid",
+        "count": 68,
+        "probability": 0.231
+      },
+      {
+        "from_zone": "garage",
+        "to_zone": "c_link",
+        "count": 64,
+        "probability": 0.217
+      },
+      {
+        "from_zone": "c_long",
+        "to_zone": "a_long",
+        "count": 61,
+        "probability": 0.108
+      },
+      {
+        "from_zone": "a_short",
+        "to_zone": "a_site",
+        "count": 60,
+        "probability": 0.231
+      },
+      {
+        "from_zone": "b_window",
+        "to_zone": "a_short",
+        "count": 59,
+        "probability": 0.248
+      },
+      {
+        "from_zone": "a_short",
+        "to_zone": "a_long",
+        "count": 59,
+        "probability": 0.227
+      },
+      {
+        "from_zone": "c_long",
+        "to_zone": "garage",
+        "count": 58,
+        "probability": 0.102
+      },
+      {
+        "from_zone": "c_site",
+        "to_zone": "c_link",
+        "count": 55,
+        "probability": 0.186
+      },
+      {
+        "from_zone": "garage",
+        "to_zone": "c_long",
+        "count": 54,
+        "probability": 0.183
+      },
+      {
+        "from_zone": "c_link",
+        "to_zone": "garage",
+        "count": 53,
+        "probability": 0.171
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "a_long",
+        "count": 52,
+        "probability": 0.195
+      },
+      {
+        "from_zone": "c_long",
+        "to_zone": "c_link",
+        "count": 51,
+        "probability": 0.09
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "garage",
+        "count": 49,
+        "probability": 0.184
+      },
+      {
+        "from_zone": "a_long",
+        "to_zone": "c_long",
+        "count": 49,
+        "probability": 0.112
+      },
+      {
+        "from_zone": "b_window",
+        "to_zone": "a_site",
+        "count": 48,
+        "probability": 0.202
+      },
+      {
+        "from_zone": "a_long",
+        "to_zone": "a_short",
+        "count": 46,
+        "probability": 0.106
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "a_short",
+        "count": 46,
+        "probability": 0.188
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "c_site",
+        "count": 45,
+        "probability": 0.184
+      },
+      {
+        "from_zone": "a_long",
+        "to_zone": "a_site",
+        "count": 43,
+        "probability": 0.099
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "c_long",
+        "count": 42,
+        "probability": 0.158
+      },
+      {
+        "from_zone": "c_long",
+        "to_zone": "mid",
+        "count": 41,
+        "probability": 0.072
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "a_short",
+        "count": 39,
+        "probability": 0.147
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "b_window",
+        "count": 37,
+        "probability": 0.151
+      },
+      {
+        "from_zone": "c_link",
+        "to_zone": "c_site",
+        "count": 37,
+        "probability": 0.119
+      },
+      {
+        "from_zone": "garage",
+        "to_zone": "b_window",
+        "count": 36,
+        "probability": 0.122
+      },
+      {
+        "from_zone": "c_link",
+        "to_zone": "mid",
+        "count": 35,
+        "probability": 0.113
+      },
+      {
+        "from_zone": "c_site",
+        "to_zone": "b_window",
+        "count": 32,
+        "probability": 0.108
+      },
+      {
+        "from_zone": "a_short",
+        "to_zone": "b_window",
+        "count": 30,
+        "probability": 0.115
+      },
+      {
+        "from_zone": "c_site",
+        "to_zone": "garage",
+        "count": 30,
+        "probability": 0.102
+      },
+      {
+        "from_zone": "b_window",
+        "to_zone": "garage",
+        "count": 29,
+        "probability": 0.122
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "mid",
+        "count": 29,
+        "probability": 0.067
+      },
+      {
+        "from_zone": "a_long",
+        "to_zone": "mid",
+        "count": 29,
+        "probability": 0.067
+      },
+      {
+        "from_zone": "c_link",
+        "to_zone": "a_site",
+        "count": 29,
+        "probability": 0.094
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "c_link",
+        "count": 29,
+        "probability": 0.109
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "b_window",
+        "count": 28,
+        "probability": 0.105
+      },
+      {
+        "from_zone": "b_window",
+        "to_zone": "c_site",
+        "count": 27,
+        "probability": 0.113
+      },
+      {
+        "from_zone": "a_short",
+        "to_zone": "c_link",
+        "count": 27,
+        "probability": 0.104
+      },
+      {
+        "from_zone": "a_long",
+        "to_zone": "c_link",
+        "count": 26,
+        "probability": 0.06
+      },
+      {
+        "from_zone": "a_short",
+        "to_zone": "mid",
+        "count": 26,
+        "probability": 0.1
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "b_window",
+        "count": 26,
+        "probability": 0.329
+      },
+      {
+        "from_zone": "b_window",
+        "to_zone": "c_link",
+        "count": 23,
+        "probability": 0.097
+      },
+      {
+        "from_zone": "a_short",
+        "to_zone": "c_long",
+        "count": 22,
+        "probability": 0.085
+      },
+      {
+        "from_zone": "c_site",
+        "to_zone": "a_site",
+        "count": 22,
+        "probability": 0.075
+      }
+    ],
+    "fracture": [
+      {
+        "from_zone": "b_site",
+        "to_zone": "mid",
+        "count": 154,
+        "probability": 0.542
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "t_spawn",
+        "count": 149,
+        "probability": 0.429
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "b_site",
+        "count": 138,
+        "probability": 0.409
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "b_site",
+        "count": 136,
+        "probability": 0.392
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "t_spawn",
+        "count": 129,
+        "probability": 0.454
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "mid",
+        "count": 129,
+        "probability": 0.383
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "a_site",
+        "count": 70,
+        "probability": 0.208
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "mid",
+        "count": 67,
+        "probability": 0.511
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "t_spawn",
+        "count": 64,
+        "probability": 0.489
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "a_site",
+        "count": 62,
+        "probability": 0.179
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "a_site",
+        "count": 1,
+        "probability": 0.004
+      }
+    ],
+    "sunset": [
+      {
+        "from_zone": "a_site",
+        "to_zone": "ct_spawn",
+        "count": 137,
+        "probability": 0.588
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "a_site",
+        "count": 120,
+        "probability": 0.48
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "b_site",
+        "count": 86,
+        "probability": 0.344
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "ct_spawn",
+        "count": 82,
+        "probability": 0.607
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "a_site",
+        "count": 47,
+        "probability": 0.348
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "b_site",
+        "count": 47,
+        "probability": 0.202
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "a_site",
+        "count": 45,
+        "probability": 0.391
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "mid",
+        "count": 41,
+        "probability": 0.176
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "mid",
+        "count": 37,
+        "probability": 0.148
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "t_spawn",
+        "count": 34,
+        "probability": 0.296
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "mid",
+        "count": 32,
+        "probability": 0.627
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "ct_spawn",
+        "count": 29,
+        "probability": 0.252
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "a_site",
+        "count": 14,
+        "probability": 0.275
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "t_spawn",
+        "count": 8,
+        "probability": 0.034
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "b_site",
+        "count": 7,
+        "probability": 0.061
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "t_spawn",
+        "count": 7,
+        "probability": 0.028
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "mid",
+        "count": 5,
+        "probability": 0.037
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "ct_spawn",
+        "count": 4,
+        "probability": 0.078
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "b_site",
+        "count": 1,
+        "probability": 0.02
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "t_spawn",
+        "count": 1,
+        "probability": 0.007
+      }
+    ],
+    "pearl": [
+      {
+        "from_zone": "b_site",
+        "to_zone": "mid",
+        "count": 128,
+        "probability": 0.382
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "t_spawn",
+        "count": 127,
+        "probability": 0.49
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "b_site",
+        "count": 114,
+        "probability": 0.514
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "ct_spawn",
+        "count": 107,
+        "probability": 0.319
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "b_site",
+        "count": 99,
+        "probability": 0.382
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "b_site",
+        "count": 99,
+        "probability": 0.432
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "mid",
+        "count": 98,
+        "probability": 0.441
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "a_site",
+        "count": 95,
+        "probability": 0.415
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "ct_spawn",
+        "count": 91,
+        "probability": 0.812
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "t_spawn",
+        "count": 85,
+        "probability": 0.254
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "ct_spawn",
+        "count": 31,
+        "probability": 0.12
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "mid",
+        "count": 28,
+        "probability": 0.122
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "b_site",
+        "count": 19,
+        "probability": 0.17
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "a_site",
+        "count": 15,
+        "probability": 0.045
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "ct_spawn",
+        "count": 10,
+        "probability": 0.045
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "t_spawn",
+        "count": 7,
+        "probability": 0.031
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "a_site",
+        "count": 2,
+        "probability": 0.008
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "mid",
+        "count": 1,
+        "probability": 0.009
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "t_spawn",
+        "count": 1,
+        "probability": 0.009
+      }
+    ],
+    "icebox": [
+      {
+        "from_zone": "a_site",
+        "to_zone": "mid",
+        "count": 478,
+        "probability": 0.481
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "a_site",
+        "count": 446,
+        "probability": 0.541
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "b_site",
+        "count": 309,
+        "probability": 0.445
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "ct_spawn",
+        "count": 290,
+        "probability": 0.529
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "ct_spawn",
+        "count": 283,
+        "probability": 0.285
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "a_site",
+        "count": 266,
+        "probability": 0.383
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "t_spawn",
+        "count": 200,
+        "probability": 0.242
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "mid",
+        "count": 159,
+        "probability": 0.422
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "a_site",
+        "count": 133,
+        "probability": 0.353
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "a_site",
+        "count": 130,
+        "probability": 0.237
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "b_site",
+        "count": 122,
+        "probability": 0.123
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "t_spawn",
+        "count": 110,
+        "probability": 0.111
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "mid",
+        "count": 107,
+        "probability": 0.154
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "ct_spawn",
+        "count": 101,
+        "probability": 0.122
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "b_site",
+        "count": 78,
+        "probability": 0.095
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "mid",
+        "count": 73,
+        "probability": 0.133
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "b_site",
+        "count": 61,
+        "probability": 0.162
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "t_spawn",
+        "count": 55,
+        "probability": 0.1
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "ct_spawn",
+        "count": 24,
+        "probability": 0.064
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "t_spawn",
+        "count": 13,
+        "probability": 0.019
+      }
+    ],
+    "ascent": [
+      {
+        "from_zone": "a_site",
+        "to_zone": "ct_spawn",
+        "count": 382,
+        "probability": 0.57
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "a_site",
+        "count": 329,
+        "probability": 0.413
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "b_site",
+        "count": 310,
+        "probability": 0.389
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "ct_spawn",
+        "count": 269,
+        "probability": 0.302
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "b_main",
+        "count": 268,
+        "probability": 0.301
+      },
+      {
+        "from_zone": "b_main",
+        "to_zone": "b_site",
+        "count": 250,
+        "probability": 0.422
+      },
+      {
+        "from_zone": "b_main",
+        "to_zone": "mid",
+        "count": 127,
+        "probability": 0.214
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "a_site",
+        "count": 123,
+        "probability": 0.138
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "b_main",
+        "count": 121,
+        "probability": 0.207
+      },
+      {
+        "from_zone": "b_market",
+        "to_zone": "b_site",
+        "count": 98,
+        "probability": 0.378
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "a_main",
+        "count": 98,
+        "probability": 0.168
+      },
+      {
+        "from_zone": "b_market",
+        "to_zone": "b_main",
+        "count": 91,
+        "probability": 0.351
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "b_site",
+        "count": 90,
+        "probability": 0.134
+      },
+      {
+        "from_zone": "mid_top",
+        "to_zone": "ct_spawn",
+        "count": 88,
+        "probability": 0.331
+      },
+      {
+        "from_zone": "a_main",
+        "to_zone": "mid",
+        "count": 86,
+        "probability": 0.339
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "b_main",
+        "count": 81,
+        "probability": 0.367
+      },
+      {
+        "from_zone": "b_main",
+        "to_zone": "b_market",
+        "count": 81,
+        "probability": 0.137
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "t_spawn",
+        "count": 79,
+        "probability": 0.135
+      },
+      {
+        "from_zone": "a_tree",
+        "to_zone": "mid",
+        "count": 78,
+        "probability": 0.364
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "mid",
+        "count": 77,
+        "probability": 0.087
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "catwalk",
+        "count": 67,
+        "probability": 0.115
+      },
+      {
+        "from_zone": "a_main",
+        "to_zone": "a_site",
+        "count": 67,
+        "probability": 0.264
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "b_market",
+        "count": 65,
+        "probability": 0.073
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "a_main",
+        "count": 63,
+        "probability": 0.094
+      },
+      {
+        "from_zone": "b_main",
+        "to_zone": "t_spawn",
+        "count": 61,
+        "probability": 0.103
+      },
+      {
+        "from_zone": "a_main",
+        "to_zone": "a_tree",
+        "count": 56,
+        "probability": 0.22
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "mid",
+        "count": 51,
+        "probability": 0.231
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "mid_top",
+        "count": 51,
+        "probability": 0.064
+      },
+      {
+        "from_zone": "catwalk",
+        "to_zone": "mid",
+        "count": 49,
+        "probability": 0.232
+      },
+      {
+        "from_zone": "mid_top",
+        "to_zone": "b_site",
+        "count": 48,
+        "probability": 0.18
+      },
+      {
+        "from_zone": "a_tree",
+        "to_zone": "a_site",
+        "count": 48,
+        "probability": 0.224
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "mid_top",
+        "count": 47,
+        "probability": 0.08
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "a_tree",
+        "count": 44,
+        "probability": 0.066
+      },
+      {
+        "from_zone": "a_tree",
+        "to_zone": "a_main",
+        "count": 43,
+        "probability": 0.201
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "a_site",
+        "count": 43,
+        "probability": 0.074
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "a_tree",
+        "count": 41,
+        "probability": 0.07
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "b_market",
+        "count": 39,
+        "probability": 0.067
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "catwalk",
+        "count": 38,
+        "probability": 0.043
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "mid_top",
+        "count": 36,
+        "probability": 0.04
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "mid",
+        "count": 36,
+        "probability": 0.054
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "b_site",
+        "count": 36,
+        "probability": 0.062
+      },
+      {
+        "from_zone": "catwalk",
+        "to_zone": "b_site",
+        "count": 35,
+        "probability": 0.166
+      },
+      {
+        "from_zone": "catwalk",
+        "to_zone": "mid_top",
+        "count": 34,
+        "probability": 0.161
+      },
+      {
+        "from_zone": "mid_top",
+        "to_zone": "mid",
+        "count": 33,
+        "probability": 0.124
+      },
+      {
+        "from_zone": "b_main",
+        "to_zone": "mid_top",
+        "count": 31,
+        "probability": 0.052
+      },
+      {
+        "from_zone": "b_main",
+        "to_zone": "catwalk",
+        "count": 29,
+        "probability": 0.049
+      },
+      {
+        "from_zone": "a_main",
+        "to_zone": "t_spawn",
+        "count": 28,
+        "probability": 0.11
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "mid",
+        "count": 26,
+        "probability": 0.033
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "mid_top",
+        "count": 24,
+        "probability": 0.036
+      },
+      {
+        "from_zone": "catwalk",
+        "to_zone": "b_main",
+        "count": 23,
+        "probability": 0.109
+      }
+    ],
+    "corrode": [
+      {
+        "from_zone": "b_site",
+        "to_zone": "mid",
+        "count": 260,
+        "probability": 0.527
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "b_site",
+        "count": 259,
+        "probability": 0.396
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "mid",
+        "count": 247,
+        "probability": 0.538
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "a_site",
+        "count": 227,
+        "probability": 0.347
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "ct_spawn",
+        "count": 143,
+        "probability": 0.312
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "a_site",
+        "count": 136,
+        "probability": 0.455
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "b_site",
+        "count": 125,
+        "probability": 0.418
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "t_spawn",
+        "count": 123,
+        "probability": 0.188
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "mid",
+        "count": 107,
+        "probability": 0.554
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "ct_spawn",
+        "count": 103,
+        "probability": 0.209
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "a_site",
+        "count": 76,
+        "probability": 0.154
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "b_site",
+        "count": 65,
+        "probability": 0.337
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "b_site",
+        "count": 54,
+        "probability": 0.118
+      },
+      {
+        "from_zone": "b_site",
+        "to_zone": "t_spawn",
+        "count": 54,
+        "probability": 0.11
+      },
+      {
+        "from_zone": "mid",
+        "to_zone": "ct_spawn",
+        "count": 45,
+        "probability": 0.069
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "mid",
+        "count": 34,
+        "probability": 0.114
+      },
+      {
+        "from_zone": "a_site",
+        "to_zone": "t_spawn",
+        "count": 15,
+        "probability": 0.033
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "a_site",
+        "count": 15,
+        "probability": 0.078
+      },
+      {
+        "from_zone": "t_spawn",
+        "to_zone": "ct_spawn",
+        "count": 6,
+        "probability": 0.031
+      },
+      {
+        "from_zone": "ct_spawn",
+        "to_zone": "t_spawn",
+        "count": 4,
+        "probability": 0.013
+      }
+    ]
+  },
+  "role_heatmaps": {},
+  "phase_patterns": {
+    "bind": {
+      "early": {
+        "b_site": 0.353,
+        "b_long": 0.343,
+        "ct_spawn": 0.089,
+        "b_garden": 0.063,
+        "a_site": 0.055,
+        "hookah": 0.045,
+        "a_bath": 0.031,
+        "a_short": 0.015,
+        "t_spawn": 0.006
+      }
+    },
+    "split": {
+      "early": {
+        "a_site": 0.314,
+        "ct_spawn": 0.303,
+        "b_site": 0.271,
+        "b_heaven": 0.042,
+        "vents": 0.034,
+        "a_ramp": 0.026,
+        "mail": 0.01
+      }
+    },
+    "lotus": {
+      "early": {
+        "c_main": 0.246,
+        "c_site": 0.227,
+        "t_spawn": 0.129,
+        "ct_spawn": 0.121,
+        "c_mound": 0.073,
+        "b_lower": 0.056,
+        "a_site": 0.049,
+        "a_main": 0.037,
+        "b_upper": 0.031,
+        "a_rubble": 0.017
+      }
+    },
+    "abyss": {
+      "early": {
+        "b_site": 0.318,
+        "a_site": 0.236,
+        "mid": 0.173,
+        "ct_spawn": 0.166,
+        "t_spawn": 0.107
+      }
+    },
+    "haven": {
+      "early": {
+        "c_long": 0.3,
+        "a_long": 0.165,
+        "t_spawn": 0.136,
+        "c_site": 0.075,
+        "a_site": 0.057,
+        "c_link": 0.055,
+        "garage": 0.051,
+        "mid": 0.049,
+        "b_window": 0.048,
+        "a_short": 0.046
+      }
+    },
+    "fracture": {
+      "early": {
+        "b_site": 0.557,
+        "t_spawn": 0.184,
+        "mid": 0.155,
+        "a_site": 0.103
+      }
+    },
+    "sunset": {
+      "early": {
+        "a_site": 0.302,
+        "ct_spawn": 0.258,
+        "b_site": 0.235,
+        "mid": 0.152,
+        "t_spawn": 0.053
+      }
+    },
+    "pearl": {
+      "early": {
+        "b_site": 0.368,
+        "t_spawn": 0.178,
+        "ct_spawn": 0.175,
+        "mid": 0.165,
+        "a_site": 0.115
+      }
+    },
+    "icebox": {
+      "early": {
+        "a_site": 0.327,
+        "b_site": 0.226,
+        "mid": 0.203,
+        "ct_spawn": 0.17,
+        "t_spawn": 0.074
+      }
+    },
+    "ascent": {
+      "early": {
+        "b_site": 0.226,
+        "b_main": 0.19,
+        "ct_spawn": 0.171,
+        "a_site": 0.127,
+        "mid": 0.087,
+        "a_main": 0.064,
+        "mid_top": 0.033,
+        "t_spawn": 0.029,
+        "b_market": 0.027,
+        "a_tree": 0.024
+      }
+    },
+    "corrode": {
+      "early": {
+        "b_site": 0.296,
+        "a_site": 0.26,
+        "mid": 0.247,
+        "ct_spawn": 0.131,
+        "t_spawn": 0.066
+      }
+    }
+  },
+  "c9_patterns": {
+    "player_zone_preferences": {
+      "moose": {
+        "a_site": 0.189,
+        "b_site": 0.187,
+        "ct_spawn": 0.146,
+        "mid": 0.098,
+        "t_spawn": 0.048
+      },
+      "Runi": {
+        "a_site": 0.187,
+        "b_site": 0.171,
+        "ct_spawn": 0.151,
+        "mid": 0.1,
+        "t_spawn": 0.071
+      },
+      "Xeppaa": {
+        "b_site": 0.219,
+        "a_site": 0.13,
+        "ct_spawn": 0.112,
+        "mid": 0.097,
+        "t_spawn": 0.09
+      },
+      "vanity": {
+        "b_site": 0.216,
+        "a_site": 0.172,
+        "ct_spawn": 0.129,
+        "mid": 0.105,
+        "b_long": 0.067
+      },
+      "OXY": {
+        "b_site": 0.19,
+        "ct_spawn": 0.125,
+        "a_site": 0.118,
+        "c_main": 0.093,
+        "mid": 0.09
+      },
+      "neT": {
+        "b_site": 0.209,
+        "a_site": 0.116,
+        "ct_spawn": 0.108,
+        "t_spawn": 0.105,
+        "c_site": 0.093
+      },
+      "mitch": {
+        "b_site": 0.182,
+        "t_spawn": 0.131,
+        "a_site": 0.122,
+        "ct_spawn": 0.105,
+        "c_main": 0.087
+      },
+      "v1c": {
+        "b_site": 0.193,
+        "t_spawn": 0.128,
+        "a_site": 0.107,
+        "mid": 0.092,
+        "ct_spawn": 0.091
+      },
+      "wippie": {
+        "b_site": 0.273,
+        "b_long": 0.223,
+        "a_site": 0.218,
+        "ct_spawn": 0.146,
+        "mid": 0.065
+      },
+      "xeppaa": {
+        "b_site": 0.302,
+        "b_long": 0.269,
+        "ct_spawn": 0.152,
+        "a_site": 0.124,
+        "mid": 0.072
+      },
+      "jakee": {
+        "b_site": 0.335,
+        "a_site": 0.259,
+        "mid": 0.201,
+        "ct_spawn": 0.169,
+        "t_spawn": 0.036
+      },
+      "Jakee": {
+        "b_long": 0.328,
+        "b_site": 0.248,
+        "a_site": 0.186,
+        "ct_spawn": 0.158,
+        "hookah": 0.042
+      }
+    },
+    "attack_zones": {
+      "b_site": 0.182,
+      "a_site": 0.161,
+      "mid": 0.118,
+      "t_spawn": 0.106,
+      "ct_spawn": 0.098,
+      "c_site": 0.049,
+      "c_main": 0.033,
+      "b_long": 0.031,
+      "c_long": 0.025,
+      "a_main": 0.024
+    },
+    "defense_zones": {
+      "b_site": 0.223,
+      "ct_spawn": 0.14,
+      "a_site": 0.113,
+      "c_main": 0.091,
+      "c_site": 0.078,
+      "t_spawn": 0.073,
+      "mid": 0.067,
+      "b_long": 0.048,
+      "b_main": 0.042,
+      "c_long": 0.034
+    },
+    "total_samples": 40195
+  }
+}

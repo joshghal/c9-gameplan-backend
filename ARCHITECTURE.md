@@ -1,0 +1,314 @@
+# C9 Tactical Vision - Architecture Overview
+
+**Last Updated**: January 2026
+**Simulation Accuracy**: 86% (12/14 scenarios)
+
+---
+
+## Project Goal
+
+A VALORANT tactical simulation platform for coaching analysis. Enables counterfactual questions like:
+- "What if OXY and xeppaa pushed together at 15 seconds?"
+- "What if C9 played attacker side in yesterday's match?"
+- "How would C9 perform against Asian teams?"
+
+---
+
+## Technology Stack
+
+| Component | Technology | Purpose |
+|-----------|------------|---------|
+| Web Framework | FastAPI 0.109 (async) | REST API |
+| Database | PostgreSQL + asyncpg | Persistent storage |
+| Cache | Redis 5.0 | Session cache |
+| Data Source | GRID esports API | VCT match data |
+| Processing | Pandas, Numpy | Data analysis |
+
+---
+
+## Directory Structure
+
+```
+backend/
+├── app/
+│   ├── main.py                 # FastAPI entry point
+│   ├── config.py               # Settings (DB, Redis, GRID API)
+│   ├── database.py             # SQLAlchemy async setup
+│   │
+│   ├── api/routes/             # REST endpoints
+│   │   ├── simulations.py      # Simulation CRUD + execution
+│   │   ├── matches.py          # Match/Round queries
+│   │   ├── teams.py            # Team/Player management
+│   │   ├── patterns.py         # Movement pattern queries
+│   │   └── maps.py             # Map configs and zones
+│   │
+│   ├── models/                 # SQLAlchemy ORM models
+│   │   ├── teams.py            # Team, Player
+│   │   ├── matches.py          # Match, Round
+│   │   ├── simulations.py      # SimulationSession
+│   │   ├── patterns.py         # MovementPattern, PlayerTendency
+│   │   ├── maps.py             # MapConfig, MapZone
+│   │   └── positions.py        # RawPosition, GridEvent
+│   │
+│   ├── schemas/                # Pydantic request/response
+│   │
+│   ├── data/                   # VCT-extracted JSON (8 files)
+│   │   ├── position_trajectories.json (50MB)
+│   │   ├── trade_patterns.json
+│   │   ├── behavioral_patterns.json
+│   │   ├── hold_angles.json
+│   │   ├── movement_patterns.json
+│   │   ├── economy_patterns.json
+│   │   ├── opponent_profiles.json
+│   │   └── simulation_profiles.json
+│   │
+│   └── services/               # Core simulation (16,729 lines)
+│       ├── [ACTIVE] simulation_engine.py (3,363 lines)
+│       ├── [ACTIVE] combat_model.py (880 lines)
+│       ├── [ACTIVE] weapon_system.py (610 lines)
+│       ├── [ACTIVE] economy_engine.py (533 lines)
+│       ├── [ACTIVE] round_state.py (482 lines)
+│       ├── [ACTIVE] behavior_adaptation.py (477 lines)
+│       ├── [ACTIVE] strategy_coordinator.py (709 lines)
+│       ├── [ACTIVE] ability_system.py (1,143 lines)
+│       ├── [ACTIVE] pathfinding.py (698 lines)
+│       ├── [ACTIVE] pattern_matcher.py (360 lines)
+│       ├── [ACTIVE] data_loader.py (601 lines)
+│       ├── [ACTIVE] information_system.py (524 lines)
+│       ├── [ACTIVE] ai_decision_system.py (1,187 lines)
+│       ├── [ACTIVE] neural_ai_system.py (860 lines)
+│       ├── [ACTIVE] validated_parameters.py (809 lines)
+│       ├── [DATA TOOL] grid_parser.py (524 lines)
+│       ├── [DATA TOOL] grid_data_extractor.py (775 lines)
+│       ├── [DATA TOOL] player_profiles.py (433 lines)
+│       ├── [DEAD] coordination_system.py (636 lines)
+│       ├── [DEAD] combat_system_v2.py (697 lines)
+│       └── [EXPERIMENTAL] trade_system.py (391 lines)
+│
+├── scripts/                    # Analysis and testing
+│   ├── scenario_analysis_v6.py # Current best (86% accuracy)
+│   └── ...
+│
+└── tests/                      # Unit and integration tests
+```
+
+---
+
+## Core Simulation Flow
+
+```
+API Request (POST /simulations/{id}/start)
+    │
+    ▼
+SimulationEngine.initialize_round()
+    ├── WeaponDatabase → Load weapon stats
+    ├── EconomyEngine → Generate loadouts from credits
+    ├── StrategyCoordinator → Assign roles (duelist, initiator, etc.)
+    └── AbilitySystem → Initialize agent abilities
+    │
+    ▼
+SimulationEngine.advance() [tick loop at 128ms]
+    ├── Movement
+    │   ├── Pathfinding (A* with LOS)
+    │   ├── Pattern Matcher (VCT patterns)
+    │   └── Behavior Adaptation (aggression modifiers)
+    │
+    ├── Information
+    │   ├── Sound Detection (running/walking radius)
+    │   ├── Vision (LOS checks)
+    │   └── Knowledge Decay (info gets stale)
+    │
+    ├── Combat (when players in range + LOS)
+    │   ├── CombatModel → TTK calculation
+    │   ├── Crossfire Advantage → Teammate LOS support
+    │   ├── Information Advantage → Prior knowledge bonus
+    │   └── Trade System → Post-kill trade window
+    │
+    └── Decisions
+        ├── AIDecisionSystem → Rule-based decisions
+        └── NeuralAISystem → NN-based (64 features → 10 actions)
+    │
+    ▼
+Return SimulationState (players, events, phase)
+```
+
+---
+
+## Active Services (What Each Does)
+
+### Core Engine
+| Service | Lines | Responsibility |
+|---------|-------|----------------|
+| `simulation_engine.py` | 3,363 | Main orchestrator - round init, tick loop, events |
+| `round_state.py` | 482 | Round phases, win probability, economy tracking |
+
+### Combat
+| Service | Lines | Responsibility |
+|---------|-------|----------------|
+| `combat_model.py` | 880 | Gunfight mechanics - reaction time, accuracy, TTK |
+| `weapon_system.py` | 610 | Weapon stats, damage falloff, armor calculation |
+
+### Economy
+| Service | Lines | Responsibility |
+|---------|-------|----------------|
+| `economy_engine.py` | 533 | Credit tracking, buy decisions, loadout generation |
+
+### Movement & Positioning
+| Service | Lines | Responsibility |
+|---------|-------|----------------|
+| `pathfinding.py` | 698 | A* pathfinding, LOS (Bresenham line algorithm) |
+| `pattern_matcher.py` | 360 | Match movement to VCT patterns |
+
+### Player Behavior
+| Service | Lines | Responsibility |
+|---------|-------|----------------|
+| `strategy_coordinator.py` | 709 | Role assignments (5 roles), team tactics |
+| `behavior_adaptation.py` | 477 | Aggression modifiers, clutch factors |
+| `ai_decision_system.py` | 1,187 | Rule-based decisions (hold/advance/execute/etc) |
+| `neural_ai_system.py` | 860 | Neural network decisions (64→10 actions) |
+
+### Abilities
+| Service | Lines | Responsibility |
+|---------|-------|----------------|
+| `ability_system.py` | 1,143 | 19 agents, ability mechanics, ultimate economy |
+
+### Information
+| Service | Lines | Responsibility |
+|---------|-------|----------------|
+| `information_system.py` | 524 | Player knowledge - who saw what, info decay |
+
+### Data
+| Service | Lines | Responsibility |
+|---------|-------|----------------|
+| `data_loader.py` | 601 | Singleton loader for VCT JSON data |
+| `validated_parameters.py` | 809 | VCT-derived parameters with justification |
+
+---
+
+## Data Files (VCT Extracted)
+
+All from **33 VCT matches with 1,739 rounds**:
+
+| File | Size | Content |
+|------|------|---------|
+| `position_trajectories.json` | 50MB | 592,893 position samples (~34 per player/round) |
+| `trade_patterns.json` | 125KB | 3,036 trades, 1.72s avg, time distribution |
+| `behavioral_patterns.json` | 19KB | Role HS rates (Duelist 23.3%, Sentinel 13.3%) |
+| `hold_angles.json` | 76KB | Engagement angles/distances by zone |
+| `movement_patterns.json` | 79KB | 84,063 zone transition samples |
+| `economy_patterns.json` | 12KB | Buy thresholds, win rates by buy type |
+| `opponent_profiles.json` | var | 85 player profiles with stats |
+| `simulation_profiles.json` | var | Behavioral profiles for AI |
+
+---
+
+## Dead/Unused Code
+
+| File | Lines | Status | Why |
+|------|-------|--------|-----|
+| `coordination_system.py` | 636 | **FAILED** | Experiment made accuracy worse (50% vs 71%) |
+| `combat_system_v2.py` | 697 | **SUPERSEDED** | Replaced by `combat_model.py` |
+| `trade_system.py` | 391 | **EXPERIMENTAL** | Used only in scenario analysis scripts |
+
+**Recommendation**: Archive or delete these files.
+
+---
+
+## Emergent vs Hardcoded Systems
+
+### Philosophy
+Every outcome should EMERGE from underlying mechanics, not be hardcoded.
+
+### Current Emergent Systems
+
+1. **Economy** - TTK differences produce correct eco/full win rates
+2. **Crossfire** - LOS checks determine teammate support advantage
+3. **Information** - Sound system provides detection coverage
+4. **Molly Repositioning** - Ability effects trigger movement
+
+### Still Hardcoded (Needs Work)
+
+1. **Position Advantage** - 15% base estimated, no VCT data
+2. **Trade Distance** - 15% of map threshold is tuned
+3. **Clutch Factor** - Profile-based but arbitrary
+
+---
+
+## API Endpoints
+
+### Simulations (`/api/v1/simulations`)
+- `POST /` - Create session
+- `POST /{id}/start` - Initialize round
+- `POST /{id}/tick` - Advance N ticks
+- `POST /{id}/snapshot` - Save state
+- `POST /{id}/what-if` - Run alternative from snapshot
+- `GET /{id}/analysis` - Get recommendations
+
+### Matches (`/api/v1/matches`)
+- `GET /` - List matches
+- `GET /{id}/rounds` - Get rounds
+
+### Teams (`/api/v1/teams`)
+- `GET /` - List teams
+- `GET /{id}/players` - Get roster
+
+### Patterns (`/api/v1/patterns`)
+- `POST /query` - Query best patterns
+- `GET /tendencies/{player}` - Player tendencies
+- `GET /strategies/{team}` - Team strategies
+
+### Maps (`/api/v1/maps`)
+- `GET /` - List map configs
+- `GET /{name}/zones` - Get zones
+
+---
+
+## Database Schema
+
+| Table | Key Fields |
+|-------|------------|
+| `teams` | id, name, region |
+| `players` | id, team_id, name, role |
+| `matches` | team1_id, team2_id, map, tournament |
+| `rounds` | match_id, round_number, winner, spike_planted |
+| `simulation_sessions` | teams, map, phase, snapshots (JSONB) |
+| `movement_patterns` | team, map, side, waypoints (JSONB) |
+| `map_configs` | map_name, walls_grid (JSONB) |
+
+---
+
+## What Works Well
+
+| System | Accuracy | Why |
+|--------|----------|-----|
+| Economy scenarios | 9/10 | TTK differences are physics-based |
+| Trade timing | 8/10 | Based on VCT 1.72s average |
+| Role behaviors | 8/10 | Direct from VCT headshot/aggression data |
+| Defender arrival | 8/10 | Matches VCT spread (12.9s avg) |
+
+## What Needs Work
+
+| System | Gap | Root Cause |
+|--------|-----|------------|
+| Man advantage 4v5 | 51% vs 35% | Missing chain trades |
+| Man advantage 3v5 | 42% vs 15% | Missing utility stacking |
+| Retake | 26% vs 35% | Attacker positioning wrong |
+| Post-plant | 83% vs 65% | Attackers too static |
+
+---
+
+## Configuration
+
+Key settings in `app/config.py`:
+
+| Setting | Value | Purpose |
+|---------|-------|---------|
+| `simulation_tick_rate` | 128ms | Tick duration |
+| `max_simulation_time` | 120000ms | 2 min round limit |
+| `pattern_similarity_threshold` | 0.85 | Pattern matching tolerance |
+
+---
+
+## Next Steps
+
+See `COACHING_SIMULATOR_ROADMAP.md` for the path to coaching use case.

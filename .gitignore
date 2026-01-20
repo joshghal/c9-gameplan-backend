@@ -1,0 +1,39 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment variables
+.env
+.env.local
+
+# Large data files (>10MB)
+app/data/position_trajectories.json
+
+# Generated outputs
+round_panels_*.png
+*.png
+!app/data/**/*.png
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test/debug outputs
+*.log
+debug_*.json
+
+# Jupyter
+.ipynb_checkpoints/

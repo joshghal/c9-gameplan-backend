@@ -1,0 +1,525 @@
+{
+  "metadata": {
+    "description": "Economy patterns from VCT pro matches",
+    "total_rounds": 1737,
+    "thresholds": {
+      "full_buy": 3900,
+      "force_buy": 2000,
+      "half_buy": 1000,
+      "eco": 0
+    }
+  },
+  "buy_patterns": {
+    "buy_win_rates": {
+      "full_buy": {
+        "win_rate": 0.509705248023005,
+        "wins": 1418,
+        "total": 2782
+      },
+      "half_buy": {
+        "win_rate": 0.49809885931558934,
+        "wins": 131,
+        "total": 263
+      },
+      "force_buy": {
+        "win_rate": 0.42216358839050133,
+        "wins": 160,
+        "total": 379
+      },
+      "eco": {
+        "win_rate": 0.54,
+        "wins": 27,
+        "total": 50
+      }
+    },
+    "loadout_distribution": {
+      "full_buy": 2782,
+      "half_buy": 263,
+      "force_buy": 379,
+      "eco": 50
+    },
+    "eco_threshold_avg": 2852.0
+  },
+  "by_side": {
+    "attacker": {
+      "full_buy": 1297,
+      "half_buy": 192,
+      "force_buy": 199,
+      "eco": 49
+    },
+    "defender": {
+      "full_buy": 1485,
+      "half_buy": 71,
+      "force_buy": 180,
+      "eco": 1
+    }
+  },
+  "by_map": {
+    "bind": {
+      "avg_attacker_loadout": 12925.416666666666,
+      "avg_defender_loadout": 14958.75,
+      "buy_distribution": {
+        "full_buy": 189,
+        "half_buy": 3,
+        "force_buy": 48
+      }
+    },
+    "split": {
+      "avg_attacker_loadout": 7394.174757281553,
+      "avg_defender_loadout": 14066.504854368932,
+      "buy_distribution": {
+        "half_buy": 59,
+        "full_buy": 122,
+        "force_buy": 25
+      }
+    },
+    "lotus": {
+      "avg_attacker_loadout": 10964.334862385322,
+      "avg_defender_loadout": 13878.211009174312,
+      "buy_distribution": {
+        "half_buy": 71,
+        "full_buy": 717,
+        "force_buy": 84
+      }
+    },
+    "sunset": {
+      "avg_attacker_loadout": 6899.54128440367,
+      "avg_defender_loadout": 11269.724770642202,
+      "buy_distribution": {
+        "full_buy": 146,
+        "force_buy": 24,
+        "half_buy": 22,
+        "eco": 26
+      }
+    },
+    "ascent": {
+      "avg_attacker_loadout": 12332.35294117647,
+      "avg_defender_loadout": 12405.882352941177,
+      "buy_distribution": {
+        "force_buy": 41,
+        "full_buy": 381,
+        "half_buy": 20
+      }
+    },
+    "icebox": {
+      "avg_attacker_loadout": 11532.798165137614,
+      "avg_defender_loadout": 14915.825688073395,
+      "buy_distribution": {
+        "force_buy": 44,
+        "half_buy": 21,
+        "full_buy": 347,
+        "eco": 24
+      }
+    },
+    "haven": {
+      "avg_attacker_loadout": 12479.761904761905,
+      "avg_defender_loadout": 14896.666666666666,
+      "buy_distribution": {
+        "full_buy": 344,
+        "force_buy": 55,
+        "half_buy": 21
+      }
+    },
+    "abyss": {
+      "avg_attacker_loadout": 10313.235294117647,
+      "avg_defender_loadout": 9319.117647058823,
+      "buy_distribution": {
+        "full_buy": 88,
+        "force_buy": 24,
+        "half_buy": 24
+      }
+    },
+    "fracture": {
+      "avg_attacker_loadout": 19747.014925373136,
+      "avg_defender_loadout": 15016.41791044776,
+      "buy_distribution": {
+        "force_buy": 10,
+        "full_buy": 124
+      }
+    },
+    "pearl": {
+      "avg_attacker_loadout": 10409.274193548386,
+      "avg_defender_loadout": 13531.451612903225,
+      "buy_distribution": {
+        "full_buy": 223,
+        "half_buy": 21,
+        "force_buy": 4
+      }
+    },
+    "corrode": {
+      "avg_attacker_loadout": 15045.901639344262,
+      "avg_defender_loadout": 18231.967213114753,
+      "buy_distribution": {
+        "full_buy": 101,
+        "force_buy": 20,
+        "half_buy": 1
+      }
+    }
+  },
+  "player_economy": {
+    "rglmeister": {
+      "avg_loadout": 1656.4655172413793,
+      "rounds_played": 116
+    },
+    "frz": {
+      "avg_loadout": 1599.5689655172414,
+      "rounds_played": 116
+    },
+    "mazin": {
+      "avg_loadout": 1771.1206896551723,
+      "rounds_played": 116
+    },
+    "jzz": {
+      "avg_loadout": 1586.6379310344828,
+      "rounds_played": 116
+    },
+    "artziN": {
+      "avg_loadout": 1916.3793103448277,
+      "rounds_played": 116
+    },
+    "Jakee": {
+      "avg_loadout": 3580.8823529411766,
+      "rounds_played": 68
+    },
+    "OXY": {
+      "avg_loadout": 2425.964306275187,
+      "rounds_played": 1737
+    },
+    "vanity": {
+      "avg_loadout": 1821.3178294573643,
+      "rounds_played": 774
+    },
+    "wippie": {
+      "avg_loadout": 1371.9298245614036,
+      "rounds_played": 114
+    },
+    "xeppaa": {
+      "avg_loadout": 1394.298245614035,
+      "rounds_played": 114
+    },
+    "jakee": {
+      "avg_loadout": 2792.391304347826,
+      "rounds_played": 46
+    },
+    "Demon1": {
+      "avg_loadout": 2295.1807228915663,
+      "rounds_played": 83
+    },
+    "Marved": {
+      "avg_loadout": 3429.3478260869565,
+      "rounds_played": 46
+    },
+    "Ethan": {
+      "avg_loadout": 2608.7188612099644,
+      "rounds_played": 281
+    },
+    "crashies": {
+      "avg_loadout": 2705.4054054054054,
+      "rounds_played": 111
+    },
+    "Victor": {
+      "avg_loadout": 4865.315315315315,
+      "rounds_played": 111
+    },
+    "moose": {
+      "avg_loadout": 1847.9545454545455,
+      "rounds_played": 660
+    },
+    "Runi": {
+      "avg_loadout": 1715.2272727272727,
+      "rounds_played": 660
+    },
+    "Xeppaa": {
+      "avg_loadout": 1754.0665434380776,
+      "rounds_played": 1623
+    },
+    "aspas": {
+      "avg_loadout": 2754.0284360189576,
+      "rounds_played": 211
+    },
+    "tex": {
+      "avg_loadout": 2031.2154696132598,
+      "rounds_played": 181
+    },
+    "kiNgg": {
+      "avg_loadout": 1908.8397790055249,
+      "rounds_played": 181
+    },
+    "C0M": {
+      "avg_loadout": 2898.6187845303866,
+      "rounds_played": 181
+    },
+    "Mazino": {
+      "avg_loadout": 1380.4054054054054,
+      "rounds_played": 74
+    },
+    "JAWGEMO": {
+      "avg_loadout": 3446.039603960396,
+      "rounds_played": 202
+    },
+    "Derrek": {
+      "avg_loadout": 3793.7908496732025,
+      "rounds_played": 153
+    },
+    "NaturE": {
+      "avg_loadout": 2307.1895424836603,
+      "rounds_played": 153
+    },
+    "Apoth": {
+      "avg_loadout": 3633.3333333333335,
+      "rounds_played": 60
+    },
+    "supamen": {
+      "avg_loadout": 2710.4575163398695,
+      "rounds_played": 153
+    },
+    "qck1": {
+      "avg_loadout": 2111.1111111111113,
+      "rounds_played": 63
+    },
+    "cauanzin": {
+      "avg_loadout": 1988.888888888889,
+      "rounds_played": 63
+    },
+    "Saadhak": {
+      "avg_loadout": 1614.2857142857142,
+      "rounds_played": 63
+    },
+    "Less": {
+      "avg_loadout": 4068.253968253968,
+      "rounds_played": 63
+    },
+    "tuyz": {
+      "avg_loadout": 1725.7575757575758,
+      "rounds_played": 99
+    },
+    "eeiu": {
+      "avg_loadout": 2266.0919540229884,
+      "rounds_played": 87
+    },
+    "bang": {
+      "avg_loadout": 4140.837696335078,
+      "rounds_played": 191
+    },
+    "Boostio": {
+      "avg_loadout": 2000.0,
+      "rounds_played": 39
+    },
+    "Cryo": {
+      "avg_loadout": 3244.2528735632186,
+      "rounds_played": 87
+    },
+    "Asuna": {
+      "avg_loadout": 2970.689655172414,
+      "rounds_played": 87
+    },
+    "kon4n": {
+      "avg_loadout": 1356.7307692307693,
+      "rounds_played": 52
+    },
+    "mwzera": {
+      "avg_loadout": 1294.2307692307693,
+      "rounds_played": 52
+    },
+    "nzr": {
+      "avg_loadout": 1172.608695652174,
+      "rounds_played": 115
+    },
+    "havoc": {
+      "avg_loadout": 3376.0416666666665,
+      "rounds_played": 96
+    },
+    "Khalil": {
+      "avg_loadout": 1299.0384615384614,
+      "rounds_played": 52
+    },
+    "icy": {
+      "avg_loadout": 3061.576354679803,
+      "rounds_played": 203
+    },
+    "leaf": {
+      "avg_loadout": 3146.8899521531102,
+      "rounds_played": 209
+    },
+    "valyn": {
+      "avg_loadout": 2575.9920634920636,
+      "rounds_played": 252
+    },
+    "trent": {
+      "avg_loadout": 3455.753968253968,
+      "rounds_played": 252
+    },
+    "JonahP": {
+      "avg_loadout": 3464.8809523809523,
+      "rounds_played": 252
+    },
+    "TenZ": {
+      "avg_loadout": 4330.7692307692305,
+      "rounds_played": 39
+    },
+    "zekken": {
+      "avg_loadout": 3554.1884816753927,
+      "rounds_played": 191
+    },
+    "johnqt": {
+      "avg_loadout": 2978.7958115183246,
+      "rounds_played": 191
+    },
+    "Zellsis": {
+      "avg_loadout": 3708.9005235602094,
+      "rounds_played": 191
+    },
+    "Sacy": {
+      "avg_loadout": 4561.538461538462,
+      "rounds_played": 39
+    },
+    "s0m": {
+      "avg_loadout": 3321.4893617021276,
+      "rounds_played": 235
+    },
+    "FNS": {
+      "avg_loadout": 3569.2528735632186,
+      "rounds_played": 174
+    },
+    "keznitdeuS": {
+      "avg_loadout": 3339.090909090909,
+      "rounds_played": 110
+    },
+    "Shyy": {
+      "avg_loadout": 2211.818181818182,
+      "rounds_played": 110
+    },
+    "Melser": {
+      "avg_loadout": 3748.181818181818,
+      "rounds_played": 110
+    },
+    "mta": {
+      "avg_loadout": 4115.909090909091,
+      "rounds_played": 110
+    },
+    "heat": {
+      "avg_loadout": 3857.7272727272725,
+      "rounds_played": 110
+    },
+    "Verno": {
+      "avg_loadout": 1952.0325203252032,
+      "rounds_played": 123
+    },
+    "mada": {
+      "avg_loadout": 2366.176470588235,
+      "rounds_played": 170
+    },
+    "v1c": {
+      "avg_loadout": 2885.9813084112147,
+      "rounds_played": 963
+    },
+    "mitch": {
+      "avg_loadout": 3019.055036344756,
+      "rounds_played": 963
+    },
+    "neT": {
+      "avg_loadout": 2697.7154724818274,
+      "rounds_played": 963
+    },
+    "artzin": {
+      "avg_loadout": 1466.7883211678832,
+      "rounds_played": 137
+    },
+    "cortezia": {
+      "avg_loadout": 1204.014598540146,
+      "rounds_played": 137
+    },
+    "xenom": {
+      "avg_loadout": 1258.029197080292,
+      "rounds_played": 137
+    },
+    "brawk": {
+      "avg_loadout": 3640.0826446280994,
+      "rounds_played": 121
+    },
+    "Rossy": {
+      "avg_loadout": 3052.7027027027025,
+      "rounds_played": 37
+    },
+    "Heat": {
+      "avg_loadout": 2936.875,
+      "rounds_played": 80
+    },
+    "Pryze": {
+      "avg_loadout": 3857.9545454545455,
+      "rounds_played": 44
+    },
+    "raafa": {
+      "avg_loadout": 3632.9545454545455,
+      "rounds_played": 44
+    },
+    "khalil": {
+      "avg_loadout": 3805.681818181818,
+      "rounds_played": 44
+    },
+    "N4RRATE": {
+      "avg_loadout": 3621.0526315789475,
+      "rounds_played": 152
+    },
+    "yay": {
+      "avg_loadout": 3610.2150537634407,
+      "rounds_played": 93
+    },
+    "Urango": {
+      "avg_loadout": 1559.7222222222222,
+      "rounds_played": 36
+    },
+    "adverso": {
+      "avg_loadout": 2419.4444444444443,
+      "rounds_played": 36
+    },
+    "Palla": {
+      "avg_loadout": 2044.4444444444443,
+      "rounds_played": 36
+    },
+    "silentzz": {
+      "avg_loadout": 1394.1176470588234,
+      "rounds_played": 34
+    },
+    "spikeziN": {
+      "avg_loadout": 1992.6470588235295,
+      "rounds_played": 34
+    },
+    "Lz": {
+      "avg_loadout": 1902.9411764705883,
+      "rounds_played": 34
+    },
+    "gobera": {
+      "avg_loadout": 1692.6470588235295,
+      "rounds_played": 34
+    },
+    "pryze": {
+      "avg_loadout": 1788.235294117647,
+      "rounds_played": 34
+    },
+    "BABYBAY": {
+      "avg_loadout": 6037.209302325581,
+      "rounds_played": 43
+    },
+    "okeanos": {
+      "avg_loadout": 2093.5714285714284,
+      "rounds_played": 70
+    },
+    "Sato": {
+      "avg_loadout": 1925.7142857142858,
+      "rounds_played": 70
+    },
+    "Zander": {
+      "avg_loadout": 2770.8333333333335,
+      "rounds_played": 48
+    },
+    "Kess": {
+      "avg_loadout": 2233.3333333333335,
+      "rounds_played": 48
+    },
+    "skuba": {
+      "avg_loadout": 2314.754098360656,
+      "rounds_played": 61
+    }
+  }
+}

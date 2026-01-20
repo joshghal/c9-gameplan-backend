@@ -1,0 +1,4540 @@
+{
+  "metadata": {
+    "description": "Trade and damage patterns from VCT pro matches",
+    "total_kills": 12029,
+    "total_damage_events": 27292
+  },
+  "trade_patterns": {
+    "total_trades": 3036,
+    "avg_trade_time": 1.7198982222278127,
+    "trade_time_distribution": {
+      "under_1s": 1203,
+      "1_to_2s": 789,
+      "2_to_3s": 417,
+      "3_to_5s": 627
+    },
+    "sample_trades": [
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708132179.366,
+          "map": "bind",
+          "round": 2,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 1333.50541545778,
+          "attacker_pos": {
+            "x": 9379.80078,
+            "y": 4905.64893
+          },
+          "victim_pos": {
+            "x": 8071.72168,
+            "y": 4646.48535
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708132180.222,
+          "map": "bind",
+          "round": 2,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 2326.0530048465575,
+          "attacker_pos": {
+            "x": 7153.00244,
+            "y": 4233.42
+          },
+          "victim_pos": {
+            "x": 9379.80078,
+            "y": 4905.64893
+          }
+        },
+        "trade_time": 0.8559999465942383,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708132180.222,
+          "map": "bind",
+          "round": 2,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 2326.0530048465575,
+          "attacker_pos": {
+            "x": 7153.00244,
+            "y": 4233.42
+          },
+          "victim_pos": {
+            "x": 9379.80078,
+            "y": 4905.64893
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708132183.303,
+          "map": "bind",
+          "round": 2,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "mazin",
+          "victim_team": "81",
+          "distance": 1625.687420195829,
+          "attacker_pos": {
+            "x": 9308.29102,
+            "y": 4846.38135
+          },
+          "victim_pos": {
+            "x": 7792.63916,
+            "y": 4258.45361
+          }
+        },
+        "trade_time": 3.0810000896453857,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708132326.614,
+          "map": "bind",
+          "round": 3,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 1099.9445638575005,
+          "attacker_pos": {
+            "x": 8446.27539,
+            "y": 148.954269
+          },
+          "victim_pos": {
+            "x": 7819.18896,
+            "y": 1052.63599
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708132328.553,
+          "map": "bind",
+          "round": 3,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 4432.2884951754595,
+          "attacker_pos": {
+            "x": 11695.2822,
+            "y": 3293.59106
+          },
+          "victim_pos": {
+            "x": 8514.58203,
+            "y": 206.792114
+          }
+        },
+        "trade_time": 1.938999891281128,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708132327.85,
+          "map": "bind",
+          "round": 3,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 875.6014004788857,
+          "attacker_pos": {
+            "x": 8480.48633,
+            "y": 168.398087
+          },
+          "victim_pos": {
+            "x": 7881.26221,
+            "y": 806.840149
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708132328.553,
+          "map": "bind",
+          "round": 3,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 4432.2884951754595,
+          "attacker_pos": {
+            "x": 11695.2822,
+            "y": 3293.59106
+          },
+          "victim_pos": {
+            "x": 8514.58203,
+            "y": 206.792114
+          }
+        },
+        "trade_time": 0.7030000686645508,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708132604.905,
+          "map": "bind",
+          "round": 5,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 2167.8354422740413,
+          "attacker_pos": {
+            "x": 11970.6,
+            "y": -5240.97754
+          },
+          "victim_pos": {
+            "x": 9899.16602,
+            "y": -5880.25195
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708132608.203,
+          "map": "bind",
+          "round": 5,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 1605.7643561471796,
+          "attacker_pos": {
+            "x": 10397.5381,
+            "y": -4091.55811
+          },
+          "victim_pos": {
+            "x": 11430.7715,
+            "y": -5320.74805
+          }
+        },
+        "trade_time": 3.2980000972747803,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708132608.203,
+          "map": "bind",
+          "round": 5,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 1605.7643561471796,
+          "attacker_pos": {
+            "x": 10397.5381,
+            "y": -4091.55811
+          },
+          "victim_pos": {
+            "x": 11430.7715,
+            "y": -5320.74805
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708132608.245,
+          "map": "bind",
+          "round": 5,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 576.5689326167704,
+          "attacker_pos": {
+            "x": 10973.7969,
+            "y": -4072.64966
+          },
+          "victim_pos": {
+            "x": 10397.5381,
+            "y": -4091.55811
+          }
+        },
+        "trade_time": 0.04199981689453125,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708132608.245,
+          "map": "bind",
+          "round": 5,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 576.5689326167704,
+          "attacker_pos": {
+            "x": 10973.7969,
+            "y": -4072.64966
+          },
+          "victim_pos": {
+            "x": 10397.5381,
+            "y": -4091.55811
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708132608.389,
+          "map": "bind",
+          "round": 5,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 2346.8427046990646,
+          "attacker_pos": {
+            "x": 10056.0342,
+            "y": -6319.81055
+          },
+          "victim_pos": {
+            "x": 10625.583,
+            "y": -4043.12769
+          }
+        },
+        "trade_time": 0.14400005340576172,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708132761.698,
+          "map": "bind",
+          "round": 6,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "mazin",
+          "victim_team": "81",
+          "distance": 2678.6497873600683,
+          "attacker_pos": {
+            "x": 11996.9492,
+            "y": 3712.50513
+          },
+          "victim_pos": {
+            "x": 9381.8125,
+            "y": 3132.65625
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708132761.965,
+          "map": "bind",
+          "round": 6,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 2976.0585932237523,
+          "attacker_pos": {
+            "x": 9044.49,
+            "y": 3338.46045
+          },
+          "victim_pos": {
+            "x": 11996.9492,
+            "y": 3712.50513
+          }
+        },
+        "trade_time": 0.2669999599456787,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708132910.676,
+          "map": "bind",
+          "round": 7,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 999.5748296504377,
+          "attacker_pos": {
+            "x": 11382.3398,
+            "y": -4139.96533
+          },
+          "victim_pos": {
+            "x": 12352.0273,
+            "y": -4382.56787
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708132911.02,
+          "map": "bind",
+          "round": 7,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 1096.247375779476,
+          "attacker_pos": {
+            "x": 12452.8262,
+            "y": -3903.70874
+          },
+          "victim_pos": {
+            "x": 11382.3398,
+            "y": -4139.96533
+          }
+        },
+        "trade_time": 0.34399986267089844,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708132911.02,
+          "map": "bind",
+          "round": 7,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 1096.247375779476,
+          "attacker_pos": {
+            "x": 12452.8262,
+            "y": -3903.70874
+          },
+          "victim_pos": {
+            "x": 11382.3398,
+            "y": -4139.96533
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708132911.474,
+          "map": "bind",
+          "round": 7,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 3152.594782000108,
+          "attacker_pos": {
+            "x": 10297.7598,
+            "y": -6313.06494
+          },
+          "victim_pos": {
+            "x": 12269.8262,
+            "y": -3853.4292
+          }
+        },
+        "trade_time": 0.45399999618530273,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708133048.723,
+          "map": "bind",
+          "round": 8,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 1828.0085331811533,
+          "attacker_pos": {
+            "x": 8599.3125,
+            "y": 179.300369
+          },
+          "victim_pos": {
+            "x": 9849.29102,
+            "y": 1513.15527
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708133049.358,
+          "map": "bind",
+          "round": 8,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 1785.3848590824693,
+          "attacker_pos": {
+            "x": 9838.12891,
+            "y": 1393.21826
+          },
+          "victim_pos": {
+            "x": 8495.78516,
+            "y": 216.05542
+          }
+        },
+        "trade_time": 0.6349999904632568,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708133051.413,
+          "map": "bind",
+          "round": 8,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 2798.263857139268,
+          "attacker_pos": {
+            "x": 7176.81445,
+            "y": 893.466553
+          },
+          "victim_pos": {
+            "x": 9955.4873,
+            "y": 562.924866
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708133051.997,
+          "map": "bind",
+          "round": 8,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 2213.078696274356,
+          "attacker_pos": {
+            "x": 9389.8877,
+            "y": 898.376343
+          },
+          "victim_pos": {
+            "x": 7176.81445,
+            "y": 893.466553
+          }
+        },
+        "trade_time": 0.5839998722076416,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708133123.281,
+          "map": "bind",
+          "round": 9,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 680.0125044870389,
+          "attacker_pos": {
+            "x": 9945.06738,
+            "y": -57.8255043
+          },
+          "victim_pos": {
+            "x": 10177.334,
+            "y": 581.290466
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708133126.27,
+          "map": "bind",
+          "round": 9,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 585.9332737547237,
+          "attacker_pos": {
+            "x": 10264.4727,
+            "y": -4.80059958
+          },
+          "victim_pos": {
+            "x": 10782.0049,
+            "y": 269.932404
+          }
+        },
+        "trade_time": 2.989000082015991,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708133126.27,
+          "map": "bind",
+          "round": 9,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 585.9332737547237,
+          "attacker_pos": {
+            "x": 10264.4727,
+            "y": -4.80059958
+          },
+          "victim_pos": {
+            "x": 10782.0049,
+            "y": 269.932404
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708133128.848,
+          "map": "bind",
+          "round": 9,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 2427.219510121775,
+          "attacker_pos": {
+            "x": 9699.99512,
+            "y": 2253.18896
+          },
+          "victim_pos": {
+            "x": 10561.2158,
+            "y": -16.1046505
+          }
+        },
+        "trade_time": 2.578000068664551,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708133317.393,
+          "map": "bind",
+          "round": 10,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 1011.4663401115912,
+          "attacker_pos": {
+            "x": 10675.0088,
+            "y": 723.387695
+          },
+          "victim_pos": {
+            "x": 11290.5352,
+            "y": 1526.00305
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708133322.378,
+          "map": "bind",
+          "round": 10,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "mazin",
+          "victim_team": "81",
+          "distance": 861.6620195938831,
+          "attacker_pos": {
+            "x": 11632.4824,
+            "y": 1162.78186
+          },
+          "victim_pos": {
+            "x": 11001.2217,
+            "y": 1749.27258
+          }
+        },
+        "trade_time": 4.985000133514404,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708133317.5,
+          "map": "bind",
+          "round": 10,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 1720.0674273707352,
+          "attacker_pos": {
+            "x": 10398.3545,
+            "y": 3554.9895
+          },
+          "victim_pos": {
+            "x": 10103.9365,
+            "y": 1860.30664
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708133317.881,
+          "map": "bind",
+          "round": 10,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 2512.8763617463264,
+          "attacker_pos": {
+            "x": 10304.8994,
+            "y": 1043.85156
+          },
+          "victim_pos": {
+            "x": 10398.3545,
+            "y": 3554.9895
+          }
+        },
+        "trade_time": 0.3810000419616699,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708133318.511,
+          "map": "bind",
+          "round": 10,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 2253.0206676553325,
+          "attacker_pos": {
+            "x": 10763.6006,
+            "y": 730.942932
+          },
+          "victim_pos": {
+            "x": 11866.3066,
+            "y": 2695.66724
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708133322.378,
+          "map": "bind",
+          "round": 10,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "mazin",
+          "victim_team": "81",
+          "distance": 861.6620195938831,
+          "attacker_pos": {
+            "x": 11632.4824,
+            "y": 1162.78186
+          },
+          "victim_pos": {
+            "x": 11001.2217,
+            "y": 1749.27258
+          }
+        },
+        "trade_time": 3.867000102996826,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708133486.724,
+          "map": "bind",
+          "round": 11,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 2875.442501150022,
+          "attacker_pos": {
+            "x": 11274.2803,
+            "y": 1499.01331
+          },
+          "victim_pos": {
+            "x": 9763.17676,
+            "y": 3945.38525
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708133491.679,
+          "map": "bind",
+          "round": 11,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 1313.0321400092039,
+          "attacker_pos": {
+            "x": 10687.5889,
+            "y": 3263.33545
+          },
+          "victim_pos": {
+            "x": 11899.7432,
+            "y": 2758.62231
+          }
+        },
+        "trade_time": 4.954999923706055,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708133490.865,
+          "map": "bind",
+          "round": 11,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 815.2135007850402,
+          "attacker_pos": {
+            "x": 10754.8643,
+            "y": 3204.02124
+          },
+          "victim_pos": {
+            "x": 11083.6777,
+            "y": 3949.98022
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708133491.03,
+          "map": "bind",
+          "round": 11,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 1397.6312631432145,
+          "attacker_pos": {
+            "x": 11900.0703,
+            "y": 2402.84937
+          },
+          "victim_pos": {
+            "x": 10754.8643,
+            "y": 3204.02124
+          }
+        },
+        "trade_time": 0.16499996185302734,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708133491.03,
+          "map": "bind",
+          "round": 11,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 1397.6312631432145,
+          "attacker_pos": {
+            "x": 11900.0703,
+            "y": 2402.84937
+          },
+          "victim_pos": {
+            "x": 10754.8643,
+            "y": 3204.02124
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708133491.679,
+          "map": "bind",
+          "round": 11,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 1313.0321400092039,
+          "attacker_pos": {
+            "x": 10687.5889,
+            "y": 3263.33545
+          },
+          "victim_pos": {
+            "x": 11899.7432,
+            "y": 2758.62231
+          }
+        },
+        "trade_time": 0.6489999294281006,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708133847.602,
+          "map": "bind",
+          "round": 13,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 1072.2850297613504,
+          "attacker_pos": {
+            "x": 7736.68555,
+            "y": -3442.15259
+          },
+          "victim_pos": {
+            "x": 8772.45898,
+            "y": -3164.72046
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708133848.424,
+          "map": "bind",
+          "round": 13,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 1170.1450893692095,
+          "attacker_pos": {
+            "x": 8905.10547,
+            "y": -3505.66968
+          },
+          "victim_pos": {
+            "x": 7736.68555,
+            "y": -3442.15259
+          }
+        },
+        "trade_time": 0.8220000267028809,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708133925.587,
+          "map": "bind",
+          "round": 13,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 356.15796484105886,
+          "attacker_pos": {
+            "x": 10830.6562,
+            "y": 624.140808
+          },
+          "victim_pos": {
+            "x": 10825.6084,
+            "y": 980.263
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708133926.099,
+          "map": "bind",
+          "round": 13,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 450.53108257038053,
+          "attacker_pos": {
+            "x": 10880.3535,
+            "y": 1071.92249
+          },
+          "victim_pos": {
+            "x": 10830.6562,
+            "y": 624.140808
+          }
+        },
+        "trade_time": 0.5120000839233398,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708133926.099,
+          "map": "bind",
+          "round": 13,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 450.53108257038053,
+          "attacker_pos": {
+            "x": 10880.3535,
+            "y": 1071.92249
+          },
+          "victim_pos": {
+            "x": 10830.6562,
+            "y": 624.140808
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708133927.187,
+          "map": "bind",
+          "round": 13,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 485.1634148000303,
+          "attacker_pos": {
+            "x": 11150.6,
+            "y": 572.056824
+          },
+          "victim_pos": {
+            "x": 10792.1631,
+            "y": 899.022461
+          }
+        },
+        "trade_time": 1.0880000591278076,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134010.785,
+          "map": "bind",
+          "round": 14,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "mazin",
+          "victim_team": "81",
+          "distance": 1098.0043713180246,
+          "attacker_pos": {
+            "x": 8351.85156,
+            "y": -6757.99414
+          },
+          "victim_pos": {
+            "x": 9202.00586,
+            "y": -6063.11914
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134010.848,
+          "map": "bind",
+          "round": 14,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 536.0600492061553,
+          "attacker_pos": {
+            "x": 8748.52539,
+            "y": -7118.56348
+          },
+          "victim_pos": {
+            "x": 8351.85156,
+            "y": -6757.99414
+          }
+        },
+        "trade_time": 0.06299996376037598,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134010.848,
+          "map": "bind",
+          "round": 14,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 536.0600492061553,
+          "attacker_pos": {
+            "x": 8748.52539,
+            "y": -7118.56348
+          },
+          "victim_pos": {
+            "x": 8351.85156,
+            "y": -6757.99414
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134010.916,
+          "map": "bind",
+          "round": 14,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 878.028255128177,
+          "attacker_pos": {
+            "x": 8696.73535,
+            "y": -6242.06396
+          },
+          "victim_pos": {
+            "x": 8748.52539,
+            "y": -7118.56348
+          }
+        },
+        "trade_time": 0.06799983978271484,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134041.972,
+          "map": "bind",
+          "round": 14,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 2057.162864637828,
+          "attacker_pos": {
+            "x": 9865.39,
+            "y": -5963.49
+          },
+          "victim_pos": {
+            "x": 11825.6025,
+            "y": -5339.40186
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134043.091,
+          "map": "bind",
+          "round": 14,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 1124.2513871850415,
+          "attacker_pos": {
+            "x": 11029.9277,
+            "y": -5959.14746
+          },
+          "victim_pos": {
+            "x": 9914.95703,
+            "y": -5814.98926
+          }
+        },
+        "trade_time": 1.1190001964569092,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134042.731,
+          "map": "bind",
+          "round": 14,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 2595.561149411291,
+          "attacker_pos": {
+            "x": 9791.02246,
+            "y": -5786.604
+          },
+          "victim_pos": {
+            "x": 11680.8545,
+            "y": -4007.42651
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134043.394,
+          "map": "bind",
+          "round": 14,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 1250.8626780299383,
+          "attacker_pos": {
+            "x": 11029.9277,
+            "y": -5959.14746
+          },
+          "victim_pos": {
+            "x": 9791.02246,
+            "y": -5786.604
+          }
+        },
+        "trade_time": 0.6630001068115234,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134043.091,
+          "map": "bind",
+          "round": 14,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 1124.2513871850415,
+          "attacker_pos": {
+            "x": 11029.9277,
+            "y": -5959.14746
+          },
+          "victim_pos": {
+            "x": 9914.95703,
+            "y": -5814.98926
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134044.013,
+          "map": "bind",
+          "round": 14,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 357.0796054741428,
+          "attacker_pos": {
+            "x": 10685.0879,
+            "y": -6036.80615
+          },
+          "victim_pos": {
+            "x": 11031.2588,
+            "y": -5949.21875
+          }
+        },
+        "trade_time": 0.9219999313354492,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134043.394,
+          "map": "bind",
+          "round": 14,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 1250.8626780299383,
+          "attacker_pos": {
+            "x": 11029.9277,
+            "y": -5959.14746
+          },
+          "victim_pos": {
+            "x": 9791.02246,
+            "y": -5786.604
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134044.013,
+          "map": "bind",
+          "round": 14,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 357.0796054741428,
+          "attacker_pos": {
+            "x": 10685.0879,
+            "y": -6036.80615
+          },
+          "victim_pos": {
+            "x": 11031.2588,
+            "y": -5949.21875
+          }
+        },
+        "trade_time": 0.6189999580383301,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134124.438,
+          "map": "bind",
+          "round": 15,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 1283.6704766241085,
+          "attacker_pos": {
+            "x": 11979.502,
+            "y": -5746.96436
+          },
+          "victim_pos": {
+            "x": 11628.3301,
+            "y": -4512.2627
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134128.396,
+          "map": "bind",
+          "round": 15,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 1498.2610784817355,
+          "attacker_pos": {
+            "x": 9594.16309,
+            "y": -5189.21533
+          },
+          "victim_pos": {
+            "x": 11043.7871,
+            "y": -5567.86621
+          }
+        },
+        "trade_time": 3.9579999446868896,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134128.396,
+          "map": "bind",
+          "round": 15,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 1498.2610784817355,
+          "attacker_pos": {
+            "x": 9594.16309,
+            "y": -5189.21533
+          },
+          "victim_pos": {
+            "x": 11043.7871,
+            "y": -5567.86621
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134131.856,
+          "map": "bind",
+          "round": 15,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "mazin",
+          "victim_team": "81",
+          "distance": 1333.88315682522,
+          "attacker_pos": {
+            "x": 10430.0918,
+            "y": -5385.50342
+          },
+          "victim_pos": {
+            "x": 9097.09668,
+            "y": -5434.16846
+          }
+        },
+        "trade_time": 3.4600000381469727,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134131.235,
+          "map": "bind",
+          "round": 15,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 1556.4120588139724,
+          "attacker_pos": {
+            "x": 9129.64551,
+            "y": -5391.29492
+          },
+          "victim_pos": {
+            "x": 10667.335,
+            "y": -5150.60938
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134131.856,
+          "map": "bind",
+          "round": 15,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "mazin",
+          "victim_team": "81",
+          "distance": 1333.88315682522,
+          "attacker_pos": {
+            "x": 10430.0918,
+            "y": -5385.50342
+          },
+          "victim_pos": {
+            "x": 9097.09668,
+            "y": -5434.16846
+          }
+        },
+        "trade_time": 0.6210000514984131,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134362.92,
+          "map": "bind",
+          "round": 17,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 1796.0643849984683,
+          "attacker_pos": {
+            "x": 9457.92285,
+            "y": 4108.05518
+          },
+          "victim_pos": {
+            "x": 7673.30225,
+            "y": 4310.48193
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134364.919,
+          "map": "bind",
+          "round": 17,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 1146.0595600637373,
+          "attacker_pos": {
+            "x": 8604.12109,
+            "y": 4615.44824
+          },
+          "victim_pos": {
+            "x": 9242.75195,
+            "y": 3663.81641
+          }
+        },
+        "trade_time": 1.998999834060669,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134521.852,
+          "map": "bind",
+          "round": 18,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 843.2814771626607,
+          "attacker_pos": {
+            "x": 7647.87256,
+            "y": 114.126816
+          },
+          "victim_pos": {
+            "x": 7919.26855,
+            "y": 912.542664
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134521.911,
+          "map": "bind",
+          "round": 18,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 1905.8223444287667,
+          "attacker_pos": {
+            "x": 7050.81543,
+            "y": 1924.01123
+          },
+          "victim_pos": {
+            "x": 7647.87256,
+            "y": 114.126816
+          }
+        },
+        "trade_time": 0.05900001525878906,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134744.557,
+          "map": "bind",
+          "round": 20,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 1776.1400441766234,
+          "attacker_pos": {
+            "x": 8821.27051,
+            "y": 1057.99194
+          },
+          "victim_pos": {
+            "x": 10432.707,
+            "y": 311.03418
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134747.144,
+          "map": "bind",
+          "round": 20,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 1943.192684070345,
+          "attacker_pos": {
+            "x": 10446.4297,
+            "y": 520.713806
+          },
+          "victim_pos": {
+            "x": 8565.46,
+            "y": 1008.51581
+          }
+        },
+        "trade_time": 2.5870001316070557,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134747.144,
+          "map": "bind",
+          "round": 20,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 1943.192684070345,
+          "attacker_pos": {
+            "x": 10446.4297,
+            "y": 520.713806
+          },
+          "victim_pos": {
+            "x": 8565.46,
+            "y": 1008.51581
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134747.372,
+          "map": "bind",
+          "round": 20,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 538.8089052418931,
+          "attacker_pos": {
+            "x": 10603.7812,
+            "y": 5.39299154
+          },
+          "victim_pos": {
+            "x": 10446.4297,
+            "y": 520.713806
+          }
+        },
+        "trade_time": 0.22799992561340332,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134944.098,
+          "map": "bind",
+          "round": 21,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 1076.0559044868899,
+          "attacker_pos": {
+            "x": 9581.10742,
+            "y": 2002.00073
+          },
+          "victim_pos": {
+            "x": 10499.5439,
+            "y": 1441.31299
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134947.54,
+          "map": "bind",
+          "round": 21,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 361.91578408955024,
+          "attacker_pos": {
+            "x": 9871.26855,
+            "y": 2982.71069
+          },
+          "victim_pos": {
+            "x": 9963.49805,
+            "y": 2632.7439
+          }
+        },
+        "trade_time": 3.441999912261963,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134991.529,
+          "map": "bind",
+          "round": 21,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 3075.1089094420936,
+          "attacker_pos": {
+            "x": 12550.0176,
+            "y": 613.644165
+          },
+          "victim_pos": {
+            "x": 14598.4854,
+            "y": -1679.84106
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134992.726,
+          "map": "bind",
+          "round": 21,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 2915.6773831782666,
+          "attacker_pos": {
+            "x": 14395.2676,
+            "y": -1657.92725
+          },
+          "victim_pos": {
+            "x": 12738.8613,
+            "y": 741.550354
+          }
+        },
+        "trade_time": 1.1970000267028809,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708134992.726,
+          "map": "bind",
+          "round": 21,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 2915.6773831782666,
+          "attacker_pos": {
+            "x": 14395.2676,
+            "y": -1657.92725
+          },
+          "victim_pos": {
+            "x": 12738.8613,
+            "y": 741.550354
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708134992.957,
+          "map": "bind",
+          "round": 21,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "mazin",
+          "victim_team": "81",
+          "distance": 2194.87960190596,
+          "attacker_pos": {
+            "x": 12961.1387,
+            "y": 3.62947941
+          },
+          "victim_pos": {
+            "x": 14395.2676,
+            "y": -1657.92725
+          }
+        },
+        "trade_time": 0.23099994659423828,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708135376.193,
+          "map": "bind",
+          "round": 24,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 2214.6451600131295,
+          "attacker_pos": {
+            "x": 11924.9951,
+            "y": 2711.74121
+          },
+          "victim_pos": {
+            "x": 9940.01367,
+            "y": 1729.65063
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708135377.311,
+          "map": "bind",
+          "round": 24,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 2362.404356303571,
+          "attacker_pos": {
+            "x": 9552.34,
+            "y": 3316.47363
+          },
+          "victim_pos": {
+            "x": 11857.543,
+            "y": 2799.75952
+          }
+        },
+        "trade_time": 1.1180000305175781,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708135377.487,
+          "map": "bind",
+          "round": 24,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 1583.497266108085,
+          "attacker_pos": {
+            "x": 9281.05469,
+            "y": 620.11438
+          },
+          "victim_pos": {
+            "x": 10614.2881,
+            "y": 1474.48682
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708135378.589,
+          "map": "bind",
+          "round": 24,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 3439.4197481797983,
+          "attacker_pos": {
+            "x": 11377.4326,
+            "y": 3941.573
+          },
+          "victim_pos": {
+            "x": 9253.48828,
+            "y": 1236.30615
+          }
+        },
+        "trade_time": 1.1019999980926514,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708135378.589,
+          "map": "bind",
+          "round": 24,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 3439.4197481797983,
+          "attacker_pos": {
+            "x": 11377.4326,
+            "y": 3941.573
+          },
+          "victim_pos": {
+            "x": 9253.48828,
+            "y": 1236.30615
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708135380.777,
+          "map": "bind",
+          "round": 24,
+          "game_id": "8aacfbab-be97-44f9-bc69-da5c6601062a",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 1583.8943540352486,
+          "attacker_pos": {
+            "x": 9745.38672,
+            "y": 2946.6311
+          },
+          "victim_pos": {
+            "x": 11091.5781,
+            "y": 3781.19092
+          }
+        },
+        "trade_time": 2.187999963760376,
+        "map": "bind"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708136331.952,
+          "map": "split",
+          "round": 1,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 2672.3572625767674,
+          "attacker_pos": {
+            "x": -702.40686,
+            "y": -6744.6416
+          },
+          "victim_pos": {
+            "x": -3344.45532,
+            "y": -6343.30225
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708136333.198,
+          "map": "split",
+          "round": 1,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 1176.200777302791,
+          "attacker_pos": {
+            "x": -1231.34497,
+            "y": -5614.51318
+          },
+          "victim_pos": {
+            "x": -673.098633,
+            "y": -6649.79541
+          }
+        },
+        "trade_time": 1.246000051498413,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708136332.024,
+          "map": "split",
+          "round": 1,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 2447.5506631163958,
+          "attacker_pos": {
+            "x": -702.40686,
+            "y": -6744.6416
+          },
+          "victim_pos": {
+            "x": -3118.82324,
+            "y": -6355.49365
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708136333.198,
+          "map": "split",
+          "round": 1,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 1176.200777302791,
+          "attacker_pos": {
+            "x": -1231.34497,
+            "y": -5614.51318
+          },
+          "victim_pos": {
+            "x": -673.098633,
+            "y": -6649.79541
+          }
+        },
+        "trade_time": 1.1740000247955322,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708136483.203,
+          "map": "split",
+          "round": 2,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "mazin",
+          "victim_team": "81",
+          "distance": 587.329594210645,
+          "attacker_pos": {
+            "x": -434.199524,
+            "y": -7674.53906
+          },
+          "victim_pos": {
+            "x": -499.645599,
+            "y": -8258.21094
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708136484.601,
+          "map": "split",
+          "round": 2,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 1701.8473697520642,
+          "attacker_pos": {
+            "x": 1207.98682,
+            "y": -7161.0874
+          },
+          "victim_pos": {
+            "x": -453.162476,
+            "y": -7531.04346
+          }
+        },
+        "trade_time": 1.3980000019073486,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708136569.08,
+          "map": "split",
+          "round": 3,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 462.344084163146,
+          "attacker_pos": {
+            "x": 5463.41699,
+            "y": -8444.31543
+          },
+          "victim_pos": {
+            "x": 5408.27441,
+            "y": -8903.35938
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708136569.766,
+          "map": "split",
+          "round": 3,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 729.207653402215,
+          "attacker_pos": {
+            "x": 4958.60254,
+            "y": -8970.53418
+          },
+          "victim_pos": {
+            "x": 5463.41699,
+            "y": -8444.31543
+          }
+        },
+        "trade_time": 0.6860001087188721,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708136664.846,
+          "map": "split",
+          "round": 4,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 2696.1499123441545,
+          "attacker_pos": {
+            "x": -3150.46265,
+            "y": -7780.80127
+          },
+          "victim_pos": {
+            "x": -2476.08,
+            "y": -5170.35449
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708136666.102,
+          "map": "split",
+          "round": 4,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 1322.4678216406194,
+          "attacker_pos": {
+            "x": -2451.12061,
+            "y": -6728.76953
+          },
+          "victim_pos": {
+            "x": -3287.8584,
+            "y": -7752.87451
+          }
+        },
+        "trade_time": 1.25600004196167,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708136666.102,
+          "map": "split",
+          "round": 4,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 1322.4678216406194,
+          "attacker_pos": {
+            "x": -2451.12061,
+            "y": -6728.76953
+          },
+          "victim_pos": {
+            "x": -3287.8584,
+            "y": -7752.87451
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708136670.886,
+          "map": "split",
+          "round": 4,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 2417.343352011817,
+          "attacker_pos": {
+            "x": -474.906281,
+            "y": -4872.75781
+          },
+          "victim_pos": {
+            "x": -2122.35669,
+            "y": -6641.78467
+          }
+        },
+        "trade_time": 4.783999919891357,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708136670.886,
+          "map": "split",
+          "round": 4,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 2417.343352011817,
+          "attacker_pos": {
+            "x": -474.906281,
+            "y": -4872.75781
+          },
+          "victim_pos": {
+            "x": -2122.35669,
+            "y": -6641.78467
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708136674.969,
+          "map": "split",
+          "round": 4,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 2173.987718628353,
+          "attacker_pos": {
+            "x": -2609.57544,
+            "y": -4931.14844
+          },
+          "victim_pos": {
+            "x": -521.514221,
+            "y": -5536.31201
+          }
+        },
+        "trade_time": 4.083000183105469,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708136747.138,
+          "map": "split",
+          "round": 5,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 959.856447970891,
+          "attacker_pos": {
+            "x": -684.867676,
+            "y": -6146.20703
+          },
+          "victim_pos": {
+            "x": -1507.99976,
+            "y": -5652.46826
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708136748.474,
+          "map": "split",
+          "round": 5,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 1239.016620156412,
+          "attacker_pos": {
+            "x": -1789.82764,
+            "y": -5325.90723
+          },
+          "victim_pos": {
+            "x": -650.010742,
+            "y": -5811.68457
+          }
+        },
+        "trade_time": 1.3359999656677246,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708136776.467,
+          "map": "split",
+          "round": 5,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 1932.2880413652003,
+          "attacker_pos": {
+            "x": 1439.15344,
+            "y": -7297.28076
+          },
+          "victim_pos": {
+            "x": -449.209351,
+            "y": -7706.94287
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708136781.215,
+          "map": "split",
+          "round": 5,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 2444.7021809052453,
+          "attacker_pos": {
+            "x": 32.7403908,
+            "y": -7242.00342
+          },
+          "victim_pos": {
+            "x": 2405.36304,
+            "y": -7831.26611
+          }
+        },
+        "trade_time": 4.747999906539917,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708137168.596,
+          "map": "split",
+          "round": 8,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 1593.7073958687706,
+          "attacker_pos": {
+            "x": 5284.92529,
+            "y": -6994.01953
+          },
+          "victim_pos": {
+            "x": 6553.77783,
+            "y": -6029.69775
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708137173.382,
+          "map": "split",
+          "round": 8,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 1410.6440781441104,
+          "attacker_pos": {
+            "x": 6687.51318,
+            "y": -7984.42529
+          },
+          "victim_pos": {
+            "x": 5547.03662,
+            "y": -7154.22656
+          }
+        },
+        "trade_time": 4.78600001335144,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708137173.382,
+          "map": "split",
+          "round": 8,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 1410.6440781441104,
+          "attacker_pos": {
+            "x": 6687.51318,
+            "y": -7984.42529
+          },
+          "victim_pos": {
+            "x": 5547.03662,
+            "y": -7154.22656
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708137174.055,
+          "map": "split",
+          "round": 8,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 589.3953720415493,
+          "attacker_pos": {
+            "x": 6069.66406,
+            "y": -8075.00684
+          },
+          "victim_pos": {
+            "x": 6657.09912,
+            "y": -8026.97607
+          }
+        },
+        "trade_time": 0.6730000972747803,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708137288.136,
+          "map": "split",
+          "round": 9,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 1705.7662484410387,
+          "attacker_pos": {
+            "x": 7119.7,
+            "y": -6971.30176
+          },
+          "victim_pos": {
+            "x": 8207.22949,
+            "y": -5657.1792
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708137288.456,
+          "map": "split",
+          "round": 9,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 1794.2518466667686,
+          "attacker_pos": {
+            "x": 5447.24902,
+            "y": -6321.49609
+          },
+          "victim_pos": {
+            "x": 7119.7,
+            "y": -6971.30176
+          }
+        },
+        "trade_time": 0.32000017166137695,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708137421.037,
+          "map": "split",
+          "round": 10,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 1717.6401212779033,
+          "attacker_pos": {
+            "x": -1657.37317,
+            "y": -5391.35059
+          },
+          "victim_pos": {
+            "x": -865.162964,
+            "y": -6915.38818
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708137424.132,
+          "map": "split",
+          "round": 10,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 1654.3108834291556,
+          "attacker_pos": {
+            "x": -1595.31702,
+            "y": -7950.2085
+          },
+          "victim_pos": {
+            "x": -1043.98218,
+            "y": -6390.47314
+          }
+        },
+        "trade_time": 3.0950000286102295,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708137535.275,
+          "map": "split",
+          "round": 11,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 2215.3170087035896,
+          "attacker_pos": {
+            "x": 840.415283,
+            "y": -2146.28906
+          },
+          "victim_pos": {
+            "x": 2250.56494,
+            "y": -3854.82861
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708137539.035,
+          "map": "split",
+          "round": 11,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 1844.596394280126,
+          "attacker_pos": {
+            "x": 2090.51123,
+            "y": -3488.99561
+          },
+          "victim_pos": {
+            "x": 712.59491,
+            "y": -2262.66675
+          }
+        },
+        "trade_time": 3.759999990463257,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708137537.864,
+          "map": "split",
+          "round": 11,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 1098.3229155004835,
+          "attacker_pos": {
+            "x": 698.287109,
+            "y": -2290.67773
+          },
+          "victim_pos": {
+            "x": 1421.20532,
+            "y": -3117.54077
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708137539.035,
+          "map": "split",
+          "round": 11,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 1844.596394280126,
+          "attacker_pos": {
+            "x": 2090.51123,
+            "y": -3488.99561
+          },
+          "victim_pos": {
+            "x": 712.59491,
+            "y": -2262.66675
+          }
+        },
+        "trade_time": 1.1710000038146973,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708137607.768,
+          "map": "split",
+          "round": 12,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 1020.5184100711808,
+          "attacker_pos": {
+            "x": 4609.43457,
+            "y": -5904.12061
+          },
+          "victim_pos": {
+            "x": 3589.79907,
+            "y": -5946.56201
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708137612.475,
+          "map": "split",
+          "round": 12,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 290.24704720229585,
+          "attacker_pos": {
+            "x": 3591.45557,
+            "y": -6197.99707
+          },
+          "victim_pos": {
+            "x": 3728.24683,
+            "y": -5942.00586
+          }
+        },
+        "trade_time": 4.707000017166138,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708137612.475,
+          "map": "split",
+          "round": 12,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 290.24704720229585,
+          "attacker_pos": {
+            "x": 3591.45557,
+            "y": -6197.99707
+          },
+          "victim_pos": {
+            "x": 3728.24683,
+            "y": -5942.00586
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708137615.722,
+          "map": "split",
+          "round": 12,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 1443.0454651318448,
+          "attacker_pos": {
+            "x": 4208.27686,
+            "y": -7385.4458
+          },
+          "victim_pos": {
+            "x": 4107.21777,
+            "y": -5945.94336
+          }
+        },
+        "trade_time": 3.246999979019165,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708137892.288,
+          "map": "split",
+          "round": 13,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "mazin",
+          "victim_team": "81",
+          "distance": 2151.945475537806,
+          "attacker_pos": {
+            "x": -3426.86304,
+            "y": -7476.98926
+          },
+          "victim_pos": {
+            "x": -1450.71948,
+            "y": -6625.09375
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708137893.549,
+          "map": "split",
+          "round": 13,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 1615.7504227536965,
+          "attacker_pos": {
+            "x": -1941.33093,
+            "y": -6765.09961
+          },
+          "victim_pos": {
+            "x": -3447.13208,
+            "y": -7350.94287
+          }
+        },
+        "trade_time": 1.2609999179840088,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708137956.253,
+          "map": "split",
+          "round": 14,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 1972.3915149545667,
+          "attacker_pos": {
+            "x": -574.965271,
+            "y": -4850.23145
+          },
+          "victim_pos": {
+            "x": -2474.46484,
+            "y": -5381.48438
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708137959.872,
+          "map": "split",
+          "round": 14,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 1989.3854929898876,
+          "attacker_pos": {
+            "x": -2436.53149,
+            "y": -5409.29639
+          },
+          "victim_pos": {
+            "x": -497.582733,
+            "y": -4964.17578
+          }
+        },
+        "trade_time": 3.61899995803833,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708137959.781,
+          "map": "split",
+          "round": 14,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 1864.5986185450683,
+          "attacker_pos": {
+            "x": -497.582733,
+            "y": -4964.17578
+          },
+          "victim_pos": {
+            "x": -2219.34204,
+            "y": -5679.9082
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708137959.872,
+          "map": "split",
+          "round": 14,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 1989.3854929898876,
+          "attacker_pos": {
+            "x": -2436.53149,
+            "y": -5409.29639
+          },
+          "victim_pos": {
+            "x": -497.582733,
+            "y": -4964.17578
+          }
+        },
+        "trade_time": 0.09100008010864258,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708137970.208,
+          "map": "split",
+          "round": 14,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 929.5187158481502,
+          "attacker_pos": {
+            "x": -1507.99585,
+            "y": -7502.87207
+          },
+          "victim_pos": {
+            "x": -981.603455,
+            "y": -8268.97656
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708137974.696,
+          "map": "split",
+          "round": 14,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 3052.2465164800533,
+          "attacker_pos": {
+            "x": -1490.92505,
+            "y": -5264.6665
+          },
+          "victim_pos": {
+            "x": -1197.90649,
+            "y": -8302.81543
+          }
+        },
+        "trade_time": 4.488000154495239,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138025.012,
+          "map": "split",
+          "round": 15,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 2261.9315663837465,
+          "attacker_pos": {
+            "x": -2676.02759,
+            "y": -6374.95215
+          },
+          "victim_pos": {
+            "x": -2452.88452,
+            "y": -4124.0542
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138028.765,
+          "map": "split",
+          "round": 15,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 658.7757233021678,
+          "attacker_pos": {
+            "x": -2230.68262,
+            "y": -6866.45312
+          },
+          "victim_pos": {
+            "x": -1591.42822,
+            "y": -6707.27
+          }
+        },
+        "trade_time": 3.753000020980835,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138028.765,
+          "map": "split",
+          "round": 15,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 658.7757233021678,
+          "attacker_pos": {
+            "x": -2230.68262,
+            "y": -6866.45312
+          },
+          "victim_pos": {
+            "x": -1591.42822,
+            "y": -6707.27
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138028.911,
+          "map": "split",
+          "round": 15,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 2069.9426920367728,
+          "attacker_pos": {
+            "x": -461.740753,
+            "y": -5791.50781
+          },
+          "victim_pos": {
+            "x": -2230.68262,
+            "y": -6866.45312
+          }
+        },
+        "trade_time": 0.14599990844726562,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138172.539,
+          "map": "split",
+          "round": 16,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 1189.638529200033,
+          "attacker_pos": {
+            "x": 5610.88037,
+            "y": -2245.95068
+          },
+          "victim_pos": {
+            "x": 6383.73779,
+            "y": -3150.34619
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138176.486,
+          "map": "split",
+          "round": 16,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 2283.399291672461,
+          "attacker_pos": {
+            "x": 1392.65051,
+            "y": -2984.71289
+          },
+          "victim_pos": {
+            "x": 3672.86353,
+            "y": -2864.1272
+          }
+        },
+        "trade_time": 3.947000026702881,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138500.988,
+          "map": "split",
+          "round": 18,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 1204.5661379084,
+          "attacker_pos": {
+            "x": 749.753723,
+            "y": -4676.15918
+          },
+          "victim_pos": {
+            "x": 1890.86902,
+            "y": -4290.36719
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138502.115,
+          "map": "split",
+          "round": 18,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 1349.4082457068737,
+          "attacker_pos": {
+            "x": 1643.2406,
+            "y": -4220.56201
+          },
+          "victim_pos": {
+            "x": 456.102692,
+            "y": -4862.12744
+          }
+        },
+        "trade_time": 1.127000093460083,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138502.115,
+          "map": "split",
+          "round": 18,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 1349.4082457068737,
+          "attacker_pos": {
+            "x": 1643.2406,
+            "y": -4220.56201
+          },
+          "victim_pos": {
+            "x": 456.102692,
+            "y": -4862.12744
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138502.602,
+          "map": "split",
+          "round": 18,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 833.9046474079302,
+          "attacker_pos": {
+            "x": 2557.8064,
+            "y": -4492.18066
+          },
+          "victim_pos": {
+            "x": 1724.16431,
+            "y": -4471.25635
+          }
+        },
+        "trade_time": 0.4869999885559082,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138502.602,
+          "map": "split",
+          "round": 18,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 833.9046474079302,
+          "attacker_pos": {
+            "x": 2557.8064,
+            "y": -4492.18066
+          },
+          "victim_pos": {
+            "x": 1724.16431,
+            "y": -4471.25635
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138503.329,
+          "map": "split",
+          "round": 18,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 441.2322210873304,
+          "attacker_pos": {
+            "x": 2445.31885,
+            "y": -4065.52808
+          },
+          "victim_pos": {
+            "x": 2557.8064,
+            "y": -4492.18066
+          }
+        },
+        "trade_time": 0.7269999980926514,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138663.438,
+          "map": "split",
+          "round": 19,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 975.2014626997862,
+          "attacker_pos": {
+            "x": -855.80481,
+            "y": -5491.98096
+          },
+          "victim_pos": {
+            "x": -1828.71289,
+            "y": -5558.82227
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138664.332,
+          "map": "split",
+          "round": 19,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 1653.2575605425902,
+          "attacker_pos": {
+            "x": -2493.77563,
+            "y": -5267.67725
+          },
+          "victim_pos": {
+            "x": -855.80481,
+            "y": -5491.98096
+          }
+        },
+        "trade_time": 0.8940000534057617,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138664.332,
+          "map": "split",
+          "round": 19,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 1653.2575605425902,
+          "attacker_pos": {
+            "x": -2493.77563,
+            "y": -5267.67725
+          },
+          "victim_pos": {
+            "x": -855.80481,
+            "y": -5491.98096
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138667.2,
+          "map": "split",
+          "round": 19,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 470.20993438509805,
+          "attacker_pos": {
+            "x": -2739.68262,
+            "y": -6606.05908
+          },
+          "victim_pos": {
+            "x": -2565.25659,
+            "y": -6169.39795
+          }
+        },
+        "trade_time": 2.868000030517578,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138667.2,
+          "map": "split",
+          "round": 19,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 470.20993438509805,
+          "attacker_pos": {
+            "x": -2739.68262,
+            "y": -6606.05908
+          },
+          "victim_pos": {
+            "x": -2565.25659,
+            "y": -6169.39795
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138667.57,
+          "map": "split",
+          "round": 19,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 794.1087180433055,
+          "attacker_pos": {
+            "x": -3093.1106,
+            "y": -6337.55469
+          },
+          "victim_pos": {
+            "x": -2308.16211,
+            "y": -6457.82324
+          }
+        },
+        "trade_time": 0.36999988555908203,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138667.57,
+          "map": "split",
+          "round": 19,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 794.1087180433055,
+          "attacker_pos": {
+            "x": -3093.1106,
+            "y": -6337.55469
+          },
+          "victim_pos": {
+            "x": -2308.16211,
+            "y": -6457.82324
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138668.323,
+          "map": "split",
+          "round": 19,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 2425.2154830476625,
+          "attacker_pos": {
+            "x": -667.92041,
+            "y": -6326.47852
+          },
+          "victim_pos": {
+            "x": -3093.1106,
+            "y": -6337.55469
+          }
+        },
+        "trade_time": 0.753000020980835,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138668.323,
+          "map": "split",
+          "round": 19,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 2425.2154830476625,
+          "attacker_pos": {
+            "x": -667.92041,
+            "y": -6326.47852
+          },
+          "victim_pos": {
+            "x": -3093.1106,
+            "y": -6337.55469
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138671.003,
+          "map": "split",
+          "round": 19,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 2639.5813672304666,
+          "attacker_pos": {
+            "x": -3290.7085,
+            "y": -6110.58105
+          },
+          "victim_pos": {
+            "x": -652.00592,
+            "y": -6178.6875
+          }
+        },
+        "trade_time": 2.680000066757202,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138776.511,
+          "map": "split",
+          "round": 20,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 1309.1709182296477,
+          "attacker_pos": {
+            "x": -1443.72681,
+            "y": -5916.73828
+          },
+          "victim_pos": {
+            "x": -417.137451,
+            "y": -5104.30811
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138778.114,
+          "map": "split",
+          "round": 20,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 1838.5496721970442,
+          "attacker_pos": {
+            "x": -2905.02563,
+            "y": -4604.73877
+          },
+          "victim_pos": {
+            "x": -1480.71289,
+            "y": -5767.32129
+          }
+        },
+        "trade_time": 1.6030001640319824,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138777.493,
+          "map": "split",
+          "round": 20,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 1483.4482319791075,
+          "attacker_pos": {
+            "x": -1480.71289,
+            "y": -5767.32129
+          },
+          "victim_pos": {
+            "x": -80.5321121,
+            "y": -5277.30859
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138778.114,
+          "map": "split",
+          "round": 20,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 1838.5496721970442,
+          "attacker_pos": {
+            "x": -2905.02563,
+            "y": -4604.73877
+          },
+          "victim_pos": {
+            "x": -1480.71289,
+            "y": -5767.32129
+          }
+        },
+        "trade_time": 0.6210000514984131,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708138868.844,
+          "map": "split",
+          "round": 21,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 951.0557077398798,
+          "attacker_pos": {
+            "x": 4291.73779,
+            "y": -5022.42773
+          },
+          "victim_pos": {
+            "x": 5128.41357,
+            "y": -4570.23242
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708138870.983,
+          "map": "split",
+          "round": 21,
+          "game_id": "e267ddd1-e28f-48e3-8e83-3fb42a27cc63",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 857.7613000885377,
+          "attacker_pos": {
+            "x": 5012.5542,
+            "y": -4302.53906
+          },
+          "victim_pos": {
+            "x": 4460.79834,
+            "y": -4959.28857
+          }
+        },
+        "trade_time": 2.1389999389648438,
+        "map": "split"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708139774.805,
+          "map": "lotus",
+          "round": 1,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 701.0111619341092,
+          "attacker_pos": {
+            "x": 5843.65869,
+            "y": 2037.59961
+          },
+          "victim_pos": {
+            "x": 5943.71729,
+            "y": 1343.76611
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708139776.233,
+          "map": "lotus",
+          "round": 1,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 721.1274006914099,
+          "attacker_pos": {
+            "x": 6084.12,
+            "y": 1353.59827
+          },
+          "victim_pos": {
+            "x": 5907.30713,
+            "y": 2052.71338
+          }
+        },
+        "trade_time": 1.4279999732971191,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708139774.823,
+          "map": "lotus",
+          "round": 1,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 836.7464456682352,
+          "attacker_pos": {
+            "x": 5843.65869,
+            "y": 2037.59961
+          },
+          "victim_pos": {
+            "x": 5953.47754,
+            "y": 1208.09106
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708139776.233,
+          "map": "lotus",
+          "round": 1,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 721.1274006914099,
+          "attacker_pos": {
+            "x": 6084.12,
+            "y": 1353.59827
+          },
+          "victim_pos": {
+            "x": 5907.30713,
+            "y": 2052.71338
+          }
+        },
+        "trade_time": 1.4100000858306885,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708139775.246,
+          "map": "lotus",
+          "round": 1,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 697.7965799134588,
+          "attacker_pos": {
+            "x": 5843.65869,
+            "y": 2037.59961
+          },
+          "victim_pos": {
+            "x": 6025.30029,
+            "y": 1363.85901
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708139776.233,
+          "map": "lotus",
+          "round": 1,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 721.1274006914099,
+          "attacker_pos": {
+            "x": 6084.12,
+            "y": 1353.59827
+          },
+          "victim_pos": {
+            "x": 5907.30713,
+            "y": 2052.71338
+          }
+        },
+        "trade_time": 0.9869999885559082,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708139776.233,
+          "map": "lotus",
+          "round": 1,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 721.1274006914099,
+          "attacker_pos": {
+            "x": 6084.12,
+            "y": 1353.59827
+          },
+          "victim_pos": {
+            "x": 5907.30713,
+            "y": 2052.71338
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708139779.197,
+          "map": "lotus",
+          "round": 1,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 726.0034730070238,
+          "attacker_pos": {
+            "x": 7036.62109,
+            "y": 1336.72864
+          },
+          "victim_pos": {
+            "x": 6310.98828,
+            "y": 1313.53235
+          }
+        },
+        "trade_time": 2.9639999866485596,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708139777.041,
+          "map": "lotus",
+          "round": 1,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "mazin",
+          "victim_team": "81",
+          "distance": 610.8847466648334,
+          "attacker_pos": {
+            "x": 5926.72607,
+            "y": 1420.23279
+          },
+          "victim_pos": {
+            "x": 6015.70654,
+            "y": 2024.60242
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708139779.197,
+          "map": "lotus",
+          "round": 1,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 726.0034730070238,
+          "attacker_pos": {
+            "x": 7036.62109,
+            "y": 1336.72864
+          },
+          "victim_pos": {
+            "x": 6310.98828,
+            "y": 1313.53235
+          }
+        },
+        "trade_time": 2.1560001373291016,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708139779.197,
+          "map": "lotus",
+          "round": 1,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 726.0034730070238,
+          "attacker_pos": {
+            "x": 7036.62109,
+            "y": 1336.72864
+          },
+          "victim_pos": {
+            "x": 6310.98828,
+            "y": 1313.53235
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708139783.011,
+          "map": "lotus",
+          "round": 1,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 3140.8924413481923,
+          "attacker_pos": {
+            "x": 4722.82861,
+            "y": -1089.54932
+          },
+          "victim_pos": {
+            "x": 6839.41309,
+            "y": 1231.07031
+          }
+        },
+        "trade_time": 3.813999891281128,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140162.839,
+          "map": "lotus",
+          "round": 3,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 574.7795343694646,
+          "attacker_pos": {
+            "x": 5946.41846,
+            "y": -3851.07837
+          },
+          "victim_pos": {
+            "x": 5408.24414,
+            "y": -4052.91968
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140165.766,
+          "map": "lotus",
+          "round": 3,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 745.8744555911411,
+          "attacker_pos": {
+            "x": 4937.15771,
+            "y": -3827.15771
+          },
+          "victim_pos": {
+            "x": 5671.54834,
+            "y": -3957.53833
+          }
+        },
+        "trade_time": 2.927000045776367,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140163.607,
+          "map": "lotus",
+          "round": 3,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 1051.1231430798098,
+          "attacker_pos": {
+            "x": 5946.41846,
+            "y": -3851.07837
+          },
+          "victim_pos": {
+            "x": 4984.08594,
+            "y": -3428.25928
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140165.766,
+          "map": "lotus",
+          "round": 3,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 745.8744555911411,
+          "attacker_pos": {
+            "x": 4937.15771,
+            "y": -3827.15771
+          },
+          "victim_pos": {
+            "x": 5671.54834,
+            "y": -3957.53833
+          }
+        },
+        "trade_time": 2.1589999198913574,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140164.606,
+          "map": "lotus",
+          "round": 3,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 780.7289070659018,
+          "attacker_pos": {
+            "x": 5868.86377,
+            "y": -3905.23657
+          },
+          "victim_pos": {
+            "x": 5192.91,
+            "y": -3514.56519
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140165.766,
+          "map": "lotus",
+          "round": 3,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 745.8744555911411,
+          "attacker_pos": {
+            "x": 4937.15771,
+            "y": -3827.15771
+          },
+          "victim_pos": {
+            "x": 5671.54834,
+            "y": -3957.53833
+          }
+        },
+        "trade_time": 1.1600000858306885,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140165.766,
+          "map": "lotus",
+          "round": 3,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 745.8744555911411,
+          "attacker_pos": {
+            "x": 4937.15771,
+            "y": -3827.15771
+          },
+          "victim_pos": {
+            "x": 5671.54834,
+            "y": -3957.53833
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140165.976,
+          "map": "lotus",
+          "round": 3,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "mazin",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 1652.6118972974932,
+          "attacker_pos": {
+            "x": 5244.75732,
+            "y": -5450.89062
+          },
+          "victim_pos": {
+            "x": 4937.15771,
+            "y": -3827.15771
+          }
+        },
+        "trade_time": 0.21000003814697266,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140246.314,
+          "map": "lotus",
+          "round": 4,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "mazin",
+          "victim_team": "81",
+          "distance": 381.16286580978147,
+          "attacker_pos": {
+            "x": 7540.38818,
+            "y": 5330.49561
+          },
+          "victim_pos": {
+            "x": 7824.61084,
+            "y": 5076.52197
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140247.613,
+          "map": "lotus",
+          "round": 4,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 1180.9981432663756,
+          "attacker_pos": {
+            "x": 8493.50684,
+            "y": 5411.7959
+          },
+          "victim_pos": {
+            "x": 7452.05322,
+            "y": 4854.90186
+          }
+        },
+        "trade_time": 1.2990000247955322,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140253.668,
+          "map": "lotus",
+          "round": 4,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 1774.4005616624797,
+          "attacker_pos": {
+            "x": 8359.15918,
+            "y": 6507.70117
+          },
+          "victim_pos": {
+            "x": 9158.21,
+            "y": 4923.39844
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140257.608,
+          "map": "lotus",
+          "round": 4,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 1109.934454626978,
+          "attacker_pos": {
+            "x": 8226.36523,
+            "y": 4813.41455
+          },
+          "victim_pos": {
+            "x": 9335.39648,
+            "y": 4858.18262
+          }
+        },
+        "trade_time": 3.940000057220459,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140257.608,
+          "map": "lotus",
+          "round": 4,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 1109.934454626978,
+          "attacker_pos": {
+            "x": 8226.36523,
+            "y": 4813.41455
+          },
+          "victim_pos": {
+            "x": 9335.39648,
+            "y": 4858.18262
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140259.508,
+          "map": "lotus",
+          "round": 4,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "vanity",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 1324.3796936052738,
+          "attacker_pos": {
+            "x": 6934.68115,
+            "y": 5737.48828
+          },
+          "victim_pos": {
+            "x": 8007.69873,
+            "y": 4961.20557
+          }
+        },
+        "trade_time": 1.8999998569488525,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140453.704,
+          "map": "lotus",
+          "round": 6,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "vanity",
+          "victim_team": "79",
+          "distance": 1874.915378030059,
+          "attacker_pos": {
+            "x": 7187.35498,
+            "y": -4121.5459
+          },
+          "victim_pos": {
+            "x": 5851.47607,
+            "y": -5437.12
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140455.1,
+          "map": "lotus",
+          "round": 6,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 971.2413241751839,
+          "attacker_pos": {
+            "x": 6367.88281,
+            "y": -5214.67236
+          },
+          "victim_pos": {
+            "x": 6495.82617,
+            "y": -4251.89502
+          }
+        },
+        "trade_time": 1.3959999084472656,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140455.1,
+          "map": "lotus",
+          "round": 6,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 971.2413241751839,
+          "attacker_pos": {
+            "x": 6367.88281,
+            "y": -5214.67236
+          },
+          "victim_pos": {
+            "x": 6495.82617,
+            "y": -4251.89502
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140456.29,
+          "map": "lotus",
+          "round": 6,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "frz",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 1046.6613954986344,
+          "attacker_pos": {
+            "x": 6875.47412,
+            "y": -4256.05078
+          },
+          "victim_pos": {
+            "x": 6355.68896,
+            "y": -5164.52393
+          }
+        },
+        "trade_time": 1.190000057220459,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140482.474,
+          "map": "lotus",
+          "round": 6,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 733.43411789728,
+          "attacker_pos": {
+            "x": 4742.3335,
+            "y": -3749.26611
+          },
+          "victim_pos": {
+            "x": 5455.04053,
+            "y": -3576.13525
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140484.681,
+          "map": "lotus",
+          "round": 6,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 925.6771329634204,
+          "attacker_pos": {
+            "x": 5290.9668,
+            "y": -3354.63477
+          },
+          "victim_pos": {
+            "x": 5199.76465,
+            "y": -4275.80811
+          }
+        },
+        "trade_time": 2.2070000171661377,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140484.681,
+          "map": "lotus",
+          "round": 6,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 925.6771329634204,
+          "attacker_pos": {
+            "x": 5290.9668,
+            "y": -3354.63477
+          },
+          "victim_pos": {
+            "x": 5199.76465,
+            "y": -4275.80811
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140484.895,
+          "map": "lotus",
+          "round": 6,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "xeppaa",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 1614.4466463826652,
+          "attacker_pos": {
+            "x": 4991.40039,
+            "y": -5235.42236
+          },
+          "victim_pos": {
+            "x": 5436.13379,
+            "y": -3683.4397
+          }
+        },
+        "trade_time": 0.21399998664855957,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140568.174,
+          "map": "lotus",
+          "round": 7,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "frz",
+          "victim_team": "81",
+          "distance": 613.6718795506329,
+          "attacker_pos": {
+            "x": 6394.79,
+            "y": 4003.07104
+          },
+          "victim_pos": {
+            "x": 6935.13721,
+            "y": 4293.96289
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140573.089,
+          "map": "lotus",
+          "round": 7,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 784.8747276730801,
+          "attacker_pos": {
+            "x": 8021.29883,
+            "y": 4881.69482
+          },
+          "victim_pos": {
+            "x": 7285.71094,
+            "y": 4607.94531
+          }
+        },
+        "trade_time": 4.914999961853027,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140568.48,
+          "map": "lotus",
+          "round": 7,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 720.8807505537684,
+          "attacker_pos": {
+            "x": 6394.79,
+            "y": 4003.07104
+          },
+          "victim_pos": {
+            "x": 7114.67627,
+            "y": 4040.92358
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140573.089,
+          "map": "lotus",
+          "round": 7,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 784.8747276730801,
+          "attacker_pos": {
+            "x": 8021.29883,
+            "y": 4881.69482
+          },
+          "victim_pos": {
+            "x": 7285.71094,
+            "y": 4607.94531
+          }
+        },
+        "trade_time": 4.608999967575073,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140570.279,
+          "map": "lotus",
+          "round": 7,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "xeppaa",
+          "victim_team": "79",
+          "distance": 571.0903307336953,
+          "attacker_pos": {
+            "x": 7199.8125,
+            "y": 4161.1958
+          },
+          "victim_pos": {
+            "x": 6839.18652,
+            "y": 3718.37183
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140571.163,
+          "map": "lotus",
+          "round": 7,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 554.2444422129128,
+          "attacker_pos": {
+            "x": 7358.48,
+            "y": 4472.94092
+          },
+          "victim_pos": {
+            "x": 7447.47705,
+            "y": 3925.88843
+          }
+        },
+        "trade_time": 0.8840000629425049,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140571.163,
+          "map": "lotus",
+          "round": 7,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "OXY",
+          "attacker_team": "79",
+          "victim": "artziN",
+          "victim_team": "81",
+          "distance": 554.2444422129128,
+          "attacker_pos": {
+            "x": 7358.48,
+            "y": 4472.94092
+          },
+          "victim_pos": {
+            "x": 7447.47705,
+            "y": 3925.88843
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140573.089,
+          "map": "lotus",
+          "round": 7,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "rglmeister",
+          "attacker_team": "81",
+          "victim": "OXY",
+          "victim_team": "79",
+          "distance": 784.8747276730801,
+          "attacker_pos": {
+            "x": 8021.29883,
+            "y": 4881.69482
+          },
+          "victim_pos": {
+            "x": 7285.71094,
+            "y": 4607.94531
+          }
+        },
+        "trade_time": 1.9259998798370361,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140773.686,
+          "map": "lotus",
+          "round": 8,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "wippie",
+          "attacker_team": "79",
+          "victim": "rglmeister",
+          "victim_team": "81",
+          "distance": 1534.3641875359567,
+          "attacker_pos": {
+            "x": 4191.63623,
+            "y": 3115.198
+          },
+          "victim_pos": {
+            "x": 5093.3291,
+            "y": 4356.6582
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140775.602,
+          "map": "lotus",
+          "round": 8,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "jzz",
+          "attacker_team": "81",
+          "victim": "wippie",
+          "victim_team": "79",
+          "distance": 938.6851006574586,
+          "attacker_pos": {
+            "x": 4863.73633,
+            "y": 3774.20459
+          },
+          "victim_pos": {
+            "x": 4090.60181,
+            "y": 3241.85815
+          }
+        },
+        "trade_time": 1.9159998893737793,
+        "map": "lotus"
+      },
+      {
+        "original_kill": {
+          "type": "kill",
+          "timestamp": 1708140790.174,
+          "map": "lotus",
+          "round": 8,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "Jakee",
+          "attacker_team": "79",
+          "victim": "jzz",
+          "victim_team": "81",
+          "distance": 1409.3737633417688,
+          "attacker_pos": {
+            "x": 6006.09863,
+            "y": 1560.57
+          },
+          "victim_pos": {
+            "x": 6361.78223,
+            "y": 2924.32349
+          }
+        },
+        "trade_kill": {
+          "type": "kill",
+          "timestamp": 1708140792.684,
+          "map": "lotus",
+          "round": 8,
+          "game_id": "4a219f17-c477-448a-ad7b-4f77ab033c9c",
+          "attacker": "artziN",
+          "attacker_team": "81",
+          "victim": "Jakee",
+          "victim_team": "79",
+          "distance": 1198.8359633369776,
+          "attacker_pos": {
+            "x": 6192.68457,
+            "y": 2943.13574
+          },
+          "victim_pos": {
+            "x": 6005.61133,
+            "y": 1758.98572
+          }
+        },
+        "trade_time": 2.509999990463257,
+        "map": "lotus"
+      }
+    ]
+  },
+  "time_to_kill": {
+    "avg_ttk": 1.560722317685309,
+    "avg_hits_to_kill": 3.9457122267595484,
+    "ttk_distribution": {
+      "under_0.5s": 2208,
+      "0.5_to_1s": 557,
+      "1_to_2s": 426,
+      "over_2s": 972
+    },
+    "samples": 4163
+  },
+  "distance_damage": {
+    "long_2000_3000": {
+      "avg_damage": 33.28764251081117,
+      "samples": 7631,
+      "damage_range": [
+        1,
+        150
+      ]
+    },
+    "medium_1000_2000": {
+      "avg_damage": 38.793321982595536,
+      "samples": 10572,
+      "damage_range": [
+        1,
+        780
+      ]
+    },
+    "close_0_500": {
+      "avg_damage": 33.54828150572831,
+      "samples": 1222,
+      "damage_range": [
+        1,
+        160
+      ]
+    },
+    "short_500_1000": {
+      "avg_damage": 37.14668547249647,
+      "samples": 4254,
+      "damage_range": [
+        1,
+        752
+      ]
+    },
+    "very_long_3000+": {
+      "avg_damage": 29.820370882922777,
+      "samples": 3613,
+      "damage_range": [
+        1,
+        156
+      ]
+    }
+  },
+  "by_map": {
+    "bind": {
+      "kills": 835,
+      "damage_events": 1161,
+      "avg_engagement_distance": 1864.7960715889105,
+      "avg_damage_per_event": 25.218776916451336
+    },
+    "split": {
+      "kills": 693,
+      "damage_events": 515,
+      "avg_engagement_distance": 1666.8644339574334,
+      "avg_damage_per_event": 41.376699029126215
+    },
+    "lotus": {
+      "kills": 3065,
+      "damage_events": 7881,
+      "avg_engagement_distance": 1690.931617204123,
+      "avg_damage_per_event": 37.196548661337395
+    },
+    "sunset": {
+      "kills": 742,
+      "damage_events": 0,
+      "avg_engagement_distance": 1811.4739122696933,
+      "avg_damage_per_event": 0
+    },
+    "ascent": {
+      "kills": 1534,
+      "damage_events": 1319,
+      "avg_engagement_distance": 1798.8942066895004,
+      "avg_damage_per_event": 45.420773313115994
+    },
+    "icebox": {
+      "kills": 1536,
+      "damage_events": 3129,
+      "avg_engagement_distance": 2170.9605794704185,
+      "avg_damage_per_event": 31.567913071268777
+    },
+    "haven": {
+      "kills": 1412,
+      "damage_events": 5323,
+      "avg_engagement_distance": 1904.6251283902866,
+      "avg_damage_per_event": 32.0351305654706
+    },
+    "abyss": {
+      "kills": 464,
+      "damage_events": 886,
+      "avg_engagement_distance": 1748.7854081938933,
+      "avg_damage_per_event": 49.60045146726862
+    },
+    "fracture": {
+      "kills": 471,
+      "damage_events": 2398,
+      "avg_engagement_distance": 2186.2319358949258,
+      "avg_damage_per_event": 28.1326105087573
+    },
+    "pearl": {
+      "kills": 857,
+      "damage_events": 3049,
+      "avg_engagement_distance": 1757.4529684207585,
+      "avg_damage_per_event": 40.94817973105936
+    },
+    "corrode": {
+      "kills": 420,
+      "damage_events": 1631,
+      "avg_engagement_distance": 1708.3971033164644,
+      "avg_damage_per_event": 37.82832618025751
+    }
+  }
+}

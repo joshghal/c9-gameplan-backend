@@ -1,0 +1,5748 @@
+{
+  "generated": "2026-01-19",
+  "total_teams": 12,
+  "total_players": 85,
+  "cloud9": {
+    "team": {
+      "id": "79",
+      "name": "Cloud9",
+      "players": [
+        "vanity",
+        "OXY",
+        "wippie",
+        "xeppaa",
+        "Jakee",
+        "moose",
+        "Runi",
+        "neT",
+        "mitch",
+        "v1c"
+      ],
+      "player_count": 10,
+      "total_kills": 5952,
+      "total_deaths": 6077,
+      "avg_kd": 0.96,
+      "avg_headshot_rate": 0.132,
+      "avg_first_kill_rate": 0.066,
+      "team_aggression": 0.288,
+      "role_balance": 1.0,
+      "star_reliance": 0.453,
+      "role_distribution": {
+        "controller": 4,
+        "duelist": 1,
+        "sentinel": 3,
+        "initiator": 2
+      },
+      "preferred_agents": [
+        "omen",
+        "viper",
+        "killjoy",
+        "cypher",
+        "sova"
+      ],
+      "preferred_weapons": [
+        "vandal",
+        "phantom",
+        "ghost"
+      ],
+      "attack_preference": 0.473,
+      "defense_preference": 0.527
+    },
+    "players": [
+      {
+        "id": "91",
+        "name": "vanity",
+        "team": "Cloud9",
+        "kills": 466,
+        "deaths": 553,
+        "kd_ratio": 0.84,
+        "headshot_rate": 0.0,
+        "first_kill_rate": 0.034,
+        "first_death_rate": 0.04,
+        "aggression": 0.259,
+        "consistency": 0.588,
+        "clutch_potential": 0.336,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 0.891,
+          "initiator": 0.109
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.46,
+          "phantom": 0.184,
+          "classic": 0.11,
+          "stinger": 0.041,
+          "bulldog": 0.039
+        },
+        "avg_kill_distance": 1596.5,
+        "avg_loadout_value": 3253.0,
+        "attack_kills": 217,
+        "defense_kills": 249
+      },
+      {
+        "id": "10636",
+        "name": "OXY",
+        "team": "Cloud9",
+        "kills": 1534,
+        "deaths": 1376,
+        "kd_ratio": 1.11,
+        "headshot_rate": 0.266,
+        "first_kill_rate": 0.143,
+        "first_death_rate": 0.151,
+        "aggression": 0.343,
+        "consistency": 0.777,
+        "clutch_potential": 0.976,
+        "primary_role": "duelist",
+        "role_distribution": {
+          "duelist": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.535,
+          "phantom": 0.091,
+          "operator": 0.07,
+          "ghost": 0.062,
+          "sheriff": 0.058
+        },
+        "avg_kill_distance": 1665.4,
+        "avg_loadout_value": 3777.0,
+        "attack_kills": 723,
+        "defense_kills": 811
+      },
+      {
+        "id": "706",
+        "name": "wippie",
+        "team": "Cloud9",
+        "kills": 73,
+        "deaths": 67,
+        "kd_ratio": 1.09,
+        "headshot_rate": 0.0,
+        "first_kill_rate": 0.0,
+        "first_death_rate": 0.0,
+        "aggression": 0.281,
+        "consistency": 0.763,
+        "clutch_potential": 0.436,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 0.643,
+          "controller": 0.357
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.614,
+          "spectre": 0.114,
+          "ghost": 0.086,
+          "classic": 0.071,
+          "bulldog": 0.057
+        },
+        "avg_kill_distance": 1876.5,
+        "avg_loadout_value": 2693.0,
+        "attack_kills": 41,
+        "defense_kills": 32
+      },
+      {
+        "id": "1193",
+        "name": "xeppaa",
+        "team": "Cloud9",
+        "kills": 1165,
+        "deaths": 1219,
+        "kd_ratio": 0.96,
+        "headshot_rate": 0.241,
+        "first_kill_rate": 0.068,
+        "first_death_rate": 0.059,
+        "aggression": 0.288,
+        "consistency": 0.672,
+        "clutch_potential": 0.866,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "sentinel": 0.345,
+          "initiator": 0.513,
+          "duelist": 0.119,
+          "controller": 0.023
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.552,
+          "vandal": 0.179,
+          "ghost": 0.076,
+          "classic": 0.067,
+          "bulldog": 0.051
+        },
+        "avg_kill_distance": 1636.1,
+        "avg_loadout_value": 3324.0,
+        "attack_kills": 553,
+        "defense_kills": 612
+      },
+      {
+        "id": "11969",
+        "name": "Jakee",
+        "team": "Cloud9",
+        "kills": 62,
+        "deaths": 79,
+        "kd_ratio": 0.78,
+        "headshot_rate": 0.0,
+        "first_kill_rate": 0.0,
+        "first_death_rate": 0.0,
+        "aggression": 0.226,
+        "consistency": 0.546,
+        "clutch_potential": 0.312,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.59,
+          "phantom": 0.18,
+          "classic": 0.049,
+          "bulldog": 0.049,
+          "guardian": 0.049
+        },
+        "avg_kill_distance": 1696.4,
+        "avg_loadout_value": 3268.0,
+        "attack_kills": 28,
+        "defense_kills": 34
+      },
+      {
+        "id": "725",
+        "name": "moose",
+        "team": "Cloud9",
+        "kills": 409,
+        "deaths": 413,
+        "kd_ratio": 0.99,
+        "headshot_rate": 0.0,
+        "first_kill_rate": 0.049,
+        "first_death_rate": 0.027,
+        "aggression": 0.249,
+        "consistency": 0.693,
+        "clutch_potential": 0.396,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 1.0
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.564,
+          "phantom": 0.156,
+          "classic": 0.073,
+          "ghost": 0.053,
+          "bulldog": 0.045
+        },
+        "avg_kill_distance": 1903.4,
+        "avg_loadout_value": 3223.0,
+        "attack_kills": 174,
+        "defense_kills": 235
+      },
+      {
+        "id": "11968",
+        "name": "Runi",
+        "team": "Cloud9",
+        "kills": 414,
+        "deaths": 438,
+        "kd_ratio": 0.95,
+        "headshot_rate": 0.0,
+        "first_kill_rate": 0.022,
+        "first_death_rate": 0.027,
+        "aggression": 0.242,
+        "consistency": 0.665,
+        "clutch_potential": 0.38,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 0.527,
+          "initiator": 0.473
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.68,
+          "sheriff": 0.1,
+          "classic": 0.06,
+          "ghost": 0.06,
+          "guardian": 0.028
+        },
+        "avg_kill_distance": 2086.8,
+        "avg_loadout_value": 3210.0,
+        "attack_kills": 187,
+        "defense_kills": 227
+      },
+      {
+        "id": "2348",
+        "name": "neT",
+        "team": "Cloud9",
+        "kills": 581,
+        "deaths": 649,
+        "kd_ratio": 0.9,
+        "headshot_rate": 0.31,
+        "first_kill_rate": 0.127,
+        "first_death_rate": 0.142,
+        "aggression": 0.345,
+        "consistency": 0.63,
+        "clutch_potential": 0.98,
+        "primary_role": "sentinel",
+        "role_distribution": {
+          "sentinel": 0.595,
+          "controller": 0.405
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.504,
+          "vandal": 0.181,
+          "ghost": 0.094,
+          "sheriff": 0.046,
+          "classic": 0.044
+        },
+        "avg_kill_distance": 1742.5,
+        "avg_loadout_value": 3519.0,
+        "attack_kills": 290,
+        "defense_kills": 291
+      },
+      {
+        "id": "1195",
+        "name": "mitch",
+        "team": "Cloud9",
+        "kills": 574,
+        "deaths": 657,
+        "kd_ratio": 0.87,
+        "headshot_rate": 0.205,
+        "first_kill_rate": 0.099,
+        "first_death_rate": 0.146,
+        "aggression": 0.301,
+        "consistency": 0.609,
+        "clutch_potential": 0.758,
+        "primary_role": "initiator",
+        "role_distribution": {
+          "initiator": 0.952,
+          "controller": 0.048
+        },
+        "primary_weapon": "phantom",
+        "weapon_preference": {
+          "phantom": 0.545,
+          "vandal": 0.159,
+          "classic": 0.072,
+          "bulldog": 0.062,
+          "ghost": 0.056
+        },
+        "avg_kill_distance": 1821.3,
+        "avg_loadout_value": 3623.0,
+        "attack_kills": 260,
+        "defense_kills": 314
+      },
+      {
+        "id": "10612",
+        "name": "v1c",
+        "team": "Cloud9",
+        "kills": 674,
+        "deaths": 626,
+        "kd_ratio": 1.08,
+        "headshot_rate": 0.298,
+        "first_kill_rate": 0.116,
+        "first_death_rate": 0.11,
+        "aggression": 0.343,
+        "consistency": 0.756,
+        "clutch_potential": 1.0,
+        "primary_role": "controller",
+        "role_distribution": {
+          "controller": 0.979,
+          "duelist": 0.021
+        },
+        "primary_weapon": "vandal",
+        "weapon_preference": {
+          "vandal": 0.556,
+          "phantom": 0.156,
+          "ghost": 0.064,
+          "bulldog": 0.061,
+          "classic": 0.055
+        },
+        "avg_kill_distance": 1684.0,
+        "avg_loadout_value": 3515.0,
+        "attack_kills": 345,
+        "defense_kills": 329
+      }
+    ]
+  },
+  "opponents": {
+    "teams": [
+      {
+        "id": "97",
+        "name": "Evil Geniuses",
+        "players": [
+          "crashies",
+          "Victor",
+          "Marved",
+          "Ethan",
+          "Demon1",
+          "FNS",
+          "s0m",
+          "mada",
+          "Verno",
+          "brawk",
+          "skuba"
+        ],
+        "player_count": 11,
+        "total_kills": 1104,
+        "total_deaths": 1025,
+        "avg_kd": 1.07,
+        "avg_headshot_rate": 0.202,
+        "avg_first_kill_rate": 0.108,
+        "team_aggression": 0.313,
+        "role_balance": 1.0,
+        "star_reliance": 0.359,
+        "role_distribution": {
+          "initiator": 4,
+          "sentinel": 2,
+          "controller": 4,
+          "duelist": 1
+        },
+        "preferred_agents": [
+          "omen",
+          "sova",
+          "killjoy",
+          "cypher",
+          "viper"
+        ],
+        "preferred_weapons": [
+          "vandal",
+          "phantom",
+          "ghost"
+        ],
+        "attack_preference": 0.488,
+        "defense_preference": 0.512
+      },
+      {
+        "id": "96",
+        "name": "Leviat\u00e1n",
+        "players": [
+          "leaf",
+          "JonahP",
+          "valyn",
+          "trent",
+          "icy",
+          "BABYBAY"
+        ],
+        "player_count": 6,
+        "total_kills": 875,
+        "total_deaths": 785,
+        "avg_kd": 1.16,
+        "avg_headshot_rate": 0.24,
+        "avg_first_kill_rate": 0.081,
+        "team_aggression": 0.289,
+        "role_balance": 1.0,
+        "star_reliance": 0.402,
+        "role_distribution": {
+          "sentinel": 1,
+          "initiator": 2,
+          "controller": 2,
+          "duelist": 1
+        },
+        "preferred_agents": [
+          "omen",
+          "killjoy",
+          "sova",
+          "fade",
+          "viper"
+        ],
+        "preferred_weapons": [
+          "vandal",
+          "phantom",
+          "ghost"
+        ],
+        "attack_preference": 0.451,
+        "defense_preference": 0.549
+      },
+      {
+        "id": "1611",
+        "name": "2GAME",
+        "players": [
+          "tex",
+          "kiNgg",
+          "Mazino",
+          "C0M",
+          "aspas",
+          "Rossy",
+          "okeanos",
+          "Sato"
+        ],
+        "player_count": 8,
+        "total_kills": 708,
+        "total_deaths": 703,
+        "avg_kd": 1.01,
+        "avg_headshot_rate": 0.264,
+        "avg_first_kill_rate": 0.087,
+        "team_aggression": 0.312,
+        "role_balance": 1.0,
+        "star_reliance": 0.466,
+        "role_distribution": {
+          "sentinel": 1,
+          "controller": 2,
+          "initiator": 3,
+          "duelist": 2
+        },
+        "preferred_agents": [
+          "omen",
+          "viper",
+          "neon",
+          "cypher",
+          "sova"
+        ],
+        "preferred_weapons": [
+          "phantom",
+          "vandal",
+          "ghost"
+        ],
+        "attack_preference": 0.494,
+        "defense_preference": 0.506
+      },
+      {
+        "id": "81",
+        "name": "FUT",
+        "players": [
+          "jzz",
+          "frz",
+          "artziN",
+          "rglmeister",
+          "mazin",
+          "cortezia",
+          "xenom"
+        ],
+        "player_count": 7,
+        "total_kills": 657,
+        "total_deaths": 723,
+        "avg_kd": 0.92,
+        "avg_headshot_rate": 0.126,
+        "avg_first_kill_rate": 0.043,
+        "team_aggression": 0.275,
+        "role_balance": 0.75,
+        "star_reliance": 0.403,
+        "role_distribution": {
+          "initiator": 3,
+          "sentinel": 2,
+          "controller": 2
+        },
+        "preferred_agents": [
+          "omen",
+          "viper",
+          "cypher",
+          "kayo",
+          "killjoy"
+        ],
+        "preferred_weapons": [
+          "vandal",
+          "phantom",
+          "ghost"
+        ],
+        "attack_preference": 0.476,
+        "defense_preference": 0.524
+      },
+      {
+        "id": "1079",
+        "name": "Shopify Rebellion",
+        "players": [
+          "zekken",
+          "Sacy",
+          "johnqt",
+          "TenZ",
+          "Zellsis",
+          "N4RRATE"
+        ],
+        "player_count": 6,
+        "total_kills": 584,
+        "total_deaths": 479,
+        "avg_kd": 1.15,
+        "avg_headshot_rate": 0.16,
+        "avg_first_kill_rate": 0.08,
+        "team_aggression": 0.323,
+        "role_balance": 1.0,
+        "star_reliance": 0.521,
+        "role_distribution": {
+          "duelist": 1,
+          "initiator": 2,
+          "controller": 2,
+          "sentinel": 1
+        },
+        "preferred_agents": [
+          "fade",
+          "viper",
+          "vyse",
+          "killjoy",
+          "sova"
+        ],
+        "preferred_weapons": [
+          "phantom",
+          "vandal",
+          "classic"
+        ],
+        "attack_preference": 0.495,
+        "defense_preference": 0.505
+      },
+      {
+        "id": "281",
+        "name": "The Guard",
+        "players": [
+          "JAWGEMO",
+          "Apoth",
+          "NaturE",
+          "Derrek",
+          "supamen",
+          "yay"
+        ],
+        "player_count": 6,
+        "total_kills": 562,
+        "total_deaths": 592,
+        "avg_kd": 0.96,
+        "avg_headshot_rate": 0.23,
+        "avg_first_kill_rate": 0.101,
+        "team_aggression": 0.314,
+        "role_balance": 1.0,
+        "star_reliance": 0.463,
+        "role_distribution": {
+          "duelist": 2,
+          "sentinel": 1,
+          "initiator": 2,
+          "controller": 1
+        },
+        "preferred_agents": [
+          "yoru",
+          "cypher",
+          "omen",
+          "viper",
+          "fade"
+        ],
+        "preferred_weapons": [
+          "vandal",
+          "phantom",
+          "classic"
+        ],
+        "attack_preference": 0.464,
+        "defense_preference": 0.536
+      },
+      {
+        "id": "48457",
+        "name": "Rex Regum Qeon",
+        "players": [
+          "mta",
+          "Melser",
+          "Shyy",
+          "keznitdeuS",
+          "heat"
+        ],
+        "player_count": 5,
+        "total_kills": 469,
+        "total_deaths": 402,
+        "avg_kd": 1.17,
+        "avg_headshot_rate": 0.078,
+        "avg_first_kill_rate": 0.137,
+        "team_aggression": 0.364,
+        "role_balance": 1.0,
+        "star_reliance": 0.501,
+        "role_distribution": {
+          "initiator": 2,
+          "controller": 1,
+          "sentinel": 1,
+          "duelist": 1
+        },
+        "preferred_agents": [
+          "omen",
+          "cypher",
+          "viper",
+          "neon",
+          "sova"
+        ],
+        "preferred_weapons": [
+          "vandal",
+          "ghost",
+          "sheriff"
+        ],
+        "attack_preference": 0.522,
+        "defense_preference": 0.478
+      },
+      {
+        "id": "337",
+        "name": "EDward Gaming",
+        "players": [
+          "Asuna",
+          "bang",
+          "Boostio",
+          "Cryo",
+          "eeiu",
+          "Kess",
+          "Zander"
+        ],
+        "player_count": 7,
+        "total_kills": 436,
+        "total_deaths": 375,
+        "avg_kd": 1.11,
+        "avg_headshot_rate": 0.264,
+        "avg_first_kill_rate": 0.088,
+        "team_aggression": 0.274,
+        "role_balance": 1.0,
+        "star_reliance": 0.518,
+        "role_distribution": {
+          "duelist": 2,
+          "controller": 2,
+          "sentinel": 2,
+          "initiator": 1
+        },
+        "preferred_agents": [
+          "omen",
+          "viper",
+          "sova",
+          "killjoy",
+          "cypher"
+        ],
+        "preferred_weapons": [
+          "phantom",
+          "vandal",
+          "ghost"
+        ],
+        "attack_preference": 0.424,
+        "defense_preference": 0.576
+      },
+      {
+        "id": "99",
+        "name": "KR\u00dc",
+        "players": [
+          "Khalil",
+          "havoc",
+          "kon4n",
+          "mwzera",
+          "nzr",
+          "Pryze",
+          "raafa",
+          "Urango",
+          "adverso",
+          "Palla"
+        ],
+        "player_count": 10,
+        "total_kills": 400,
+        "total_deaths": 498,
+        "avg_kd": 0.76,
+        "avg_headshot_rate": 0.187,
+        "avg_first_kill_rate": 0.093,
+        "team_aggression": 0.362,
+        "role_balance": 1.0,
+        "star_reliance": 0.378,
+        "role_distribution": {
+          "controller": 2,
+          "duelist": 3,
+          "initiator": 4,
+          "sentinel": 1
+        },
+        "preferred_agents": [
+          "fade",
+          "omen",
+          "sova",
+          "neon",
+          "killjoy"
+        ],
+        "preferred_weapons": [
+          "vandal",
+          "phantom",
+          "ghost"
+        ],
+        "attack_preference": 0.62,
+        "defense_preference": 0.38
+      },
+      {
+        "id": "3412",
+        "name": "Fnatic",
+        "players": [
+          "Saadhak",
+          "Less",
+          "tuyz",
+          "cauanzin",
+          "qck1"
+        ],
+        "player_count": 5,
+        "total_kills": 206,
+        "total_deaths": 260,
+        "avg_kd": 0.81,
+        "avg_headshot_rate": 0.104,
+        "avg_first_kill_rate": 0.009,
+        "team_aggression": 0.208,
+        "role_balance": 1.0,
+        "star_reliance": 0.442,
+        "role_distribution": {
+          "sentinel": 1,
+          "controller": 2,
+          "initiator": 1,
+          "duelist": 1
+        },
+        "preferred_agents": [
+          "omen",
+          "viper",
+          "brimstone",
+          "raze",
+          "breach"
+        ],
+        "preferred_weapons": [
+          "vandal",
+          "ghost",
+          "guardian"
+        ],
+        "attack_preference": 0.408,
+        "defense_preference": 0.592
+      },
+      {
+        "id": "53367",
+        "name": "Acend",
+        "players": [
+          "silentzz",
+          "gobera",
+          "Lz",
+          "spikeziN"
+        ],
+        "player_count": 4,
+        "total_kills": 76,
+        "total_deaths": 110,
+        "avg_kd": 0.69,
+        "avg_headshot_rate": 0.28,
+        "avg_first_kill_rate": 0.153,
+        "team_aggression": 0.456,
+        "role_balance": 0.75,
+        "star_reliance": 0.618,
+        "role_distribution": {
+          "controller": 2,
+          "initiator": 1,
+          "duelist": 1
+        },
+        "preferred_agents": [
+          "omen",
+          "neon",
+          "viper",
+          "breach",
+          "brimstone"
+        ],
+        "preferred_weapons": [
+          "vandal",
+          "phantom",
+          "classic"
+        ],
+        "attack_preference": 0.671,
+        "defense_preference": 0.329
+      }
+    ],
+    "players_by_team": {
+      "FUT": [
+        {
+          "id": "2641",
+          "name": "jzz",
+          "team": "FUT",
+          "kills": 88,
+          "deaths": 91,
+          "kd_ratio": 0.97,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.199,
+          "consistency": 0.679,
+          "clutch_potential": 0.388,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 0.619,
+            "duelist": 0.381
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.5,
+            "bulldog": 0.179,
+            "phantom": 0.119,
+            "ghost": 0.071,
+            "spectre": 0.048
+          },
+          "avg_kill_distance": 1603.8,
+          "avg_loadout_value": 3257.0,
+          "attack_kills": 35,
+          "defense_kills": 53
+        },
+        {
+          "id": "59",
+          "name": "frz",
+          "team": "FUT",
+          "kills": 80,
+          "deaths": 85,
+          "kd_ratio": 0.94,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.231,
+          "consistency": 0.658,
+          "clutch_potential": 0.376,
+          "primary_role": "sentinel",
+          "role_distribution": {
+            "sentinel": 0.646,
+            "controller": 0.354
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.519,
+            "ghost": 0.101,
+            "spectre": 0.089,
+            "classic": 0.063,
+            "guardian": 0.063
+          },
+          "avg_kill_distance": 1973.9,
+          "avg_loadout_value": 2840.0,
+          "attack_kills": 37,
+          "defense_kills": 43
+        },
+        {
+          "id": "2837",
+          "name": "artziN",
+          "team": "FUT",
+          "kills": 167,
+          "deaths": 198,
+          "kd_ratio": 0.84,
+          "headshot_rate": 0.205,
+          "first_kill_rate": 0.096,
+          "first_death_rate": 0.101,
+          "aggression": 0.278,
+          "consistency": 0.588,
+          "clutch_potential": 0.746,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 0.511,
+            "duelist": 0.31,
+            "sentinel": 0.102,
+            "controller": 0.077
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.486,
+            "phantom": 0.115,
+            "stinger": 0.068,
+            "guardian": 0.061,
+            "sheriff": 0.054
+          },
+          "avg_kill_distance": 1611.3,
+          "avg_loadout_value": 3457.0,
+          "attack_kills": 69,
+          "defense_kills": 98
+        },
+        {
+          "id": "1814",
+          "name": "rglmeister",
+          "team": "FUT",
+          "kills": 77,
+          "deaths": 76,
+          "kd_ratio": 1.01,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.234,
+          "consistency": 0.707,
+          "clutch_potential": 0.404,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.429,
+            "phantom": 0.247,
+            "sheriff": 0.078,
+            "classic": 0.065,
+            "bulldog": 0.065
+          },
+          "avg_kill_distance": 1585.2,
+          "avg_loadout_value": 3178.0,
+          "attack_kills": 36,
+          "defense_kills": 41
+        },
+        {
+          "id": "266",
+          "name": "mazin",
+          "team": "FUT",
+          "kills": 59,
+          "deaths": 90,
+          "kd_ratio": 0.66,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.263,
+          "consistency": 0.462,
+          "clutch_potential": 0.264,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "controller": 0.416,
+            "initiator": 0.584
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.678,
+            "bulldog": 0.136,
+            "classic": 0.085,
+            "judge": 0.034,
+            "marshal": 0.017
+          },
+          "avg_kill_distance": 1847.8,
+          "avg_loadout_value": 3194.0,
+          "attack_kills": 31,
+          "defense_kills": 28
+        },
+        {
+          "id": "3320",
+          "name": "cortezia",
+          "team": "FUT",
+          "kills": 98,
+          "deaths": 97,
+          "kd_ratio": 1.01,
+          "headshot_rate": 0.374,
+          "first_kill_rate": 0.163,
+          "first_death_rate": 0.103,
+          "aggression": 0.393,
+          "consistency": 0.707,
+          "clutch_potential": 1.0,
+          "primary_role": "sentinel",
+          "role_distribution": {
+            "sentinel": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.639,
+            "phantom": 0.103,
+            "ghost": 0.082,
+            "guardian": 0.062,
+            "sheriff": 0.052
+          },
+          "avg_kill_distance": 1812.5,
+          "avg_loadout_value": 3533.0,
+          "attack_kills": 53,
+          "defense_kills": 45
+        },
+        {
+          "id": "629",
+          "name": "xenom",
+          "team": "FUT",
+          "kills": 88,
+          "deaths": 86,
+          "kd_ratio": 1.02,
+          "headshot_rate": 0.306,
+          "first_kill_rate": 0.045,
+          "first_death_rate": 0.116,
+          "aggression": 0.33,
+          "consistency": 0.714,
+          "clutch_potential": 1.0,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.75,
+            "ghost": 0.114,
+            "sheriff": 0.034,
+            "guardian": 0.034,
+            "classic": 0.023
+          },
+          "avg_kill_distance": 1968.1,
+          "avg_loadout_value": 3699.0,
+          "attack_kills": 52,
+          "defense_kills": 36
+        }
+      ],
+      "Evil Geniuses": [
+        {
+          "id": "291",
+          "name": "crashies",
+          "team": "Evil Geniuses",
+          "kills": 63,
+          "deaths": 65,
+          "kd_ratio": 0.97,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.048,
+          "first_death_rate": 0.108,
+          "aggression": 0.258,
+          "consistency": 0.679,
+          "clutch_potential": 0.388,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 0.821,
+            "controller": 0.179
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.421,
+            "odin": 0.158,
+            "classic": 0.105,
+            "ghost": 0.088,
+            "guardian": 0.07
+          },
+          "avg_kill_distance": 2173.4,
+          "avg_loadout_value": 3232.0,
+          "attack_kills": 28,
+          "defense_kills": 35
+        },
+        {
+          "id": "290",
+          "name": "Victor",
+          "team": "Evil Geniuses",
+          "kills": 87,
+          "deaths": 74,
+          "kd_ratio": 1.18,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.172,
+          "first_death_rate": 0.176,
+          "aggression": 0.388,
+          "consistency": 0.826,
+          "clutch_potential": 0.472,
+          "primary_role": "sentinel",
+          "role_distribution": {
+            "sentinel": 0.592,
+            "duelist": 0.408
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.549,
+            "operator": 0.122,
+            "ghost": 0.085,
+            "classic": 0.085,
+            "sheriff": 0.049
+          },
+          "avg_kill_distance": 1874.6,
+          "avg_loadout_value": 3515.0,
+          "attack_kills": 45,
+          "defense_kills": 42
+        },
+        {
+          "id": "292",
+          "name": "Marved",
+          "team": "Evil Geniuses",
+          "kills": 36,
+          "deaths": 35,
+          "kd_ratio": 1.03,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.292,
+          "consistency": 0.721,
+          "clutch_potential": 0.412,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.444,
+            "vandal": 0.306,
+            "classic": 0.083,
+            "spectre": 0.083,
+            "ghost": 0.056
+          },
+          "avg_kill_distance": 1814.4,
+          "avg_loadout_value": 3421.0,
+          "attack_kills": 21,
+          "defense_kills": 15
+        },
+        {
+          "id": "297",
+          "name": "Ethan",
+          "team": "Evil Geniuses",
+          "kills": 195,
+          "deaths": 199,
+          "kd_ratio": 0.98,
+          "headshot_rate": 0.221,
+          "first_kill_rate": 0.103,
+          "first_death_rate": 0.08,
+          "aggression": 0.308,
+          "consistency": 0.686,
+          "clutch_potential": 0.834,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 0.709,
+            "controller": 0.215,
+            "duelist": 0.076
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.427,
+            "vandal": 0.292,
+            "classic": 0.07,
+            "stinger": 0.054,
+            "ghost": 0.038
+          },
+          "avg_kill_distance": 1775.0,
+          "avg_loadout_value": 3310.0,
+          "attack_kills": 90,
+          "defense_kills": 105
+        },
+        {
+          "id": "11334",
+          "name": "Demon1",
+          "team": "Evil Geniuses",
+          "kills": 67,
+          "deaths": 61,
+          "kd_ratio": 1.1,
+          "headshot_rate": 0.492,
+          "first_kill_rate": 0.075,
+          "first_death_rate": 0.033,
+          "aggression": 0.205,
+          "consistency": 0.77,
+          "clutch_potential": 1.0,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 0.634,
+            "duelist": 0.366
+          },
+          "primary_weapon": "operator",
+          "weapon_preference": {
+            "operator": 0.333,
+            "vandal": 0.317,
+            "guardian": 0.117,
+            "sheriff": 0.1,
+            "classic": 0.067
+          },
+          "avg_kill_distance": 1974.1,
+          "avg_loadout_value": 4181.0,
+          "attack_kills": 20,
+          "defense_kills": 47
+        },
+        {
+          "id": "74432",
+          "name": "FNS",
+          "team": "Evil Geniuses",
+          "kills": 105,
+          "deaths": 127,
+          "kd_ratio": 0.83,
+          "headshot_rate": 0.232,
+          "first_kill_rate": 0.105,
+          "first_death_rate": 0.094,
+          "aggression": 0.364,
+          "consistency": 0.581,
+          "clutch_potential": 0.796,
+          "primary_role": "sentinel",
+          "role_distribution": {
+            "sentinel": 1.0
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.514,
+            "vandal": 0.219,
+            "ghost": 0.105,
+            "stinger": 0.057,
+            "classic": 0.038
+          },
+          "avg_kill_distance": 1632.2,
+          "avg_loadout_value": 3288.0,
+          "attack_kills": 60,
+          "defense_kills": 45
+        },
+        {
+          "id": "2340",
+          "name": "s0m",
+          "team": "Evil Geniuses",
+          "kills": 201,
+          "deaths": 150,
+          "kd_ratio": 1.34,
+          "headshot_rate": 0.267,
+          "first_kill_rate": 0.129,
+          "first_death_rate": 0.1,
+          "aggression": 0.398,
+          "consistency": 0.938,
+          "clutch_potential": 1.0,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.503,
+            "phantom": 0.246,
+            "stinger": 0.051,
+            "classic": 0.046,
+            "bulldog": 0.046
+          },
+          "avg_kill_distance": 1691.8,
+          "avg_loadout_value": 3835.0,
+          "attack_kills": 121,
+          "defense_kills": 80
+        },
+        {
+          "id": "2358",
+          "name": "mada",
+          "team": "Evil Geniuses",
+          "kills": 140,
+          "deaths": 126,
+          "kd_ratio": 1.11,
+          "headshot_rate": 0.241,
+          "first_kill_rate": 0.221,
+          "first_death_rate": 0.262,
+          "aggression": 0.398,
+          "consistency": 0.777,
+          "clutch_potential": 0.926,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 1.0
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.44,
+            "vandal": 0.248,
+            "ghost": 0.072,
+            "stinger": 0.064,
+            "classic": 0.048
+          },
+          "avg_kill_distance": 1528.6,
+          "avg_loadout_value": 3738.0,
+          "attack_kills": 65,
+          "defense_kills": 75
+        },
+        {
+          "id": "10630",
+          "name": "Verno",
+          "team": "Evil Geniuses",
+          "kills": 76,
+          "deaths": 72,
+          "kd_ratio": 1.06,
+          "headshot_rate": 0.285,
+          "first_kill_rate": 0.105,
+          "first_death_rate": 0.042,
+          "aggression": 0.329,
+          "consistency": 0.742,
+          "clutch_potential": 0.994,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.667,
+            "phantom": 0.097,
+            "ghost": 0.097,
+            "classic": 0.056,
+            "bulldog": 0.042
+          },
+          "avg_kill_distance": 1721.9,
+          "avg_loadout_value": 3617.0,
+          "attack_kills": 38,
+          "defense_kills": 38
+        },
+        {
+          "id": "2513",
+          "name": "brawk",
+          "team": "Evil Geniuses",
+          "kills": 98,
+          "deaths": 76,
+          "kd_ratio": 1.29,
+          "headshot_rate": 0.199,
+          "first_kill_rate": 0.092,
+          "first_death_rate": 0.092,
+          "aggression": 0.288,
+          "consistency": 0.903,
+          "clutch_potential": 0.914,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 0.744,
+            "sentinel": 0.256
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.4,
+            "odin": 0.222,
+            "sheriff": 0.122,
+            "bulldog": 0.078,
+            "ghost": 0.067
+          },
+          "avg_kill_distance": 1896.6,
+          "avg_loadout_value": 3756.0,
+          "attack_kills": 43,
+          "defense_kills": 55
+        },
+        {
+          "id": "312",
+          "name": "skuba",
+          "team": "Evil Geniuses",
+          "kills": 36,
+          "deaths": 40,
+          "kd_ratio": 0.9,
+          "headshot_rate": 0.289,
+          "first_kill_rate": 0.139,
+          "first_death_rate": 0.1,
+          "aggression": 0.215,
+          "consistency": 0.63,
+          "clutch_potential": 0.938,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 0.538,
+            "sentinel": 0.462
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.417,
+            "sheriff": 0.222,
+            "phantom": 0.139,
+            "classic": 0.056,
+            "guardian": 0.056
+          },
+          "avg_kill_distance": 1683.3,
+          "avg_loadout_value": 3043.0,
+          "attack_kills": 8,
+          "defense_kills": 28
+        }
+      ],
+      "2GAME": [
+        {
+          "id": "2343",
+          "name": "tex",
+          "team": "2GAME",
+          "kills": 92,
+          "deaths": 129,
+          "kd_ratio": 0.71,
+          "headshot_rate": 0.299,
+          "first_kill_rate": 0.087,
+          "first_death_rate": 0.093,
+          "aggression": 0.332,
+          "consistency": 0.497,
+          "clutch_potential": 0.882,
+          "primary_role": "sentinel",
+          "role_distribution": {
+            "sentinel": 0.909,
+            "controller": 0.091
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.478,
+            "phantom": 0.2,
+            "sheriff": 0.067,
+            "classic": 0.056,
+            "ghost": 0.044
+          },
+          "avg_kill_distance": 1820.3,
+          "avg_loadout_value": 3838.0,
+          "attack_kills": 49,
+          "defense_kills": 43
+        },
+        {
+          "id": "207",
+          "name": "kiNgg",
+          "team": "2GAME",
+          "kills": 128,
+          "deaths": 123,
+          "kd_ratio": 1.04,
+          "headshot_rate": 0.307,
+          "first_kill_rate": 0.078,
+          "first_death_rate": 0.122,
+          "aggression": 0.289,
+          "consistency": 0.728,
+          "clutch_potential": 1.0,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 0.829,
+            "duelist": 0.171
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.416,
+            "phantom": 0.232,
+            "sheriff": 0.112,
+            "ghost": 0.096,
+            "classic": 0.04
+          },
+          "avg_kill_distance": 1694.8,
+          "avg_loadout_value": 3435.0,
+          "attack_kills": 59,
+          "defense_kills": 69
+        },
+        {
+          "id": "74",
+          "name": "Mazino",
+          "team": "2GAME",
+          "kills": 44,
+          "deaths": 53,
+          "kd_ratio": 0.83,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.261,
+          "consistency": 0.581,
+          "clutch_potential": 0.332,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 0.706,
+            "controller": 0.294
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.432,
+            "ghost": 0.159,
+            "phantom": 0.159,
+            "classic": 0.091,
+            "sheriff": 0.068
+          },
+          "avg_kill_distance": 1728.1,
+          "avg_loadout_value": 2827.0,
+          "attack_kills": 23,
+          "defense_kills": 21
+        },
+        {
+          "id": "2515",
+          "name": "C0M",
+          "team": "2GAME",
+          "kills": 86,
+          "deaths": 126,
+          "kd_ratio": 0.68,
+          "headshot_rate": 0.243,
+          "first_kill_rate": 0.07,
+          "first_death_rate": 0.032,
+          "aggression": 0.302,
+          "consistency": 0.476,
+          "clutch_potential": 0.758,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 0.768,
+            "controller": 0.232
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.481,
+            "vandal": 0.148,
+            "odin": 0.074,
+            "bulldog": 0.062,
+            "stinger": 0.062
+          },
+          "avg_kill_distance": 1898.9,
+          "avg_loadout_value": 3857.0,
+          "attack_kills": 43,
+          "defense_kills": 43
+        },
+        {
+          "id": "14",
+          "name": "aspas",
+          "team": "2GAME",
+          "kills": 202,
+          "deaths": 139,
+          "kd_ratio": 1.45,
+          "headshot_rate": 0.297,
+          "first_kill_rate": 0.129,
+          "first_death_rate": 0.18,
+          "aggression": 0.347,
+          "consistency": 1.0,
+          "clutch_potential": 1.0,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.369,
+            "phantom": 0.305,
+            "operator": 0.112,
+            "guardian": 0.059,
+            "sheriff": 0.059
+          },
+          "avg_kill_distance": 1793.7,
+          "avg_loadout_value": 3965.0,
+          "attack_kills": 101,
+          "defense_kills": 101
+        },
+        {
+          "id": "2890",
+          "name": "Rossy",
+          "team": "2GAME",
+          "kills": 23,
+          "deaths": 31,
+          "kd_ratio": 0.74,
+          "headshot_rate": 0.359,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.161,
+          "aggression": 0.239,
+          "consistency": 0.518,
+          "clutch_potential": 1.0,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 0.782,
+            "sentinel": 0.218
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.591,
+            "bulldog": 0.136,
+            "ghost": 0.091,
+            "stinger": 0.091,
+            "classic": 0.045
+          },
+          "avg_kill_distance": 1749.6,
+          "avg_loadout_value": 4107.0,
+          "attack_kills": 11,
+          "defense_kills": 12
+        },
+        {
+          "id": "10621",
+          "name": "okeanos",
+          "team": "2GAME",
+          "kills": 66,
+          "deaths": 48,
+          "kd_ratio": 1.38,
+          "headshot_rate": 0.295,
+          "first_kill_rate": 0.121,
+          "first_death_rate": 0.104,
+          "aggression": 0.333,
+          "consistency": 0.966,
+          "clutch_potential": 1.0,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 0.568,
+            "duelist": 0.432
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.727,
+            "guardian": 0.136,
+            "outlaw": 0.045,
+            "shorty": 0.03,
+            "stinger": 0.03
+          },
+          "avg_kill_distance": 1631.4,
+          "avg_loadout_value": 4543.0,
+          "attack_kills": 32,
+          "defense_kills": 34
+        },
+        {
+          "id": "14826",
+          "name": "Sato",
+          "team": "2GAME",
+          "kills": 67,
+          "deaths": 54,
+          "kd_ratio": 1.24,
+          "headshot_rate": 0.309,
+          "first_kill_rate": 0.209,
+          "first_death_rate": 0.241,
+          "aggression": 0.396,
+          "consistency": 0.868,
+          "clutch_potential": 1.0,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 1.0
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.429,
+            "vandal": 0.175,
+            "sheriff": 0.095,
+            "bulldog": 0.079,
+            "ghost": 0.079
+          },
+          "avg_kill_distance": 1660.3,
+          "avg_loadout_value": 4116.0,
+          "attack_kills": 32,
+          "defense_kills": 35
+        }
+      ],
+      "The Guard": [
+        {
+          "id": "2347",
+          "name": "JAWGEMO",
+          "team": "The Guard",
+          "kills": 164,
+          "deaths": 153,
+          "kd_ratio": 1.07,
+          "headshot_rate": 0.25,
+          "first_kill_rate": 0.201,
+          "first_death_rate": 0.098,
+          "aggression": 0.367,
+          "consistency": 0.749,
+          "clutch_potential": 0.928,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 0.916,
+            "initiator": 0.084
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.395,
+            "phantom": 0.211,
+            "stinger": 0.116,
+            "classic": 0.075,
+            "frenzy": 0.054
+          },
+          "avg_kill_distance": 1495.2,
+          "avg_loadout_value": 3652.0,
+          "attack_kills": 71,
+          "defense_kills": 93
+        },
+        {
+          "id": "2891",
+          "name": "Apoth",
+          "team": "The Guard",
+          "kills": 40,
+          "deaths": 44,
+          "kd_ratio": 0.91,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.263,
+          "consistency": 0.637,
+          "clutch_potential": 0.364,
+          "primary_role": "sentinel",
+          "role_distribution": {
+            "sentinel": 1.0
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.55,
+            "classic": 0.15,
+            "spectre": 0.1,
+            "ghost": 0.075,
+            "stinger": 0.05
+          },
+          "avg_kill_distance": 1765.0,
+          "avg_loadout_value": 2671.0,
+          "attack_kills": 21,
+          "defense_kills": 19
+        },
+        {
+          "id": "303",
+          "name": "NaturE",
+          "team": "The Guard",
+          "kills": 80,
+          "deaths": 111,
+          "kd_ratio": 0.72,
+          "headshot_rate": 0.231,
+          "first_kill_rate": 0.075,
+          "first_death_rate": 0.09,
+          "aggression": 0.312,
+          "consistency": 0.504,
+          "clutch_potential": 0.75,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 0.749,
+            "controller": 0.251
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.443,
+            "classic": 0.165,
+            "bulldog": 0.076,
+            "vandal": 0.076,
+            "guardian": 0.063
+          },
+          "avg_kill_distance": 1581.0,
+          "avg_loadout_value": 3281.0,
+          "attack_kills": 41,
+          "defense_kills": 39
+        },
+        {
+          "id": "306",
+          "name": "Derrek",
+          "team": "The Guard",
+          "kills": 95,
+          "deaths": 102,
+          "kd_ratio": 0.93,
+          "headshot_rate": 0.267,
+          "first_kill_rate": 0.053,
+          "first_death_rate": 0.029,
+          "aggression": 0.245,
+          "consistency": 0.651,
+          "clutch_potential": 0.906,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.461,
+            "phantom": 0.247,
+            "spectre": 0.045,
+            "sheriff": 0.045,
+            "ghost": 0.045
+          },
+          "avg_kill_distance": 2153.7,
+          "avg_loadout_value": 4010.0,
+          "attack_kills": 39,
+          "defense_kills": 56
+        },
+        {
+          "id": "307",
+          "name": "supamen",
+          "team": "The Guard",
+          "kills": 96,
+          "deaths": 114,
+          "kd_ratio": 0.84,
+          "headshot_rate": 0.314,
+          "first_kill_rate": 0.062,
+          "first_death_rate": 0.044,
+          "aggression": 0.297,
+          "consistency": 0.588,
+          "clutch_potential": 0.964,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.344,
+            "phantom": 0.333,
+            "guardian": 0.104,
+            "sheriff": 0.062,
+            "classic": 0.052
+          },
+          "avg_kill_distance": 1581.0,
+          "avg_loadout_value": 3660.0,
+          "attack_kills": 48,
+          "defense_kills": 48
+        },
+        {
+          "id": "866",
+          "name": "yay",
+          "team": "The Guard",
+          "kills": 87,
+          "deaths": 68,
+          "kd_ratio": 1.28,
+          "headshot_rate": 0.319,
+          "first_kill_rate": 0.218,
+          "first_death_rate": 0.191,
+          "aggression": 0.399,
+          "consistency": 0.896,
+          "clutch_potential": 1.0,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 0.386,
+            "sentinel": 0.362,
+            "controller": 0.252
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.415,
+            "sheriff": 0.146,
+            "operator": 0.134,
+            "ghost": 0.073,
+            "outlaw": 0.073
+          },
+          "avg_kill_distance": 2088.2,
+          "avg_loadout_value": 3959.0,
+          "attack_kills": 41,
+          "defense_kills": 46
+        }
+      ],
+      "Fnatic": [
+        {
+          "id": "58",
+          "name": "Saadhak",
+          "team": "Fnatic",
+          "kills": 46,
+          "deaths": 46,
+          "kd_ratio": 1.0,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.261,
+          "consistency": 0.7,
+          "clutch_potential": 0.4,
+          "primary_role": "sentinel",
+          "role_distribution": {
+            "initiator": 0.478,
+            "sentinel": 0.522
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.8,
+            "ghost": 0.089,
+            "classic": 0.044,
+            "sheriff": 0.044,
+            "operator": 0.022
+          },
+          "avg_kill_distance": 1856.7,
+          "avg_loadout_value": 3118.0,
+          "attack_kills": 24,
+          "defense_kills": 22
+        },
+        {
+          "id": "28",
+          "name": "Less",
+          "team": "Fnatic",
+          "kills": 45,
+          "deaths": 44,
+          "kd_ratio": 1.02,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.189,
+          "consistency": 0.714,
+          "clutch_potential": 0.408,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.738,
+            "sheriff": 0.095,
+            "guardian": 0.095,
+            "classic": 0.024,
+            "judge": 0.024
+          },
+          "avg_kill_distance": 2371.2,
+          "avg_loadout_value": 3256.0,
+          "attack_kills": 17,
+          "defense_kills": 28
+        },
+        {
+          "id": "272",
+          "name": "tuyz",
+          "team": "Fnatic",
+          "kills": 45,
+          "deaths": 72,
+          "kd_ratio": 0.62,
+          "headshot_rate": 0.52,
+          "first_kill_rate": 0.044,
+          "first_death_rate": 0.056,
+          "aggression": 0.211,
+          "consistency": 0.434,
+          "clutch_potential": 1.0,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.533,
+            "ghost": 0.311,
+            "guardian": 0.067,
+            "sheriff": 0.044,
+            "classic": 0.044
+          },
+          "avg_kill_distance": 2108.0,
+          "avg_loadout_value": 2599.0,
+          "attack_kills": 16,
+          "defense_kills": 29
+        },
+        {
+          "id": "1812",
+          "name": "cauanzin",
+          "team": "Fnatic",
+          "kills": 39,
+          "deaths": 49,
+          "kd_ratio": 0.8,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.218,
+          "consistency": 0.56,
+          "clutch_potential": 0.32,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.676,
+            "guardian": 0.162,
+            "ghost": 0.135,
+            "sheriff": 0.027
+          },
+          "avg_kill_distance": 1721.3,
+          "avg_loadout_value": 3112.0,
+          "attack_kills": 17,
+          "defense_kills": 22
+        },
+        {
+          "id": "50",
+          "name": "qck1",
+          "team": "Fnatic",
+          "kills": 31,
+          "deaths": 49,
+          "kd_ratio": 0.63,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.161,
+          "consistency": 0.441,
+          "clutch_potential": 0.252,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.214,
+            "phantom": 0.214,
+            "operator": 0.214,
+            "ghost": 0.107,
+            "judge": 0.107
+          },
+          "avg_kill_distance": 1656.2,
+          "avg_loadout_value": 3437.0,
+          "attack_kills": 10,
+          "defense_kills": 21
+        }
+      ],
+      "EDward Gaming": [
+        {
+          "id": "296",
+          "name": "Asuna",
+          "team": "EDward Gaming",
+          "kills": 63,
+          "deaths": 51,
+          "kd_ratio": 1.24,
+          "headshot_rate": 0.274,
+          "first_kill_rate": 0.079,
+          "first_death_rate": 0.098,
+          "aggression": 0.242,
+          "consistency": 0.868,
+          "clutch_potential": 1.0,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 0.549,
+            "sentinel": 0.234,
+            "initiator": 0.217
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.576,
+            "phantom": 0.169,
+            "ghost": 0.068,
+            "stinger": 0.068,
+            "classic": 0.068
+          },
+          "avg_kill_distance": 2177.2,
+          "avg_loadout_value": 3463.0,
+          "attack_kills": 23,
+          "defense_kills": 40
+        },
+        {
+          "id": "727",
+          "name": "bang",
+          "team": "EDward Gaming",
+          "kills": 137,
+          "deaths": 116,
+          "kd_ratio": 1.18,
+          "headshot_rate": 0.268,
+          "first_kill_rate": 0.08,
+          "first_death_rate": 0.129,
+          "aggression": 0.283,
+          "consistency": 0.826,
+          "clutch_potential": 1.0,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.667,
+            "classic": 0.096,
+            "bulldog": 0.089,
+            "stinger": 0.052,
+            "ghost": 0.037
+          },
+          "avg_kill_distance": 1575.3,
+          "avg_loadout_value": 3876.0,
+          "attack_kills": 61,
+          "defense_kills": 76
+        },
+        {
+          "id": "2345",
+          "name": "Boostio",
+          "team": "EDward Gaming",
+          "kills": 24,
+          "deaths": 25,
+          "kd_ratio": 0.96,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.104,
+          "consistency": 0.672,
+          "clutch_potential": 0.384,
+          "primary_role": "sentinel",
+          "role_distribution": {
+            "sentinel": 0.612,
+            "initiator": 0.388
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.458,
+            "vandal": 0.208,
+            "sheriff": 0.125,
+            "operator": 0.083,
+            "shorty": 0.042
+          },
+          "avg_kill_distance": 2071.2,
+          "avg_loadout_value": 3694.0,
+          "attack_kills": 5,
+          "defense_kills": 19
+        },
+        {
+          "id": "2361",
+          "name": "Cryo",
+          "team": "EDward Gaming",
+          "kills": 89,
+          "deaths": 59,
+          "kd_ratio": 1.51,
+          "headshot_rate": 0.391,
+          "first_kill_rate": 0.101,
+          "first_death_rate": 0.102,
+          "aggression": 0.284,
+          "consistency": 1.0,
+          "clutch_potential": 1.0,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 0.749,
+            "controller": 0.251
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.55,
+            "operator": 0.113,
+            "ghost": 0.1,
+            "vandal": 0.1,
+            "sheriff": 0.05
+          },
+          "avg_kill_distance": 1821.0,
+          "avg_loadout_value": 4009.0,
+          "attack_kills": 37,
+          "defense_kills": 52
+        },
+        {
+          "id": "2341",
+          "name": "eeiu",
+          "team": "EDward Gaming",
+          "kills": 64,
+          "deaths": 50,
+          "kd_ratio": 1.28,
+          "headshot_rate": 0.419,
+          "first_kill_rate": 0.031,
+          "first_death_rate": 0.0,
+          "aggression": 0.266,
+          "consistency": 0.896,
+          "clutch_potential": 1.0,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.724,
+            "ghost": 0.086,
+            "sheriff": 0.069,
+            "classic": 0.052,
+            "phantom": 0.034
+          },
+          "avg_kill_distance": 2151.5,
+          "avg_loadout_value": 3610.0,
+          "attack_kills": 31,
+          "defense_kills": 33
+        },
+        {
+          "id": "119048",
+          "name": "Kess",
+          "team": "EDward Gaming",
+          "kills": 24,
+          "deaths": 38,
+          "kd_ratio": 0.63,
+          "headshot_rate": 0.216,
+          "first_kill_rate": 0.125,
+          "first_death_rate": 0.132,
+          "aggression": 0.406,
+          "consistency": 0.441,
+          "clutch_potential": 0.684,
+          "primary_role": "sentinel",
+          "role_distribution": {
+            "sentinel": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.417,
+            "ghost": 0.167,
+            "bulldog": 0.167,
+            "sheriff": 0.125,
+            "phantom": 0.042
+          },
+          "avg_kill_distance": 2005.4,
+          "avg_loadout_value": 3527.0,
+          "attack_kills": 15,
+          "defense_kills": 9
+        },
+        {
+          "id": "2359",
+          "name": "Zander",
+          "team": "EDward Gaming",
+          "kills": 35,
+          "deaths": 36,
+          "kd_ratio": 0.97,
+          "headshot_rate": 0.283,
+          "first_kill_rate": 0.2,
+          "first_death_rate": 0.167,
+          "aggression": 0.336,
+          "consistency": 0.679,
+          "clutch_potential": 0.954,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.429,
+            "vandal": 0.314,
+            "classic": 0.114,
+            "stinger": 0.057,
+            "ghost": 0.057
+          },
+          "avg_kill_distance": 2075.5,
+          "avg_loadout_value": 3790.0,
+          "attack_kills": 13,
+          "defense_kills": 22
+        }
+      ],
+      "KR\u00dc": [
+        {
+          "id": "51",
+          "name": "Khalil",
+          "team": "KR\u00dc",
+          "kills": 66,
+          "deaths": 71,
+          "kd_ratio": 0.93,
+          "headshot_rate": 0.237,
+          "first_kill_rate": 0.061,
+          "first_death_rate": 0.099,
+          "aggression": 0.379,
+          "consistency": 0.651,
+          "clutch_potential": 0.846,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.692,
+            "classic": 0.092,
+            "bulldog": 0.062,
+            "ghost": 0.062,
+            "sheriff": 0.031
+          },
+          "avg_kill_distance": 1783.2,
+          "avg_loadout_value": 3362.0,
+          "attack_kills": 44,
+          "defense_kills": 22
+        },
+        {
+          "id": "3314",
+          "name": "havoc",
+          "team": "KR\u00dc",
+          "kills": 71,
+          "deaths": 80,
+          "kd_ratio": 0.89,
+          "headshot_rate": 0.269,
+          "first_kill_rate": 0.183,
+          "first_death_rate": 0.075,
+          "aggression": 0.468,
+          "consistency": 0.623,
+          "clutch_potential": 0.894,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 0.576,
+            "sentinel": 0.424
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.493,
+            "sheriff": 0.127,
+            "phantom": 0.113,
+            "ghost": 0.099,
+            "guardian": 0.085
+          },
+          "avg_kill_distance": 1894.0,
+          "avg_loadout_value": 3112.0,
+          "attack_kills": 47,
+          "defense_kills": 24
+        },
+        {
+          "id": "19",
+          "name": "kon4n",
+          "team": "KR\u00dc",
+          "kills": 27,
+          "deaths": 40,
+          "kd_ratio": 0.68,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.389,
+          "consistency": 0.476,
+          "clutch_potential": 0.272,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 0.672,
+            "initiator": 0.328
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.481,
+            "ghost": 0.148,
+            "bulldog": 0.111,
+            "sheriff": 0.111,
+            "phantom": 0.074
+          },
+          "avg_kill_distance": 1780.3,
+          "avg_loadout_value": 2728.0,
+          "attack_kills": 21,
+          "defense_kills": 6
+        },
+        {
+          "id": "57",
+          "name": "mwzera",
+          "team": "KR\u00dc",
+          "kills": 43,
+          "deaths": 45,
+          "kd_ratio": 0.96,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.337,
+          "consistency": 0.672,
+          "clutch_potential": 0.384,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.5,
+            "guardian": 0.139,
+            "ghost": 0.083,
+            "phantom": 0.083,
+            "operator": 0.056
+          },
+          "avg_kill_distance": 1503.8,
+          "avg_loadout_value": 3177.0,
+          "attack_kills": 29,
+          "defense_kills": 14
+        },
+        {
+          "id": "52",
+          "name": "nzr",
+          "team": "KR\u00dc",
+          "kills": 80,
+          "deaths": 76,
+          "kd_ratio": 1.05,
+          "headshot_rate": 0.25,
+          "first_kill_rate": 0.037,
+          "first_death_rate": 0.039,
+          "aggression": 0.341,
+          "consistency": 0.735,
+          "clutch_potential": 0.92,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.635,
+            "ghost": 0.122,
+            "guardian": 0.054,
+            "stinger": 0.054,
+            "sheriff": 0.054
+          },
+          "avg_kill_distance": 1940.2,
+          "avg_loadout_value": 3121.0,
+          "attack_kills": 50,
+          "defense_kills": 30
+        },
+        {
+          "id": "32030",
+          "name": "Pryze",
+          "team": "KR\u00dc",
+          "kills": 36,
+          "deaths": 62,
+          "kd_ratio": 0.58,
+          "headshot_rate": 0.246,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.097,
+          "aggression": 0.306,
+          "consistency": 0.406,
+          "clutch_potential": 0.724,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 1.0
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.514,
+            "stinger": 0.286,
+            "ghost": 0.057,
+            "classic": 0.057,
+            "frenzy": 0.057
+          },
+          "avg_kill_distance": 1522.9,
+          "avg_loadout_value": 3182.0,
+          "attack_kills": 22,
+          "defense_kills": 14
+        },
+        {
+          "id": "2646",
+          "name": "raafa",
+          "team": "KR\u00dc",
+          "kills": 25,
+          "deaths": 31,
+          "kd_ratio": 0.81,
+          "headshot_rate": 0.148,
+          "first_kill_rate": 0.08,
+          "first_death_rate": 0.032,
+          "aggression": 0.32,
+          "consistency": 0.567,
+          "clutch_potential": 0.62,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.609,
+            "bulldog": 0.13,
+            "classic": 0.087,
+            "ghost": 0.043,
+            "phantom": 0.043
+          },
+          "avg_kill_distance": 1951.2,
+          "avg_loadout_value": 3370.0,
+          "attack_kills": 13,
+          "defense_kills": 12
+        },
+        {
+          "id": "42",
+          "name": "Urango",
+          "team": "KR\u00dc",
+          "kills": 13,
+          "deaths": 32,
+          "kd_ratio": 0.41,
+          "headshot_rate": 0.232,
+          "first_kill_rate": 0.308,
+          "first_death_rate": 0.156,
+          "aggression": 0.5,
+          "consistency": 0.287,
+          "clutch_potential": 0.628,
+          "primary_role": "sentinel",
+          "role_distribution": {
+            "sentinel": 0.53,
+            "initiator": 0.47
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.231,
+            "stinger": 0.231,
+            "ghost": 0.154,
+            "classic": 0.154,
+            "judge": 0.077
+          },
+          "avg_kill_distance": 1175.7,
+          "avg_loadout_value": 2550.0,
+          "attack_kills": 7,
+          "defense_kills": 6
+        },
+        {
+          "id": "206",
+          "name": "adverso",
+          "team": "KR\u00dc",
+          "kills": 20,
+          "deaths": 29,
+          "kd_ratio": 0.69,
+          "headshot_rate": 0.242,
+          "first_kill_rate": 0.1,
+          "first_death_rate": 0.172,
+          "aggression": 0.25,
+          "consistency": 0.483,
+          "clutch_potential": 0.76,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 0.721,
+            "sentinel": 0.279
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.333,
+            "ghost": 0.111,
+            "guardian": 0.111,
+            "vandal": 0.111,
+            "stinger": 0.111
+          },
+          "avg_kill_distance": 1632.8,
+          "avg_loadout_value": 3470.0,
+          "attack_kills": 7,
+          "defense_kills": 13
+        },
+        {
+          "id": "32038",
+          "name": "Palla",
+          "team": "KR\u00dc",
+          "kills": 19,
+          "deaths": 32,
+          "kd_ratio": 0.59,
+          "headshot_rate": 0.25,
+          "first_kill_rate": 0.158,
+          "first_death_rate": 0.156,
+          "aggression": 0.329,
+          "consistency": 0.413,
+          "clutch_potential": 0.736,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 1.0
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.316,
+            "guardian": 0.158,
+            "sheriff": 0.158,
+            "ghost": 0.105,
+            "outlaw": 0.105
+          },
+          "avg_kill_distance": 1666.0,
+          "avg_loadout_value": 3087.0,
+          "attack_kills": 8,
+          "defense_kills": 11
+        }
+      ],
+      "Leviat\u00e1n": [
+        {
+          "id": "1192",
+          "name": "leaf",
+          "team": "Leviat\u00e1n",
+          "kills": 169,
+          "deaths": 135,
+          "kd_ratio": 1.25,
+          "headshot_rate": 0.245,
+          "first_kill_rate": 0.071,
+          "first_death_rate": 0.059,
+          "aggression": 0.26,
+          "consistency": 0.875,
+          "clutch_potential": 0.99,
+          "primary_role": "sentinel",
+          "role_distribution": {
+            "sentinel": 0.931,
+            "controller": 0.069
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.513,
+            "stinger": 0.096,
+            "phantom": 0.09,
+            "classic": 0.09,
+            "ghost": 0.064
+          },
+          "avg_kill_distance": 1783.0,
+          "avg_loadout_value": 3220.0,
+          "attack_kills": 70,
+          "defense_kills": 99
+        },
+        {
+          "id": "2351",
+          "name": "JonahP",
+          "team": "Leviat\u00e1n",
+          "kills": 162,
+          "deaths": 166,
+          "kd_ratio": 0.98,
+          "headshot_rate": 0.251,
+          "first_kill_rate": 0.068,
+          "first_death_rate": 0.072,
+          "aggression": 0.258,
+          "consistency": 0.686,
+          "clutch_potential": 0.894,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "controller": 0.241,
+            "initiator": 0.689,
+            "sentinel": 0.07
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.418,
+            "phantom": 0.297,
+            "ghost": 0.108,
+            "classic": 0.051,
+            "guardian": 0.038
+          },
+          "avg_kill_distance": 1718.5,
+          "avg_loadout_value": 3359.0,
+          "attack_kills": 67,
+          "defense_kills": 95
+        },
+        {
+          "id": "2349",
+          "name": "valyn",
+          "team": "Leviat\u00e1n",
+          "kills": 178,
+          "deaths": 171,
+          "kd_ratio": 1.04,
+          "headshot_rate": 0.208,
+          "first_kill_rate": 0.051,
+          "first_death_rate": 0.041,
+          "aggression": 0.277,
+          "consistency": 0.728,
+          "clutch_potential": 0.832,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.534,
+            "stinger": 0.163,
+            "phantom": 0.152,
+            "classic": 0.056,
+            "ghost": 0.039
+          },
+          "avg_kill_distance": 1706.5,
+          "avg_loadout_value": 3634.0,
+          "attack_kills": 85,
+          "defense_kills": 93
+        },
+        {
+          "id": "2353",
+          "name": "trent",
+          "team": "Leviat\u00e1n",
+          "kills": 174,
+          "deaths": 147,
+          "kd_ratio": 1.18,
+          "headshot_rate": 0.285,
+          "first_kill_rate": 0.063,
+          "first_death_rate": 0.095,
+          "aggression": 0.274,
+          "consistency": 0.826,
+          "clutch_potential": 1.0,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.42,
+            "phantom": 0.216,
+            "classic": 0.08,
+            "bulldog": 0.074,
+            "ghost": 0.068
+          },
+          "avg_kill_distance": 1909.4,
+          "avg_loadout_value": 3370.0,
+          "attack_kills": 79,
+          "defense_kills": 95
+        },
+        {
+          "id": "14940",
+          "name": "icy",
+          "team": "Leviat\u00e1n",
+          "kills": 155,
+          "deaths": 140,
+          "kd_ratio": 1.11,
+          "headshot_rate": 0.28,
+          "first_kill_rate": 0.071,
+          "first_death_rate": 0.107,
+          "aggression": 0.298,
+          "consistency": 0.777,
+          "clutch_potential": 1.0,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 0.693,
+            "sentinel": 0.255,
+            "initiator": 0.052
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.471,
+            "phantom": 0.145,
+            "ghost": 0.094,
+            "sheriff": 0.065,
+            "bulldog": 0.065
+          },
+          "avg_kill_distance": 1767.7,
+          "avg_loadout_value": 3633.0,
+          "attack_kills": 76,
+          "defense_kills": 79
+        },
+        {
+          "id": "709",
+          "name": "BABYBAY",
+          "team": "Leviat\u00e1n",
+          "kills": 37,
+          "deaths": 26,
+          "kd_ratio": 1.42,
+          "headshot_rate": 0.169,
+          "first_kill_rate": 0.162,
+          "first_death_rate": 0.154,
+          "aggression": 0.365,
+          "consistency": 0.994,
+          "clutch_potential": 0.906,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 0.53,
+            "sentinel": 0.47
+          },
+          "primary_weapon": "outlaw",
+          "weapon_preference": {
+            "outlaw": 0.258,
+            "vandal": 0.194,
+            "phantom": 0.194,
+            "operator": 0.161,
+            "ghost": 0.065
+          },
+          "avg_kill_distance": 1972.8,
+          "avg_loadout_value": 4182.0,
+          "attack_kills": 18,
+          "defense_kills": 19
+        }
+      ],
+      "Shopify Rebellion": [
+        {
+          "id": "287",
+          "name": "zekken",
+          "team": "Shopify Rebellion",
+          "kills": 168,
+          "deaths": 124,
+          "kd_ratio": 1.35,
+          "headshot_rate": 0.243,
+          "first_kill_rate": 0.185,
+          "first_death_rate": 0.25,
+          "aggression": 0.391,
+          "consistency": 0.945,
+          "clutch_potential": 1.0,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 1.0
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.484,
+            "vandal": 0.19,
+            "sheriff": 0.065,
+            "stinger": 0.059,
+            "outlaw": 0.059
+          },
+          "avg_kill_distance": 1800.8,
+          "avg_loadout_value": 3910.0,
+          "attack_kills": 85,
+          "defense_kills": 83
+        },
+        {
+          "id": "3260",
+          "name": "Sacy",
+          "team": "Shopify Rebellion",
+          "kills": 18,
+          "deaths": 20,
+          "kd_ratio": 0.9,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.278,
+          "consistency": 0.63,
+          "clutch_potential": 0.36,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.765,
+            "classic": 0.118,
+            "spectre": 0.059,
+            "bulldog": 0.059
+          },
+          "avg_kill_distance": 1771.4,
+          "avg_loadout_value": 3414.0,
+          "attack_kills": 10,
+          "defense_kills": 8
+        },
+        {
+          "id": "2512",
+          "name": "johnqt",
+          "team": "Shopify Rebellion",
+          "kills": 125,
+          "deaths": 107,
+          "kd_ratio": 1.17,
+          "headshot_rate": 0.254,
+          "first_kill_rate": 0.064,
+          "first_death_rate": 0.009,
+          "aggression": 0.284,
+          "consistency": 0.819,
+          "clutch_potential": 0.976,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 0.427,
+            "sentinel": 0.426,
+            "initiator": 0.147
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.537,
+            "vandal": 0.132,
+            "ghost": 0.107,
+            "classic": 0.066,
+            "sheriff": 0.041
+          },
+          "avg_kill_distance": 1894.6,
+          "avg_loadout_value": 3465.0,
+          "attack_kills": 59,
+          "defense_kills": 66
+        },
+        {
+          "id": "90",
+          "name": "TenZ",
+          "team": "Shopify Rebellion",
+          "kills": 24,
+          "deaths": 23,
+          "kd_ratio": 1.04,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.0,
+          "first_death_rate": 0.0,
+          "aggression": 0.333,
+          "consistency": 0.728,
+          "clutch_potential": 0.416,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.833,
+            "classic": 0.083,
+            "stinger": 0.042,
+            "guardian": 0.042
+          },
+          "avg_kill_distance": 1979.9,
+          "avg_loadout_value": 3602.0,
+          "attack_kills": 16,
+          "defense_kills": 8
+        },
+        {
+          "id": "94",
+          "name": "Zellsis",
+          "team": "Shopify Rebellion",
+          "kills": 136,
+          "deaths": 109,
+          "kd_ratio": 1.25,
+          "headshot_rate": 0.214,
+          "first_kill_rate": 0.074,
+          "first_death_rate": 0.147,
+          "aggression": 0.298,
+          "consistency": 0.875,
+          "clutch_potential": 0.928,
+          "primary_role": "sentinel",
+          "role_distribution": {
+            "sentinel": 0.771,
+            "initiator": 0.131,
+            "controller": 0.098
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.59,
+            "classic": 0.134,
+            "vandal": 0.127,
+            "stinger": 0.045,
+            "sheriff": 0.037
+          },
+          "avg_kill_distance": 1486.9,
+          "avg_loadout_value": 3407.0,
+          "attack_kills": 66,
+          "defense_kills": 70
+        },
+        {
+          "id": "11013",
+          "name": "N4RRATE",
+          "team": "Shopify Rebellion",
+          "kills": 113,
+          "deaths": 96,
+          "kd_ratio": 1.18,
+          "headshot_rate": 0.246,
+          "first_kill_rate": 0.159,
+          "first_death_rate": 0.104,
+          "aggression": 0.354,
+          "consistency": 0.826,
+          "clutch_potential": 0.964,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 1.0
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.727,
+            "vandal": 0.073,
+            "classic": 0.064,
+            "stinger": 0.064,
+            "ghost": 0.027
+          },
+          "avg_kill_distance": 1616.6,
+          "avg_loadout_value": 3863.0,
+          "attack_kills": 53,
+          "defense_kills": 60
+        }
+      ],
+      "Rex Regum Qeon": [
+        {
+          "id": "10985",
+          "name": "mta",
+          "team": "Rex Regum Qeon",
+          "kills": 80,
+          "deaths": 69,
+          "kd_ratio": 1.16,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.062,
+          "first_death_rate": 0.087,
+          "aggression": 0.309,
+          "consistency": 0.812,
+          "clutch_potential": 0.464,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 0.494,
+            "sentinel": 0.324,
+            "controller": 0.182
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.675,
+            "ghost": 0.078,
+            "sheriff": 0.065,
+            "phantom": 0.052,
+            "classic": 0.052
+          },
+          "avg_kill_distance": 1523.8,
+          "avg_loadout_value": 3343.0,
+          "attack_kills": 42,
+          "defense_kills": 38
+        },
+        {
+          "id": "208",
+          "name": "Melser",
+          "team": "Rex Regum Qeon",
+          "kills": 75,
+          "deaths": 66,
+          "kd_ratio": 1.14,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.133,
+          "first_death_rate": 0.212,
+          "aggression": 0.353,
+          "consistency": 0.798,
+          "clutch_potential": 0.456,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.773,
+            "classic": 0.12,
+            "ghost": 0.053,
+            "bulldog": 0.027,
+            "guardian": 0.013
+          },
+          "avg_kill_distance": 1701.3,
+          "avg_loadout_value": 3261.0,
+          "attack_kills": 38,
+          "defense_kills": 37
+        },
+        {
+          "id": "3078",
+          "name": "Shyy",
+          "team": "Rex Regum Qeon",
+          "kills": 79,
+          "deaths": 70,
+          "kd_ratio": 1.13,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.127,
+          "first_death_rate": 0.114,
+          "aggression": 0.329,
+          "consistency": 0.791,
+          "clutch_potential": 0.452,
+          "primary_role": "sentinel",
+          "role_distribution": {
+            "sentinel": 0.867,
+            "controller": 0.133
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.747,
+            "ghost": 0.114,
+            "guardian": 0.038,
+            "sheriff": 0.025,
+            "classic": 0.025
+          },
+          "avg_kill_distance": 1916.1,
+          "avg_loadout_value": 3209.0,
+          "attack_kills": 37,
+          "defense_kills": 42
+        },
+        {
+          "id": "77",
+          "name": "keznitdeuS",
+          "team": "Rex Regum Qeon",
+          "kills": 92,
+          "deaths": 70,
+          "kd_ratio": 1.31,
+          "headshot_rate": 0.0,
+          "first_kill_rate": 0.25,
+          "first_death_rate": 0.243,
+          "aggression": 0.497,
+          "consistency": 0.917,
+          "clutch_potential": 0.524,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.637,
+            "operator": 0.138,
+            "sheriff": 0.1,
+            "guardian": 0.05,
+            "phantom": 0.05
+          },
+          "avg_kill_distance": 2182.9,
+          "avg_loadout_value": 3980.0,
+          "attack_kills": 57,
+          "defense_kills": 35
+        },
+        {
+          "id": "48",
+          "name": "heat",
+          "team": "Rex Regum Qeon",
+          "kills": 143,
+          "deaths": 127,
+          "kd_ratio": 1.13,
+          "headshot_rate": 0.39,
+          "first_kill_rate": 0.112,
+          "first_death_rate": 0.102,
+          "aggression": 0.332,
+          "consistency": 0.791,
+          "clutch_potential": 1.0,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 0.622,
+            "controller": 0.328,
+            "sentinel": 0.05
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.718,
+            "phantom": 0.085,
+            "guardian": 0.063,
+            "sheriff": 0.049,
+            "ghost": 0.049
+          },
+          "avg_kill_distance": 1770.2,
+          "avg_loadout_value": 3819.0,
+          "attack_kills": 71,
+          "defense_kills": 72
+        }
+      ],
+      "Acend": [
+        {
+          "id": "32268",
+          "name": "silentzz",
+          "team": "Acend",
+          "kills": 13,
+          "deaths": 27,
+          "kd_ratio": 0.48,
+          "headshot_rate": 0.163,
+          "first_kill_rate": 0.231,
+          "first_death_rate": 0.148,
+          "aggression": 0.558,
+          "consistency": 0.336,
+          "clutch_potential": 0.518,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 0.649,
+            "duelist": 0.351
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.273,
+            "vandal": 0.182,
+            "outlaw": 0.182,
+            "sheriff": 0.091,
+            "spectre": 0.091
+          },
+          "avg_kill_distance": 1889.1,
+          "avg_loadout_value": 3854.0,
+          "attack_kills": 10,
+          "defense_kills": 3
+        },
+        {
+          "id": "3315",
+          "name": "gobera",
+          "team": "Acend",
+          "kills": 16,
+          "deaths": 27,
+          "kd_ratio": 0.59,
+          "headshot_rate": 0.191,
+          "first_kill_rate": 0.125,
+          "first_death_rate": 0.148,
+          "aggression": 0.438,
+          "consistency": 0.413,
+          "clutch_potential": 0.618,
+          "primary_role": "initiator",
+          "role_distribution": {
+            "initiator": 0.688,
+            "controller": 0.312
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.438,
+            "phantom": 0.312,
+            "stinger": 0.188,
+            "shorty": 0.062
+          },
+          "avg_kill_distance": 1707.1,
+          "avg_loadout_value": 4538.0,
+          "attack_kills": 11,
+          "defense_kills": 5
+        },
+        {
+          "id": "32033",
+          "name": "Lz",
+          "team": "Acend",
+          "kills": 24,
+          "deaths": 28,
+          "kd_ratio": 0.86,
+          "headshot_rate": 0.426,
+          "first_kill_rate": 0.125,
+          "first_death_rate": 0.036,
+          "aggression": 0.469,
+          "consistency": 0.602,
+          "clutch_potential": 1.0,
+          "primary_role": "controller",
+          "role_distribution": {
+            "controller": 1.0
+          },
+          "primary_weapon": "vandal",
+          "weapon_preference": {
+            "vandal": 0.583,
+            "classic": 0.208,
+            "sheriff": 0.083,
+            "ghost": 0.083,
+            "guardian": 0.042
+          },
+          "avg_kill_distance": 1627.8,
+          "avg_loadout_value": 2875.0,
+          "attack_kills": 18,
+          "defense_kills": 6
+        },
+        {
+          "id": "32032",
+          "name": "spikeziN",
+          "team": "Acend",
+          "kills": 23,
+          "deaths": 28,
+          "kd_ratio": 0.82,
+          "headshot_rate": 0.338,
+          "first_kill_rate": 0.13,
+          "first_death_rate": 0.429,
+          "aggression": 0.359,
+          "consistency": 0.574,
+          "clutch_potential": 1.0,
+          "primary_role": "duelist",
+          "role_distribution": {
+            "duelist": 1.0
+          },
+          "primary_weapon": "phantom",
+          "weapon_preference": {
+            "phantom": 0.7,
+            "classic": 0.15,
+            "sheriff": 0.1,
+            "bucky": 0.05
+          },
+          "avg_kill_distance": 1736.3,
+          "avg_loadout_value": 3467.0,
+          "attack_kills": 12,
+          "defense_kills": 11
+        }
+      ]
+    }
+  },
+  "player_lookup": {
+    "91": {
+      "id": "91",
+      "name": "vanity",
+      "team": "Cloud9",
+      "kills": 466,
+      "deaths": 553,
+      "kd_ratio": 0.84,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.034,
+      "first_death_rate": 0.04,
+      "aggression": 0.259,
+      "consistency": 0.588,
+      "clutch_potential": 0.336,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 0.891,
+        "initiator": 0.109
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.46,
+        "phantom": 0.184,
+        "classic": 0.11,
+        "stinger": 0.041,
+        "bulldog": 0.039
+      },
+      "avg_kill_distance": 1596.5,
+      "avg_loadout_value": 3253.0,
+      "attack_kills": 217,
+      "defense_kills": 249
+    },
+    "10636": {
+      "id": "10636",
+      "name": "OXY",
+      "team": "Cloud9",
+      "kills": 1534,
+      "deaths": 1376,
+      "kd_ratio": 1.11,
+      "headshot_rate": 0.266,
+      "first_kill_rate": 0.143,
+      "first_death_rate": 0.151,
+      "aggression": 0.343,
+      "consistency": 0.777,
+      "clutch_potential": 0.976,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.535,
+        "phantom": 0.091,
+        "operator": 0.07,
+        "ghost": 0.062,
+        "sheriff": 0.058
+      },
+      "avg_kill_distance": 1665.4,
+      "avg_loadout_value": 3777.0,
+      "attack_kills": 723,
+      "defense_kills": 811
+    },
+    "706": {
+      "id": "706",
+      "name": "wippie",
+      "team": "Cloud9",
+      "kills": 73,
+      "deaths": 67,
+      "kd_ratio": 1.09,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.281,
+      "consistency": 0.763,
+      "clutch_potential": 0.436,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 0.643,
+        "controller": 0.357
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.614,
+        "spectre": 0.114,
+        "ghost": 0.086,
+        "classic": 0.071,
+        "bulldog": 0.057
+      },
+      "avg_kill_distance": 1876.5,
+      "avg_loadout_value": 2693.0,
+      "attack_kills": 41,
+      "defense_kills": 32
+    },
+    "1193": {
+      "id": "1193",
+      "name": "xeppaa",
+      "team": "Cloud9",
+      "kills": 1165,
+      "deaths": 1219,
+      "kd_ratio": 0.96,
+      "headshot_rate": 0.241,
+      "first_kill_rate": 0.068,
+      "first_death_rate": 0.059,
+      "aggression": 0.288,
+      "consistency": 0.672,
+      "clutch_potential": 0.866,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "sentinel": 0.345,
+        "initiator": 0.513,
+        "duelist": 0.119,
+        "controller": 0.023
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.552,
+        "vandal": 0.179,
+        "ghost": 0.076,
+        "classic": 0.067,
+        "bulldog": 0.051
+      },
+      "avg_kill_distance": 1636.1,
+      "avg_loadout_value": 3324.0,
+      "attack_kills": 553,
+      "defense_kills": 612
+    },
+    "11969": {
+      "id": "11969",
+      "name": "Jakee",
+      "team": "Cloud9",
+      "kills": 62,
+      "deaths": 79,
+      "kd_ratio": 0.78,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.226,
+      "consistency": 0.546,
+      "clutch_potential": 0.312,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.59,
+        "phantom": 0.18,
+        "classic": 0.049,
+        "bulldog": 0.049,
+        "guardian": 0.049
+      },
+      "avg_kill_distance": 1696.4,
+      "avg_loadout_value": 3268.0,
+      "attack_kills": 28,
+      "defense_kills": 34
+    },
+    "725": {
+      "id": "725",
+      "name": "moose",
+      "team": "Cloud9",
+      "kills": 409,
+      "deaths": 413,
+      "kd_ratio": 0.99,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.049,
+      "first_death_rate": 0.027,
+      "aggression": 0.249,
+      "consistency": 0.693,
+      "clutch_potential": 0.396,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.564,
+        "phantom": 0.156,
+        "classic": 0.073,
+        "ghost": 0.053,
+        "bulldog": 0.045
+      },
+      "avg_kill_distance": 1903.4,
+      "avg_loadout_value": 3223.0,
+      "attack_kills": 174,
+      "defense_kills": 235
+    },
+    "11968": {
+      "id": "11968",
+      "name": "Runi",
+      "team": "Cloud9",
+      "kills": 414,
+      "deaths": 438,
+      "kd_ratio": 0.95,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.022,
+      "first_death_rate": 0.027,
+      "aggression": 0.242,
+      "consistency": 0.665,
+      "clutch_potential": 0.38,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 0.527,
+        "initiator": 0.473
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.68,
+        "sheriff": 0.1,
+        "classic": 0.06,
+        "ghost": 0.06,
+        "guardian": 0.028
+      },
+      "avg_kill_distance": 2086.8,
+      "avg_loadout_value": 3210.0,
+      "attack_kills": 187,
+      "defense_kills": 227
+    },
+    "2348": {
+      "id": "2348",
+      "name": "neT",
+      "team": "Cloud9",
+      "kills": 581,
+      "deaths": 649,
+      "kd_ratio": 0.9,
+      "headshot_rate": 0.31,
+      "first_kill_rate": 0.127,
+      "first_death_rate": 0.142,
+      "aggression": 0.345,
+      "consistency": 0.63,
+      "clutch_potential": 0.98,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 0.595,
+        "controller": 0.405
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.504,
+        "vandal": 0.181,
+        "ghost": 0.094,
+        "sheriff": 0.046,
+        "classic": 0.044
+      },
+      "avg_kill_distance": 1742.5,
+      "avg_loadout_value": 3519.0,
+      "attack_kills": 290,
+      "defense_kills": 291
+    },
+    "1195": {
+      "id": "1195",
+      "name": "mitch",
+      "team": "Cloud9",
+      "kills": 574,
+      "deaths": 657,
+      "kd_ratio": 0.87,
+      "headshot_rate": 0.205,
+      "first_kill_rate": 0.099,
+      "first_death_rate": 0.146,
+      "aggression": 0.301,
+      "consistency": 0.609,
+      "clutch_potential": 0.758,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.952,
+        "controller": 0.048
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.545,
+        "vandal": 0.159,
+        "classic": 0.072,
+        "bulldog": 0.062,
+        "ghost": 0.056
+      },
+      "avg_kill_distance": 1821.3,
+      "avg_loadout_value": 3623.0,
+      "attack_kills": 260,
+      "defense_kills": 314
+    },
+    "10612": {
+      "id": "10612",
+      "name": "v1c",
+      "team": "Cloud9",
+      "kills": 674,
+      "deaths": 626,
+      "kd_ratio": 1.08,
+      "headshot_rate": 0.298,
+      "first_kill_rate": 0.116,
+      "first_death_rate": 0.11,
+      "aggression": 0.343,
+      "consistency": 0.756,
+      "clutch_potential": 1.0,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 0.979,
+        "duelist": 0.021
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.556,
+        "phantom": 0.156,
+        "ghost": 0.064,
+        "bulldog": 0.061,
+        "classic": 0.055
+      },
+      "avg_kill_distance": 1684.0,
+      "avg_loadout_value": 3515.0,
+      "attack_kills": 345,
+      "defense_kills": 329
+    },
+    "2641": {
+      "id": "2641",
+      "name": "jzz",
+      "team": "FUT",
+      "kills": 88,
+      "deaths": 91,
+      "kd_ratio": 0.97,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.199,
+      "consistency": 0.679,
+      "clutch_potential": 0.388,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.619,
+        "duelist": 0.381
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.5,
+        "bulldog": 0.179,
+        "phantom": 0.119,
+        "ghost": 0.071,
+        "spectre": 0.048
+      },
+      "avg_kill_distance": 1603.8,
+      "avg_loadout_value": 3257.0,
+      "attack_kills": 35,
+      "defense_kills": 53
+    },
+    "59": {
+      "id": "59",
+      "name": "frz",
+      "team": "FUT",
+      "kills": 80,
+      "deaths": 85,
+      "kd_ratio": 0.94,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.231,
+      "consistency": 0.658,
+      "clutch_potential": 0.376,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 0.646,
+        "controller": 0.354
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.519,
+        "ghost": 0.101,
+        "spectre": 0.089,
+        "classic": 0.063,
+        "guardian": 0.063
+      },
+      "avg_kill_distance": 1973.9,
+      "avg_loadout_value": 2840.0,
+      "attack_kills": 37,
+      "defense_kills": 43
+    },
+    "2837": {
+      "id": "2837",
+      "name": "artziN",
+      "team": "FUT",
+      "kills": 167,
+      "deaths": 198,
+      "kd_ratio": 0.84,
+      "headshot_rate": 0.205,
+      "first_kill_rate": 0.096,
+      "first_death_rate": 0.101,
+      "aggression": 0.278,
+      "consistency": 0.588,
+      "clutch_potential": 0.746,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.511,
+        "duelist": 0.31,
+        "sentinel": 0.102,
+        "controller": 0.077
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.486,
+        "phantom": 0.115,
+        "stinger": 0.068,
+        "guardian": 0.061,
+        "sheriff": 0.054
+      },
+      "avg_kill_distance": 1611.3,
+      "avg_loadout_value": 3457.0,
+      "attack_kills": 69,
+      "defense_kills": 98
+    },
+    "1814": {
+      "id": "1814",
+      "name": "rglmeister",
+      "team": "FUT",
+      "kills": 77,
+      "deaths": 76,
+      "kd_ratio": 1.01,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.234,
+      "consistency": 0.707,
+      "clutch_potential": 0.404,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.429,
+        "phantom": 0.247,
+        "sheriff": 0.078,
+        "classic": 0.065,
+        "bulldog": 0.065
+      },
+      "avg_kill_distance": 1585.2,
+      "avg_loadout_value": 3178.0,
+      "attack_kills": 36,
+      "defense_kills": 41
+    },
+    "266": {
+      "id": "266",
+      "name": "mazin",
+      "team": "FUT",
+      "kills": 59,
+      "deaths": 90,
+      "kd_ratio": 0.66,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.263,
+      "consistency": 0.462,
+      "clutch_potential": 0.264,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "controller": 0.416,
+        "initiator": 0.584
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.678,
+        "bulldog": 0.136,
+        "classic": 0.085,
+        "judge": 0.034,
+        "marshal": 0.017
+      },
+      "avg_kill_distance": 1847.8,
+      "avg_loadout_value": 3194.0,
+      "attack_kills": 31,
+      "defense_kills": 28
+    },
+    "3320": {
+      "id": "3320",
+      "name": "cortezia",
+      "team": "FUT",
+      "kills": 98,
+      "deaths": 97,
+      "kd_ratio": 1.01,
+      "headshot_rate": 0.374,
+      "first_kill_rate": 0.163,
+      "first_death_rate": 0.103,
+      "aggression": 0.393,
+      "consistency": 0.707,
+      "clutch_potential": 1.0,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.639,
+        "phantom": 0.103,
+        "ghost": 0.082,
+        "guardian": 0.062,
+        "sheriff": 0.052
+      },
+      "avg_kill_distance": 1812.5,
+      "avg_loadout_value": 3533.0,
+      "attack_kills": 53,
+      "defense_kills": 45
+    },
+    "629": {
+      "id": "629",
+      "name": "xenom",
+      "team": "FUT",
+      "kills": 88,
+      "deaths": 86,
+      "kd_ratio": 1.02,
+      "headshot_rate": 0.306,
+      "first_kill_rate": 0.045,
+      "first_death_rate": 0.116,
+      "aggression": 0.33,
+      "consistency": 0.714,
+      "clutch_potential": 1.0,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.75,
+        "ghost": 0.114,
+        "sheriff": 0.034,
+        "guardian": 0.034,
+        "classic": 0.023
+      },
+      "avg_kill_distance": 1968.1,
+      "avg_loadout_value": 3699.0,
+      "attack_kills": 52,
+      "defense_kills": 36
+    },
+    "291": {
+      "id": "291",
+      "name": "crashies",
+      "team": "Evil Geniuses",
+      "kills": 63,
+      "deaths": 65,
+      "kd_ratio": 0.97,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.048,
+      "first_death_rate": 0.108,
+      "aggression": 0.258,
+      "consistency": 0.679,
+      "clutch_potential": 0.388,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.821,
+        "controller": 0.179
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.421,
+        "odin": 0.158,
+        "classic": 0.105,
+        "ghost": 0.088,
+        "guardian": 0.07
+      },
+      "avg_kill_distance": 2173.4,
+      "avg_loadout_value": 3232.0,
+      "attack_kills": 28,
+      "defense_kills": 35
+    },
+    "290": {
+      "id": "290",
+      "name": "Victor",
+      "team": "Evil Geniuses",
+      "kills": 87,
+      "deaths": 74,
+      "kd_ratio": 1.18,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.172,
+      "first_death_rate": 0.176,
+      "aggression": 0.388,
+      "consistency": 0.826,
+      "clutch_potential": 0.472,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 0.592,
+        "duelist": 0.408
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.549,
+        "operator": 0.122,
+        "ghost": 0.085,
+        "classic": 0.085,
+        "sheriff": 0.049
+      },
+      "avg_kill_distance": 1874.6,
+      "avg_loadout_value": 3515.0,
+      "attack_kills": 45,
+      "defense_kills": 42
+    },
+    "292": {
+      "id": "292",
+      "name": "Marved",
+      "team": "Evil Geniuses",
+      "kills": 36,
+      "deaths": 35,
+      "kd_ratio": 1.03,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.292,
+      "consistency": 0.721,
+      "clutch_potential": 0.412,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.444,
+        "vandal": 0.306,
+        "classic": 0.083,
+        "spectre": 0.083,
+        "ghost": 0.056
+      },
+      "avg_kill_distance": 1814.4,
+      "avg_loadout_value": 3421.0,
+      "attack_kills": 21,
+      "defense_kills": 15
+    },
+    "297": {
+      "id": "297",
+      "name": "Ethan",
+      "team": "Evil Geniuses",
+      "kills": 195,
+      "deaths": 199,
+      "kd_ratio": 0.98,
+      "headshot_rate": 0.221,
+      "first_kill_rate": 0.103,
+      "first_death_rate": 0.08,
+      "aggression": 0.308,
+      "consistency": 0.686,
+      "clutch_potential": 0.834,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.709,
+        "controller": 0.215,
+        "duelist": 0.076
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.427,
+        "vandal": 0.292,
+        "classic": 0.07,
+        "stinger": 0.054,
+        "ghost": 0.038
+      },
+      "avg_kill_distance": 1775.0,
+      "avg_loadout_value": 3310.0,
+      "attack_kills": 90,
+      "defense_kills": 105
+    },
+    "11334": {
+      "id": "11334",
+      "name": "Demon1",
+      "team": "Evil Geniuses",
+      "kills": 67,
+      "deaths": 61,
+      "kd_ratio": 1.1,
+      "headshot_rate": 0.492,
+      "first_kill_rate": 0.075,
+      "first_death_rate": 0.033,
+      "aggression": 0.205,
+      "consistency": 0.77,
+      "clutch_potential": 1.0,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 0.634,
+        "duelist": 0.366
+      },
+      "primary_weapon": "operator",
+      "weapon_preference": {
+        "operator": 0.333,
+        "vandal": 0.317,
+        "guardian": 0.117,
+        "sheriff": 0.1,
+        "classic": 0.067
+      },
+      "avg_kill_distance": 1974.1,
+      "avg_loadout_value": 4181.0,
+      "attack_kills": 20,
+      "defense_kills": 47
+    },
+    "74432": {
+      "id": "74432",
+      "name": "FNS",
+      "team": "Evil Geniuses",
+      "kills": 105,
+      "deaths": 127,
+      "kd_ratio": 0.83,
+      "headshot_rate": 0.232,
+      "first_kill_rate": 0.105,
+      "first_death_rate": 0.094,
+      "aggression": 0.364,
+      "consistency": 0.581,
+      "clutch_potential": 0.796,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 1.0
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.514,
+        "vandal": 0.219,
+        "ghost": 0.105,
+        "stinger": 0.057,
+        "classic": 0.038
+      },
+      "avg_kill_distance": 1632.2,
+      "avg_loadout_value": 3288.0,
+      "attack_kills": 60,
+      "defense_kills": 45
+    },
+    "2340": {
+      "id": "2340",
+      "name": "s0m",
+      "team": "Evil Geniuses",
+      "kills": 201,
+      "deaths": 150,
+      "kd_ratio": 1.34,
+      "headshot_rate": 0.267,
+      "first_kill_rate": 0.129,
+      "first_death_rate": 0.1,
+      "aggression": 0.398,
+      "consistency": 0.938,
+      "clutch_potential": 1.0,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.503,
+        "phantom": 0.246,
+        "stinger": 0.051,
+        "classic": 0.046,
+        "bulldog": 0.046
+      },
+      "avg_kill_distance": 1691.8,
+      "avg_loadout_value": 3835.0,
+      "attack_kills": 121,
+      "defense_kills": 80
+    },
+    "2358": {
+      "id": "2358",
+      "name": "mada",
+      "team": "Evil Geniuses",
+      "kills": 140,
+      "deaths": 126,
+      "kd_ratio": 1.11,
+      "headshot_rate": 0.241,
+      "first_kill_rate": 0.221,
+      "first_death_rate": 0.262,
+      "aggression": 0.398,
+      "consistency": 0.777,
+      "clutch_potential": 0.926,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 1.0
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.44,
+        "vandal": 0.248,
+        "ghost": 0.072,
+        "stinger": 0.064,
+        "classic": 0.048
+      },
+      "avg_kill_distance": 1528.6,
+      "avg_loadout_value": 3738.0,
+      "attack_kills": 65,
+      "defense_kills": 75
+    },
+    "10630": {
+      "id": "10630",
+      "name": "Verno",
+      "team": "Evil Geniuses",
+      "kills": 76,
+      "deaths": 72,
+      "kd_ratio": 1.06,
+      "headshot_rate": 0.285,
+      "first_kill_rate": 0.105,
+      "first_death_rate": 0.042,
+      "aggression": 0.329,
+      "consistency": 0.742,
+      "clutch_potential": 0.994,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.667,
+        "phantom": 0.097,
+        "ghost": 0.097,
+        "classic": 0.056,
+        "bulldog": 0.042
+      },
+      "avg_kill_distance": 1721.9,
+      "avg_loadout_value": 3617.0,
+      "attack_kills": 38,
+      "defense_kills": 38
+    },
+    "2513": {
+      "id": "2513",
+      "name": "brawk",
+      "team": "Evil Geniuses",
+      "kills": 98,
+      "deaths": 76,
+      "kd_ratio": 1.29,
+      "headshot_rate": 0.199,
+      "first_kill_rate": 0.092,
+      "first_death_rate": 0.092,
+      "aggression": 0.288,
+      "consistency": 0.903,
+      "clutch_potential": 0.914,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.744,
+        "sentinel": 0.256
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.4,
+        "odin": 0.222,
+        "sheriff": 0.122,
+        "bulldog": 0.078,
+        "ghost": 0.067
+      },
+      "avg_kill_distance": 1896.6,
+      "avg_loadout_value": 3756.0,
+      "attack_kills": 43,
+      "defense_kills": 55
+    },
+    "312": {
+      "id": "312",
+      "name": "skuba",
+      "team": "Evil Geniuses",
+      "kills": 36,
+      "deaths": 40,
+      "kd_ratio": 0.9,
+      "headshot_rate": 0.289,
+      "first_kill_rate": 0.139,
+      "first_death_rate": 0.1,
+      "aggression": 0.215,
+      "consistency": 0.63,
+      "clutch_potential": 0.938,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 0.538,
+        "sentinel": 0.462
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.417,
+        "sheriff": 0.222,
+        "phantom": 0.139,
+        "classic": 0.056,
+        "guardian": 0.056
+      },
+      "avg_kill_distance": 1683.3,
+      "avg_loadout_value": 3043.0,
+      "attack_kills": 8,
+      "defense_kills": 28
+    },
+    "2343": {
+      "id": "2343",
+      "name": "tex",
+      "team": "2GAME",
+      "kills": 92,
+      "deaths": 129,
+      "kd_ratio": 0.71,
+      "headshot_rate": 0.299,
+      "first_kill_rate": 0.087,
+      "first_death_rate": 0.093,
+      "aggression": 0.332,
+      "consistency": 0.497,
+      "clutch_potential": 0.882,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 0.909,
+        "controller": 0.091
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.478,
+        "phantom": 0.2,
+        "sheriff": 0.067,
+        "classic": 0.056,
+        "ghost": 0.044
+      },
+      "avg_kill_distance": 1820.3,
+      "avg_loadout_value": 3838.0,
+      "attack_kills": 49,
+      "defense_kills": 43
+    },
+    "207": {
+      "id": "207",
+      "name": "kiNgg",
+      "team": "2GAME",
+      "kills": 128,
+      "deaths": 123,
+      "kd_ratio": 1.04,
+      "headshot_rate": 0.307,
+      "first_kill_rate": 0.078,
+      "first_death_rate": 0.122,
+      "aggression": 0.289,
+      "consistency": 0.728,
+      "clutch_potential": 1.0,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 0.829,
+        "duelist": 0.171
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.416,
+        "phantom": 0.232,
+        "sheriff": 0.112,
+        "ghost": 0.096,
+        "classic": 0.04
+      },
+      "avg_kill_distance": 1694.8,
+      "avg_loadout_value": 3435.0,
+      "attack_kills": 59,
+      "defense_kills": 69
+    },
+    "74": {
+      "id": "74",
+      "name": "Mazino",
+      "team": "2GAME",
+      "kills": 44,
+      "deaths": 53,
+      "kd_ratio": 0.83,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.261,
+      "consistency": 0.581,
+      "clutch_potential": 0.332,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.706,
+        "controller": 0.294
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.432,
+        "ghost": 0.159,
+        "phantom": 0.159,
+        "classic": 0.091,
+        "sheriff": 0.068
+      },
+      "avg_kill_distance": 1728.1,
+      "avg_loadout_value": 2827.0,
+      "attack_kills": 23,
+      "defense_kills": 21
+    },
+    "2515": {
+      "id": "2515",
+      "name": "C0M",
+      "team": "2GAME",
+      "kills": 86,
+      "deaths": 126,
+      "kd_ratio": 0.68,
+      "headshot_rate": 0.243,
+      "first_kill_rate": 0.07,
+      "first_death_rate": 0.032,
+      "aggression": 0.302,
+      "consistency": 0.476,
+      "clutch_potential": 0.758,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.768,
+        "controller": 0.232
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.481,
+        "vandal": 0.148,
+        "odin": 0.074,
+        "bulldog": 0.062,
+        "stinger": 0.062
+      },
+      "avg_kill_distance": 1898.9,
+      "avg_loadout_value": 3857.0,
+      "attack_kills": 43,
+      "defense_kills": 43
+    },
+    "14": {
+      "id": "14",
+      "name": "aspas",
+      "team": "2GAME",
+      "kills": 202,
+      "deaths": 139,
+      "kd_ratio": 1.45,
+      "headshot_rate": 0.297,
+      "first_kill_rate": 0.129,
+      "first_death_rate": 0.18,
+      "aggression": 0.347,
+      "consistency": 1.0,
+      "clutch_potential": 1.0,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.369,
+        "phantom": 0.305,
+        "operator": 0.112,
+        "guardian": 0.059,
+        "sheriff": 0.059
+      },
+      "avg_kill_distance": 1793.7,
+      "avg_loadout_value": 3965.0,
+      "attack_kills": 101,
+      "defense_kills": 101
+    },
+    "2890": {
+      "id": "2890",
+      "name": "Rossy",
+      "team": "2GAME",
+      "kills": 23,
+      "deaths": 31,
+      "kd_ratio": 0.74,
+      "headshot_rate": 0.359,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.161,
+      "aggression": 0.239,
+      "consistency": 0.518,
+      "clutch_potential": 1.0,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.782,
+        "sentinel": 0.218
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.591,
+        "bulldog": 0.136,
+        "ghost": 0.091,
+        "stinger": 0.091,
+        "classic": 0.045
+      },
+      "avg_kill_distance": 1749.6,
+      "avg_loadout_value": 4107.0,
+      "attack_kills": 11,
+      "defense_kills": 12
+    },
+    "10621": {
+      "id": "10621",
+      "name": "okeanos",
+      "team": "2GAME",
+      "kills": 66,
+      "deaths": 48,
+      "kd_ratio": 1.38,
+      "headshot_rate": 0.295,
+      "first_kill_rate": 0.121,
+      "first_death_rate": 0.104,
+      "aggression": 0.333,
+      "consistency": 0.966,
+      "clutch_potential": 1.0,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 0.568,
+        "duelist": 0.432
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.727,
+        "guardian": 0.136,
+        "outlaw": 0.045,
+        "shorty": 0.03,
+        "stinger": 0.03
+      },
+      "avg_kill_distance": 1631.4,
+      "avg_loadout_value": 4543.0,
+      "attack_kills": 32,
+      "defense_kills": 34
+    },
+    "14826": {
+      "id": "14826",
+      "name": "Sato",
+      "team": "2GAME",
+      "kills": 67,
+      "deaths": 54,
+      "kd_ratio": 1.24,
+      "headshot_rate": 0.309,
+      "first_kill_rate": 0.209,
+      "first_death_rate": 0.241,
+      "aggression": 0.396,
+      "consistency": 0.868,
+      "clutch_potential": 1.0,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 1.0
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.429,
+        "vandal": 0.175,
+        "sheriff": 0.095,
+        "bulldog": 0.079,
+        "ghost": 0.079
+      },
+      "avg_kill_distance": 1660.3,
+      "avg_loadout_value": 4116.0,
+      "attack_kills": 32,
+      "defense_kills": 35
+    },
+    "2347": {
+      "id": "2347",
+      "name": "JAWGEMO",
+      "team": "The Guard",
+      "kills": 164,
+      "deaths": 153,
+      "kd_ratio": 1.07,
+      "headshot_rate": 0.25,
+      "first_kill_rate": 0.201,
+      "first_death_rate": 0.098,
+      "aggression": 0.367,
+      "consistency": 0.749,
+      "clutch_potential": 0.928,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 0.916,
+        "initiator": 0.084
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.395,
+        "phantom": 0.211,
+        "stinger": 0.116,
+        "classic": 0.075,
+        "frenzy": 0.054
+      },
+      "avg_kill_distance": 1495.2,
+      "avg_loadout_value": 3652.0,
+      "attack_kills": 71,
+      "defense_kills": 93
+    },
+    "2891": {
+      "id": "2891",
+      "name": "Apoth",
+      "team": "The Guard",
+      "kills": 40,
+      "deaths": 44,
+      "kd_ratio": 0.91,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.263,
+      "consistency": 0.637,
+      "clutch_potential": 0.364,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 1.0
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.55,
+        "classic": 0.15,
+        "spectre": 0.1,
+        "ghost": 0.075,
+        "stinger": 0.05
+      },
+      "avg_kill_distance": 1765.0,
+      "avg_loadout_value": 2671.0,
+      "attack_kills": 21,
+      "defense_kills": 19
+    },
+    "303": {
+      "id": "303",
+      "name": "NaturE",
+      "team": "The Guard",
+      "kills": 80,
+      "deaths": 111,
+      "kd_ratio": 0.72,
+      "headshot_rate": 0.231,
+      "first_kill_rate": 0.075,
+      "first_death_rate": 0.09,
+      "aggression": 0.312,
+      "consistency": 0.504,
+      "clutch_potential": 0.75,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.749,
+        "controller": 0.251
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.443,
+        "classic": 0.165,
+        "bulldog": 0.076,
+        "vandal": 0.076,
+        "guardian": 0.063
+      },
+      "avg_kill_distance": 1581.0,
+      "avg_loadout_value": 3281.0,
+      "attack_kills": 41,
+      "defense_kills": 39
+    },
+    "306": {
+      "id": "306",
+      "name": "Derrek",
+      "team": "The Guard",
+      "kills": 95,
+      "deaths": 102,
+      "kd_ratio": 0.93,
+      "headshot_rate": 0.267,
+      "first_kill_rate": 0.053,
+      "first_death_rate": 0.029,
+      "aggression": 0.245,
+      "consistency": 0.651,
+      "clutch_potential": 0.906,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.461,
+        "phantom": 0.247,
+        "spectre": 0.045,
+        "sheriff": 0.045,
+        "ghost": 0.045
+      },
+      "avg_kill_distance": 2153.7,
+      "avg_loadout_value": 4010.0,
+      "attack_kills": 39,
+      "defense_kills": 56
+    },
+    "307": {
+      "id": "307",
+      "name": "supamen",
+      "team": "The Guard",
+      "kills": 96,
+      "deaths": 114,
+      "kd_ratio": 0.84,
+      "headshot_rate": 0.314,
+      "first_kill_rate": 0.062,
+      "first_death_rate": 0.044,
+      "aggression": 0.297,
+      "consistency": 0.588,
+      "clutch_potential": 0.964,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.344,
+        "phantom": 0.333,
+        "guardian": 0.104,
+        "sheriff": 0.062,
+        "classic": 0.052
+      },
+      "avg_kill_distance": 1581.0,
+      "avg_loadout_value": 3660.0,
+      "attack_kills": 48,
+      "defense_kills": 48
+    },
+    "866": {
+      "id": "866",
+      "name": "yay",
+      "team": "The Guard",
+      "kills": 87,
+      "deaths": 68,
+      "kd_ratio": 1.28,
+      "headshot_rate": 0.319,
+      "first_kill_rate": 0.218,
+      "first_death_rate": 0.191,
+      "aggression": 0.399,
+      "consistency": 0.896,
+      "clutch_potential": 1.0,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 0.386,
+        "sentinel": 0.362,
+        "controller": 0.252
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.415,
+        "sheriff": 0.146,
+        "operator": 0.134,
+        "ghost": 0.073,
+        "outlaw": 0.073
+      },
+      "avg_kill_distance": 2088.2,
+      "avg_loadout_value": 3959.0,
+      "attack_kills": 41,
+      "defense_kills": 46
+    },
+    "58": {
+      "id": "58",
+      "name": "Saadhak",
+      "team": "Fnatic",
+      "kills": 46,
+      "deaths": 46,
+      "kd_ratio": 1.0,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.261,
+      "consistency": 0.7,
+      "clutch_potential": 0.4,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "initiator": 0.478,
+        "sentinel": 0.522
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.8,
+        "ghost": 0.089,
+        "classic": 0.044,
+        "sheriff": 0.044,
+        "operator": 0.022
+      },
+      "avg_kill_distance": 1856.7,
+      "avg_loadout_value": 3118.0,
+      "attack_kills": 24,
+      "defense_kills": 22
+    },
+    "28": {
+      "id": "28",
+      "name": "Less",
+      "team": "Fnatic",
+      "kills": 45,
+      "deaths": 44,
+      "kd_ratio": 1.02,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.189,
+      "consistency": 0.714,
+      "clutch_potential": 0.408,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.738,
+        "sheriff": 0.095,
+        "guardian": 0.095,
+        "classic": 0.024,
+        "judge": 0.024
+      },
+      "avg_kill_distance": 2371.2,
+      "avg_loadout_value": 3256.0,
+      "attack_kills": 17,
+      "defense_kills": 28
+    },
+    "272": {
+      "id": "272",
+      "name": "tuyz",
+      "team": "Fnatic",
+      "kills": 45,
+      "deaths": 72,
+      "kd_ratio": 0.62,
+      "headshot_rate": 0.52,
+      "first_kill_rate": 0.044,
+      "first_death_rate": 0.056,
+      "aggression": 0.211,
+      "consistency": 0.434,
+      "clutch_potential": 1.0,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.533,
+        "ghost": 0.311,
+        "guardian": 0.067,
+        "sheriff": 0.044,
+        "classic": 0.044
+      },
+      "avg_kill_distance": 2108.0,
+      "avg_loadout_value": 2599.0,
+      "attack_kills": 16,
+      "defense_kills": 29
+    },
+    "1812": {
+      "id": "1812",
+      "name": "cauanzin",
+      "team": "Fnatic",
+      "kills": 39,
+      "deaths": 49,
+      "kd_ratio": 0.8,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.218,
+      "consistency": 0.56,
+      "clutch_potential": 0.32,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.676,
+        "guardian": 0.162,
+        "ghost": 0.135,
+        "sheriff": 0.027
+      },
+      "avg_kill_distance": 1721.3,
+      "avg_loadout_value": 3112.0,
+      "attack_kills": 17,
+      "defense_kills": 22
+    },
+    "50": {
+      "id": "50",
+      "name": "qck1",
+      "team": "Fnatic",
+      "kills": 31,
+      "deaths": 49,
+      "kd_ratio": 0.63,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.161,
+      "consistency": 0.441,
+      "clutch_potential": 0.252,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.214,
+        "phantom": 0.214,
+        "operator": 0.214,
+        "ghost": 0.107,
+        "judge": 0.107
+      },
+      "avg_kill_distance": 1656.2,
+      "avg_loadout_value": 3437.0,
+      "attack_kills": 10,
+      "defense_kills": 21
+    },
+    "296": {
+      "id": "296",
+      "name": "Asuna",
+      "team": "EDward Gaming",
+      "kills": 63,
+      "deaths": 51,
+      "kd_ratio": 1.24,
+      "headshot_rate": 0.274,
+      "first_kill_rate": 0.079,
+      "first_death_rate": 0.098,
+      "aggression": 0.242,
+      "consistency": 0.868,
+      "clutch_potential": 1.0,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 0.549,
+        "sentinel": 0.234,
+        "initiator": 0.217
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.576,
+        "phantom": 0.169,
+        "ghost": 0.068,
+        "stinger": 0.068,
+        "classic": 0.068
+      },
+      "avg_kill_distance": 2177.2,
+      "avg_loadout_value": 3463.0,
+      "attack_kills": 23,
+      "defense_kills": 40
+    },
+    "727": {
+      "id": "727",
+      "name": "bang",
+      "team": "EDward Gaming",
+      "kills": 137,
+      "deaths": 116,
+      "kd_ratio": 1.18,
+      "headshot_rate": 0.268,
+      "first_kill_rate": 0.08,
+      "first_death_rate": 0.129,
+      "aggression": 0.283,
+      "consistency": 0.826,
+      "clutch_potential": 1.0,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.667,
+        "classic": 0.096,
+        "bulldog": 0.089,
+        "stinger": 0.052,
+        "ghost": 0.037
+      },
+      "avg_kill_distance": 1575.3,
+      "avg_loadout_value": 3876.0,
+      "attack_kills": 61,
+      "defense_kills": 76
+    },
+    "2345": {
+      "id": "2345",
+      "name": "Boostio",
+      "team": "EDward Gaming",
+      "kills": 24,
+      "deaths": 25,
+      "kd_ratio": 0.96,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.104,
+      "consistency": 0.672,
+      "clutch_potential": 0.384,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 0.612,
+        "initiator": 0.388
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.458,
+        "vandal": 0.208,
+        "sheriff": 0.125,
+        "operator": 0.083,
+        "shorty": 0.042
+      },
+      "avg_kill_distance": 2071.2,
+      "avg_loadout_value": 3694.0,
+      "attack_kills": 5,
+      "defense_kills": 19
+    },
+    "2361": {
+      "id": "2361",
+      "name": "Cryo",
+      "team": "EDward Gaming",
+      "kills": 89,
+      "deaths": 59,
+      "kd_ratio": 1.51,
+      "headshot_rate": 0.391,
+      "first_kill_rate": 0.101,
+      "first_death_rate": 0.102,
+      "aggression": 0.284,
+      "consistency": 1.0,
+      "clutch_potential": 1.0,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 0.749,
+        "controller": 0.251
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.55,
+        "operator": 0.113,
+        "ghost": 0.1,
+        "vandal": 0.1,
+        "sheriff": 0.05
+      },
+      "avg_kill_distance": 1821.0,
+      "avg_loadout_value": 4009.0,
+      "attack_kills": 37,
+      "defense_kills": 52
+    },
+    "2341": {
+      "id": "2341",
+      "name": "eeiu",
+      "team": "EDward Gaming",
+      "kills": 64,
+      "deaths": 50,
+      "kd_ratio": 1.28,
+      "headshot_rate": 0.419,
+      "first_kill_rate": 0.031,
+      "first_death_rate": 0.0,
+      "aggression": 0.266,
+      "consistency": 0.896,
+      "clutch_potential": 1.0,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.724,
+        "ghost": 0.086,
+        "sheriff": 0.069,
+        "classic": 0.052,
+        "phantom": 0.034
+      },
+      "avg_kill_distance": 2151.5,
+      "avg_loadout_value": 3610.0,
+      "attack_kills": 31,
+      "defense_kills": 33
+    },
+    "119048": {
+      "id": "119048",
+      "name": "Kess",
+      "team": "EDward Gaming",
+      "kills": 24,
+      "deaths": 38,
+      "kd_ratio": 0.63,
+      "headshot_rate": 0.216,
+      "first_kill_rate": 0.125,
+      "first_death_rate": 0.132,
+      "aggression": 0.406,
+      "consistency": 0.441,
+      "clutch_potential": 0.684,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.417,
+        "ghost": 0.167,
+        "bulldog": 0.167,
+        "sheriff": 0.125,
+        "phantom": 0.042
+      },
+      "avg_kill_distance": 2005.4,
+      "avg_loadout_value": 3527.0,
+      "attack_kills": 15,
+      "defense_kills": 9
+    },
+    "2359": {
+      "id": "2359",
+      "name": "Zander",
+      "team": "EDward Gaming",
+      "kills": 35,
+      "deaths": 36,
+      "kd_ratio": 0.97,
+      "headshot_rate": 0.283,
+      "first_kill_rate": 0.2,
+      "first_death_rate": 0.167,
+      "aggression": 0.336,
+      "consistency": 0.679,
+      "clutch_potential": 0.954,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.429,
+        "vandal": 0.314,
+        "classic": 0.114,
+        "stinger": 0.057,
+        "ghost": 0.057
+      },
+      "avg_kill_distance": 2075.5,
+      "avg_loadout_value": 3790.0,
+      "attack_kills": 13,
+      "defense_kills": 22
+    },
+    "51": {
+      "id": "51",
+      "name": "Khalil",
+      "team": "KR\u00dc",
+      "kills": 66,
+      "deaths": 71,
+      "kd_ratio": 0.93,
+      "headshot_rate": 0.237,
+      "first_kill_rate": 0.061,
+      "first_death_rate": 0.099,
+      "aggression": 0.379,
+      "consistency": 0.651,
+      "clutch_potential": 0.846,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.692,
+        "classic": 0.092,
+        "bulldog": 0.062,
+        "ghost": 0.062,
+        "sheriff": 0.031
+      },
+      "avg_kill_distance": 1783.2,
+      "avg_loadout_value": 3362.0,
+      "attack_kills": 44,
+      "defense_kills": 22
+    },
+    "3314": {
+      "id": "3314",
+      "name": "havoc",
+      "team": "KR\u00dc",
+      "kills": 71,
+      "deaths": 80,
+      "kd_ratio": 0.89,
+      "headshot_rate": 0.269,
+      "first_kill_rate": 0.183,
+      "first_death_rate": 0.075,
+      "aggression": 0.468,
+      "consistency": 0.623,
+      "clutch_potential": 0.894,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 0.576,
+        "sentinel": 0.424
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.493,
+        "sheriff": 0.127,
+        "phantom": 0.113,
+        "ghost": 0.099,
+        "guardian": 0.085
+      },
+      "avg_kill_distance": 1894.0,
+      "avg_loadout_value": 3112.0,
+      "attack_kills": 47,
+      "defense_kills": 24
+    },
+    "19": {
+      "id": "19",
+      "name": "kon4n",
+      "team": "KR\u00dc",
+      "kills": 27,
+      "deaths": 40,
+      "kd_ratio": 0.68,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.389,
+      "consistency": 0.476,
+      "clutch_potential": 0.272,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 0.672,
+        "initiator": 0.328
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.481,
+        "ghost": 0.148,
+        "bulldog": 0.111,
+        "sheriff": 0.111,
+        "phantom": 0.074
+      },
+      "avg_kill_distance": 1780.3,
+      "avg_loadout_value": 2728.0,
+      "attack_kills": 21,
+      "defense_kills": 6
+    },
+    "57": {
+      "id": "57",
+      "name": "mwzera",
+      "team": "KR\u00dc",
+      "kills": 43,
+      "deaths": 45,
+      "kd_ratio": 0.96,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.337,
+      "consistency": 0.672,
+      "clutch_potential": 0.384,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.5,
+        "guardian": 0.139,
+        "ghost": 0.083,
+        "phantom": 0.083,
+        "operator": 0.056
+      },
+      "avg_kill_distance": 1503.8,
+      "avg_loadout_value": 3177.0,
+      "attack_kills": 29,
+      "defense_kills": 14
+    },
+    "52": {
+      "id": "52",
+      "name": "nzr",
+      "team": "KR\u00dc",
+      "kills": 80,
+      "deaths": 76,
+      "kd_ratio": 1.05,
+      "headshot_rate": 0.25,
+      "first_kill_rate": 0.037,
+      "first_death_rate": 0.039,
+      "aggression": 0.341,
+      "consistency": 0.735,
+      "clutch_potential": 0.92,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.635,
+        "ghost": 0.122,
+        "guardian": 0.054,
+        "stinger": 0.054,
+        "sheriff": 0.054
+      },
+      "avg_kill_distance": 1940.2,
+      "avg_loadout_value": 3121.0,
+      "attack_kills": 50,
+      "defense_kills": 30
+    },
+    "32030": {
+      "id": "32030",
+      "name": "Pryze",
+      "team": "KR\u00dc",
+      "kills": 36,
+      "deaths": 62,
+      "kd_ratio": 0.58,
+      "headshot_rate": 0.246,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.097,
+      "aggression": 0.306,
+      "consistency": 0.406,
+      "clutch_potential": 0.724,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 1.0
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.514,
+        "stinger": 0.286,
+        "ghost": 0.057,
+        "classic": 0.057,
+        "frenzy": 0.057
+      },
+      "avg_kill_distance": 1522.9,
+      "avg_loadout_value": 3182.0,
+      "attack_kills": 22,
+      "defense_kills": 14
+    },
+    "2646": {
+      "id": "2646",
+      "name": "raafa",
+      "team": "KR\u00dc",
+      "kills": 25,
+      "deaths": 31,
+      "kd_ratio": 0.81,
+      "headshot_rate": 0.148,
+      "first_kill_rate": 0.08,
+      "first_death_rate": 0.032,
+      "aggression": 0.32,
+      "consistency": 0.567,
+      "clutch_potential": 0.62,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.609,
+        "bulldog": 0.13,
+        "classic": 0.087,
+        "ghost": 0.043,
+        "phantom": 0.043
+      },
+      "avg_kill_distance": 1951.2,
+      "avg_loadout_value": 3370.0,
+      "attack_kills": 13,
+      "defense_kills": 12
+    },
+    "42": {
+      "id": "42",
+      "name": "Urango",
+      "team": "KR\u00dc",
+      "kills": 13,
+      "deaths": 32,
+      "kd_ratio": 0.41,
+      "headshot_rate": 0.232,
+      "first_kill_rate": 0.308,
+      "first_death_rate": 0.156,
+      "aggression": 0.5,
+      "consistency": 0.287,
+      "clutch_potential": 0.628,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 0.53,
+        "initiator": 0.47
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.231,
+        "stinger": 0.231,
+        "ghost": 0.154,
+        "classic": 0.154,
+        "judge": 0.077
+      },
+      "avg_kill_distance": 1175.7,
+      "avg_loadout_value": 2550.0,
+      "attack_kills": 7,
+      "defense_kills": 6
+    },
+    "206": {
+      "id": "206",
+      "name": "adverso",
+      "team": "KR\u00dc",
+      "kills": 20,
+      "deaths": 29,
+      "kd_ratio": 0.69,
+      "headshot_rate": 0.242,
+      "first_kill_rate": 0.1,
+      "first_death_rate": 0.172,
+      "aggression": 0.25,
+      "consistency": 0.483,
+      "clutch_potential": 0.76,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.721,
+        "sentinel": 0.279
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.333,
+        "ghost": 0.111,
+        "guardian": 0.111,
+        "vandal": 0.111,
+        "stinger": 0.111
+      },
+      "avg_kill_distance": 1632.8,
+      "avg_loadout_value": 3470.0,
+      "attack_kills": 7,
+      "defense_kills": 13
+    },
+    "32038": {
+      "id": "32038",
+      "name": "Palla",
+      "team": "KR\u00dc",
+      "kills": 19,
+      "deaths": 32,
+      "kd_ratio": 0.59,
+      "headshot_rate": 0.25,
+      "first_kill_rate": 0.158,
+      "first_death_rate": 0.156,
+      "aggression": 0.329,
+      "consistency": 0.413,
+      "clutch_potential": 0.736,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 1.0
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.316,
+        "guardian": 0.158,
+        "sheriff": 0.158,
+        "ghost": 0.105,
+        "outlaw": 0.105
+      },
+      "avg_kill_distance": 1666.0,
+      "avg_loadout_value": 3087.0,
+      "attack_kills": 8,
+      "defense_kills": 11
+    },
+    "1192": {
+      "id": "1192",
+      "name": "leaf",
+      "team": "Leviat\u00e1n",
+      "kills": 169,
+      "deaths": 135,
+      "kd_ratio": 1.25,
+      "headshot_rate": 0.245,
+      "first_kill_rate": 0.071,
+      "first_death_rate": 0.059,
+      "aggression": 0.26,
+      "consistency": 0.875,
+      "clutch_potential": 0.99,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 0.931,
+        "controller": 0.069
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.513,
+        "stinger": 0.096,
+        "phantom": 0.09,
+        "classic": 0.09,
+        "ghost": 0.064
+      },
+      "avg_kill_distance": 1783.0,
+      "avg_loadout_value": 3220.0,
+      "attack_kills": 70,
+      "defense_kills": 99
+    },
+    "2351": {
+      "id": "2351",
+      "name": "JonahP",
+      "team": "Leviat\u00e1n",
+      "kills": 162,
+      "deaths": 166,
+      "kd_ratio": 0.98,
+      "headshot_rate": 0.251,
+      "first_kill_rate": 0.068,
+      "first_death_rate": 0.072,
+      "aggression": 0.258,
+      "consistency": 0.686,
+      "clutch_potential": 0.894,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "controller": 0.241,
+        "initiator": 0.689,
+        "sentinel": 0.07
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.418,
+        "phantom": 0.297,
+        "ghost": 0.108,
+        "classic": 0.051,
+        "guardian": 0.038
+      },
+      "avg_kill_distance": 1718.5,
+      "avg_loadout_value": 3359.0,
+      "attack_kills": 67,
+      "defense_kills": 95
+    },
+    "2349": {
+      "id": "2349",
+      "name": "valyn",
+      "team": "Leviat\u00e1n",
+      "kills": 178,
+      "deaths": 171,
+      "kd_ratio": 1.04,
+      "headshot_rate": 0.208,
+      "first_kill_rate": 0.051,
+      "first_death_rate": 0.041,
+      "aggression": 0.277,
+      "consistency": 0.728,
+      "clutch_potential": 0.832,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.534,
+        "stinger": 0.163,
+        "phantom": 0.152,
+        "classic": 0.056,
+        "ghost": 0.039
+      },
+      "avg_kill_distance": 1706.5,
+      "avg_loadout_value": 3634.0,
+      "attack_kills": 85,
+      "defense_kills": 93
+    },
+    "2353": {
+      "id": "2353",
+      "name": "trent",
+      "team": "Leviat\u00e1n",
+      "kills": 174,
+      "deaths": 147,
+      "kd_ratio": 1.18,
+      "headshot_rate": 0.285,
+      "first_kill_rate": 0.063,
+      "first_death_rate": 0.095,
+      "aggression": 0.274,
+      "consistency": 0.826,
+      "clutch_potential": 1.0,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.42,
+        "phantom": 0.216,
+        "classic": 0.08,
+        "bulldog": 0.074,
+        "ghost": 0.068
+      },
+      "avg_kill_distance": 1909.4,
+      "avg_loadout_value": 3370.0,
+      "attack_kills": 79,
+      "defense_kills": 95
+    },
+    "14940": {
+      "id": "14940",
+      "name": "icy",
+      "team": "Leviat\u00e1n",
+      "kills": 155,
+      "deaths": 140,
+      "kd_ratio": 1.11,
+      "headshot_rate": 0.28,
+      "first_kill_rate": 0.071,
+      "first_death_rate": 0.107,
+      "aggression": 0.298,
+      "consistency": 0.777,
+      "clutch_potential": 1.0,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 0.693,
+        "sentinel": 0.255,
+        "initiator": 0.052
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.471,
+        "phantom": 0.145,
+        "ghost": 0.094,
+        "sheriff": 0.065,
+        "bulldog": 0.065
+      },
+      "avg_kill_distance": 1767.7,
+      "avg_loadout_value": 3633.0,
+      "attack_kills": 76,
+      "defense_kills": 79
+    },
+    "709": {
+      "id": "709",
+      "name": "BABYBAY",
+      "team": "Leviat\u00e1n",
+      "kills": 37,
+      "deaths": 26,
+      "kd_ratio": 1.42,
+      "headshot_rate": 0.169,
+      "first_kill_rate": 0.162,
+      "first_death_rate": 0.154,
+      "aggression": 0.365,
+      "consistency": 0.994,
+      "clutch_potential": 0.906,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 0.53,
+        "sentinel": 0.47
+      },
+      "primary_weapon": "outlaw",
+      "weapon_preference": {
+        "outlaw": 0.258,
+        "vandal": 0.194,
+        "phantom": 0.194,
+        "operator": 0.161,
+        "ghost": 0.065
+      },
+      "avg_kill_distance": 1972.8,
+      "avg_loadout_value": 4182.0,
+      "attack_kills": 18,
+      "defense_kills": 19
+    },
+    "287": {
+      "id": "287",
+      "name": "zekken",
+      "team": "Shopify Rebellion",
+      "kills": 168,
+      "deaths": 124,
+      "kd_ratio": 1.35,
+      "headshot_rate": 0.243,
+      "first_kill_rate": 0.185,
+      "first_death_rate": 0.25,
+      "aggression": 0.391,
+      "consistency": 0.945,
+      "clutch_potential": 1.0,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 1.0
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.484,
+        "vandal": 0.19,
+        "sheriff": 0.065,
+        "stinger": 0.059,
+        "outlaw": 0.059
+      },
+      "avg_kill_distance": 1800.8,
+      "avg_loadout_value": 3910.0,
+      "attack_kills": 85,
+      "defense_kills": 83
+    },
+    "3260": {
+      "id": "3260",
+      "name": "Sacy",
+      "team": "Shopify Rebellion",
+      "kills": 18,
+      "deaths": 20,
+      "kd_ratio": 0.9,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.278,
+      "consistency": 0.63,
+      "clutch_potential": 0.36,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.765,
+        "classic": 0.118,
+        "spectre": 0.059,
+        "bulldog": 0.059
+      },
+      "avg_kill_distance": 1771.4,
+      "avg_loadout_value": 3414.0,
+      "attack_kills": 10,
+      "defense_kills": 8
+    },
+    "2512": {
+      "id": "2512",
+      "name": "johnqt",
+      "team": "Shopify Rebellion",
+      "kills": 125,
+      "deaths": 107,
+      "kd_ratio": 1.17,
+      "headshot_rate": 0.254,
+      "first_kill_rate": 0.064,
+      "first_death_rate": 0.009,
+      "aggression": 0.284,
+      "consistency": 0.819,
+      "clutch_potential": 0.976,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 0.427,
+        "sentinel": 0.426,
+        "initiator": 0.147
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.537,
+        "vandal": 0.132,
+        "ghost": 0.107,
+        "classic": 0.066,
+        "sheriff": 0.041
+      },
+      "avg_kill_distance": 1894.6,
+      "avg_loadout_value": 3465.0,
+      "attack_kills": 59,
+      "defense_kills": 66
+    },
+    "90": {
+      "id": "90",
+      "name": "TenZ",
+      "team": "Shopify Rebellion",
+      "kills": 24,
+      "deaths": 23,
+      "kd_ratio": 1.04,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.0,
+      "first_death_rate": 0.0,
+      "aggression": 0.333,
+      "consistency": 0.728,
+      "clutch_potential": 0.416,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.833,
+        "classic": 0.083,
+        "stinger": 0.042,
+        "guardian": 0.042
+      },
+      "avg_kill_distance": 1979.9,
+      "avg_loadout_value": 3602.0,
+      "attack_kills": 16,
+      "defense_kills": 8
+    },
+    "94": {
+      "id": "94",
+      "name": "Zellsis",
+      "team": "Shopify Rebellion",
+      "kills": 136,
+      "deaths": 109,
+      "kd_ratio": 1.25,
+      "headshot_rate": 0.214,
+      "first_kill_rate": 0.074,
+      "first_death_rate": 0.147,
+      "aggression": 0.298,
+      "consistency": 0.875,
+      "clutch_potential": 0.928,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 0.771,
+        "initiator": 0.131,
+        "controller": 0.098
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.59,
+        "classic": 0.134,
+        "vandal": 0.127,
+        "stinger": 0.045,
+        "sheriff": 0.037
+      },
+      "avg_kill_distance": 1486.9,
+      "avg_loadout_value": 3407.0,
+      "attack_kills": 66,
+      "defense_kills": 70
+    },
+    "11013": {
+      "id": "11013",
+      "name": "N4RRATE",
+      "team": "Shopify Rebellion",
+      "kills": 113,
+      "deaths": 96,
+      "kd_ratio": 1.18,
+      "headshot_rate": 0.246,
+      "first_kill_rate": 0.159,
+      "first_death_rate": 0.104,
+      "aggression": 0.354,
+      "consistency": 0.826,
+      "clutch_potential": 0.964,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 1.0
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.727,
+        "vandal": 0.073,
+        "classic": 0.064,
+        "stinger": 0.064,
+        "ghost": 0.027
+      },
+      "avg_kill_distance": 1616.6,
+      "avg_loadout_value": 3863.0,
+      "attack_kills": 53,
+      "defense_kills": 60
+    },
+    "10985": {
+      "id": "10985",
+      "name": "mta",
+      "team": "Rex Regum Qeon",
+      "kills": 80,
+      "deaths": 69,
+      "kd_ratio": 1.16,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.062,
+      "first_death_rate": 0.087,
+      "aggression": 0.309,
+      "consistency": 0.812,
+      "clutch_potential": 0.464,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.494,
+        "sentinel": 0.324,
+        "controller": 0.182
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.675,
+        "ghost": 0.078,
+        "sheriff": 0.065,
+        "phantom": 0.052,
+        "classic": 0.052
+      },
+      "avg_kill_distance": 1523.8,
+      "avg_loadout_value": 3343.0,
+      "attack_kills": 42,
+      "defense_kills": 38
+    },
+    "208": {
+      "id": "208",
+      "name": "Melser",
+      "team": "Rex Regum Qeon",
+      "kills": 75,
+      "deaths": 66,
+      "kd_ratio": 1.14,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.133,
+      "first_death_rate": 0.212,
+      "aggression": 0.353,
+      "consistency": 0.798,
+      "clutch_potential": 0.456,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.773,
+        "classic": 0.12,
+        "ghost": 0.053,
+        "bulldog": 0.027,
+        "guardian": 0.013
+      },
+      "avg_kill_distance": 1701.3,
+      "avg_loadout_value": 3261.0,
+      "attack_kills": 38,
+      "defense_kills": 37
+    },
+    "3078": {
+      "id": "3078",
+      "name": "Shyy",
+      "team": "Rex Regum Qeon",
+      "kills": 79,
+      "deaths": 70,
+      "kd_ratio": 1.13,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.127,
+      "first_death_rate": 0.114,
+      "aggression": 0.329,
+      "consistency": 0.791,
+      "clutch_potential": 0.452,
+      "primary_role": "sentinel",
+      "role_distribution": {
+        "sentinel": 0.867,
+        "controller": 0.133
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.747,
+        "ghost": 0.114,
+        "guardian": 0.038,
+        "sheriff": 0.025,
+        "classic": 0.025
+      },
+      "avg_kill_distance": 1916.1,
+      "avg_loadout_value": 3209.0,
+      "attack_kills": 37,
+      "defense_kills": 42
+    },
+    "77": {
+      "id": "77",
+      "name": "keznitdeuS",
+      "team": "Rex Regum Qeon",
+      "kills": 92,
+      "deaths": 70,
+      "kd_ratio": 1.31,
+      "headshot_rate": 0.0,
+      "first_kill_rate": 0.25,
+      "first_death_rate": 0.243,
+      "aggression": 0.497,
+      "consistency": 0.917,
+      "clutch_potential": 0.524,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.637,
+        "operator": 0.138,
+        "sheriff": 0.1,
+        "guardian": 0.05,
+        "phantom": 0.05
+      },
+      "avg_kill_distance": 2182.9,
+      "avg_loadout_value": 3980.0,
+      "attack_kills": 57,
+      "defense_kills": 35
+    },
+    "48": {
+      "id": "48",
+      "name": "heat",
+      "team": "Rex Regum Qeon",
+      "kills": 143,
+      "deaths": 127,
+      "kd_ratio": 1.13,
+      "headshot_rate": 0.39,
+      "first_kill_rate": 0.112,
+      "first_death_rate": 0.102,
+      "aggression": 0.332,
+      "consistency": 0.791,
+      "clutch_potential": 1.0,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.622,
+        "controller": 0.328,
+        "sentinel": 0.05
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.718,
+        "phantom": 0.085,
+        "guardian": 0.063,
+        "sheriff": 0.049,
+        "ghost": 0.049
+      },
+      "avg_kill_distance": 1770.2,
+      "avg_loadout_value": 3819.0,
+      "attack_kills": 71,
+      "defense_kills": 72
+    },
+    "32268": {
+      "id": "32268",
+      "name": "silentzz",
+      "team": "Acend",
+      "kills": 13,
+      "deaths": 27,
+      "kd_ratio": 0.48,
+      "headshot_rate": 0.163,
+      "first_kill_rate": 0.231,
+      "first_death_rate": 0.148,
+      "aggression": 0.558,
+      "consistency": 0.336,
+      "clutch_potential": 0.518,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 0.649,
+        "duelist": 0.351
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.273,
+        "vandal": 0.182,
+        "outlaw": 0.182,
+        "sheriff": 0.091,
+        "spectre": 0.091
+      },
+      "avg_kill_distance": 1889.1,
+      "avg_loadout_value": 3854.0,
+      "attack_kills": 10,
+      "defense_kills": 3
+    },
+    "3315": {
+      "id": "3315",
+      "name": "gobera",
+      "team": "Acend",
+      "kills": 16,
+      "deaths": 27,
+      "kd_ratio": 0.59,
+      "headshot_rate": 0.191,
+      "first_kill_rate": 0.125,
+      "first_death_rate": 0.148,
+      "aggression": 0.438,
+      "consistency": 0.413,
+      "clutch_potential": 0.618,
+      "primary_role": "initiator",
+      "role_distribution": {
+        "initiator": 0.688,
+        "controller": 0.312
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.438,
+        "phantom": 0.312,
+        "stinger": 0.188,
+        "shorty": 0.062
+      },
+      "avg_kill_distance": 1707.1,
+      "avg_loadout_value": 4538.0,
+      "attack_kills": 11,
+      "defense_kills": 5
+    },
+    "32033": {
+      "id": "32033",
+      "name": "Lz",
+      "team": "Acend",
+      "kills": 24,
+      "deaths": 28,
+      "kd_ratio": 0.86,
+      "headshot_rate": 0.426,
+      "first_kill_rate": 0.125,
+      "first_death_rate": 0.036,
+      "aggression": 0.469,
+      "consistency": 0.602,
+      "clutch_potential": 1.0,
+      "primary_role": "controller",
+      "role_distribution": {
+        "controller": 1.0
+      },
+      "primary_weapon": "vandal",
+      "weapon_preference": {
+        "vandal": 0.583,
+        "classic": 0.208,
+        "sheriff": 0.083,
+        "ghost": 0.083,
+        "guardian": 0.042
+      },
+      "avg_kill_distance": 1627.8,
+      "avg_loadout_value": 2875.0,
+      "attack_kills": 18,
+      "defense_kills": 6
+    },
+    "32032": {
+      "id": "32032",
+      "name": "spikeziN",
+      "team": "Acend",
+      "kills": 23,
+      "deaths": 28,
+      "kd_ratio": 0.82,
+      "headshot_rate": 0.338,
+      "first_kill_rate": 0.13,
+      "first_death_rate": 0.429,
+      "aggression": 0.359,
+      "consistency": 0.574,
+      "clutch_potential": 1.0,
+      "primary_role": "duelist",
+      "role_distribution": {
+        "duelist": 1.0
+      },
+      "primary_weapon": "phantom",
+      "weapon_preference": {
+        "phantom": 0.7,
+        "classic": 0.15,
+        "sheriff": 0.1,
+        "bucky": 0.05
+      },
+      "avg_kill_distance": 1736.3,
+      "avg_loadout_value": 3467.0,
+      "attack_kills": 12,
+      "defense_kills": 11
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "timestamp": "2026-01-19T22:53:23.511813",
+  "accuracy": 50.0,
+  "version": "v7_coordination_integrated",
+  "key_changes": [
+    "coordination_system_for_attention",
+    "coordinated_push_behavior",
+    "crossfire_advantage_emerges",
+    "retake_not_hardcoded"
+  ],
+  "results": {
+    "attack_execute_fast": {
+      "attack_win_rate": 0.6428571428571429,
+      "plant_rate": 0.7040816326530612,
+      "avg_duration_ms": 49731.91836734694,
+      "avg_kills": 6.704081632653061,
+      "avg_trades": 0.41836734693877553,
+      "avg_crossfires": 3.377551020408163,
+      "avg_coordinated_entries": 0.0,
+      "total_rounds": 98
+    },
+    "attack_execute_slow": {
+      "attack_win_rate": 0.41836734693877553,
+      "plant_rate": 0.5408163265306123,
+      "avg_duration_ms": 56177.63265306123,
+      "avg_kills": 6.061224489795919,
+      "avg_trades": 0.29591836734693877,
+      "avg_crossfires": 3.0510204081632653,
+      "avg_coordinated_entries": 0.0,
+      "total_rounds": 98
+    },
+    "post_plant_defense": {
+      "attack_win_rate": 0.8469387755102041,
+      "plant_rate": 1.0,
+      "avg_duration_ms": 29609.79591836735,
+      "avg_kills": 6.326530612244898,
+      "avg_trades": 0.8367346938775511,
+      "avg_crossfires": 3.1530612244897958,
+      "avg_coordinated_entries": 0.9081632653061225,
+      "total_rounds": 98
+    },
+    "retake": {
+      "attack_win_rate": 0.3163265306122449,
+      "plant_rate": 1.0,
+      "avg_duration_ms": 26055.836734693876,
+      "avg_kills": 6.1938775510204085,
+      "avg_trades": 0.8673469387755102,
+      "avg_crossfires": 3.0306122448979593,
+      "avg_coordinated_entries": 0.8979591836734694,
+      "total_rounds": 98
+    },
+    "mid_control": {
+      "attack_win_rate": 0.6326530612244898,
+      "plant_rate": 0.5714285714285714,
+      "avg_duration_ms": 52430.36734693877,
+      "avg_kills": 6.3061224489795915,
+      "avg_trades": 0.41836734693877553,
+      "avg_crossfires": 3.0306122448979593,
+      "avg_coordinated_entries": 0.0,
+      "total_rounds": 98
+    },
+    "defender_aggression": {
+      "attack_win_rate": 0.6020408163265306,
+      "plant_rate": 0.6326530612244898,
+      "avg_duration_ms": 55263.34693877551,
+      "avg_kills": 6.5,
+      "avg_trades": 0.4489795918367347,
+      "avg_crossfires": 3.193877551020408,
+      "avg_coordinated_entries": 0.0,
+      "total_rounds": 98
+    },
+    "eco_vs_full": {
+      "attack_win_rate": 0.1836734693877551,
+      "plant_rate": 0.35714285714285715,
+      "avg_duration_ms": 34603.102040816324,
+      "avg_kills": 6.040816326530612,
+      "avg_trades": 0.23469387755102042,
+      "avg_crossfires": 3.193877551020408,
+      "avg_coordinated_entries": 0.0,
+      "total_rounds": 98
+    },
+    "full_vs_eco": {
+      "attack_win_rate": 0.9693877551020408,
+      "plant_rate": 0.8673469387755102,
+      "avg_duration_ms": 51582.69387755102,
+      "avg_kills": 5.010204081632653,
+      "avg_trades": 0.17346938775510204,
+      "avg_crossfires": 2.7551020408163267,
+      "avg_coordinated_entries": 0.0,
+      "total_rounds": 98
+    },
+    "clutch_1v1": {
+      "attack_win_rate": 0.37755102040816324,
+      "plant_rate": 0.32653061224489793,
+      "avg_duration_ms": 16941.714285714286,
+      "avg_kills": 0.7346938775510204,
+      "avg_trades": 0.0,
+      "avg_crossfires": 0.0,
+      "avg_coordinated_entries": 0.0,
+      "total_rounds": 98
+    },
+    "clutch_1v2": {
+      "attack_win_rate": 0.08163265306122448,
+      "plant_rate": 0.37755102040816324,
+      "avg_duration_ms": 18173.38775510204,
+      "avg_kills": 0.9795918367346939,
+      "avg_trades": 0.01020408163265306,
+      "avg_crossfires": 0.1836734693877551,
+      "avg_coordinated_entries": 0.0,
+      "total_rounds": 98
+    },
+    "clutch_2v1": {
+      "attack_win_rate": 0.6632653061224489,
+      "plant_rate": 0.35714285714285715,
+      "avg_duration_ms": 15343.020408163266,
+      "avg_kills": 1.2448979591836735,
+      "avg_trades": 0.05102040816326531,
+      "avg_crossfires": 0.21428571428571427,
+      "avg_coordinated_entries": 0.0,
+      "total_rounds": 98
+    },
+    "man_advantage_4v5": {
+      "attack_win_rate": 0.5714285714285714,
+      "plant_rate": 0.6632653061224489,
+      "avg_duration_ms": 49344.0,
+      "avg_kills": 5.561224489795919,
+      "avg_trades": 0.30612244897959184,
+      "avg_crossfires": 2.7448979591836733,
+      "avg_coordinated_entries": 0.0,
+      "total_rounds": 98
+    },
+    "man_advantage_5v4": {
+      "attack_win_rate": 0.7857142857142857,
+      "plant_rate": 0.6530612244897959,
+      "avg_duration_ms": 55130.12244897959,
+      "avg_kills": 5.3979591836734695,
+      "avg_trades": 0.3163265306122449,
+      "avg_crossfires": 2.642857142857143,
+      "avg_coordinated_entries": 0.0,
+      "total_rounds": 98
+    },
+    "man_advantage_3v5": {
+      "attack_win_rate": 0.4489795918367347,
+      "plant_rate": 0.5918367346938775,
+      "avg_duration_ms": 45993.795918367345,
+      "avg_kills": 4.663265306122449,
+      "avg_trades": 0.16326530612244897,
+      "avg_crossfires": 2.295918367346939,
+      "avg_coordinated_entries": 0.0,
+      "total_rounds": 98
+    }
+  }
+}

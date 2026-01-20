@@ -1,0 +1,2488 @@
+{
+  "metadata": {
+    "description": "Hold angles derived from VCT pro engagement data",
+    "zones_source": "VCT-derived grid zones",
+    "total_samples": 34691,
+    "coverage_rate": 0.8822512143638259
+  },
+  "angles_by_map": {
+    "bind": {
+      "i4": {
+        "mean_angle": -2.661800482188917,
+        "mean_angle_degrees": -152.5099335353124,
+        "std_angle": 0.7964425763993729,
+        "samples": 65,
+        "avg_distance": 1972.2321200687466,
+        "source": "vct"
+      },
+      "i5": {
+        "mean_angle": -2.4945495714459613,
+        "mean_angle_degrees": -142.9271622300218,
+        "std_angle": 1.6961955056362423,
+        "samples": 7,
+        "avg_distance": 1777.8319964849577,
+        "source": "vct"
+      },
+      "h4": {
+        "mean_angle": -2.3651678032226218,
+        "mean_angle_degrees": -135.51413296488462,
+        "std_angle": 0.8548763209208131,
+        "samples": 105,
+        "avg_distance": 1833.8139021195102,
+        "source": "vct"
+      },
+      "h3": {
+        "mean_angle": 3.0518973846450805,
+        "mean_angle_degrees": 174.86083964717713,
+        "std_angle": 1.1718313748188869,
+        "samples": 246,
+        "avg_distance": 1957.244726167396,
+        "source": "vct"
+      },
+      "f8": {
+        "mean_angle": -0.7167666148200639,
+        "mean_angle_degrees": -41.06770192506878,
+        "std_angle": 2.0497293699746573,
+        "samples": 20,
+        "avg_distance": 1518.6336020259555,
+        "source": "vct"
+      },
+      "g4": {
+        "mean_angle": 0.27477603259543315,
+        "mean_angle_degrees": 15.74350697906746,
+        "std_angle": 1.2604912361752627,
+        "samples": 101,
+        "avg_distance": 1820.3783291200816,
+        "source": "vct"
+      },
+      "h7": {
+        "mean_angle": -2.9693310908818717,
+        "mean_angle_degrees": -170.13013948450794,
+        "std_angle": 1.2682278609719082,
+        "samples": 168,
+        "avg_distance": 1672.3200599040672,
+        "source": "vct"
+      },
+      "h6": {
+        "mean_angle": 2.283583117125147,
+        "mean_angle_degrees": 130.83967477859966,
+        "std_angle": 0.9197157306000798,
+        "samples": 308,
+        "avg_distance": 1259.697446367452,
+        "source": "vct"
+      },
+      "f3": {
+        "mean_angle": 0.4721591926474135,
+        "mean_angle_degrees": 27.052728997001164,
+        "std_angle": 1.0814377446094658,
+        "samples": 31,
+        "avg_distance": 2426.4498396361532,
+        "source": "vct"
+      },
+      "f5": {
+        "mean_angle": -0.9671532233819806,
+        "mean_angle_degrees": -55.41379784226082,
+        "std_angle": 0.6115653534597393,
+        "samples": 30,
+        "avg_distance": 4893.022588996172,
+        "source": "vct"
+      },
+      "g3": {
+        "mean_angle": 0.30480529644399373,
+        "mean_angle_degrees": 17.46405705947476,
+        "std_angle": 1.3596663160550992,
+        "samples": 119,
+        "avg_distance": 1785.2123094363765,
+        "source": "vct"
+      },
+      "g8": {
+        "mean_angle": -1.3073639590940918,
+        "mean_angle_degrees": -74.90643714360546,
+        "std_angle": 0.9176822083727668,
+        "samples": 158,
+        "avg_distance": 1895.7046886443159,
+        "source": "vct"
+      },
+      "i8": {
+        "mean_angle": -2.725895362544718,
+        "mean_angle_degrees": -156.18229966809577,
+        "std_angle": 0.33378571142492186,
+        "samples": 13,
+        "avg_distance": 3168.0250180766643,
+        "source": "vct"
+      },
+      "g7": {
+        "mean_angle": 0.017745144142761477,
+        "mean_angle_degrees": 1.0167218662315258,
+        "std_angle": 1.460340773075501,
+        "samples": 144,
+        "avg_distance": 1625.7883919413725,
+        "source": "vct"
+      },
+      "h8": {
+        "mean_angle": -2.231192069780324,
+        "mean_angle_degrees": -127.83788888147122,
+        "std_angle": 0.7299436264977893,
+        "samples": 86,
+        "avg_distance": 2406.201421756872,
+        "source": "vct"
+      },
+      "g6": {
+        "mean_angle": 0.953387701065253,
+        "mean_angle_degrees": 54.62509151071917,
+        "std_angle": 1.4638110507792519,
+        "samples": 129,
+        "avg_distance": 1991.3306111791671,
+        "source": "vct"
+      },
+      "e3": {
+        "mean_angle": -0.11407135094845938,
+        "mean_angle_degrees": -6.535806972702363,
+        "std_angle": 0.05031636447418385,
+        "samples": 9,
+        "avg_distance": 3988.0787475226016,
+        "source": "vct"
+      },
+      "f6": {
+        "mean_angle": 0.3033629823756119,
+        "mean_angle_degrees": 17.381418550624137,
+        "std_angle": 1.679174388518119,
+        "samples": 44,
+        "avg_distance": 1491.7371616049097,
+        "source": "vct"
+      },
+      "g5": {
+        "mean_angle": -1.8257521064089024,
+        "mean_angle_degrees": -104.60789013435009,
+        "std_angle": 0.9526460427530785,
+        "samples": 3,
+        "avg_distance": 2445.2641760324746,
+        "source": "vct"
+      },
+      "f4": {
+        "mean_angle": 0.8085697442009686,
+        "mean_angle_degrees": 46.327633784688075,
+        "std_angle": 0.561491905168798,
+        "samples": 2,
+        "avg_distance": 687.0598108346989,
+        "source": "vct"
+      },
+      "i6": {
+        "mean_angle": -2.7233890836876915,
+        "mean_angle_degrees": -156.03870046730526,
+        "std_angle": 1.3541178182348814,
+        "samples": 14,
+        "avg_distance": 2041.5160912144527,
+        "source": "vct"
+      },
+      "i7": {
+        "mean_angle": -2.9267830438412545,
+        "mean_angle_degrees": -167.69231596255648,
+        "std_angle": 0.8554640085708038,
+        "samples": 9,
+        "avg_distance": 2655.8835767054998,
+        "source": "vct"
+      },
+      "c6": {
+        "mean_angle": -0.8096673745793511,
+        "mean_angle_degrees": -46.390523372834735,
+        "std_angle": -0.0,
+        "samples": 1,
+        "avg_distance": 3165.0229800911648,
+        "source": "vct"
+      },
+      "f7": {
+        "mean_angle": -1.3339218448284962,
+        "mean_angle_degrees": -76.42809190897754,
+        "std_angle": 1.2643830364522466,
+        "samples": 17,
+        "avg_distance": 1745.615222576868,
+        "source": "vct"
+      },
+      "h2": {
+        "mean_angle": 1.5944844322124256,
+        "mean_angle_degrees": 91.3572284650854,
+        "std_angle": 0.7260262003082028,
+        "samples": 18,
+        "avg_distance": 1984.943774672682,
+        "source": "vct"
+      },
+      "c7": {
+        "mean_angle": -1.3518339315252885,
+        "mean_angle_degrees": -77.45437887897616,
+        "std_angle": 0.2515597975457746,
+        "samples": 2,
+        "avg_distance": 1950.52304441629,
+        "source": "vct"
+      },
+      "d5": {
+        "mean_angle": 2.1555528444483736,
+        "mean_angle_degrees": 123.50408050431145,
+        "std_angle": -0.0,
+        "samples": 1,
+        "avg_distance": 3004.723572048912,
+        "source": "vct"
+      },
+      "e5": {
+        "mean_angle": -0.48270339808629237,
+        "mean_angle_degrees": -27.65686746696781,
+        "std_angle": 1.044246586120434,
+        "samples": 16,
+        "avg_distance": 3789.9270515661156,
+        "source": "vct"
+      },
+      "e7": {
+        "mean_angle": -0.9408751158962206,
+        "mean_angle_degrees": -53.908173189735635,
+        "std_angle": 0.48222952814432063,
+        "samples": 35,
+        "avg_distance": 2901.4129809425644,
+        "source": "vct"
+      },
+      "g2": {
+        "mean_angle": 1.9515626875280314,
+        "mean_angle_degrees": 111.81630545056446,
+        "std_angle": 0.3823989880644102,
+        "samples": 66,
+        "avg_distance": 1082.6878328057658,
+        "source": "vct"
+      },
+      "i3": {
+        "mean_angle": 2.867515330307896,
+        "mean_angle_degrees": 164.29652611570464,
+        "std_angle": 0.38500230893687365,
+        "samples": 15,
+        "avg_distance": 2500.76718164362,
+        "source": "vct"
+      },
+      "f9": {
+        "mean_angle": -1.7451984831207759,
+        "mean_angle_degrees": -99.9925074954537,
+        "std_angle": 0.5151290257733119,
+        "samples": 5,
+        "avg_distance": 2470.655145746351,
+        "source": "vct"
+      },
+      "j5": {
+        "mean_angle": 2.1749957553842574,
+        "mean_angle_degrees": 124.61807724238635,
+        "std_angle": -0.0,
+        "samples": 1,
+        "avg_distance": 2915.6773831782666,
+        "source": "vct"
+      },
+      "e4": {
+        "mean_angle": -0.5668452483909048,
+        "mean_angle_degrees": -32.47784036984366,
+        "std_angle": 0.37585272084036575,
+        "samples": 3,
+        "avg_distance": 3085.6143447295217,
+        "source": "vct"
+      },
+      "e8": {
+        "mean_angle": -0.06318372941100649,
+        "mean_angle_degrees": -3.6201610291472823,
+        "std_angle": 0.046628259393701736,
+        "samples": 5,
+        "avg_distance": 3465.280798353445,
+        "source": "vct"
+      }
+    },
+    "lotus": {
+      "g4": {
+        "mean_angle": -3.0346155732944884,
+        "mean_angle_degrees": -173.87066479444692,
+        "std_angle": 1.3637617820053631,
+        "samples": 1398,
+        "avg_distance": 1426.860711787609,
+        "source": "vct"
+      },
+      "f5": {
+        "mean_angle": -1.1954232152557098,
+        "mean_angle_degrees": -68.4927049661111,
+        "std_angle": 1.9464244255042031,
+        "samples": 395,
+        "avg_distance": 2138.48374015067,
+        "source": "vct"
+      },
+      "g5": {
+        "mean_angle": -1.790051670479408,
+        "mean_angle_degrees": -102.56240582881286,
+        "std_angle": 1.7620471195488663,
+        "samples": 406,
+        "avg_distance": 2260.815562704123,
+        "source": "vct"
+      },
+      "g6": {
+        "mean_angle": 3.089600405278234,
+        "mean_angle_degrees": 177.02106360435147,
+        "std_angle": 2.1194589226596823,
+        "samples": 911,
+        "avg_distance": 1402.7963589057354,
+        "source": "vct"
+      },
+      "f6": {
+        "mean_angle": -0.03721200300297961,
+        "mean_angle_degrees": -2.132090719298877,
+        "std_angle": 1.7578059539797073,
+        "samples": 435,
+        "avg_distance": 1815.9530237352628,
+        "source": "vct"
+      },
+      "h6": {
+        "mean_angle": -3.129628233934279,
+        "mean_angle_degrees": -179.31448924941566,
+        "std_angle": 0.7782550597394279,
+        "samples": 146,
+        "avg_distance": 1657.951616550441,
+        "source": "vct"
+      },
+      "g8": {
+        "mean_angle": 1.2059324554022302,
+        "mean_angle_degrees": 69.09484007239617,
+        "std_angle": 2.0884218853833927,
+        "samples": 895,
+        "avg_distance": 1762.4855423691586,
+        "source": "vct"
+      },
+      "f8": {
+        "mean_angle": -0.6702059991331137,
+        "mean_angle_degrees": -38.39997515467593,
+        "std_angle": 1.6468571878269798,
+        "samples": 623,
+        "avg_distance": 2005.342216821,
+        "source": "vct"
+      },
+      "h8": {
+        "mean_angle": 2.758189550438578,
+        "mean_angle_degrees": 158.03262033721643,
+        "std_angle": 1.5311617494189174,
+        "samples": 679,
+        "avg_distance": 1397.6965736122518,
+        "source": "vct"
+      },
+      "h7": {
+        "mean_angle": 2.938835531919205,
+        "mean_angle_degrees": 168.38287266205478,
+        "std_angle": 1.8573375876650953,
+        "samples": 146,
+        "avg_distance": 1699.5945852155485,
+        "source": "vct"
+      },
+      "f7": {
+        "mean_angle": 1.0966453426215454,
+        "mean_angle_degrees": 62.83314975489269,
+        "std_angle": 1.306586314825945,
+        "samples": 208,
+        "avg_distance": 1908.1759864075598,
+        "source": "vct"
+      },
+      "e7": {
+        "mean_angle": 0.3874318253155269,
+        "mean_angle_degrees": 22.198208439629454,
+        "std_angle": 1.4537606958613936,
+        "samples": 201,
+        "avg_distance": 2230.7497965108005,
+        "source": "vct"
+      },
+      "g7": {
+        "mean_angle": -0.11741193892859737,
+        "mean_angle_degrees": -6.727208565056403,
+        "std_angle": 2.334894545983534,
+        "samples": 484,
+        "avg_distance": 1516.9900966861617,
+        "source": "vct"
+      },
+      "g9": {
+        "mean_angle": -1.1148000552220374,
+        "mean_angle_degrees": -63.873338165173855,
+        "std_angle": 1.2752237634815584,
+        "samples": 554,
+        "avg_distance": 1665.4514901793004,
+        "source": "vct"
+      },
+      "h9": {
+        "mean_angle": -1.760467559772546,
+        "mean_angle_degrees": -100.86736114466187,
+        "std_angle": 1.5460597669241447,
+        "samples": 639,
+        "avg_distance": 1327.8986519964321,
+        "source": "vct"
+      },
+      "e4": {
+        "mean_angle": 0.4737421250402148,
+        "mean_angle_degrees": 27.14342434236322,
+        "std_angle": 0.7291061477912207,
+        "samples": 41,
+        "avg_distance": 1998.7476763334246,
+        "source": "vct"
+      },
+      "f4": {
+        "mean_angle": -0.051914486697414185,
+        "mean_angle_degrees": -2.9744809833498884,
+        "std_angle": 1.3352754815441616,
+        "samples": 661,
+        "avg_distance": 1806.040038961537,
+        "source": "vct"
+      },
+      "e5": {
+        "mean_angle": -0.022754113716218296,
+        "mean_angle_degrees": -1.3037146825000456,
+        "std_angle": 1.3438427400262172,
+        "samples": 131,
+        "avg_distance": 1785.4695879337542,
+        "source": "vct"
+      },
+      "d5": {
+        "mean_angle": 0.6034937390151421,
+        "mean_angle_degrees": 34.57764420813723,
+        "std_angle": 0.9530409588524329,
+        "samples": 43,
+        "avg_distance": 2896.345894101062,
+        "source": "vct"
+      },
+      "g3": {
+        "mean_angle": 1.694957002818225,
+        "mean_angle_degrees": 97.11388271762787,
+        "std_angle": 1.1411898496293893,
+        "samples": 562,
+        "avg_distance": 1546.0409553542029,
+        "source": "vct"
+      },
+      "f3": {
+        "mean_angle": 0.93257903451609,
+        "mean_angle_degrees": 53.432842740157085,
+        "std_angle": 0.9336530059610477,
+        "samples": 369,
+        "avg_distance": 1568.1802359563446,
+        "source": "vct"
+      },
+      "i8": {
+        "mean_angle": 2.8003795755497767,
+        "mean_angle_degrees": 160.44993071363908,
+        "std_angle": 0.7643639138527131,
+        "samples": 154,
+        "avg_distance": 1994.9572698495267,
+        "source": "vct"
+      },
+      "h4": {
+        "mean_angle": -3.130761003410746,
+        "mean_angle_degrees": -179.3793921595785,
+        "std_angle": 1.0322919383513476,
+        "samples": 404,
+        "avg_distance": 1855.688738536318,
+        "source": "vct"
+      },
+      "d6": {
+        "mean_angle": 0.35421528329329666,
+        "mean_angle_degrees": 20.29504077173672,
+        "std_angle": 0.7821224795695193,
+        "samples": 51,
+        "avg_distance": 2535.632500257868,
+        "source": "vct"
+      },
+      "e8": {
+        "mean_angle": -1.988507705765154,
+        "mean_angle_degrees": -113.93309906958544,
+        "std_angle": -0.0,
+        "samples": 2,
+        "avg_distance": 3869.6867836087245,
+        "source": "vct"
+      },
+      "i7": {
+        "mean_angle": -2.960195511438157,
+        "mean_angle_degrees": -169.6067093389766,
+        "std_angle": 0.8206571488797559,
+        "samples": 24,
+        "avg_distance": 2482.5382867515705,
+        "source": "vct"
+      },
+      "h5": {
+        "mean_angle": -2.898095280778652,
+        "mean_angle_degrees": -166.04862821539805,
+        "std_angle": 1.5550148967321127,
+        "samples": 82,
+        "avg_distance": 1497.5440125561386,
+        "source": "vct"
+      },
+      "f9": {
+        "mean_angle": -1.247069074565517,
+        "mean_angle_degrees": -71.45179473388949,
+        "std_angle": 0.7725003446247404,
+        "samples": 67,
+        "avg_distance": 1835.565010218939,
+        "source": "vct"
+      },
+      "e6": {
+        "mean_angle": -2.081483125288338,
+        "mean_angle_degrees": -119.26019820672212,
+        "std_angle": 2.1801406032371546,
+        "samples": 77,
+        "avg_distance": 1625.5678968380575,
+        "source": "vct"
+      },
+      "i9": {
+        "mean_angle": -2.867900022563222,
+        "mean_angle_degrees": -164.3185673583462,
+        "std_angle": 0.6781725280341704,
+        "samples": 57,
+        "avg_distance": 2063.220059836427,
+        "source": "vct"
+      },
+      "i6": {
+        "mean_angle": 1.9887883035708769,
+        "mean_angle_degrees": 113.949176139594,
+        "std_angle": 0.9417578646228062,
+        "samples": 17,
+        "avg_distance": 3271.9885599953573,
+        "source": "vct"
+      },
+      "h3": {
+        "mean_angle": 2.646416914406743,
+        "mean_angle_degrees": 151.62852002754042,
+        "std_angle": 0.4014009962308432,
+        "samples": 59,
+        "avg_distance": 1985.023848329087,
+        "source": "vct"
+      },
+      "d7": {
+        "mean_angle": 0.4702306940538242,
+        "mean_angle_degrees": 26.942234166791582,
+        "std_angle": 0.3004207004869486,
+        "samples": 25,
+        "avg_distance": 2818.2957788912354,
+        "source": "vct"
+      }
+    },
+    "split": {
+      "c3": {
+        "mean_angle": 0.6929023819202159,
+        "mean_angle_degrees": 39.700382098590254,
+        "std_angle": 0.8927081159417392,
+        "samples": 54,
+        "avg_distance": 1917.9346971041575,
+        "source": "vct"
+      },
+      "h4": {
+        "mean_angle": -1.909829397662684,
+        "mean_angle_degrees": -109.42516407608396,
+        "std_angle": 1.1942214044772583,
+        "samples": 99,
+        "avg_distance": 2162.4132889246257,
+        "source": "vct"
+      },
+      "h2": {
+        "mean_angle": 1.7672403977416735,
+        "mean_angle_degrees": 101.25541617561883,
+        "std_angle": 0.9012365772832155,
+        "samples": 80,
+        "avg_distance": 1730.9021781513948,
+        "source": "vct"
+      },
+      "i2": {
+        "mean_angle": 2.220010605281287,
+        "mean_angle_degrees": 127.19723815690107,
+        "std_angle": 1.007988431947867,
+        "samples": 32,
+        "avg_distance": 1700.98376324157,
+        "source": "vct"
+      },
+      "i3": {
+        "mean_angle": -3.113360821825803,
+        "mean_angle_degrees": -178.382435192,
+        "std_angle": 0.9679602056519526,
+        "samples": 68,
+        "avg_distance": 1602.221931084292,
+        "source": "vct"
+      },
+      "h3": {
+        "mean_angle": -0.10926827638749766,
+        "mean_angle_degrees": -6.2606110716726056,
+        "std_angle": 1.6649387674965899,
+        "samples": 114,
+        "avg_distance": 1651.0570675328029,
+        "source": "vct"
+      },
+      "d3": {
+        "mean_angle": 2.296779131357397,
+        "mean_angle_degrees": 131.59575070050215,
+        "std_angle": 1.902090531393269,
+        "samples": 158,
+        "avg_distance": 1526.0528888808099,
+        "source": "vct"
+      },
+      "c4": {
+        "mean_angle": -0.12693643265201376,
+        "mean_angle_degrees": -7.272921857407004,
+        "std_angle": 0.9376498654890811,
+        "samples": 27,
+        "avg_distance": 1708.7748311008477,
+        "source": "vct"
+      },
+      "g3": {
+        "mean_angle": 1.0659816754706841,
+        "mean_angle_degrees": 61.07625104275439,
+        "std_angle": 2.2478377916259,
+        "samples": 88,
+        "avg_distance": 1535.2358673747833,
+        "source": "vct"
+      },
+      "g2": {
+        "mean_angle": 1.0478838990281405,
+        "mean_angle_degrees": 60.03932483402536,
+        "std_angle": 0.8602021817710167,
+        "samples": 35,
+        "avg_distance": 1708.4912025234883,
+        "source": "vct"
+      },
+      "g4": {
+        "mean_angle": -0.3944107024945899,
+        "mean_angle_degrees": -22.59806864772993,
+        "std_angle": 1.3035846145370789,
+        "samples": 68,
+        "avg_distance": 1696.3035615078757,
+        "source": "vct"
+      },
+      "h5": {
+        "mean_angle": -0.607599368813135,
+        "mean_angle_degrees": -34.812879467805374,
+        "std_angle": 0.9492444778284803,
+        "samples": 8,
+        "avg_distance": 1526.7190468178455,
+        "source": "vct"
+      },
+      "e3": {
+        "mean_angle": 2.869663890551293,
+        "mean_angle_degrees": 164.41962954968088,
+        "std_angle": 1.5116967895790263,
+        "samples": 99,
+        "avg_distance": 1415.3963271875848,
+        "source": "vct"
+      },
+      "d4": {
+        "mean_angle": -1.423779838194291,
+        "mean_angle_degrees": -81.57657568435212,
+        "std_angle": 1.2197603982396632,
+        "samples": 63,
+        "avg_distance": 2021.1566409618995,
+        "source": "vct"
+      },
+      "f5": {
+        "mean_angle": -0.9921960449811368,
+        "mean_angle_degrees": -56.84864582699152,
+        "std_angle": 0.9829890521289691,
+        "samples": 10,
+        "avg_distance": 2120.9891112265896,
+        "source": "vct"
+      },
+      "e4": {
+        "mean_angle": -1.1822992886449264,
+        "mean_angle_degrees": -67.74075936067378,
+        "std_angle": 1.208438640198184,
+        "samples": 46,
+        "avg_distance": 1653.0656580205684,
+        "source": "vct"
+      },
+      "f4": {
+        "mean_angle": 2.960824299617054,
+        "mean_angle_degrees": 169.64273624783513,
+        "std_angle": 1.6040776933714083,
+        "samples": 83,
+        "avg_distance": 1085.32547350512,
+        "source": "vct"
+      },
+      "f3": {
+        "mean_angle": 2.123828201745612,
+        "mean_angle_degrees": 121.6863923708827,
+        "std_angle": 0.49593520445148553,
+        "samples": 16,
+        "avg_distance": 1540.9571084017837,
+        "source": "vct"
+      },
+      "c2": {
+        "mean_angle": 1.242637380534733,
+        "mean_angle_degrees": 71.19787736983224,
+        "std_angle": 0.3868297730859519,
+        "samples": 11,
+        "avg_distance": 2608.556061426694,
+        "source": "vct"
+      },
+      "d2": {
+        "mean_angle": 1.1359268230689687,
+        "mean_angle_degrees": 65.08381279755571,
+        "std_angle": 0.688602741779998,
+        "samples": 17,
+        "avg_distance": 1304.5745701685364,
+        "source": "vct"
+      },
+      "d5": {
+        "mean_angle": -2.5562899830984698,
+        "mean_angle_degrees": -146.46462724311087,
+        "std_angle": -0.0,
+        "samples": 4,
+        "avg_distance": 2191.058252510673,
+        "source": "vct"
+      },
+      "i5": {
+        "mean_angle": -2.7250431153874524,
+        "mean_angle_degrees": -156.13346950288243,
+        "std_angle": 0.4068002781671019,
+        "samples": 7,
+        "avg_distance": 1551.6001685643512,
+        "source": "vct"
+      },
+      "f2": {
+        "mean_angle": 2.5921305220122037,
+        "mean_angle_degrees": 148.5181388583422,
+        "std_angle": 0.3508654271609815,
+        "samples": 2,
+        "avg_distance": 2988.133573502301,
+        "source": "vct"
+      },
+      "d6": {
+        "mean_angle": -1.7591833087561688,
+        "mean_angle_degrees": -100.79377898158808,
+        "std_angle": 0.02289046030269146,
+        "samples": 3,
+        "avg_distance": 3259.690686163705,
+        "source": "vct"
+      },
+      "e5": {
+        "mean_angle": -1.3361730407570704,
+        "mean_angle_degrees": -76.55707593454187,
+        "std_angle": 0.5176607538412126,
+        "samples": 9,
+        "avg_distance": 2067.265350337783,
+        "source": "vct"
+      },
+      "e2": {
+        "mean_angle": 0.12645746498344237,
+        "mean_angle_degrees": 7.245479031474643,
+        "std_angle": 0.9918165207673287,
+        "samples": 4,
+        "avg_distance": 1150.5390865870843,
+        "source": "vct"
+      },
+      "i4": {
+        "mean_angle": -3.018823165599881,
+        "mean_angle_degrees": -172.965826485196,
+        "std_angle": 0.3823024907869168,
+        "samples": 2,
+        "avg_distance": 1799.5081627241034,
+        "source": "vct"
+      },
+      "g5": {
+        "mean_angle": 3.004912767487842,
+        "mean_angle_degrees": 172.16881938202943,
+        "std_angle": -0.0,
+        "samples": 1,
+        "avg_distance": 3631.41265021146,
+        "source": "vct"
+      }
+    },
+    "ascent": {
+      "c4": {
+        "mean_angle": -1.4782524862099642,
+        "mean_angle_degrees": -84.69762851455188,
+        "std_angle": 1.5000411294890938,
+        "samples": 60,
+        "avg_distance": 2267.9584998363507,
+        "source": "vct"
+      },
+      "e5": {
+        "mean_angle": -1.9789077455664512,
+        "mean_angle_degrees": -113.3830618667062,
+        "std_angle": 1.2105059755929648,
+        "samples": 36,
+        "avg_distance": 1790.626543404497,
+        "source": "vct"
+      },
+      "d2": {
+        "mean_angle": 1.8025215290769914,
+        "mean_angle_degrees": 103.2768760975793,
+        "std_angle": 1.4953438236663885,
+        "samples": 51,
+        "avg_distance": 2181.4819255567922,
+        "source": "vct"
+      },
+      "d4": {
+        "mean_angle": 0.015338196037659483,
+        "mean_angle_degrees": 0.8788138983021707,
+        "std_angle": 2.379015300398447,
+        "samples": 92,
+        "avg_distance": 2245.9894284251113,
+        "source": "vct"
+      },
+      "d3": {
+        "mean_angle": 2.0723476925670146,
+        "mean_angle_degrees": 118.73677646776457,
+        "std_angle": 1.533024157178712,
+        "samples": 72,
+        "avg_distance": 2135.0546104805126,
+        "source": "vct"
+      },
+      "c3": {
+        "mean_angle": -2.4270701469943803,
+        "mean_angle_degrees": -139.06087600497432,
+        "std_angle": 1.2469545957783312,
+        "samples": 184,
+        "avg_distance": 1823.5211222028229,
+        "source": "vct"
+      },
+      "a3": {
+        "mean_angle": 0.08354410548892605,
+        "mean_angle_degrees": 4.786724647711197,
+        "std_angle": 0.8837030233082085,
+        "samples": 83,
+        "avg_distance": 1784.2408604387438,
+        "source": "vct"
+      },
+      "b3": {
+        "mean_angle": -1.4132232025768512,
+        "mean_angle_degrees": -80.97172501761534,
+        "std_angle": 1.660021497116119,
+        "samples": 295,
+        "avg_distance": 1652.5676456253016,
+        "source": "vct"
+      },
+      "g4": {
+        "mean_angle": -2.9017387243329,
+        "mean_angle_degrees": -166.2573821539506,
+        "std_angle": 0.7204183208978387,
+        "samples": 14,
+        "avg_distance": 2068.9292647011503,
+        "source": "vct"
+      },
+      "e3": {
+        "mean_angle": 1.567696407653393,
+        "mean_angle_degrees": 89.82238771636003,
+        "std_angle": 1.5684714094067602,
+        "samples": 246,
+        "avg_distance": 1254.6842886325571,
+        "source": "vct"
+      },
+      "e4": {
+        "mean_angle": -2.4721564904206845,
+        "mean_angle_degrees": -141.64413319697894,
+        "std_angle": 1.7000111792673844,
+        "samples": 102,
+        "avg_distance": 1854.433820257911,
+        "source": "vct"
+      },
+      "g3": {
+        "mean_angle": -3.14017970896789,
+        "mean_angle_degrees": -179.91904423647924,
+        "std_angle": 0.802557012709278,
+        "samples": 42,
+        "avg_distance": 2225.4437913614447,
+        "source": "vct"
+      },
+      "f3": {
+        "mean_angle": -1.4720340573686133,
+        "mean_angle_degrees": -84.34133878674004,
+        "std_angle": 2.167095006326191,
+        "samples": 338,
+        "avg_distance": 1362.368711256367,
+        "source": "vct"
+      },
+      "f4": {
+        "mean_angle": -1.6719616354468516,
+        "mean_angle_degrees": -95.79634521889534,
+        "std_angle": 0.9529174900221389,
+        "samples": 202,
+        "avg_distance": 2055.5297629694555,
+        "source": "vct"
+      },
+      "c5": {
+        "mean_angle": -2.2005358262031813,
+        "mean_angle_degrees": -126.08141550877592,
+        "std_angle": 0.27848084452747307,
+        "samples": 7,
+        "avg_distance": 2652.1636824297034,
+        "source": "vct"
+      },
+      "b4": {
+        "mean_angle": -0.0998865379641944,
+        "mean_angle_degrees": -5.7230770555216095,
+        "std_angle": 1.2581217556090778,
+        "samples": 71,
+        "avg_distance": 1953.9537311012657,
+        "source": "vct"
+      },
+      "d5": {
+        "mean_angle": -1.3578780904960943,
+        "mean_angle_degrees": -77.80068367870946,
+        "std_angle": 1.1334462652401287,
+        "samples": 44,
+        "avg_distance": 2561.283878614862,
+        "source": "vct"
+      },
+      "b2": {
+        "mean_angle": 1.159631533479167,
+        "mean_angle_degrees": 66.44199265863989,
+        "std_angle": 1.2917450011450937,
+        "samples": 263,
+        "avg_distance": 1622.094113585187,
+        "source": "vct"
+      },
+      "b5": {
+        "mean_angle": -1.6016965045019333,
+        "mean_angle_degrees": -91.77044976881744,
+        "std_angle": 0.2763339886292844,
+        "samples": 12,
+        "avg_distance": 2993.455038717904,
+        "source": "vct"
+      },
+      "c2": {
+        "mean_angle": 1.907143967395168,
+        "mean_angle_degrees": 109.27130025557861,
+        "std_angle": 1.2217655240305176,
+        "samples": 195,
+        "avg_distance": 1842.6197075859686,
+        "source": "vct"
+      },
+      "a2": {
+        "mean_angle": 0.3160194508456231,
+        "mean_angle_degrees": 18.106580777496177,
+        "std_angle": 0.6054823339583427,
+        "samples": 104,
+        "avg_distance": 2253.774552012766,
+        "source": "vct"
+      },
+      "e1": {
+        "mean_angle": 2.1591640654645485,
+        "mean_angle_degrees": 123.71098822742722,
+        "std_angle": 1.4901161193847656e-08,
+        "samples": 1,
+        "avg_distance": 2922.6212740806664,
+        "source": "vct"
+      },
+      "e2": {
+        "mean_angle": 1.7112308168073387,
+        "mean_angle_degrees": 98.04630357578505,
+        "std_angle": 1.5974707596521076,
+        "samples": 48,
+        "avg_distance": 2274.3236791387376,
+        "source": "vct"
+      },
+      "f2": {
+        "mean_angle": 1.694280449948135,
+        "mean_angle_degrees": 97.07511909355425,
+        "std_angle": 0.9423230983238179,
+        "samples": 233,
+        "avg_distance": 1839.2949529446687,
+        "source": "vct"
+      },
+      "g2": {
+        "mean_angle": 2.6197477945195393,
+        "mean_angle_degrees": 150.1004920146752,
+        "std_angle": 0.7065927327014166,
+        "samples": 35,
+        "avg_distance": 2329.4275677476335,
+        "source": "vct"
+      },
+      "e6": {
+        "mean_angle": -1.455732066717361,
+        "mean_angle_degrees": -83.40730352476156,
+        "std_angle": 0.4566811657083437,
+        "samples": 12,
+        "avg_distance": 1023.7044763983239,
+        "source": "vct"
+      },
+      "d1": {
+        "mean_angle": 1.2643878164595284,
+        "mean_angle_degrees": 72.44408555089274,
+        "std_angle": 0.507425376723376,
+        "samples": 9,
+        "avg_distance": 2677.878674390442,
+        "source": "vct"
+      },
+      "f5": {
+        "mean_angle": -1.1443498062221946,
+        "mean_angle_degrees": -65.56641418314534,
+        "std_angle": -0.0,
+        "samples": 1,
+        "avg_distance": 4777.00257380024,
+        "source": "vct"
+      },
+      "c1": {
+        "mean_angle": 1.7266476472522794,
+        "mean_angle_degrees": 98.92962289374894,
+        "std_angle": -0.0,
+        "samples": 1,
+        "avg_distance": 3465.193850232413,
+        "source": "vct"
+      }
+    },
+    "fracture": {
+      "b6": {
+        "mean_angle": -0.006164040944501791,
+        "mean_angle_degrees": -0.35317353086578634,
+        "std_angle": 0.9158908967030163,
+        "samples": 119,
+        "avg_distance": 2437.1262230162347,
+        "source": "vct"
+      },
+      "a4": {
+        "mean_angle": 0.7200441069244637,
+        "mean_angle_degrees": 41.255488390038344,
+        "std_angle": 0.6729326881499754,
+        "samples": 61,
+        "avg_distance": 2086.0276421814738,
+        "source": "vct"
+      },
+      "c4": {
+        "mean_angle": 1.5371578297944686,
+        "mean_angle_degrees": 88.072656092712,
+        "std_angle": 0.5921936185103442,
+        "samples": 48,
+        "avg_distance": 2970.0225157075656,
+        "source": "vct"
+      },
+      "c6": {
+        "mean_angle": -1.1947810936326273,
+        "mean_angle_degrees": -68.45591410717438,
+        "std_angle": 1.317607306610706,
+        "samples": 280,
+        "avg_distance": 1986.0848270957308,
+        "source": "vct"
+      },
+      "d6": {
+        "mean_angle": -2.7532906192099365,
+        "mean_angle_degrees": -157.75193225369043,
+        "std_angle": 0.8738149981191554,
+        "samples": 112,
+        "avg_distance": 2138.4662924841496,
+        "source": "vct"
+      },
+      "d5": {
+        "mean_angle": 2.318284868775402,
+        "mean_angle_degrees": 132.82793868987042,
+        "std_angle": 1.3616564056267781,
+        "samples": 124,
+        "avg_distance": 1924.180891601025,
+        "source": "vct"
+      },
+      "c5": {
+        "mean_angle": 1.3305378763527502,
+        "mean_angle_degrees": 76.23420479731196,
+        "std_angle": 1.0143787472328194,
+        "samples": 189,
+        "avg_distance": 2225.450597259151,
+        "source": "vct"
+      },
+      "c2": {
+        "mean_angle": -1.6532387891228406,
+        "mean_angle_degrees": -94.72360514405747,
+        "std_angle": 1.6935686866926256,
+        "samples": 311,
+        "avg_distance": 1823.2818488050223,
+        "source": "vct"
+      },
+      "d2": {
+        "mean_angle": -2.68387890133648,
+        "mean_angle_degrees": -153.77493377078858,
+        "std_angle": 1.543259903370579,
+        "samples": 297,
+        "avg_distance": 1519.4013438704712,
+        "source": "vct"
+      },
+      "d1": {
+        "mean_angle": 2.214203628451478,
+        "mean_angle_degrees": 126.86452289282273,
+        "std_angle": 1.5493977823219511,
+        "samples": 210,
+        "avg_distance": 1245.2138448703213,
+        "source": "vct"
+      },
+      "d3": {
+        "mean_angle": -2.010984646165833,
+        "mean_angle_degrees": -115.22093289091144,
+        "std_angle": 0.6397742741483389,
+        "samples": 212,
+        "avg_distance": 3478.2349702256133,
+        "source": "vct"
+      },
+      "c3": {
+        "mean_angle": -0.4851130662280488,
+        "mean_angle_degrees": -27.794931281517584,
+        "std_angle": 1.0384965879989219,
+        "samples": 67,
+        "avg_distance": 2204.127970384235,
+        "source": "vct"
+      },
+      "c1": {
+        "mean_angle": 1.0714325680098211,
+        "mean_angle_degrees": 61.38856417982629,
+        "std_angle": 1.024275567798809,
+        "samples": 133,
+        "avg_distance": 1946.4784202304118,
+        "source": "vct"
+      },
+      "b1": {
+        "mean_angle": 1.3386459791824479,
+        "mean_angle_degrees": 76.69876486931172,
+        "std_angle": 1.015737466513924,
+        "samples": 22,
+        "avg_distance": 2847.93479571306,
+        "source": "vct"
+      },
+      "b2": {
+        "mean_angle": -0.3185131558473761,
+        "mean_angle_degrees": -18.249459549447288,
+        "std_angle": 0.5431788641292292,
+        "samples": 256,
+        "avg_distance": 2944.9793106861753,
+        "source": "vct"
+      },
+      "b5": {
+        "mean_angle": 0.5420590793292502,
+        "mean_angle_degrees": 31.05769749231312,
+        "std_angle": 1.5525623067177898,
+        "samples": 121,
+        "avg_distance": 1567.9509981913575,
+        "source": "vct"
+      },
+      "b4": {
+        "mean_angle": 1.73214854380207,
+        "mean_angle_degrees": 99.24480104959002,
+        "std_angle": 1.0954475447268728,
+        "samples": 12,
+        "avg_distance": 1778.523441654308,
+        "source": "vct"
+      },
+      "b3": {
+        "mean_angle": 2.526675116035085,
+        "mean_angle_degrees": 144.76782034953794,
+        "std_angle": 0.7693136799633429,
+        "samples": 7,
+        "avg_distance": 2174.114174483692,
+        "source": "vct"
+      },
+      "a3": {
+        "mean_angle": 0.21783867816352387,
+        "mean_angle_degrees": 12.481236873478565,
+        "std_angle": 1.2747876782976943,
+        "samples": 28,
+        "avg_distance": 1694.8468890045654,
+        "source": "vct"
+      },
+      "e3": {
+        "mean_angle": -2.470230779645273,
+        "mean_angle_degrees": -141.533798096985,
+        "std_angle": 0.5627836512620364,
+        "samples": 43,
+        "avg_distance": 2578.5039659101476,
+        "source": "vct"
+      },
+      "e2": {
+        "mean_angle": 2.3774157041921984,
+        "mean_angle_degrees": 136.21588599833555,
+        "std_angle": 1.283843324647093,
+        "samples": 45,
+        "avg_distance": 2557.261782387044,
+        "source": "vct"
+      },
+      "d4": {
+        "mean_angle": -2.8820383804135545,
+        "mean_angle_degrees": -165.1286355924159,
+        "std_angle": 1.3071029458692454,
+        "samples": 32,
+        "avg_distance": 3845.1040010927286,
+        "source": "vct"
+      },
+      "e6": {
+        "mean_angle": 2.48709522419988,
+        "mean_angle_degrees": 142.50005959379638,
+        "std_angle": 0.36071692192756893,
+        "samples": 62,
+        "avg_distance": 3035.328677966795,
+        "source": "vct"
+      },
+      "a2": {
+        "mean_angle": 1.4108973466538637,
+        "mean_angle_degrees": 80.83846328947266,
+        "std_angle": 0.16807091857159462,
+        "samples": 9,
+        "avg_distance": 1737.8152875580026,
+        "source": "vct"
+      },
+      "e5": {
+        "mean_angle": 2.3931466333763605,
+        "mean_angle_degrees": 137.1172018484072,
+        "std_angle": 0.6462673034272851,
+        "samples": 33,
+        "avg_distance": 3134.111269844606,
+        "source": "vct"
+      },
+      "f5": {
+        "mean_angle": 2.965051579946353,
+        "mean_angle_degrees": 169.88494156952262,
+        "std_angle": 0.14459765648774497,
+        "samples": 9,
+        "avg_distance": 2267.300144848669,
+        "source": "vct"
+      },
+      "f2": {
+        "mean_angle": 1.5226411774868882,
+        "mean_angle_degrees": 87.24091318282879,
+        "std_angle": -0.0,
+        "samples": 2,
+        "avg_distance": 3365.264713185466,
+        "source": "vct"
+      },
+      "f4": {
+        "mean_angle": -1.8421800887042012,
+        "mean_angle_degrees": -105.54914418578635,
+        "std_angle": 0.24853368634100165,
+        "samples": 6,
+        "avg_distance": 3178.397129930667,
+        "source": "vct"
+      },
+      "a5": {
+        "mean_angle": -0.3436391742183883,
+        "mean_angle_degrees": -19.68907435807446,
+        "std_angle": 0.9827355853056092,
+        "samples": 11,
+        "avg_distance": 1795.318590942007,
+        "source": "vct"
+      },
+      "f3": {
+        "mean_angle": 3.0497899585511123,
+        "mean_angle_degrees": 174.74009302635702,
+        "std_angle": 0.14821682746179898,
+        "samples": 8,
+        "avg_distance": 2674.3587696229906,
+        "source": "vct"
+      }
+    },
+    "pearl": {
+      "f6": {
+        "mean_angle": 0.30670998673100786,
+        "mean_angle_degrees": 17.573187774200232,
+        "std_angle": 0.8611825218425108,
+        "samples": 21,
+        "avg_distance": 2835.4025851908714,
+        "source": "vct"
+      },
+      "g6": {
+        "mean_angle": -0.38710967657448947,
+        "mean_angle_degrees": -22.17975067639256,
+        "std_angle": 1.5195151485177687,
+        "samples": 64,
+        "avg_distance": 1753.7461177370694,
+        "source": "vct"
+      },
+      "i7": {
+        "mean_angle": -3.083414799287708,
+        "mean_angle_degrees": -176.6666544873635,
+        "std_angle": 1.293780339312629,
+        "samples": 280,
+        "avg_distance": 1605.159200719383,
+        "source": "vct"
+      },
+      "h7": {
+        "mean_angle": -1.5545018775515864,
+        "mean_angle_degrees": -89.06639682886819,
+        "std_angle": 2.145808016235753,
+        "samples": 516,
+        "avg_distance": 1436.8916466140315,
+        "source": "vct"
+      },
+      "i8": {
+        "mean_angle": -2.4979206963296465,
+        "mean_angle_degrees": -143.1203134580685,
+        "std_angle": 0.485752523746757,
+        "samples": 47,
+        "avg_distance": 2490.207021112187,
+        "source": "vct"
+      },
+      "g7": {
+        "mean_angle": 0.15383041368191425,
+        "mean_angle_degrees": 8.813833464725201,
+        "std_angle": 1.0729895201411015,
+        "samples": 232,
+        "avg_distance": 2006.7830993831587,
+        "source": "vct"
+      },
+      "g2": {
+        "mean_angle": 1.2438985037133132,
+        "mean_angle_degrees": 71.27013440541101,
+        "std_angle": 1.1640926013967365,
+        "samples": 123,
+        "avg_distance": 2414.580918251143,
+        "source": "vct"
+      },
+      "e3": {
+        "mean_angle": -0.315557284240516,
+        "mean_angle_degrees": -18.08010058159165,
+        "std_angle": 0.4018426981301489,
+        "samples": 14,
+        "avg_distance": 3956.399504194473,
+        "source": "vct"
+      },
+      "f2": {
+        "mean_angle": 0.38354744740849045,
+        "mean_angle_degrees": 21.975649979522405,
+        "std_angle": 1.1814505217608722,
+        "samples": 74,
+        "avg_distance": 2756.8140581356406,
+        "source": "vct"
+      },
+      "h6": {
+        "mean_angle": 1.3703823943618898,
+        "mean_angle_degrees": 78.51712751596867,
+        "std_angle": 1.107780092117156,
+        "samples": 354,
+        "avg_distance": 1711.629042954328,
+        "source": "vct"
+      },
+      "h8": {
+        "mean_angle": -1.2729436952145081,
+        "mean_angle_degrees": -72.93430129357873,
+        "std_angle": 0.6450275972263854,
+        "samples": 80,
+        "avg_distance": 1327.5629976649611,
+        "source": "vct"
+      },
+      "h5": {
+        "mean_angle": 2.3061044101992896,
+        "mean_angle_degrees": 132.13004982092525,
+        "std_angle": 1.2169360391919906,
+        "samples": 81,
+        "avg_distance": 1228.6504354025594,
+        "source": "vct"
+      },
+      "g5": {
+        "mean_angle": -0.5435655827600749,
+        "mean_angle_degrees": -31.144013780721355,
+        "std_angle": 2.216699175316528,
+        "samples": 70,
+        "avg_distance": 1993.941791895878,
+        "source": "vct"
+      },
+      "h3": {
+        "mean_angle": -2.3219979005437836,
+        "mean_angle_degrees": -133.0406797393967,
+        "std_angle": 1.5363592615025325,
+        "samples": 579,
+        "avg_distance": 1495.003943992647,
+        "source": "vct"
+      },
+      "i3": {
+        "mean_angle": 2.936957457389071,
+        "mean_angle_degrees": 168.2752669178671,
+        "std_angle": 0.5637633204830507,
+        "samples": 98,
+        "avg_distance": 1836.7128977377367,
+        "source": "vct"
+      },
+      "i5": {
+        "mean_angle": 2.39048002953578,
+        "mean_angle_degrees": 136.96441670270858,
+        "std_angle": 1.3234382402864706,
+        "samples": 16,
+        "avg_distance": 2448.1251863405873,
+        "source": "vct"
+      },
+      "h4": {
+        "mean_angle": -1.6825959836112885,
+        "mean_angle_degrees": -96.40564848659027,
+        "std_angle": 0.910617978445105,
+        "samples": 152,
+        "avg_distance": 2022.488519390018,
+        "source": "vct"
+      },
+      "h2": {
+        "mean_angle": 1.8127220835908158,
+        "mean_angle_degrees": 103.86132481991456,
+        "std_angle": 0.9634517331930968,
+        "samples": 230,
+        "avg_distance": 1909.5667622465498,
+        "source": "vct"
+      },
+      "g3": {
+        "mean_angle": -0.0921518342842912,
+        "mean_angle_degrees": -5.279911178878849,
+        "std_angle": 1.3761174916030754,
+        "samples": 456,
+        "avg_distance": 1721.232218646633,
+        "source": "vct"
+      },
+      "g8": {
+        "mean_angle": -1.6414347483134808,
+        "mean_angle_degrees": -94.04728342448097,
+        "std_angle": 1.3594004885432658,
+        "samples": 123,
+        "avg_distance": 1541.4307208015039,
+        "source": "vct"
+      },
+      "f7": {
+        "mean_angle": 0.8497566647327982,
+        "mean_angle_degrees": 48.687470502302624,
+        "std_angle": 0.6690548486266733,
+        "samples": 33,
+        "avg_distance": 1855.2156001121748,
+        "source": "vct"
+      },
+      "e6": {
+        "mean_angle": 0.2694613584132267,
+        "mean_angle_degrees": 15.438998578939888,
+        "std_angle": 1.1936898801063052,
+        "samples": 7,
+        "avg_distance": 3025.43574455497,
+        "source": "vct"
+      },
+      "i4": {
+        "mean_angle": -2.6542347105116075,
+        "mean_angle_degrees": -152.07644674944297,
+        "std_angle": 0.43482106333364173,
+        "samples": 29,
+        "avg_distance": 1411.3831925894403,
+        "source": "vct"
+      },
+      "i6": {
+        "mean_angle": 2.730751050108809,
+        "mean_angle_degrees": 156.46051007215232,
+        "std_angle": 1.1620289466743297,
+        "samples": 52,
+        "avg_distance": 1925.9291866142562,
+        "source": "vct"
+      },
+      "j7": {
+        "mean_angle": 2.375484399121629,
+        "mean_angle_degrees": 136.1052303688397,
+        "std_angle": 0.6645673701465846,
+        "samples": 15,
+        "avg_distance": 1579.071494584524,
+        "source": "vct"
+      },
+      "f3": {
+        "mean_angle": -0.6679553199508125,
+        "mean_angle_degrees": -38.27102073649211,
+        "std_angle": 0.71186156651927,
+        "samples": 36,
+        "avg_distance": 2312.6695891522054,
+        "source": "vct"
+      },
+      "g4": {
+        "mean_angle": -0.08628543632689183,
+        "mean_angle_degrees": -4.943791334975698,
+        "std_angle": 1.8135788245979736,
+        "samples": 78,
+        "avg_distance": 2079.3208803975945,
+        "source": "vct"
+      },
+      "f5": {
+        "mean_angle": 0.14586499702995886,
+        "mean_angle_degrees": 8.357448708504931,
+        "std_angle": 1.0232634486679801,
+        "samples": 11,
+        "avg_distance": 2132.362958190025,
+        "source": "vct"
+      },
+      "d5": {
+        "mean_angle": -0.09892317190711626,
+        "mean_angle_degrees": -5.667880246324873,
+        "std_angle": 1.4901161193847656e-08,
+        "samples": 3,
+        "avg_distance": 1368.400765721589,
+        "source": "vct"
+      },
+      "e4": {
+        "mean_angle": 2.9199067374648826,
+        "mean_angle_degrees": 167.29833262855146,
+        "std_angle": -0.0,
+        "samples": 1,
+        "avg_distance": 2082.819292121631,
+        "source": "vct"
+      },
+      "e5": {
+        "mean_angle": 1.2052332681845328,
+        "mean_angle_degrees": 69.05477959573261,
+        "std_angle": 1.0587552769889048,
+        "samples": 8,
+        "avg_distance": 2688.473166403477,
+        "source": "vct"
+      },
+      "i2": {
+        "mean_angle": 2.3887374277345943,
+        "mean_angle_degrees": 136.86457297412872,
+        "std_angle": 0.7101352061860983,
+        "samples": 6,
+        "avg_distance": 2178.200483324852,
+        "source": "vct"
+      },
+      "e2": {
+        "mean_angle": 0.043372836083707934,
+        "mean_angle_degrees": 2.485080453109191,
+        "std_angle": 0.030284883836288818,
+        "samples": 8,
+        "avg_distance": 4683.787447590032,
+        "source": "vct"
+      },
+      "j6": {
+        "mean_angle": -2.5915964466662262,
+        "mean_angle_degrees": -148.4875385950757,
+        "std_angle": 0.5145881553289959,
+        "samples": 7,
+        "avg_distance": 1328.0599623959747,
+        "source": "vct"
+      },
+      "f8": {
+        "mean_angle": 0.4236089242453063,
+        "mean_angle_degrees": 24.27100352333306,
+        "std_angle": 1.4901161193847656e-08,
+        "samples": 2,
+        "avg_distance": 1130.62073000717,
+        "source": "vct"
+      }
+    },
+    "abyss": {
+      "b2": {
+        "mean_angle": 1.6978010710055487,
+        "mean_angle_degrees": 97.27683582140894,
+        "std_angle": 0.6923884954214934,
+        "samples": 69,
+        "avg_distance": 2337.380240625712,
+        "source": "vct"
+      },
+      "b3": {
+        "mean_angle": 2.436406195663034,
+        "mean_angle_degrees": 139.5957921910169,
+        "std_angle": 1.8857152867114126,
+        "samples": 139,
+        "avg_distance": 1653.8463061034552,
+        "source": "vct"
+      },
+      "a3": {
+        "mean_angle": 0.7307831004712464,
+        "mean_angle_degrees": 41.87078739648722,
+        "std_angle": 1.521823198186411,
+        "samples": 126,
+        "avg_distance": 1331.4535376420367,
+        "source": "vct"
+      },
+      "b5": {
+        "mean_angle": -1.4255607939548118,
+        "mean_angle_degrees": -81.67861693292947,
+        "std_angle": 0.7514350175593957,
+        "samples": 36,
+        "avg_distance": 2399.138391251359,
+        "source": "vct"
+      },
+      "b4": {
+        "mean_angle": -1.9229749933298783,
+        "mean_angle_degrees": -110.17835122699965,
+        "std_angle": 1.4879766068093843,
+        "samples": 109,
+        "avg_distance": 1588.0520821895077,
+        "source": "vct"
+      },
+      "a5": {
+        "mean_angle": -1.0868571018056121,
+        "mean_angle_degrees": -62.272324867282016,
+        "std_angle": 0.47344444026137433,
+        "samples": 8,
+        "avg_distance": 1870.431429521869,
+        "source": "vct"
+      },
+      "c3": {
+        "mean_angle": -2.7273148095439312,
+        "mean_angle_degrees": -156.2636279903932,
+        "std_angle": 1.4624992235263081,
+        "samples": 60,
+        "avg_distance": 1218.216436610786,
+        "source": "vct"
+      },
+      "e6": {
+        "mean_angle": -0.5469826286652452,
+        "mean_angle_degrees": -31.33979608949007,
+        "std_angle": 0.6918214264504512,
+        "samples": 12,
+        "avg_distance": 2288.8438826091183,
+        "source": "vct"
+      },
+      "e5": {
+        "mean_angle": 2.6996406028114284,
+        "mean_angle_degrees": 154.67801274324825,
+        "std_angle": 1.706786562241755,
+        "samples": 9,
+        "avg_distance": 1743.300695160891,
+        "source": "vct"
+      },
+      "d6": {
+        "mean_angle": -0.9506424514262983,
+        "mean_angle_degrees": -54.46780029269726,
+        "std_angle": 0.33531690943566433,
+        "samples": 8,
+        "avg_distance": 2558.469737857805,
+        "source": "vct"
+      },
+      "g4": {
+        "mean_angle": -2.9860063157998984,
+        "mean_angle_degrees": -171.08555949474226,
+        "std_angle": 1.1451310421000795,
+        "samples": 75,
+        "avg_distance": 1759.115858428095,
+        "source": "vct"
+      },
+      "g3": {
+        "mean_angle": 2.4213635692373927,
+        "mean_angle_degrees": 138.73391318403569,
+        "std_angle": 1.0067564262872482,
+        "samples": 53,
+        "avg_distance": 2102.6701278809574,
+        "source": "vct"
+      },
+      "g2": {
+        "mean_angle": 2.0512503579104737,
+        "mean_angle_degrees": 117.5279882329697,
+        "std_angle": 0.7797877021865088,
+        "samples": 22,
+        "avg_distance": 1681.1460853216192,
+        "source": "vct"
+      },
+      "f2": {
+        "mean_angle": 1.6598909964238913,
+        "mean_angle_degrees": 95.1047485468538,
+        "std_angle": 1.2517854218443598,
+        "samples": 30,
+        "avg_distance": 1935.4617365592956,
+        "source": "vct"
+      },
+      "f3": {
+        "mean_angle": 0.8420289607062924,
+        "mean_angle_degrees": 48.24470567625759,
+        "std_angle": 1.3821203333230354,
+        "samples": 160,
+        "avg_distance": 1589.9313526598357,
+        "source": "vct"
+      },
+      "c2": {
+        "mean_angle": 1.2215476848036908,
+        "mean_angle_degrees": 69.98952681322845,
+        "std_angle": 1.1296654178601313,
+        "samples": 16,
+        "avg_distance": 1384.9137735814184,
+        "source": "vct"
+      },
+      "a4": {
+        "mean_angle": -1.126375822858602,
+        "mean_angle_degrees": -64.53658079537314,
+        "std_angle": 0.993453624194457,
+        "samples": 81,
+        "avg_distance": 1775.8885446230609,
+        "source": "vct"
+      },
+      "f4": {
+        "mean_angle": -0.3348224840431857,
+        "mean_angle_degrees": -19.18391522176089,
+        "std_angle": 1.6788959588795453,
+        "samples": 106,
+        "avg_distance": 1477.7332984406403,
+        "source": "vct"
+      },
+      "f5": {
+        "mean_angle": -0.9629526352121258,
+        "mean_angle_degrees": -55.17312186865556,
+        "std_angle": 0.7479029230134414,
+        "samples": 27,
+        "avg_distance": 2673.6454373064153,
+        "source": "vct"
+      },
+      "d5": {
+        "mean_angle": -1.9043209217660615,
+        "mean_angle_degrees": -109.10955165565795,
+        "std_angle": 0.9354176598921653,
+        "samples": 14,
+        "avg_distance": 2162.816143237601,
+        "source": "vct"
+      },
+      "e3": {
+        "mean_angle": -2.403730824320046,
+        "mean_angle_degrees": -137.72363131904098,
+        "std_angle": 1.636343271888668,
+        "samples": 22,
+        "avg_distance": 1483.307002279256,
+        "source": "vct"
+      },
+      "g5": {
+        "mean_angle": -2.422084473152831,
+        "mean_angle_degrees": -138.77521793582477,
+        "std_angle": 0.6285384917882949,
+        "samples": 16,
+        "avg_distance": 2123.4585016624615,
+        "source": "vct"
+      },
+      "c5": {
+        "mean_angle": 0.09459085402252812,
+        "mean_angle_degrees": 5.4196567160289275,
+        "std_angle": 0.5729417252078646,
+        "samples": 14,
+        "avg_distance": 780.2596903618065,
+        "source": "vct"
+      },
+      "d3": {
+        "mean_angle": 3.0191639848821525,
+        "mean_angle_degrees": 172.98535399164683,
+        "std_angle": 1.3546044014345295,
+        "samples": 40,
+        "avg_distance": 2002.8910518931152,
+        "source": "vct"
+      },
+      "e2": {
+        "mean_angle": 1.689485779098015,
+        "mean_angle_degrees": 96.80040468968797,
+        "std_angle": 0.16225122462374814,
+        "samples": 7,
+        "avg_distance": 2881.640698833004,
+        "source": "vct"
+      },
+      "d4": {
+        "mean_angle": -1.2213370948437505,
+        "mean_angle_degrees": -69.97746089731605,
+        "std_angle": 0.9172623053812723,
+        "samples": 27,
+        "avg_distance": 2594.4455028516536,
+        "source": "vct"
+      },
+      "c4": {
+        "mean_angle": 2.2274487923599677,
+        "mean_angle_degrees": 127.6234148837382,
+        "std_angle": 1.0215260885809505,
+        "samples": 19,
+        "avg_distance": 2024.5077001332224,
+        "source": "vct"
+      },
+      "e4": {
+        "mean_angle": -2.087535168608147,
+        "mean_angle_degrees": -119.60695474637751,
+        "std_angle": 1.3854357651476825,
+        "samples": 20,
+        "avg_distance": 1525.6038011761268,
+        "source": "vct"
+      },
+      "e1": {
+        "mean_angle": 0.5959439782230885,
+        "mean_angle_degrees": 34.145074778419215,
+        "std_angle": 0.27467051047227337,
+        "samples": 3,
+        "avg_distance": 2980.1517509975142,
+        "source": "vct"
+      },
+      "d2": {
+        "mean_angle": 0.9918378183434332,
+        "mean_angle_degrees": 56.828120952541944,
+        "std_angle": 0.7005208015038173,
+        "samples": 17,
+        "avg_distance": 1809.7436643290887,
+        "source": "vct"
+      },
+      "f6": {
+        "mean_angle": -1.4792576149252858,
+        "mean_angle_degrees": -84.75521814780721,
+        "std_angle": -0.0,
+        "samples": 2,
+        "avg_distance": 3802.668601718289,
+        "source": "vct"
+      },
+      "a2": {
+        "mean_angle": 1.6597793510225909,
+        "mean_angle_degrees": 95.09835173655723,
+        "std_angle": -0.0,
+        "samples": 3,
+        "avg_distance": 2900.6976264724813,
+        "source": "vct"
+      }
+    },
+    "haven": {
+      "d3": {
+        "mean_angle": -3.130649243793453,
+        "mean_angle_degrees": -179.3729888051876,
+        "std_angle": 2.4471386511066826,
+        "samples": 678,
+        "avg_distance": 1544.0067688800468,
+        "source": "vct"
+      },
+      "c3": {
+        "mean_angle": 0.422332587831668,
+        "mean_angle_degrees": 24.197874833592724,
+        "std_angle": 1.3049847293478076,
+        "samples": 487,
+        "avg_distance": 2020.1957557241278,
+        "source": "vct"
+      },
+      "d2": {
+        "mean_angle": 2.1522795629363953,
+        "mean_angle_degrees": 123.31653528851689,
+        "std_angle": 0.9037113058314673,
+        "samples": 319,
+        "avg_distance": 2146.1703364682776,
+        "source": "vct"
+      },
+      "c4": {
+        "mean_angle": -0.4180901822386171,
+        "mean_angle_degrees": -23.954802898128214,
+        "std_angle": 1.7267726591748833,
+        "samples": 277,
+        "avg_distance": 1922.6682634852157,
+        "source": "vct"
+      },
+      "c5": {
+        "mean_angle": -1.443324733654214,
+        "mean_angle_degrees": -82.69641570523012,
+        "std_angle": 0.5928252496053179,
+        "samples": 265,
+        "avg_distance": 3625.3157179932264,
+        "source": "vct"
+      },
+      "d4": {
+        "mean_angle": -2.1410858958329864,
+        "mean_angle_degrees": -122.67518540621714,
+        "std_angle": 2.078376905395018,
+        "samples": 378,
+        "avg_distance": 1811.1145871306594,
+        "source": "vct"
+      },
+      "f4": {
+        "mean_angle": -0.628769180535414,
+        "mean_angle_degrees": -36.02582033257853,
+        "std_angle": 1.768571031594674,
+        "samples": 200,
+        "avg_distance": 1994.22778289885,
+        "source": "vct"
+      },
+      "h4": {
+        "mean_angle": -2.2882717695742647,
+        "mean_angle_degrees": -131.1083147755378,
+        "std_angle": 1.097514336761276,
+        "samples": 395,
+        "avg_distance": 2609.0757845351527,
+        "source": "vct"
+      },
+      "g3": {
+        "mean_angle": 0.060847395298711936,
+        "mean_angle_degrees": 3.486298944980361,
+        "std_angle": 1.5120251145435168,
+        "samples": 519,
+        "avg_distance": 1436.4039379357523,
+        "source": "vct"
+      },
+      "h3": {
+        "mean_angle": 2.9683554906570606,
+        "mean_angle_degrees": 170.07424170913424,
+        "std_angle": 1.156474413711961,
+        "samples": 506,
+        "avg_distance": 1442.8694077202956,
+        "source": "vct"
+      },
+      "g2": {
+        "mean_angle": 1.2367833795173597,
+        "mean_angle_degrees": 70.86246781827145,
+        "std_angle": 0.8933681306704632,
+        "samples": 172,
+        "avg_distance": 1830.6194115796727,
+        "source": "vct"
+      },
+      "f5": {
+        "mean_angle": -1.3806543501222948,
+        "mean_angle_degrees": -79.10566722838496,
+        "std_angle": 1.2529858243587702,
+        "samples": 269,
+        "avg_distance": 1961.299188967036,
+        "source": "vct"
+      },
+      "f3": {
+        "mean_angle": 2.486471660378033,
+        "mean_angle_degrees": 142.46433201854748,
+        "std_angle": 1.179335132479493,
+        "samples": 309,
+        "avg_distance": 1702.506261679562,
+        "source": "vct"
+      },
+      "e2": {
+        "mean_angle": 1.186910188579138,
+        "mean_angle_degrees": 68.00494446666126,
+        "std_angle": 1.1343456546301358,
+        "samples": 51,
+        "avg_distance": 2393.728710679707,
+        "source": "vct"
+      },
+      "e4": {
+        "mean_angle": -1.5231070564359286,
+        "mean_angle_degrees": -87.2676060803728,
+        "std_angle": 1.0867358207011177,
+        "samples": 375,
+        "avg_distance": 1724.9107005219435,
+        "source": "vct"
+      },
+      "f6": {
+        "mean_angle": -1.3419873614970834,
+        "mean_angle_degrees": -76.89021197368,
+        "std_angle": 0.5258393176639978,
+        "samples": 20,
+        "avg_distance": 3106.8402565473957,
+        "source": "vct"
+      },
+      "e3": {
+        "mean_angle": 0.6519484144198932,
+        "mean_angle_degrees": 37.353892606505816,
+        "std_angle": 1.1981420835956405,
+        "samples": 772,
+        "avg_distance": 1730.9275033315341,
+        "source": "vct"
+      },
+      "g4": {
+        "mean_angle": -1.266966025867623,
+        "mean_angle_degrees": -72.59180606867749,
+        "std_angle": 2.0537231127785724,
+        "samples": 216,
+        "avg_distance": 1629.5847887007872,
+        "source": "vct"
+      },
+      "h2": {
+        "mean_angle": 2.280064957101901,
+        "mean_angle_degrees": 130.63809905761605,
+        "std_angle": 0.9850363494684216,
+        "samples": 148,
+        "avg_distance": 1727.0495326659368,
+        "source": "vct"
+      },
+      "d5": {
+        "mean_angle": -1.7212584700758977,
+        "mean_angle_degrees": -98.62084578649404,
+        "std_angle": 1.2441904192866617,
+        "samples": 49,
+        "avg_distance": 2459.575242364308,
+        "source": "vct"
+      },
+      "c2": {
+        "mean_angle": 1.619819407114735,
+        "mean_angle_degrees": 92.80881560105759,
+        "std_angle": 0.8158519749409241,
+        "samples": 19,
+        "avg_distance": 2178.583820340882,
+        "source": "vct"
+      },
+      "e6": {
+        "mean_angle": -0.5798823536204093,
+        "mean_angle_degrees": -33.22481147656221,
+        "std_angle": 0.8826252604164799,
+        "samples": 13,
+        "avg_distance": 1932.0942743304831,
+        "source": "vct"
+      },
+      "f1": {
+        "mean_angle": 2.084090341486876,
+        "mean_angle_degrees": 119.40958069117649,
+        "std_angle": 0.8975045683436914,
+        "samples": 12,
+        "avg_distance": 2165.20145365662,
+        "source": "vct"
+      },
+      "g5": {
+        "mean_angle": -1.4171597582414395,
+        "mean_angle_degrees": -81.19727304301456,
+        "std_angle": 1.4170091393976239,
+        "samples": 53,
+        "avg_distance": 1809.331646653574,
+        "source": "vct"
+      },
+      "d6": {
+        "mean_angle": -2.4281869556623175,
+        "mean_angle_degrees": -139.12486442817075,
+        "std_angle": 0.237888341406211,
+        "samples": 16,
+        "avg_distance": 2317.5082830695833,
+        "source": "vct"
+      },
+      "e5": {
+        "mean_angle": -1.8106438320077587,
+        "mean_angle_degrees": -103.742249775439,
+        "std_angle": 0.9734752716669108,
+        "samples": 198,
+        "avg_distance": 2468.1498412344868,
+        "source": "vct"
+      },
+      "f2": {
+        "mean_angle": 1.6151264941051877,
+        "mean_angle_degrees": 92.5399314919885,
+        "std_angle": 0.6326860496534492,
+        "samples": 19,
+        "avg_distance": 2700.3115854146686,
+        "source": "vct"
+      }
+    },
+    "sunset": {
+      "d3": {
+        "mean_angle": -0.10816026532917088,
+        "mean_angle_degrees": -6.197126714376657,
+        "std_angle": 1.619114775227963,
+        "samples": 75,
+        "avg_distance": 1714.3593779623698,
+        "source": "vct"
+      },
+      "d4": {
+        "mean_angle": -1.6156041180945597,
+        "mean_angle_degrees": -92.56729733077371,
+        "std_angle": 1.6647153397699097,
+        "samples": 62,
+        "avg_distance": 1776.6823033664527,
+        "source": "vct"
+      },
+      "e4": {
+        "mean_angle": -2.5170875215742496,
+        "mean_angle_degrees": -144.21849165124905,
+        "std_angle": 1.5978316285884786,
+        "samples": 29,
+        "avg_distance": 1931.6508057039857,
+        "source": "vct"
+      },
+      "c3": {
+        "mean_angle": -0.11771950413262616,
+        "mean_angle_degrees": -6.744830753172332,
+        "std_angle": 1.0937956597919587,
+        "samples": 47,
+        "avg_distance": 1651.9401434822248,
+        "source": "vct"
+      },
+      "c2": {
+        "mean_angle": 0.7652480516539447,
+        "mean_angle_degrees": 43.84548364038025,
+        "std_angle": 0.7902544260996169,
+        "samples": 33,
+        "avg_distance": 1677.2525057837722,
+        "source": "vct"
+      },
+      "f7": {
+        "mean_angle": 2.8029452791853138,
+        "mean_angle_degrees": 160.59693470343672,
+        "std_angle": 0.6459972622669119,
+        "samples": 23,
+        "avg_distance": 1993.3643837007717,
+        "source": "vct"
+      },
+      "f6": {
+        "mean_angle": 1.4955739100220673,
+        "mean_angle_degrees": 85.6900729941428,
+        "std_angle": 1.0290518403324989,
+        "samples": 5,
+        "avg_distance": 1902.7441614024915,
+        "source": "vct"
+      },
+      "e7": {
+        "mean_angle": -0.8072544980918187,
+        "mean_angle_degrees": -46.25227573361278,
+        "std_angle": 2.0931855784014286,
+        "samples": 75,
+        "avg_distance": 1580.4929998574037,
+        "source": "vct"
+      },
+      "e8": {
+        "mean_angle": -1.902275682765102,
+        "mean_angle_degrees": -108.99236809280741,
+        "std_angle": 0.9511170214910672,
+        "samples": 35,
+        "avg_distance": 1949.8316664416623,
+        "source": "vct"
+      },
+      "d6": {
+        "mean_angle": 0.4718208838292396,
+        "mean_angle_degrees": 27.03334532954774,
+        "std_angle": 1.2003856701353188,
+        "samples": 34,
+        "avg_distance": 2002.18900409247,
+        "source": "vct"
+      },
+      "e3": {
+        "mean_angle": -3.049872919701518,
+        "mean_angle_degrees": -174.7448463501388,
+        "std_angle": 1.0219050838896973,
+        "samples": 62,
+        "avg_distance": 1735.5898397470266,
+        "source": "vct"
+      },
+      "e6": {
+        "mean_angle": -1.9534900155270205,
+        "mean_angle_degrees": -111.92673321064393,
+        "std_angle": 1.938693546540681,
+        "samples": 41,
+        "avg_distance": 1953.4277806423208,
+        "source": "vct"
+      },
+      "c5": {
+        "mean_angle": 0.48267867573176815,
+        "mean_angle_degrees": 27.655450980393947,
+        "std_angle": 1.1605229296047133,
+        "samples": 13,
+        "avg_distance": 2679.2161556817246,
+        "source": "vct"
+      },
+      "b5": {
+        "mean_angle": -0.9556724670263981,
+        "mean_angle_degrees": -54.75599895746794,
+        "std_angle": 1.1468153705234394,
+        "samples": 5,
+        "avg_distance": 1810.1802087916615,
+        "source": "vct"
+      },
+      "c6": {
+        "mean_angle": -1.5189493614726828,
+        "mean_angle_degrees": -87.02938770647602,
+        "std_angle": 1.4870831751604687,
+        "samples": 7,
+        "avg_distance": 1505.5125184072278,
+        "source": "vct"
+      },
+      "d5": {
+        "mean_angle": -1.5833526839569532,
+        "mean_angle_degrees": -90.7194262714447,
+        "std_angle": 1.6730942719239668,
+        "samples": 18,
+        "avg_distance": 2048.9251436733434,
+        "source": "vct"
+      },
+      "e5": {
+        "mean_angle": 2.7328924986114416,
+        "mean_angle_degrees": 156.5832060333978,
+        "std_angle": 1.343635857210885,
+        "samples": 26,
+        "avg_distance": 2191.1498939342973,
+        "source": "vct"
+      },
+      "e2": {
+        "mean_angle": 2.2890177190195367,
+        "mean_angle_degrees": 131.15105453048199,
+        "std_angle": 0.9461800397471003,
+        "samples": 11,
+        "avg_distance": 1770.194086898127,
+        "source": "vct"
+      },
+      "d2": {
+        "mean_angle": 1.80803914246162,
+        "mean_angle_degrees": 103.59301205750342,
+        "std_angle": 0.9480569992035902,
+        "samples": 43,
+        "avg_distance": 1918.5735761367532,
+        "source": "vct"
+      },
+      "f4": {
+        "mean_angle": -2.9830466705256637,
+        "mean_angle_degrees": -170.91598431167276,
+        "std_angle": 0.4295082435009747,
+        "samples": 6,
+        "avg_distance": 1470.5584887219595,
+        "source": "vct"
+      },
+      "c4": {
+        "mean_angle": -1.5124782382290196,
+        "mean_angle_degrees": -86.65861965590511,
+        "std_angle": 1.7469469843916334,
+        "samples": 11,
+        "avg_distance": 1826.9415724626854,
+        "source": "vct"
+      },
+      "b4": {
+        "mean_angle": -0.8320824601861668,
+        "mean_angle_degrees": -47.674813175529714,
+        "std_angle": 0.3318854781008629,
+        "samples": 5,
+        "avg_distance": 3141.31787188096,
+        "source": "vct"
+      },
+      "d8": {
+        "mean_angle": -0.49629895677493424,
+        "mean_angle_degrees": -28.435835599949407,
+        "std_angle": 1.0472684495399902,
+        "samples": 15,
+        "avg_distance": 1467.2377858520142,
+        "source": "vct"
+      },
+      "d7": {
+        "mean_angle": 0.40027475058618994,
+        "mean_angle_degrees": 22.934053854240357,
+        "std_angle": 1.0473363026133637,
+        "samples": 41,
+        "avg_distance": 1611.2117606789618,
+        "source": "vct"
+      },
+      "c7": {
+        "mean_angle": -0.3555074974517972,
+        "mean_angle_degrees": -20.36907918924585,
+        "std_angle": 1.4768979767420287,
+        "samples": 14,
+        "avg_distance": 1533.9817001134104,
+        "source": "vct"
+      },
+      "g5": {
+        "mean_angle": -3.1020862554155255,
+        "mean_angle_degrees": -177.73645012085112,
+        "std_angle": 0.6257734050947794,
+        "samples": 2,
+        "avg_distance": 1678.5076276882955,
+        "source": "vct"
+      },
+      "a5": {
+        "mean_angle": -0.16101100248786235,
+        "mean_angle_degrees": -9.22525089772491,
+        "std_angle": 0.1073232347039921,
+        "samples": 3,
+        "avg_distance": 2414.0441456290546,
+        "source": "vct"
+      },
+      "b3": {
+        "mean_angle": 1.6339879475648114,
+        "mean_angle_degrees": 93.62061317070736,
+        "std_angle": 1.4901161193847656e-08,
+        "samples": 1,
+        "avg_distance": 3450.188478443162,
+        "source": "vct"
+      }
+    },
+    "corrode": {
+      "f5": {
+        "mean_angle": 3.055443561323312,
+        "mean_angle_degrees": 175.06402060424753,
+        "std_angle": 1.538713898894631,
+        "samples": 213,
+        "avg_distance": 1530.0202459903333,
+        "source": "vct"
+      },
+      "f6": {
+        "mean_angle": -2.2620571264039064,
+        "mean_angle_degrees": -129.60632636043482,
+        "std_angle": 0.7778569315868864,
+        "samples": 71,
+        "avg_distance": 2011.537474447175,
+        "source": "vct"
+      },
+      "d5": {
+        "mean_angle": 1.5892982918465508,
+        "mean_angle_degrees": 91.06008451015833,
+        "std_angle": 1.0646680123071626,
+        "samples": 155,
+        "avg_distance": 2109.6930846015,
+        "source": "vct"
+      },
+      "c5": {
+        "mean_angle": 2.4748186367546516,
+        "mean_angle_degrees": 141.7966629463615,
+        "std_angle": 1.2331801741592228,
+        "samples": 144,
+        "avg_distance": 1931.4648785576403,
+        "source": "vct"
+      },
+      "d6": {
+        "mean_angle": -2.2256230732910542,
+        "mean_angle_degrees": -127.5188088865129,
+        "std_angle": 2.0306629700136734,
+        "samples": 139,
+        "avg_distance": 1505.5614054998662,
+        "source": "vct"
+      },
+      "a5": {
+        "mean_angle": 0.2651238667840881,
+        "mean_angle_degrees": 15.190478614916923,
+        "std_angle": 1.1228723558993343,
+        "samples": 232,
+        "avg_distance": 1666.8654819345802,
+        "source": "vct"
+      },
+      "b5": {
+        "mean_angle": -0.3744366772220316,
+        "mean_angle_degrees": -21.453641299724698,
+        "std_angle": 2.2028895613256037,
+        "samples": 383,
+        "avg_distance": 1439.627135381507,
+        "source": "vct"
+      },
+      "b4": {
+        "mean_angle": 1.9911733031005725,
+        "mean_angle_degrees": 114.08582654678624,
+        "std_angle": 0.779712622941791,
+        "samples": 102,
+        "avg_distance": 1915.426596151468,
+        "source": "vct"
+      },
+      "e5": {
+        "mean_angle": 0.1955581361982046,
+        "mean_angle_degrees": 11.204655853601654,
+        "std_angle": 1.5070547842539608,
+        "samples": 211,
+        "avg_distance": 1512.6756640868427,
+        "source": "vct"
+      },
+      "e6": {
+        "mean_angle": -0.649798404508206,
+        "mean_angle_degrees": -37.23070611265485,
+        "std_angle": 1.5922879024068064,
+        "samples": 22,
+        "avg_distance": 1542.3833610200513,
+        "source": "vct"
+      },
+      "d4": {
+        "mean_angle": 1.4896452074229865,
+        "mean_angle_degrees": 85.35038335722722,
+        "std_angle": 0.6368307907561754,
+        "samples": 22,
+        "avg_distance": 2469.409293772947,
+        "source": "vct"
+      },
+      "f4": {
+        "mean_angle": 1.689785833230505,
+        "mean_angle_degrees": 96.8175965251051,
+        "std_angle": 1.1870078431879036,
+        "samples": 62,
+        "avg_distance": 1372.2997041314939,
+        "source": "vct"
+      },
+      "c7": {
+        "mean_angle": -3.0374042754613284,
+        "mean_angle_degrees": -174.03044565892583,
+        "std_angle": 0.8289955327843144,
+        "samples": 8,
+        "avg_distance": 2232.7199185760537,
+        "source": "vct"
+      },
+      "b7": {
+        "mean_angle": -0.9404828497990682,
+        "mean_angle_degrees": -53.885697997922726,
+        "std_angle": 0.739382776666726,
+        "samples": 5,
+        "avg_distance": 2035.1438091217715,
+        "source": "vct"
+      },
+      "f3": {
+        "mean_angle": 2.093870303235977,
+        "mean_angle_degrees": 119.96993122319937,
+        "std_angle": 0.48880649462895287,
+        "samples": 11,
+        "avg_distance": 2016.2739333434743,
+        "source": "vct"
+      },
+      "e4": {
+        "mean_angle": 1.7002140740069396,
+        "mean_angle_degrees": 97.41509070934104,
+        "std_angle": 1.242649880126576,
+        "samples": 12,
+        "avg_distance": 2145.4443099289692,
+        "source": "vct"
+      },
+      "b6": {
+        "mean_angle": -1.3430614461634334,
+        "mean_angle_degrees": -76.95175249190156,
+        "std_angle": 1.3865462567639204,
+        "samples": 72,
+        "avg_distance": 2140.3749995724293,
+        "source": "vct"
+      },
+      "a6": {
+        "mean_angle": -0.6377426077527742,
+        "mean_angle_degrees": -36.5399598399011,
+        "std_angle": 0.7455481316152848,
+        "samples": 16,
+        "avg_distance": 2493.776109111988,
+        "source": "vct"
+      },
+      "a4": {
+        "mean_angle": 0.6773131233851412,
+        "mean_angle_degrees": 38.80718337879217,
+        "std_angle": 0.9408958657036591,
+        "samples": 70,
+        "avg_distance": 1552.5460846862302,
+        "source": "vct"
+      },
+      "g5": {
+        "mean_angle": 2.8685550078664517,
+        "mean_angle_degrees": 164.35609525186433,
+        "std_angle": 0.5436334071323232,
+        "samples": 22,
+        "avg_distance": 2134.6079455906893,
+        "source": "vct"
+      },
+      "b3": {
+        "mean_angle": 2.5345567687203823,
+        "mean_angle_degrees": 145.2194057839934,
+        "std_angle": 0.18064838980517026,
+        "samples": 15,
+        "avg_distance": 1172.5477444059975,
+        "source": "vct"
+      },
+      "c6": {
+        "mean_angle": -0.06444673084563535,
+        "mean_angle_degrees": -3.6925256808704843,
+        "std_angle": 0.8969035537847329,
+        "samples": 27,
+        "avg_distance": 1654.9419321506643,
+        "source": "vct"
+      },
+      "e7": {
+        "mean_angle": -0.8060417552963853,
+        "mean_angle_degrees": -46.182790689799546,
+        "std_angle": 0.6171201363927571,
+        "samples": 5,
+        "avg_distance": 2868.298497635443,
+        "source": "vct"
+      },
+      "d7": {
+        "mean_angle": -1.6238443191878433,
+        "mean_angle_degrees": -93.03942607575794,
+        "std_angle": 0.22690274698147733,
+        "samples": 19,
+        "avg_distance": 3550.217308313305,
+        "source": "vct"
+      },
+      "e3": {
+        "mean_angle": 1.0183024328331558,
+        "mean_angle_degrees": 58.34443166924382,
+        "std_angle": 0.05780927373409396,
+        "samples": 4,
+        "avg_distance": 2060.4363575216944,
+        "source": "vct"
+      },
+      "g4": {
+        "mean_angle": 2.0186218053734413,
+        "mean_angle_degrees": 115.65850988097687,
+        "std_angle": 0.3633562666167807,
+        "samples": 7,
+        "avg_distance": 2072.1055435066373,
+        "source": "vct"
+      },
+      "c8": {
+        "mean_angle": -0.5175294993552612,
+        "mean_angle_degrees": -29.652256086574923,
+        "std_angle": -0.0,
+        "samples": 2,
+        "avg_distance": 1199.9507189749404,
+        "source": "vct"
+      }
+    },
+    "icebox": {
+      "a7": {
+        "mean_angle": -1.4652170160138596,
+        "mean_angle_degrees": -83.95075108834651,
+        "std_angle": 0.36689232722749165,
+        "samples": 24,
+        "avg_distance": 2044.767506404608,
+        "source": "vct"
+      },
+      "a6": {
+        "mean_angle": 1.4461930092114648,
+        "mean_angle_degrees": 82.86075578914112,
+        "std_angle": 0.21998439739746856,
+        "samples": 10,
+        "avg_distance": 1984.1297686534679,
+        "source": "vct"
+      },
+      "b6": {
+        "mean_angle": 2.309503387275476,
+        "mean_angle_degrees": 132.32479686205244,
+        "std_angle": -0.0,
+        "samples": 1,
+        "avg_distance": 2334.1920611757596,
+        "source": "vct"
+      }
+    }
+  }
+}

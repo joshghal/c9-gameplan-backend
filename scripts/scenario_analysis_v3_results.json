@@ -1,0 +1,140 @@
+{
+  "timestamp": "2026-01-19T21:34:05.430820",
+  "accuracy": 64.28571428571429,
+  "fixes_applied": [
+    "flash_accuracy_penalty",
+    "crossfire_detection",
+    "defuse_pressure",
+    "numbers_cap",
+    "retake_utility",
+    "post_plant_anxiety"
+  ],
+  "results": {
+    "attack_execute_fast": {
+      "attack_win_rate": 0.5306122448979592,
+      "plant_rate": 0.5918367346938775,
+      "avg_duration_ms": 47323.42857142857,
+      "avg_kills": 6.469387755102041,
+      "avg_flashes": 0.0,
+      "crossfire_kill_rate": 0.6435331230283912,
+      "total_rounds": 49
+    },
+    "attack_execute_slow": {
+      "attack_win_rate": 0.40816326530612246,
+      "plant_rate": 0.5306122448979592,
+      "avg_duration_ms": 55672.163265306124,
+      "avg_kills": 5.204081632653061,
+      "avg_flashes": 0.0,
+      "crossfire_kill_rate": 0.596078431372549,
+      "total_rounds": 49
+    },
+    "post_plant_defense": {
+      "attack_win_rate": 0.9387755102040817,
+      "plant_rate": 1.0,
+      "avg_duration_ms": 39123.5918367347,
+      "avg_kills": 4.204081632653061,
+      "avg_flashes": 0.0,
+      "crossfire_kill_rate": 0.6116504854368932,
+      "total_rounds": 49
+    },
+    "retake": {
+      "attack_win_rate": 0.24489795918367346,
+      "plant_rate": 1.0,
+      "avg_duration_ms": 24205.061224489797,
+      "avg_kills": 5.387755102040816,
+      "avg_flashes": 8.755102040816327,
+      "crossfire_kill_rate": 0.6818181818181818,
+      "total_rounds": 49
+    },
+    "mid_control": {
+      "attack_win_rate": 0.6122448979591837,
+      "plant_rate": 0.6938775510204082,
+      "avg_duration_ms": 46090.448979591834,
+      "avg_kills": 5.673469387755102,
+      "avg_flashes": 0.0,
+      "crossfire_kill_rate": 0.6438848920863309,
+      "total_rounds": 49
+    },
+    "defender_aggression": {
+      "attack_win_rate": 0.5714285714285714,
+      "plant_rate": 0.6122448979591837,
+      "avg_duration_ms": 50455.510204081635,
+      "avg_kills": 5.714285714285714,
+      "avg_flashes": 0.0,
+      "crossfire_kill_rate": 0.5964285714285714,
+      "total_rounds": 49
+    },
+    "eco_vs_full": {
+      "attack_win_rate": 0.5306122448979592,
+      "plant_rate": 0.5510204081632653,
+      "avg_duration_ms": 48002.61224489796,
+      "avg_kills": 5.8979591836734695,
+      "avg_flashes": 0.0,
+      "crossfire_kill_rate": 0.6366782006920415,
+      "total_rounds": 49
+    },
+    "full_vs_eco": {
+      "attack_win_rate": 0.5918367346938775,
+      "plant_rate": 0.5714285714285714,
+      "avg_duration_ms": 56531.5918367347,
+      "avg_kills": 6.081632653061225,
+      "avg_flashes": 0.0,
+      "crossfire_kill_rate": 0.6577181208053692,
+      "total_rounds": 49
+    },
+    "clutch_1v1": {
+      "attack_win_rate": 0.3877551020408163,
+      "plant_rate": 0.3469387755102041,
+      "avg_duration_ms": 14592.0,
+      "avg_kills": 0.8367346938775511,
+      "avg_flashes": 0.0,
+      "crossfire_kill_rate": 0.0,
+      "total_rounds": 49
+    },
+    "clutch_1v2": {
+      "attack_win_rate": 0.10204081632653061,
+      "plant_rate": 0.46938775510204084,
+      "avg_duration_ms": 18915.26530612245,
+      "avg_kills": 1.0204081632653061,
+      "avg_flashes": 0.0,
+      "crossfire_kill_rate": 0.16,
+      "total_rounds": 49
+    },
+    "clutch_2v1": {
+      "attack_win_rate": 0.6122448979591837,
+      "plant_rate": 0.3877551020408163,
+      "avg_duration_ms": 14981.224489795919,
+      "avg_kills": 1.2857142857142858,
+      "avg_flashes": 0.0,
+      "crossfire_kill_rate": 0.19047619047619047,
+      "total_rounds": 49
+    },
+    "man_advantage_4v5": {
+      "attack_win_rate": 0.3469387755102041,
+      "plant_rate": 0.3877551020408163,
+      "avg_duration_ms": 45095.183673469386,
+      "avg_kills": 5.469387755102041,
+      "avg_flashes": 0.0,
+      "crossfire_kill_rate": 0.6044776119402985,
+      "total_rounds": 49
+    },
+    "man_advantage_5v4": {
+      "attack_win_rate": 0.7551020408163265,
+      "plant_rate": 0.6122448979591837,
+      "avg_duration_ms": 52965.87755102041,
+      "avg_kills": 4.877551020408164,
+      "avg_flashes": 0.0,
+      "crossfire_kill_rate": 0.5941422594142259,
+      "total_rounds": 49
+    },
+    "man_advantage_3v5": {
+      "attack_win_rate": 0.24489795918367346,
+      "plant_rate": 0.3673469387755102,
+      "avg_duration_ms": 30377.79591836735,
+      "avg_kills": 4.163265306122449,
+      "avg_flashes": 0.0,
+      "crossfire_kill_rate": 0.5784313725490197,
+      "total_rounds": 49
+    }
+  }
+}

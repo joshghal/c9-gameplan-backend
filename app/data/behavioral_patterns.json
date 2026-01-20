@@ -1,0 +1,697 @@
+{
+  "generated": "2026-01-19",
+  "description": "Behavioral patterns for simulation AI, extracted from 33 VCT matches",
+  "combat_behaviors": {
+    "controller": {
+      "engagement_distance_mean": 1814.0,
+      "engagement_distance_std": 200.0,
+      "headshot_base_rate": 0.196,
+      "first_kill_aggression": 0.071,
+      "trade_kill_rate": 0.299,
+      "time_to_kill_avg": 300
+    },
+    "duelist": {
+      "engagement_distance_mean": 1777.0,
+      "engagement_distance_std": 210.0,
+      "headshot_base_rate": 0.233,
+      "first_kill_aggression": 0.15,
+      "trade_kill_rate": 0.341,
+      "time_to_kill_avg": 300
+    },
+    "initiator": {
+      "engagement_distance_mean": 1783.0,
+      "engagement_distance_std": 178.0,
+      "headshot_base_rate": 0.19,
+      "first_kill_aggression": 0.074,
+      "trade_kill_rate": 0.281,
+      "time_to_kill_avg": 300
+    },
+    "sentinel": {
+      "engagement_distance_mean": 1793.0,
+      "engagement_distance_std": 210.0,
+      "headshot_base_rate": 0.133,
+      "first_kill_aggression": 0.089,
+      "trade_kill_rate": 0.288,
+      "time_to_kill_avg": 300
+    }
+  },
+  "role_behaviors": {
+    "duelist": {
+      "role": "duelist",
+      "aggression_level": 0.8,
+      "entry_probability": 0.6,
+      "clutch_success_rate": 0.35,
+      "preferred_zones": [
+        "mid",
+        "a_site",
+        "b_site"
+      ],
+      "avg_distance_from_site": 1600,
+      "ability_timing": {
+        "early": 0.3,
+        "mid": 0.5,
+        "late": 0.2
+      },
+      "weapon_preference": {
+        "vandal": 0.5,
+        "phantom": 0.3,
+        "operator": 0.1,
+        "sheriff": 0.1
+      }
+    },
+    "initiator": {
+      "role": "initiator",
+      "aggression_level": 0.5,
+      "entry_probability": 0.3,
+      "clutch_success_rate": 0.3,
+      "preferred_zones": [
+        "mid",
+        "a_site",
+        "b_site"
+      ],
+      "avg_distance_from_site": 1800,
+      "ability_timing": {
+        "early": 0.3,
+        "mid": 0.5,
+        "late": 0.2
+      },
+      "weapon_preference": {
+        "phantom": 0.4,
+        "vandal": 0.4,
+        "sheriff": 0.1,
+        "ghost": 0.1
+      }
+    },
+    "controller": {
+      "role": "controller",
+      "aggression_level": 0.3,
+      "entry_probability": 0.1,
+      "clutch_success_rate": 0.25,
+      "preferred_zones": [
+        "mid",
+        "a_site",
+        "b_site"
+      ],
+      "avg_distance_from_site": 1900,
+      "ability_timing": {
+        "early": 0.3,
+        "mid": 0.5,
+        "late": 0.2
+      },
+      "weapon_preference": {
+        "vandal": 0.45,
+        "phantom": 0.4,
+        "odin": 0.05,
+        "sheriff": 0.1
+      }
+    },
+    "sentinel": {
+      "role": "sentinel",
+      "aggression_level": 0.2,
+      "entry_probability": 0.05,
+      "clutch_success_rate": 0.4,
+      "preferred_zones": [
+        "mid",
+        "a_site",
+        "b_site"
+      ],
+      "avg_distance_from_site": 1850,
+      "ability_timing": {
+        "early": 0.3,
+        "mid": 0.5,
+        "late": 0.2
+      },
+      "weapon_preference": {
+        "phantom": 0.5,
+        "vandal": 0.3,
+        "judge": 0.1,
+        "sheriff": 0.1
+      }
+    }
+  },
+  "economy_behavior": {
+    "full_buy_threshold": 3900,
+    "force_buy_threshold": 2000,
+    "eco_threshold": 1500,
+    "eco_weapon_preference": {
+      "classic": 0.4,
+      "ghost": 0.3,
+      "sheriff": 0.2,
+      "shorty": 0.1
+    },
+    "force_weapon_preference": {
+      "spectre": 0.3,
+      "stinger": 0.25,
+      "bulldog": 0.2,
+      "marshal": 0.15,
+      "sheriff": 0.1
+    },
+    "full_buy_weapon_preference": {
+      "vandal": 0.45,
+      "phantom": 0.35,
+      "operator": 0.1,
+      "odin": 0.05,
+      "guardian": 0.05
+    }
+  },
+  "phase_behaviors": {
+    "early": {
+      "phase": "early",
+      "movement_speed": 0.9,
+      "rotation_probability": 0.1,
+      "engagement_likelihood": 0.3,
+      "peek_frequency": 0.4,
+      "utility_usage_rate": 0.5
+    },
+    "mid": {
+      "phase": "mid",
+      "movement_speed": 0.7,
+      "rotation_probability": 0.3,
+      "engagement_likelihood": 0.6,
+      "peek_frequency": 0.6,
+      "utility_usage_rate": 0.3
+    },
+    "late": {
+      "phase": "late",
+      "movement_speed": 0.5,
+      "rotation_probability": 0.5,
+      "engagement_likelihood": 0.8,
+      "peek_frequency": 0.8,
+      "utility_usage_rate": 0.2
+    }
+  },
+  "agent_behaviors": {
+    "omen": {
+      "agent": "omen",
+      "role": "controller",
+      "ability_timing": {
+        "early": {
+          "darkcover": 0.2420244240211507,
+          "paranoia": 0.048910990809517815,
+          "shroudedstep": 0.05029145159259726,
+          "nebuladissipate": 0.022227118217298253,
+          "fromtheshadows": 0.004009190482185573
+        },
+        "mid": {
+          "darkcover": 0.2420244240211507,
+          "paranoia": 0.08151831801586303,
+          "shroudedstep": 0.05181543497419111,
+          "nebuladissipate": 0.022900667254186078,
+          "fromtheshadows": 0.004130681102857863
+        },
+        "late": {
+          "darkcover": 0.12101221201057535,
+          "paranoia": 0.03260732720634521,
+          "shroudedstep": 0.05029145159259726,
+          "nebuladissipate": 0.022227118217298253,
+          "fromtheshadows": 0.004009190482185573
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "viper": {
+      "agent": "viper",
+      "role": "controller",
+      "ability_timing": {
+        "early": {
+          "toxicscreen": 0.15248357424441525,
+          "poisoncloud": 0.11404730617608412,
+          "snakebite": 0.09015374507227333
+        },
+        "mid": {
+          "toxicscreen": 0.15248357424441525,
+          "poisoncloud": 0.11750328515111697,
+          "snakebite": 0.0928856767411301
+        },
+        "late": {
+          "toxicscreen": 0.07624178712220762,
+          "poisoncloud": 0.11404730617608412,
+          "snakebite": 0.09015374507227333
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "brimstone": {
+      "agent": "brimstone",
+      "role": "controller",
+      "ability_timing": {
+        "early": {
+          "skysmoke": 0.2981067125645439,
+          "stimbeacon": 0.06437177280550775,
+          "incendiary": 0.019690189328743547
+        },
+        "mid": {
+          "skysmoke": 0.2981067125645439,
+          "stimbeacon": 0.06632243258749283,
+          "incendiary": 0.020286861732644868
+        },
+        "late": {
+          "skysmoke": 0.14905335628227195,
+          "stimbeacon": 0.06437177280550775,
+          "incendiary": 0.019690189328743547
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "skye": {
+      "agent": "skye",
+      "role": "initiator",
+      "ability_timing": {
+        "early": {
+          "guidinglight": 0.24335581118603727,
+          "trailblazer": 0.08944863149543832,
+          "regrowth": 0.0032725109083696947
+        },
+        "mid": {
+          "guidinglight": 0.4055930186433955,
+          "trailblazer": 0.06261404204680682,
+          "regrowth": 0.003371677905593019
+        },
+        "late": {
+          "guidinglight": 0.1622372074573582,
+          "trailblazer": 0.026834589448631496,
+          "regrowth": 0.0032725109083696947
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "sova": {
+      "agent": "sova",
+      "role": "initiator",
+      "ability_timing": {
+        "early": {
+          "reconbolt": 0.23564840956145303,
+          "shockbolt": 0.09819875776397517,
+          "owldrone": 0.10474308300395258,
+          "hunter'sfury": 0.007142857142857143
+        },
+        "mid": {
+          "reconbolt": 0.1649538866930171,
+          "shockbolt": 0.10117447769621685,
+          "owldrone": 0.07332015810276679,
+          "hunter'sfury": 0.00735930735930736
+        },
+        "late": {
+          "reconbolt": 0.0706945228684359,
+          "shockbolt": 0.09819875776397517,
+          "owldrone": 0.03142292490118577,
+          "hunter'sfury": 0.007142857142857143
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "raze": {
+      "agent": "raze",
+      "role": "duelist",
+      "ability_timing": {
+        "early": {
+          "blastpack": 0.1430342679127726,
+          "paintshells": 0.10739563862928349,
+          "boombot": 0.07676012461059191,
+          "showstopper": 0.0028099688473520253
+        },
+        "mid": {
+          "blastpack": 0.1473686396677051,
+          "paintshells": 0.11065005192107996,
+          "boombot": 0.07908618899273105,
+          "showstopper": 0.002895119418483905
+        },
+        "late": {
+          "blastpack": 0.1430342679127726,
+          "paintshells": 0.10739563862928349,
+          "boombot": 0.07676012461059191,
+          "showstopper": 0.0028099688473520253
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "jett": {
+      "agent": "jett",
+      "role": "duelist",
+      "ability_timing": {
+        "early": {
+          "tailwind": 0.16680201624194907,
+          "cloudburst": 0.1408008961075329,
+          "updraft": 0.047037244469336326
+        },
+        "mid": {
+          "tailwind": 0.1718566227947354,
+          "cloudburst": 0.1408008961075329,
+          "updraft": 0.04846261551386167
+        },
+        "late": {
+          "tailwind": 0.16680201624194907,
+          "cloudburst": 0.07040044805376645,
+          "updraft": 0.047037244469336326
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "neon": {
+      "agent": "neon",
+      "role": "duelist",
+      "ability_timing": {
+        "early": {
+          "highgear": 0.2779530201342282,
+          "relaybolt": 0.052046979865771816
+        },
+        "mid": {
+          "highgear": 0.2863758389261745,
+          "relaybolt": 0.053624161073825505
+        },
+        "late": {
+          "highgear": 0.2779530201342282,
+          "relaybolt": 0.052046979865771816
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "yoru": {
+      "agent": "yoru",
+      "role": "duelist",
+      "ability_timing": {
+        "early": {
+          "gatecrash": 0.1836220472440945,
+          "blindside": 0.10531496062992125,
+          "fakeout": 0.030531496062992127
+        },
+        "mid": {
+          "gatecrash": 0.1891863517060368,
+          "blindside": 0.1755249343832021,
+          "fakeout": 0.03145669291338583
+        },
+        "late": {
+          "gatecrash": 0.1836220472440945,
+          "blindside": 0.07020997375328085,
+          "fakeout": 0.030531496062992127
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "gekko": {
+      "agent": "gekko",
+      "role": "initiator",
+      "ability_timing": {
+        "early": {
+          "dizzy": 0.2833333333333333,
+          "wingman": 0.018333333333333333
+        },
+        "mid": {
+          "dizzy": 0.4722222222222222,
+          "wingman": 0.01888888888888889
+        },
+        "late": {
+          "dizzy": 0.18888888888888888,
+          "wingman": 0.018333333333333333
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "killjoy": {
+      "agent": "killjoy",
+      "role": "sentinel",
+      "ability_timing": {
+        "early": {
+          "nanoswarm": 0.13623952686052243,
+          "turret": 0.1924593395761459,
+          "alarmbot": 0.06147856086742238,
+          "lockdown": 0.005258748151798916
+        },
+        "mid": {
+          "nanoswarm": 0.14036799737144737,
+          "turret": 0.1347215377033021,
+          "alarmbot": 0.06334154756037458,
+          "lockdown": 0.005418104156398883
+        },
+        "late": {
+          "nanoswarm": 0.13623952686052243,
+          "turret": 0.05773780187284376,
+          "alarmbot": 0.06147856086742238,
+          "lockdown": 0.005258748151798916
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "cypher": {
+      "agent": "cypher",
+      "role": "sentinel",
+      "ability_timing": {
+        "early": {
+          "trapwire": 0.13786689419795223,
+          "cybercage": 0.10597269624573379,
+          "spycam": 0.1241855414210363,
+          "neuraltheft": 0.004197952218430035
+        },
+        "mid": {
+          "trapwire": 0.14204467887061745,
+          "cybercage": 0.10918399007136208,
+          "spycam": 0.0869298789947254,
+          "neuraltheft": 0.004325162891715794
+        },
+        "late": {
+          "trapwire": 0.13786689419795223,
+          "cybercage": 0.10597269624573379,
+          "spycam": 0.03725566242631089,
+          "neuraltheft": 0.004197952218430035
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "vyse": {
+      "agent": "vyse",
+      "role": "sentinel",
+      "ability_timing": {
+        "early": {
+          "razorvine": 0.13494845360824742,
+          "arcrose": 0.1112212529738303,
+          "shear": 0.08383029341792228
+        },
+        "mid": {
+          "razorvine": 0.13903780068728522,
+          "arcrose": 0.1145915939730373,
+          "shear": 0.08637060533967751
+        },
+        "late": {
+          "razorvine": 0.13494845360824742,
+          "arcrose": 0.1112212529738303,
+          "shear": 0.08383029341792228
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "kayo": {
+      "agent": "kayo",
+      "role": "initiator",
+      "ability_timing": {
+        "early": {
+          "guidedsalvo": 0.10989463601532568,
+          "zeropoint": 0.119272030651341,
+          "flashdrive": 0.09166666666666667
+        },
+        "mid": {
+          "guidedsalvo": 0.11322477650063857,
+          "zeropoint": 0.12288633461047255,
+          "flashdrive": 0.1527777777777778
+        },
+        "late": {
+          "guidedsalvo": 0.10989463601532568,
+          "zeropoint": 0.119272030651341,
+          "flashdrive": 0.061111111111111116
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "astra": {
+      "agent": "astra",
+      "role": "controller",
+      "ability_timing": {
+        "early": {
+          "stars": 0.30905091137649277,
+          "novapulse": 0.02094908862350723
+        },
+        "mid": {
+          "stars": 0.3184160905091138,
+          "novapulse": 0.021583909490886236
+        },
+        "late": {
+          "stars": 0.30905091137649277,
+          "novapulse": 0.02094908862350723
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "breach": {
+      "agent": "breach",
+      "role": "initiator",
+      "ability_timing": {
+        "early": {
+          "faultline": 0.1448753369272237,
+          "flashpoint": 0.11826145552560646,
+          "aftershock": 0.05503706199460917
+        },
+        "mid": {
+          "faultline": 0.1492654986522911,
+          "flashpoint": 0.1971024258760108,
+          "aftershock": 0.05670485175202157
+        },
+        "late": {
+          "faultline": 0.1448753369272237,
+          "flashpoint": 0.07884097035040433,
+          "aftershock": 0.05503706199460917
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "sage": {
+      "agent": "sage",
+      "role": "sentinel",
+      "ability_timing": {
+        "early": {
+          "sloworb": 0.23504716981132076,
+          "barrierorb": 0.07471698113207548,
+          "healingorb": 0.020235849056603774
+        },
+        "mid": {
+          "sloworb": 0.24216981132075474,
+          "barrierorb": 0.0769811320754717,
+          "healingorb": 0.020849056603773588
+        },
+        "late": {
+          "sloworb": 0.23504716981132076,
+          "barrierorb": 0.07471698113207548,
+          "healingorb": 0.020235849056603774
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "fade": {
+      "agent": "fade",
+      "role": "initiator",
+      "ability_timing": {
+        "early": {
+          "prowler": 0.15032645403377112,
+          "haunt": 0.22626641651031895,
+          "seize": 0.030337711069418388
+        },
+        "mid": {
+          "prowler": 0.15488180112570357,
+          "haunt": 0.15838649155722326,
+          "seize": 0.03125703564727955
+        },
+        "late": {
+          "prowler": 0.15032645403377112,
+          "haunt": 0.06787992495309568,
+          "seize": 0.030337711069418388
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "chamber": {
+      "agent": "chamber",
+      "role": "sentinel",
+      "ability_timing": {
+        "early": {
+          "rendezvous": 0.10645161290322581,
+          "trademark": 0.1117741935483871,
+          "headhunter": 0.1117741935483871
+        },
+        "mid": {
+          "rendezvous": 0.10967741935483871,
+          "trademark": 0.11516129032258064,
+          "headhunter": 0.11516129032258064
+        },
+        "late": {
+          "rendezvous": 0.10645161290322581,
+          "trademark": 0.1117741935483871,
+          "headhunter": 0.1117741935483871
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "harbor": {
+      "agent": "harbor",
+      "role": "controller",
+      "ability_timing": {
+        "early": {
+          "cascade": 0.19074074074074077,
+          "hightide": 0.12680555555555556,
+          "cove": 0.04583333333333334
+        },
+        "mid": {
+          "cascade": 0.19074074074074077,
+          "hightide": 0.13064814814814815,
+          "cove": 0.04722222222222223
+        },
+        "late": {
+          "cascade": 0.09537037037037038,
+          "hightide": 0.12680555555555556,
+          "cove": 0.04583333333333334
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "clove": {
+      "agent": "clove",
+      "role": "controller",
+      "ability_timing": {
+        "early": {
+          "ruse": 0.39065817409766457,
+          "pickmeup": 0.004203821656050956,
+          "meddle": 0.0035031847133757963
+        },
+        "mid": {
+          "ruse": 0.39065817409766457,
+          "pickmeup": 0.0043312101910828035,
+          "meddle": 0.0036093418259023355
+        },
+        "late": {
+          "ruse": 0.19532908704883228,
+          "pickmeup": 0.004203821656050956,
+          "meddle": 0.0035031847133757963
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    },
+    "deadlock": {
+      "agent": "deadlock",
+      "role": "sentinel",
+      "ability_timing": {
+        "early": {
+          "sonicsensor": 0.29190751445086704,
+          "gravnet": 0.13734104046242776
+        },
+        "mid": {
+          "sonicsensor": 0.20433526011560693,
+          "gravnet": 0.14150289017341042
+        },
+        "late": {
+          "sonicsensor": 0.08757225433526011,
+          "gravnet": 0.13734104046242776
+        }
+      },
+      "signature_hold_rate": 0.3,
+      "ult_usage_round_threshold": 0.7
+    }
+  }
+}

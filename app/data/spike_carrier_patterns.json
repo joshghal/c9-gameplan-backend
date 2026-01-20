@@ -1,0 +1,1565 @@
+{
+  "metadata": {
+    "total_rounds": 1739,
+    "total_plants": 1185,
+    "total_pickups": 3790,
+    "total_carrier_deaths": 0,
+    "plant_rate": 0.681,
+    "carrier_death_rate": 0.0,
+    "avg_plant_time_ms": 74576,
+    "players_analyzed": 82
+  },
+  "player_spike_stats": {
+    "frz": {
+      "player_id": "59",
+      "player_name": "frz",
+      "team": "81",
+      "role": "unknown",
+      "pickup_count": 15,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 71954,
+      "plant_success_rate": 0.2,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 3,
+        "c": 0
+      }
+    },
+    "rglmeister": {
+      "player_id": "1814",
+      "player_name": "rglmeister",
+      "team": "81",
+      "role": "unknown",
+      "pickup_count": 53,
+      "plant_count": 7,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 72599,
+      "plant_success_rate": 0.132,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 6,
+        "c": 0
+      }
+    },
+    "jzz": {
+      "player_id": "2641",
+      "player_name": "jzz",
+      "team": "81",
+      "role": "unknown",
+      "pickup_count": 35,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 62913,
+      "plant_success_rate": 0.086,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 3,
+        "c": 0
+      }
+    },
+    "mazin": {
+      "player_id": "266",
+      "player_name": "mazin",
+      "team": "81",
+      "role": "unknown",
+      "pickup_count": 22,
+      "plant_count": 11,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 75891,
+      "plant_success_rate": 0.5,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 4,
+        "b": 7,
+        "c": 0
+      }
+    },
+    "artziN": {
+      "player_id": "2837",
+      "player_name": "artziN",
+      "team": "81",
+      "role": "unknown",
+      "pickup_count": 75,
+      "plant_count": 35,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 68129,
+      "plant_success_rate": 0.467,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 6,
+        "b": 29,
+        "c": 0
+      }
+    },
+    "vanity": {
+      "player_id": "91",
+      "player_name": "vanity",
+      "team": "79",
+      "role": "unknown",
+      "pickup_count": 332,
+      "plant_count": 73,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 72624,
+      "plant_success_rate": 0.22,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 9,
+        "b": 64,
+        "c": 0
+      }
+    },
+    "Jakee": {
+      "player_id": "11969",
+      "player_name": "Jakee",
+      "team": "79",
+      "role": "unknown",
+      "pickup_count": 21,
+      "plant_count": 5,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 80756,
+      "plant_success_rate": 0.238,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 3,
+        "b": 2,
+        "c": 0
+      }
+    },
+    "OXY": {
+      "player_id": "10636",
+      "player_name": "OXY",
+      "team": "79",
+      "role": "unknown",
+      "pickup_count": 133,
+      "plant_count": 22,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 76667,
+      "plant_success_rate": 0.165,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 5,
+        "b": 17,
+        "c": 0
+      }
+    },
+    "xeppaa": {
+      "player_id": "1193",
+      "player_name": "xeppaa",
+      "team": "79",
+      "role": "unknown",
+      "pickup_count": 378,
+      "plant_count": 109,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 73324,
+      "plant_success_rate": 0.288,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 38,
+        "b": 71,
+        "c": 0
+      }
+    },
+    "wippie": {
+      "player_id": "706",
+      "player_name": "wippie",
+      "team": "79",
+      "role": "unknown",
+      "pickup_count": 11,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 92773,
+      "plant_success_rate": 0.273,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 3,
+        "c": 0
+      }
+    },
+    "Ethan": {
+      "player_id": "297",
+      "player_name": "Ethan",
+      "team": "97",
+      "role": "unknown",
+      "pickup_count": 131,
+      "plant_count": 58,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 71771,
+      "plant_success_rate": 0.443,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 7,
+        "b": 51,
+        "c": 0
+      }
+    },
+    "Demon1": {
+      "player_id": "11334",
+      "player_name": "Demon1",
+      "team": "97",
+      "role": "unknown",
+      "pickup_count": 6,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 56000,
+      "plant_success_rate": 0.5,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 2,
+        "c": 0
+      }
+    },
+    "Victor": {
+      "player_id": "290",
+      "player_name": "Victor",
+      "team": "97",
+      "role": "unknown",
+      "pickup_count": 16,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 76055,
+      "plant_success_rate": 0.188,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 2,
+        "b": 1,
+        "c": 0
+      }
+    },
+    "Marved": {
+      "player_id": "292",
+      "player_name": "Marved",
+      "team": "97",
+      "role": "unknown",
+      "pickup_count": 6,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 79029,
+      "plant_success_rate": 0.5,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 3,
+        "c": 0
+      }
+    },
+    "crashies": {
+      "player_id": "291",
+      "player_name": "crashies",
+      "team": "97",
+      "role": "unknown",
+      "pickup_count": 21,
+      "plant_count": 5,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 82230,
+      "plant_success_rate": 0.238,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 2,
+        "b": 3,
+        "c": 0
+      }
+    },
+    "C0M": {
+      "player_id": "2515",
+      "player_name": "C0M",
+      "team": "1611",
+      "role": "unknown",
+      "pickup_count": 61,
+      "plant_count": 23,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 82742,
+      "plant_success_rate": 0.377,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 11,
+        "b": 12,
+        "c": 0
+      }
+    },
+    "Mazino": {
+      "player_id": "74",
+      "player_name": "Mazino",
+      "team": "1611",
+      "role": "unknown",
+      "pickup_count": 38,
+      "plant_count": 17,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 82730,
+      "plant_success_rate": 0.447,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 7,
+        "b": 10,
+        "c": 0
+      }
+    },
+    "tex": {
+      "player_id": "2343",
+      "player_name": "tex",
+      "team": "1611",
+      "role": "unknown",
+      "pickup_count": 40,
+      "plant_count": 8,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 87128,
+      "plant_success_rate": 0.2,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 2,
+        "b": 6,
+        "c": 0
+      }
+    },
+    "aspas": {
+      "player_id": "14",
+      "player_name": "aspas",
+      "team": "1611",
+      "role": "unknown",
+      "pickup_count": 19,
+      "plant_count": 7,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 75268,
+      "plant_success_rate": 0.368,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 3,
+        "b": 4,
+        "c": 0
+      }
+    },
+    "Runi": {
+      "player_id": "11968",
+      "player_name": "Runi",
+      "team": "79",
+      "role": "unknown",
+      "pickup_count": 85,
+      "plant_count": 31,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 78524,
+      "plant_success_rate": 0.365,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 13,
+        "b": 18,
+        "c": 0
+      }
+    },
+    "moose": {
+      "player_id": "725",
+      "player_name": "moose",
+      "team": "79",
+      "role": "unknown",
+      "pickup_count": 42,
+      "plant_count": 10,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 81998,
+      "plant_success_rate": 0.238,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 3,
+        "b": 7,
+        "c": 0
+      }
+    },
+    "kiNgg": {
+      "player_id": "207",
+      "player_name": "kiNgg",
+      "team": "1611",
+      "role": "unknown",
+      "pickup_count": 14,
+      "plant_count": 4,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 68815,
+      "plant_success_rate": 0.286,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 2,
+        "b": 2,
+        "c": 0
+      }
+    },
+    "NaturE": {
+      "player_id": "303",
+      "player_name": "NaturE",
+      "team": "281",
+      "role": "unknown",
+      "pickup_count": 54,
+      "plant_count": 21,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 73660,
+      "plant_success_rate": 0.389,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 5,
+        "b": 16,
+        "c": 0
+      }
+    },
+    "supamen": {
+      "player_id": "307",
+      "player_name": "supamen",
+      "team": "281",
+      "role": "unknown",
+      "pickup_count": 50,
+      "plant_count": 10,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 83749,
+      "plant_success_rate": 0.2,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 10,
+        "c": 0
+      }
+    },
+    "Derrek": {
+      "player_id": "306",
+      "player_name": "Derrek",
+      "team": "281",
+      "role": "unknown",
+      "pickup_count": 51,
+      "plant_count": 14,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 72949,
+      "plant_success_rate": 0.275,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 4,
+        "b": 10,
+        "c": 0
+      }
+    },
+    "JAWGEMO": {
+      "player_id": "2347",
+      "player_name": "JAWGEMO",
+      "team": "281",
+      "role": "unknown",
+      "pickup_count": 38,
+      "plant_count": 7,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 74021,
+      "plant_success_rate": 0.184,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 3,
+        "b": 4,
+        "c": 0
+      }
+    },
+    "Saadhak": {
+      "player_id": "58",
+      "player_name": "Saadhak",
+      "team": "3412",
+      "role": "unknown",
+      "pickup_count": 27,
+      "plant_count": 9,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 63233,
+      "plant_success_rate": 0.333,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 8,
+        "c": 0
+      }
+    },
+    "cauanzin": {
+      "player_id": "1812",
+      "player_name": "cauanzin",
+      "team": "3412",
+      "role": "unknown",
+      "pickup_count": 20,
+      "plant_count": 2,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 51595,
+      "plant_success_rate": 0.1,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 2,
+        "c": 0
+      }
+    },
+    "tuyz": {
+      "player_id": "272",
+      "player_name": "tuyz",
+      "team": "3412",
+      "role": "unknown",
+      "pickup_count": 26,
+      "plant_count": 6,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 77824,
+      "plant_success_rate": 0.231,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 6,
+        "c": 0
+      }
+    },
+    "Less": {
+      "player_id": "28",
+      "player_name": "Less",
+      "team": "3412",
+      "role": "unknown",
+      "pickup_count": 6,
+      "plant_count": 2,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 89561,
+      "plant_success_rate": 0.333,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 2,
+        "c": 0
+      }
+    },
+    "qck1": {
+      "player_id": "50",
+      "player_name": "qck1",
+      "team": "3412",
+      "role": "unknown",
+      "pickup_count": 3,
+      "plant_count": 0,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 56000,
+      "plant_success_rate": 0.0,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 0.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 0,
+        "c": 0
+      }
+    },
+    "eeiu": {
+      "player_id": "2341",
+      "player_name": "eeiu",
+      "team": "337",
+      "role": "unknown",
+      "pickup_count": 12,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 92055,
+      "plant_success_rate": 0.25,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 2,
+        "b": 1,
+        "c": 0
+      }
+    },
+    "Boostio": {
+      "player_id": "2345",
+      "player_name": "Boostio",
+      "team": "337",
+      "role": "unknown",
+      "pickup_count": 13,
+      "plant_count": 1,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 77922,
+      "plant_success_rate": 0.077,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 1,
+        "c": 0
+      }
+    },
+    "Cryo": {
+      "player_id": "2361",
+      "player_name": "Cryo",
+      "team": "337",
+      "role": "unknown",
+      "pickup_count": 16,
+      "plant_count": 5,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 77486,
+      "plant_success_rate": 0.312,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 4,
+        "c": 0
+      }
+    },
+    "Asuna": {
+      "player_id": "296",
+      "player_name": "Asuna",
+      "team": "337",
+      "role": "unknown",
+      "pickup_count": 24,
+      "plant_count": 8,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 77723,
+      "plant_success_rate": 0.333,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 4,
+        "b": 4,
+        "c": 0
+      }
+    },
+    "bang": {
+      "player_id": "727",
+      "player_name": "bang",
+      "team": "337",
+      "role": "unknown",
+      "pickup_count": 22,
+      "plant_count": 9,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 72922,
+      "plant_success_rate": 0.409,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 8,
+        "c": 0
+      }
+    },
+    "nzr": {
+      "player_id": "52",
+      "player_name": "nzr",
+      "team": "99",
+      "role": "unknown",
+      "pickup_count": 61,
+      "plant_count": 16,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 65852,
+      "plant_success_rate": 0.262,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 6,
+        "b": 10,
+        "c": 0
+      }
+    },
+    "Khalil": {
+      "player_id": "51",
+      "player_name": "Khalil",
+      "team": "99",
+      "role": "unknown",
+      "pickup_count": 27,
+      "plant_count": 13,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 76256,
+      "plant_success_rate": 0.481,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 12,
+        "c": 0
+      }
+    },
+    "kon4n": {
+      "player_id": "19",
+      "player_name": "kon4n",
+      "team": "99",
+      "role": "unknown",
+      "pickup_count": 15,
+      "plant_count": 5,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 77490,
+      "plant_success_rate": 0.333,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 4,
+        "c": 0
+      }
+    },
+    "havoc": {
+      "player_id": "3314",
+      "player_name": "havoc",
+      "team": "99",
+      "role": "unknown",
+      "pickup_count": 20,
+      "plant_count": 4,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 56000,
+      "plant_success_rate": 0.2,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 3,
+        "c": 0
+      }
+    },
+    "mwzera": {
+      "player_id": "57",
+      "player_name": "mwzera",
+      "team": "99",
+      "role": "unknown",
+      "pickup_count": 5,
+      "plant_count": 1,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 56000,
+      "plant_success_rate": 0.2,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 1,
+        "c": 0
+      }
+    },
+    "valyn": {
+      "player_id": "2349",
+      "player_name": "valyn",
+      "team": "96",
+      "role": "unknown",
+      "pickup_count": 49,
+      "plant_count": 15,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 75676,
+      "plant_success_rate": 0.306,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 6,
+        "b": 9,
+        "c": 0
+      }
+    },
+    "JonahP": {
+      "player_id": "2351",
+      "player_name": "JonahP",
+      "team": "96",
+      "role": "unknown",
+      "pickup_count": 40,
+      "plant_count": 15,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 77303,
+      "plant_success_rate": 0.375,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 4,
+        "b": 11,
+        "c": 0
+      }
+    },
+    "trent": {
+      "player_id": "2353",
+      "player_name": "trent",
+      "team": "96",
+      "role": "unknown",
+      "pickup_count": 120,
+      "plant_count": 36,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 73846,
+      "plant_success_rate": 0.3,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 7,
+        "b": 29,
+        "c": 0
+      }
+    },
+    "icy": {
+      "player_id": "14940",
+      "player_name": "icy",
+      "team": "96",
+      "role": "unknown",
+      "pickup_count": 26,
+      "plant_count": 4,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 56000,
+      "plant_success_rate": 0.154,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 3,
+        "c": 0
+      }
+    },
+    "leaf": {
+      "player_id": "1192",
+      "player_name": "leaf",
+      "team": "96",
+      "role": "unknown",
+      "pickup_count": 10,
+      "plant_count": 5,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 56410,
+      "plant_success_rate": 0.5,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 3,
+        "b": 2,
+        "c": 0
+      }
+    },
+    "Sacy": {
+      "player_id": "3260",
+      "player_name": "Sacy",
+      "team": "1079",
+      "role": "unknown",
+      "pickup_count": 16,
+      "plant_count": 4,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 56000,
+      "plant_success_rate": 0.25,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 4,
+        "c": 0
+      }
+    },
+    "Zellsis": {
+      "player_id": "94",
+      "player_name": "Zellsis",
+      "team": "1079",
+      "role": "unknown",
+      "pickup_count": 42,
+      "plant_count": 18,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 73368,
+      "plant_success_rate": 0.429,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 4,
+        "b": 14,
+        "c": 0
+      }
+    },
+    "johnqt": {
+      "player_id": "2512",
+      "player_name": "johnqt",
+      "team": "1079",
+      "role": "unknown",
+      "pickup_count": 73,
+      "plant_count": 22,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 75835,
+      "plant_success_rate": 0.301,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 9,
+        "b": 13,
+        "c": 0
+      }
+    },
+    "TenZ": {
+      "player_id": "90",
+      "player_name": "TenZ",
+      "team": "1079",
+      "role": "unknown",
+      "pickup_count": 11,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 83892,
+      "plant_success_rate": 0.273,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 2,
+        "c": 0
+      }
+    },
+    "zekken": {
+      "player_id": "287",
+      "player_name": "zekken",
+      "team": "1079",
+      "role": "unknown",
+      "pickup_count": 25,
+      "plant_count": 7,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 70001,
+      "plant_success_rate": 0.28,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 2,
+        "b": 5,
+        "c": 0
+      }
+    },
+    "FNS": {
+      "player_id": "74432",
+      "player_name": "FNS",
+      "team": "97",
+      "role": "unknown",
+      "pickup_count": 12,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 61362,
+      "plant_success_rate": 0.25,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 3,
+        "c": 0
+      }
+    },
+    "s0m": {
+      "player_id": "2340",
+      "player_name": "s0m",
+      "team": "97",
+      "role": "unknown",
+      "pickup_count": 80,
+      "plant_count": 17,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 64187,
+      "plant_success_rate": 0.212,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 16,
+        "c": 0
+      }
+    },
+    "Melser": {
+      "player_id": "208",
+      "player_name": "Melser",
+      "team": "48457",
+      "role": "unknown",
+      "pickup_count": 26,
+      "plant_count": 8,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 80038,
+      "plant_success_rate": 0.308,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 2,
+        "b": 6,
+        "c": 0
+      }
+    },
+    "mta": {
+      "player_id": "10985",
+      "player_name": "mta",
+      "team": "48457",
+      "role": "unknown",
+      "pickup_count": 37,
+      "plant_count": 17,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 80493,
+      "plant_success_rate": 0.459,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 9,
+        "b": 8,
+        "c": 0
+      }
+    },
+    "heat": {
+      "player_id": "48",
+      "player_name": "heat",
+      "team": "48457",
+      "role": "unknown",
+      "pickup_count": 43,
+      "plant_count": 15,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 86289,
+      "plant_success_rate": 0.349,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 4,
+        "b": 11,
+        "c": 0
+      }
+    },
+    "Shyy": {
+      "player_id": "3078",
+      "player_name": "Shyy",
+      "team": "48457",
+      "role": "unknown",
+      "pickup_count": 13,
+      "plant_count": 2,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 88312,
+      "plant_success_rate": 0.154,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 1,
+        "c": 0
+      }
+    },
+    "keznitdeuS": {
+      "player_id": "77",
+      "player_name": "keznitdeuS",
+      "team": "48457",
+      "role": "unknown",
+      "pickup_count": 25,
+      "plant_count": 5,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 84904,
+      "plant_success_rate": 0.2,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 5,
+        "c": 0
+      }
+    },
+    "v1c": {
+      "player_id": "10612",
+      "player_name": "v1c",
+      "team": "79",
+      "role": "unknown",
+      "pickup_count": 171,
+      "plant_count": 86,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 76317,
+      "plant_success_rate": 0.503,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 22,
+        "b": 64,
+        "c": 0
+      }
+    },
+    "mitch": {
+      "player_id": "1195",
+      "player_name": "mitch",
+      "team": "79",
+      "role": "unknown",
+      "pickup_count": 476,
+      "plant_count": 185,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 71923,
+      "plant_success_rate": 0.389,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 43,
+        "b": 142,
+        "c": 0
+      }
+    },
+    "neT": {
+      "player_id": "2348",
+      "player_name": "neT",
+      "team": "79",
+      "role": "unknown",
+      "pickup_count": 132,
+      "plant_count": 40,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 77577,
+      "plant_success_rate": 0.303,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 10,
+        "b": 30,
+        "c": 0
+      }
+    },
+    "Verno": {
+      "player_id": "10630",
+      "player_name": "Verno",
+      "team": "97",
+      "role": "unknown",
+      "pickup_count": 13,
+      "plant_count": 7,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 77979,
+      "plant_success_rate": 0.538,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 2,
+        "b": 5,
+        "c": 0
+      }
+    },
+    "mada": {
+      "player_id": "2358",
+      "player_name": "mada",
+      "team": "97",
+      "role": "unknown",
+      "pickup_count": 22,
+      "plant_count": 4,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 59220,
+      "plant_success_rate": 0.182,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 4,
+        "c": 0
+      }
+    },
+    "xenom": {
+      "player_id": "629",
+      "player_name": "xenom",
+      "team": "81",
+      "role": "unknown",
+      "pickup_count": 11,
+      "plant_count": 6,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 87470,
+      "plant_success_rate": 0.545,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 6,
+        "c": 0
+      }
+    },
+    "cortezia": {
+      "player_id": "3320",
+      "player_name": "cortezia",
+      "team": "81",
+      "role": "unknown",
+      "pickup_count": 6,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 86312,
+      "plant_success_rate": 0.5,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 3,
+        "c": 0
+      }
+    },
+    "brawk": {
+      "player_id": "2513",
+      "player_name": "brawk",
+      "team": "97",
+      "role": "unknown",
+      "pickup_count": 31,
+      "plant_count": 11,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 77310,
+      "plant_success_rate": 0.355,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 11,
+        "c": 0
+      }
+    },
+    "Rossy": {
+      "player_id": "2890",
+      "player_name": "Rossy",
+      "team": "1611",
+      "role": "unknown",
+      "pickup_count": 11,
+      "plant_count": 1,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 56000,
+      "plant_success_rate": 0.091,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 1,
+        "c": 0
+      }
+    },
+    "Pryze": {
+      "player_id": "32030",
+      "player_name": "Pryze",
+      "team": "99",
+      "role": "unknown",
+      "pickup_count": 39,
+      "plant_count": 12,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 83666,
+      "plant_success_rate": 0.308,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 12,
+        "c": 0
+      }
+    },
+    "raafa": {
+      "player_id": "2646",
+      "player_name": "raafa",
+      "team": "99",
+      "role": "unknown",
+      "pickup_count": 23,
+      "plant_count": 12,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 73955,
+      "plant_success_rate": 0.522,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 12,
+        "c": 0
+      }
+    },
+    "N4RRATE": {
+      "player_id": "11013",
+      "player_name": "N4RRATE",
+      "team": "1079",
+      "role": "unknown",
+      "pickup_count": 56,
+      "plant_count": 16,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 68826,
+      "plant_success_rate": 0.286,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 15,
+        "c": 0
+      }
+    },
+    "yay": {
+      "player_id": "866",
+      "player_name": "yay",
+      "team": "281",
+      "role": "unknown",
+      "pickup_count": 3,
+      "plant_count": 2,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 60869,
+      "plant_success_rate": 0.667,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 2,
+        "c": 0
+      }
+    },
+    "adverso": {
+      "player_id": "206",
+      "player_name": "adverso",
+      "team": "99",
+      "role": "unknown",
+      "pickup_count": 11,
+      "plant_count": 1,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 57787,
+      "plant_success_rate": 0.091,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 1,
+        "c": 0
+      }
+    },
+    "Palla": {
+      "player_id": "32038",
+      "player_name": "Palla",
+      "team": "99",
+      "role": "unknown",
+      "pickup_count": 3,
+      "plant_count": 0,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 56000,
+      "plant_success_rate": 0.0,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 0.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 0,
+        "c": 0
+      }
+    },
+    "Urango": {
+      "player_id": "42",
+      "player_name": "Urango",
+      "team": "99",
+      "role": "unknown",
+      "pickup_count": 11,
+      "plant_count": 4,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 74232,
+      "plant_success_rate": 0.364,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 4,
+        "c": 0
+      }
+    },
+    "gobera": {
+      "player_id": "3315",
+      "player_name": "gobera",
+      "team": "53367",
+      "role": "unknown",
+      "pickup_count": 22,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 80300,
+      "plant_success_rate": 0.136,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 3,
+        "c": 0
+      }
+    },
+    "Lz": {
+      "player_id": "32033",
+      "player_name": "Lz",
+      "team": "53367",
+      "role": "unknown",
+      "pickup_count": 5,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 72572,
+      "plant_success_rate": 0.6,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 3,
+        "c": 0
+      }
+    },
+    "spikeziN": {
+      "player_id": "32032",
+      "player_name": "spikeziN",
+      "team": "53367",
+      "role": "unknown",
+      "pickup_count": 6,
+      "plant_count": 1,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 56000,
+      "plant_success_rate": 0.167,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 1,
+        "c": 0
+      }
+    },
+    "BABYBAY": {
+      "player_id": "709",
+      "player_name": "BABYBAY",
+      "team": "96",
+      "role": "unknown",
+      "pickup_count": 3,
+      "plant_count": 2,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 56000,
+      "plant_success_rate": 0.667,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 1,
+        "c": 0
+      }
+    },
+    "Sato": {
+      "player_id": "14826",
+      "player_name": "Sato",
+      "team": "1611",
+      "role": "unknown",
+      "pickup_count": 6,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 56000,
+      "plant_success_rate": 0.5,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 2,
+        "c": 0
+      }
+    },
+    "okeanos": {
+      "player_id": "10621",
+      "player_name": "okeanos",
+      "team": "1611",
+      "role": "unknown",
+      "pickup_count": 11,
+      "plant_count": 3,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 94851,
+      "plant_success_rate": 0.273,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 2,
+        "b": 1,
+        "c": 0
+      }
+    },
+    "Kess": {
+      "player_id": "119048",
+      "player_name": "Kess",
+      "team": "337",
+      "role": "unknown",
+      "pickup_count": 8,
+      "plant_count": 1,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 94536,
+      "plant_success_rate": 0.125,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 0,
+        "b": 1,
+        "c": 0
+      }
+    },
+    "Zander": {
+      "player_id": "2359",
+      "player_name": "Zander",
+      "team": "337",
+      "role": "unknown",
+      "pickup_count": 13,
+      "plant_count": 4,
+      "dropped_on_death": 0,
+      "avg_plant_time_ms": 68163,
+      "plant_success_rate": 0.308,
+      "carrier_death_rate": 0.0,
+      "post_plant_survival": 1.0,
+      "plant_sites": {
+        "a": 1,
+        "b": 3,
+        "c": 0
+      }
+    }
+  },
+  "role_spike_stats": {
+    "duelist": {
+      "pickup_rate": 0.0,
+      "plant_rate": 0.0,
+      "carrier_death_rate": 0.0,
+      "avg_plant_time_ms": 56000,
+      "total_pickups": 0,
+      "total_plants": 0
+    },
+    "initiator": {
+      "pickup_rate": 0.0,
+      "plant_rate": 0.0,
+      "carrier_death_rate": 0.0,
+      "avg_plant_time_ms": 56000,
+      "total_pickups": 0,
+      "total_plants": 0
+    },
+    "controller": {
+      "pickup_rate": 0.0,
+      "plant_rate": 0.0,
+      "carrier_death_rate": 0.0,
+      "avg_plant_time_ms": 56000,
+      "total_pickups": 0,
+      "total_plants": 0
+    },
+    "sentinel": {
+      "pickup_rate": 0.0,
+      "plant_rate": 0.0,
+      "carrier_death_rate": 0.0,
+      "avg_plant_time_ms": 56000,
+      "total_pickups": 0,
+      "total_plants": 0
+    },
+    "unknown": {
+      "pickup_rate": 1.0,
+      "plant_rate": 0.313,
+      "carrier_death_rate": 0.0,
+      "avg_plant_time_ms": 74576,
+      "total_pickups": 3790,
+      "total_plants": 1185
+    }
+  },
+  "role_carrier_defaults": {
+    "unknown": {
+      "carrier_aggression": 0.2,
+      "early_engagement_mult": 0.3,
+      "execute_engagement_mult": 0.46,
+      "post_plant_hold_mult": 0.33999999999999997,
+      "drop_spike_threshold": 0.76,
+      "lurk_probability": 0.21,
+      "fast_plant_tendency": 0.38
+    }
+  },
+  "vct_validation_targets": {
+    "plant_rate": {
+      "target": 0.65,
+      "tolerance": 0.05,
+      "description": "Plants per attack round"
+    },
+    "avg_plant_time_ms": {
+      "target": 56000,
+      "tolerance": 8000,
+      "description": "Average plant time"
+    },
+    "carrier_death_rate": {
+      "target": 0.12,
+      "tolerance": 0.04,
+      "description": "Carrier deaths per pickup"
+    },
+    "attack_win_rate": {
+      "target": 0.48,
+      "tolerance": 0.03,
+      "description": "Attack side win rate"
+    }
+  }
+}

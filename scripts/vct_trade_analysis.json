@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "description": "Deep analysis of VCT trade patterns",
+    "source_file": "app/data/trade_patterns.json",
+    "analysis_date": "2026-01-19",
+    "total_trades_analyzed": 3036,
+    "sample_trades_with_timing": 100
+  },
+  "key_finding": {
+    "title": "Distance Doesn't Matter, Readiness Does",
+    "correlation_time_vs_distance": -0.013,
+    "explanation": "Trade time is determined by player readiness state (pre-aimed vs need to turn), not physical distance to killer"
+  },
+  "trade_time_distribution": {
+    "under_1s": {
+      "count": 1203,
+      "percentage": 39.6,
+      "interpretation": "Fast reaction / pre-aimed trades"
+    },
+    "1_to_2s": {
+      "count": 789,
+      "percentage": 26.0,
+      "interpretation": "Normal reaction trades"
+    },
+    "2_to_3s": {
+      "count": 417,
+      "percentage": 13.7,
+      "interpretation": "Slow / need to reposition"
+    },
+    "3_to_5s": {
+      "count": 627,
+      "percentage": 20.7,
+      "interpretation": "Very slow / rotating from far"
+    }
+  },
+  "detailed_timing_from_samples": {
+    "min_trade_time_ms": 42,
+    "max_trade_time_ms": 4985,
+    "avg_trade_time_ms": 1831,
+    "under_500ms_percentage": 19.0,
+    "under_1s_percentage": 38.0,
+    "under_2s_percentage": 63.0
+  },
+  "trade_time_by_distance": {
+    "close_under_1000_units": {
+      "avg_time_ms": 1897,
+      "sample_count": 36
+    },
+    "medium_1000_to_2000_units": {
+      "avg_time_ms": 1759,
+      "sample_count": 42
+    },
+    "far_over_2000_units": {
+      "avg_time_ms": 1863,
+      "sample_count": 22
+    },
+    "conclusion": "No significant difference - distance does not affect trade time"
+  },
+  "fastest_trades": [
+    {"time_ms": 42, "distance_units": 577, "interpretation": "Pre-aimed, close"},
+    {"time_ms": 59, "distance_units": 1906, "interpretation": "Pre-aimed, medium"},
+    {"time_ms": 63, "distance_units": 536, "interpretation": "Pre-aimed, close"},
+    {"time_ms": 68, "distance_units": 878, "interpretation": "Pre-aimed, close"},
+    {"time_ms": 91, "distance_units": 1989, "interpretation": "Pre-aimed, medium"},
+    {"time_ms": 144, "distance_units": 2347, "interpretation": "Pre-aimed, FAR"},
+    {"time_ms": 146, "distance_units": 2070, "interpretation": "Pre-aimed, far"},
+    {"time_ms": 165, "distance_units": 1398, "interpretation": "Pre-aimed, medium"},
+    {"time_ms": 210, "distance_units": 1653, "interpretation": "Pre-aimed, medium"},
+    {"time_ms": 214, "distance_units": 1614, "interpretation": "Pre-aimed, medium"}
+  ],
+  "player_specific_trade_times": [
+    {"player": "Jakee", "avg_time_ms": 450, "sample_count": 3},
+    {"player": "OXY", "avg_time_ms": 582, "sample_count": 4},
+    {"player": "rglmeister", "avg_time_ms": 667, "sample_count": 2},
+    {"player": "xeppaa", "avg_time_ms": 934, "sample_count": 4},
+    {"player": "jzz", "avg_time_ms": 955, "sample_count": 4},
+    {"player": "frz", "avg_time_ms": 1337, "sample_count": 4},
+    {"player": "artziN", "avg_time_ms": 1509, "sample_count": 6},
+    {"player": "wippie", "avg_time_ms": 1595, "sample_count": 6},
+    {"player": "mazin", "avg_time_ms": 1960, "sample_count": 10},
+    {"player": "vanity", "avg_time_ms": 2972, "sample_count": 7}
+  ],
+  "trade_type_model": {
+    "pre_aimed": {
+      "time_range_ms": "42-200",
+      "percentage_of_trades": 19,
+      "description": "Trader was already watching the angle, just needs to click"
+    },
+    "normal_reaction": {
+      "time_range_ms": "500-1500",
+      "percentage_of_trades": 44,
+      "description": "Trader heard gunshot, turned to face, aimed, shot"
+    },
+    "repositioning": {
+      "time_range_ms": "2000-5000",
+      "percentage_of_trades": 37,
+      "description": "Trader had to move to get angle on killer"
+    }
+  },
+  "modeling_implications": {
+    "current_model_flaw": "Uses distance as factor in trade probability, but VCT data shows distance has no correlation",
+    "correct_model_would_use": "Readiness state (facing direction, awareness of enemy position)",
+    "challenge": "Tracking facing direction requires additional state not currently in simulation",
+    "recommendation": "Model readiness as probabilistic: 19% pre-aimed (fast), 44% normal, 37% repositioning"
+  }
+}

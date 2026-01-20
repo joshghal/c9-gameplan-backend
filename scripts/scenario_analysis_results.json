@@ -1,0 +1,154 @@
+{
+  "timestamp": "2026-01-19T21:27:39.587900",
+  "results": {
+    "attack_execute_fast": {
+      "total_rounds": 42,
+      "attack_wins": 25,
+      "defense_wins": 17,
+      "attack_win_rate": 0.5952380952380952,
+      "plant_rate": 0.4523809523809524,
+      "avg_duration_ms": 51468.19047619047,
+      "avg_kills": 6.285714285714286
+    },
+    "attack_execute_slow": {
+      "total_rounds": 42,
+      "attack_wins": 17,
+      "defense_wins": 25,
+      "attack_win_rate": 0.40476190476190477,
+      "plant_rate": 0.6428571428571429,
+      "avg_duration_ms": 57916.95238095238,
+      "avg_kills": 5.476190476190476
+    },
+    "post_plant_defense": {
+      "total_rounds": 42,
+      "attack_wins": 35,
+      "defense_wins": 7,
+      "attack_win_rate": 0.8333333333333334,
+      "plant_rate": 1.0,
+      "avg_duration_ms": 29830.095238095237,
+      "avg_kills": 6.238095238095238
+    },
+    "retake": {
+      "total_rounds": 42,
+      "attack_wins": 8,
+      "defense_wins": 34,
+      "attack_win_rate": 0.19047619047619047,
+      "plant_rate": 1.0,
+      "avg_duration_ms": 28586.666666666668,
+      "avg_kills": 6.119047619047619
+    },
+    "mid_control": {
+      "total_rounds": 42,
+      "attack_wins": 18,
+      "defense_wins": 24,
+      "attack_win_rate": 0.42857142857142855,
+      "plant_rate": 0.0,
+      "avg_duration_ms": 18352.761904761905,
+      "avg_kills": 6.5
+    },
+    "defender_aggression": {
+      "total_rounds": 42,
+      "attack_wins": 23,
+      "defense_wins": 19,
+      "attack_win_rate": 0.5476190476190477,
+      "plant_rate": 0.5952380952380952,
+      "avg_duration_ms": 76854.85714285714,
+      "avg_kills": 3.261904761904762
+    },
+    "eco_vs_full": {
+      "total_rounds": 42,
+      "attack_wins": 9,
+      "defense_wins": 33,
+      "attack_win_rate": 0.21428571428571427,
+      "plant_rate": 0.38095238095238093,
+      "avg_duration_ms": 42553.90476190476,
+      "avg_kills": 6.023809523809524
+    },
+    "full_vs_eco": {
+      "total_rounds": 42,
+      "attack_wins": 37,
+      "defense_wins": 5,
+      "attack_win_rate": 0.8809523809523809,
+      "plant_rate": 0.8333333333333334,
+      "avg_duration_ms": 59568.76190476191,
+      "avg_kills": 5.309523809523809
+    },
+    "clutch_1v1": {
+      "total_rounds": 42,
+      "attack_wins": 15,
+      "defense_wins": 27,
+      "attack_win_rate": 0.35714285714285715,
+      "plant_rate": 0.35714285714285715,
+      "avg_duration_ms": 15219.809523809523,
+      "avg_kills": 0.8571428571428571
+    },
+    "clutch_1v2": {
+      "total_rounds": 42,
+      "attack_wins": 5,
+      "defense_wins": 37,
+      "attack_win_rate": 0.11904761904761904,
+      "plant_rate": 0.40476190476190477,
+      "avg_duration_ms": 18243.04761904762,
+      "avg_kills": 0.9761904761904762
+    },
+    "clutch_2v1": {
+      "total_rounds": 42,
+      "attack_wins": 31,
+      "defense_wins": 11,
+      "attack_win_rate": 0.7380952380952381,
+      "plant_rate": 0.2619047619047619,
+      "avg_duration_ms": 14342.095238095239,
+      "avg_kills": 1.2619047619047619
+    },
+    "man_advantage_4v5": {
+      "total_rounds": 42,
+      "attack_wins": 26,
+      "defense_wins": 16,
+      "attack_win_rate": 0.6190476190476191,
+      "plant_rate": 0.6666666666666666,
+      "avg_duration_ms": 55591.619047619046,
+      "avg_kills": 5.214285714285714
+    },
+    "man_advantage_5v4": {
+      "total_rounds": 42,
+      "attack_wins": 26,
+      "defense_wins": 16,
+      "attack_win_rate": 0.6190476190476191,
+      "plant_rate": 0.5952380952380952,
+      "avg_duration_ms": 54756.57142857143,
+      "avg_kills": 5.142857142857143
+    },
+    "man_advantage_3v5": {
+      "total_rounds": 42,
+      "attack_wins": 16,
+      "defense_wins": 26,
+      "attack_win_rate": 0.38095238095238093,
+      "plant_rate": 0.5476190476190477,
+      "avg_duration_ms": 46598.09523809524,
+      "avg_kills": 4.714285714285714
+    }
+  },
+  "analysis": {
+    "strengths": [
+      "attack_execute_fast: Accurate (60% vs 52% target)",
+      "attack_execute_slow: Accurate (40% vs 45% target)",
+      "mid_control: Accurate (43% vs 48% target)",
+      "defender_aggression: Accurate (55% vs 55% target)",
+      "eco_vs_full: Accurate (21% vs 15% target)",
+      "full_vs_eco: Accurate (88% vs 85% target)",
+      "clutch_2v1: Accurate (74% vs 75% target)",
+      "man_advantage_5v4: Accurate (62% vs 60% target)"
+    ],
+    "weaknesses": [
+      "post_plant_defense: Attack too strong (83% vs 65% target)",
+      "retake: MAJOR - Defense way too strong (19% vs 65% target)",
+      "clutch_1v1: Defense too strong (36% vs 50% target)",
+      "clutch_1v2: Defense too strong (12% vs 25% target)",
+      "man_advantage_4v5: MAJOR - Attack way too strong (62% vs 35% target)",
+      "man_advantage_3v5: MAJOR - Attack way too strong (38% vs 15% target)"
+    ],
+    "suggestions": [
+      "MAN DISADVANTAGE FIX: 4v5 attackers winning too much. Numbers should matter more."
+    ]
+  }
+}
