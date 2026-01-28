@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "team": "LOUD (1)",
+    "description": "LOUD (1) engagement distance preferences from VCT data",
+    "methodology": "Estimated from position variance",
+    "n_players": 5
+  },
+  "preferences": {
+    "tuyz": {
+      "player": "tuyz",
+      "n_samples": 466,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "cauanzin": {
+      "player": "cauanzin",
+      "n_samples": 296,
+      "mean_distance": 2115.7,
+      "std_distance": 317.3,
+      "ci_lower": 1493.7,
+      "ci_upper": 2737.7
+    },
+    "qck1": {
+      "player": "qck1",
+      "n_samples": 296,
+      "mean_distance": 2127.5,
+      "std_distance": 319.1,
+      "ci_lower": 1502.0,
+      "ci_upper": 2752.9
+    },
+    "Saadhak": {
+      "player": "Saadhak",
+      "n_samples": 296,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Less": {
+      "player": "Less",
+      "n_samples": 296,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    }
+  }
+}

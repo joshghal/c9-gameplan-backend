@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "team": "Leviat\u00e1n Esports",
+    "description": "Leviat\u00e1n Esports engagement distance preferences from VCT data",
+    "methodology": "Estimated from position variance",
+    "n_players": 9
+  },
+  "preferences": {
+    "C0M": {
+      "player": "C0M",
+      "n_samples": 878,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Demon1": {
+      "player": "Demon1",
+      "n_samples": 391,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "okeanos": {
+      "player": "okeanos",
+      "n_samples": 346,
+      "mean_distance": 1996.8,
+      "std_distance": 299.5,
+      "ci_lower": 1409.7,
+      "ci_upper": 2583.9
+    },
+    "Rossy": {
+      "player": "Rossy",
+      "n_samples": 173,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "aspas": {
+      "player": "aspas",
+      "n_samples": 1030,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Mazino": {
+      "player": "Mazino",
+      "n_samples": 359,
+      "mean_distance": 2192.8,
+      "std_distance": 328.9,
+      "ci_lower": 1548.1,
+      "ci_upper": 2837.4
+    },
+    "Sato": {
+      "player": "Sato",
+      "n_samples": 346,
+      "mean_distance": 1955.3,
+      "std_distance": 293.3,
+      "ci_lower": 1380.4,
+      "ci_upper": 2530.1
+    },
+    "kiNgg": {
+      "player": "kiNgg",
+      "n_samples": 878,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "tex": {
+      "player": "tex",
+      "n_samples": 878,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    }
+  }
+}

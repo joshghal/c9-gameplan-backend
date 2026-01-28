@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "team": "MIBR (1)",
+    "description": "MIBR (1) engagement distance preferences from VCT data",
+    "methodology": "Estimated from position variance",
+    "n_players": 8
+  },
+  "preferences": {
+    "frz": {
+      "player": "frz",
+      "n_samples": 542,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "jzz": {
+      "player": "jzz",
+      "n_samples": 542,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "cortezia": {
+      "player": "cortezia",
+      "n_samples": 671,
+      "mean_distance": 2189.6,
+      "std_distance": 328.4,
+      "ci_lower": 1545.9,
+      "ci_upper": 2833.4
+    },
+    "mazin": {
+      "player": "mazin",
+      "n_samples": 542,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "rglmeister": {
+      "player": "rglmeister",
+      "n_samples": 542,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "xenom": {
+      "player": "xenom",
+      "n_samples": 671,
+      "mean_distance": 2140.5,
+      "std_distance": 321.1,
+      "ci_lower": 1511.2,
+      "ci_upper": 2769.8
+    },
+    "Verno": {
+      "player": "Verno",
+      "n_samples": 607,
+      "mean_distance": 2050.9,
+      "std_distance": 307.6,
+      "ci_lower": 1447.9,
+      "ci_upper": 2653.9
+    },
+    "artziN": {
+      "player": "artziN",
+      "n_samples": 542,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    }
+  }
+}

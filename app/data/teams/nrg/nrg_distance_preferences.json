@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "team": "NRG",
+    "description": "NRG engagement distance preferences from VCT data",
+    "methodology": "Estimated from position variance",
+    "n_players": 9
+  },
+  "preferences": {
+    "crashies": {
+      "player": "crashies",
+      "n_samples": 533,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Victor": {
+      "player": "Victor",
+      "n_samples": 533,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Marved": {
+      "player": "Marved",
+      "n_samples": 218,
+      "mean_distance": 2178.5,
+      "std_distance": 326.8,
+      "ci_lower": 1538.0,
+      "ci_upper": 2818.9
+    },
+    "skuba": {
+      "player": "skuba",
+      "n_samples": 295,
+      "mean_distance": 2026.6,
+      "std_distance": 304.0,
+      "ci_lower": 1430.8,
+      "ci_upper": 2622.4
+    },
+    "s0m": {
+      "player": "s0m",
+      "n_samples": 1157,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Ethan": {
+      "player": "Ethan",
+      "n_samples": 1375,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "mada": {
+      "player": "mada",
+      "n_samples": 842,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "FNS": {
+      "player": "FNS",
+      "n_samples": 862,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "brawk": {
+      "player": "brawk",
+      "n_samples": 597,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "team": "FURIA",
+    "description": "FURIA engagement distance preferences from VCT data",
+    "methodology": "Estimated from position variance",
+    "n_players": 8
+  },
+  "preferences": {
+    "Palla": {
+      "player": "Palla",
+      "n_samples": 170,
+      "mean_distance": 2145.9,
+      "std_distance": 321.9,
+      "ci_lower": 1515.0,
+      "ci_upper": 2776.7
+    },
+    "Khalil": {
+      "player": "Khalil",
+      "n_samples": 253,
+      "mean_distance": 2128.0,
+      "std_distance": 319.2,
+      "ci_lower": 1502.4,
+      "ci_upper": 2753.6
+    },
+    "adverso": {
+      "player": "adverso",
+      "n_samples": 170,
+      "mean_distance": 2157.9,
+      "std_distance": 323.7,
+      "ci_lower": 1523.5,
+      "ci_upper": 2792.3
+    },
+    "kon4n": {
+      "player": "kon4n",
+      "n_samples": 253,
+      "mean_distance": 2047.4,
+      "std_distance": 307.1,
+      "ci_lower": 1445.5,
+      "ci_upper": 2649.3
+    },
+    "havoc": {
+      "player": "havoc",
+      "n_samples": 468,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "mwzera": {
+      "player": "mwzera",
+      "n_samples": 253,
+      "mean_distance": 1925.2,
+      "std_distance": 288.8,
+      "ci_lower": 1359.2,
+      "ci_upper": 2491.2
+    },
+    "raafa": {
+      "player": "raafa",
+      "n_samples": 215,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Urango": {
+      "player": "Urango",
+      "n_samples": 170,
+      "mean_distance": 2192.7,
+      "std_distance": 328.9,
+      "ci_lower": 1548.1,
+      "ci_upper": 2837.4
+    }
+  }
+}

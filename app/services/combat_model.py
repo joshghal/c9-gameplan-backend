@@ -411,12 +411,13 @@ class RealisticCombatModel:
         reaction = base + variance
 
         # Peeker vs holder modifiers
+        # TUNED: Balanced for ~53% attack win rate with map-derived masks
         if engagement_type == EngagementType.PEEK_VS_HOLD and is_peeking:
-            # Peeker is ready, holder must react
-            reaction *= 0.85  # Peeker is mentally prepared
+            # Peeker is ready, but holder has crosshair placed
+            reaction *= 0.90  # Reduced peeker advantage (was 0.85)
         elif engagement_type == EngagementType.HOLD_VS_PEEK and not is_peeking:
-            # Holder has crosshair placed, faster aim adjustment
-            reaction *= 0.90  # Pre-aimed
+            # Holder has crosshair placed, aim advantage
+            reaction *= 0.82  # Holder advantage (was 0.90)
 
         # Flash heavily impacts reaction
         if is_flashed:

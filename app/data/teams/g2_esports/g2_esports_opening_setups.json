@@ -1,0 +1,489 @@
+{
+  "metadata": {
+    "team": "G2 Esports",
+    "description": "G2 Esports opening positions extracted from VCT data",
+    "methodology": "Mean/std clustering from GRID position data",
+    "min_samples": 30,
+    "n_players": 5
+  },
+  "setups": {
+    "BABYBAY": {
+      "ascent": {
+        "attack": {
+          "player": "BABYBAY",
+          "map_name": "ascent",
+          "side": "attack",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 853.9771637929825,
+              "y": -2431.0654194736844,
+              "weight": 1.0,
+              "std_x": 2296.0902543634134,
+              "std_y": 3527.467555388127
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "BABYBAY",
+          "map_name": "ascent",
+          "side": "defense",
+          "n_samples": 150,
+          "positions": [
+            {
+              "x": 5549.234032399999,
+              "y": -7609.971891333332,
+              "weight": 1.0,
+              "std_x": 2391.127865127219,
+              "std_y": 1177.13287275164
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "leaf": {
+      "lotus": {
+        "attack": {
+          "player": "leaf",
+          "map_name": "lotus",
+          "side": "attack",
+          "n_samples": 197,
+          "positions": [
+            {
+              "x": 5292.8374834111655,
+              "y": -2060.895015861929,
+              "weight": 1.0,
+              "std_x": 2866.6569420743376,
+              "std_y": 2870.1618462092515
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "leaf",
+          "map_name": "lotus",
+          "side": "defense",
+          "n_samples": 224,
+          "positions": [
+            {
+              "x": 7056.125949419642,
+              "y": -1819.3968928169645,
+              "weight": 1.0,
+              "std_x": 1784.9607702916262,
+              "std_y": 2799.7275061828996
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "ascent": {
+        "attack": {
+          "player": "leaf",
+          "map_name": "ascent",
+          "side": "attack",
+          "n_samples": 55,
+          "positions": [
+            {
+              "x": 8.803077818181826,
+              "y": -2584.322132109091,
+              "weight": 1.0,
+              "std_x": 2568.0534010857677,
+              "std_y": 3529.2974202724918
+            }
+          ],
+          "confidence": 0.775,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "leaf",
+          "map_name": "ascent",
+          "side": "defense",
+          "n_samples": 233,
+          "positions": [
+            {
+              "x": 5193.679329210301,
+              "y": -7822.44001527897,
+              "weight": 1.0,
+              "std_x": 2293.4204760963876,
+              "std_y": 1022.611843918869
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "icebox": {
+        "attack": {
+          "player": "leaf",
+          "map_name": "icebox",
+          "side": "attack",
+          "n_samples": 51,
+          "positions": [
+            {
+              "x": -3934.7040167058817,
+              "y": -2543.9105997431375,
+              "weight": 1.0,
+              "std_x": 2775.079979072478,
+              "std_y": 2413.7807473486814
+            }
+          ],
+          "confidence": 0.755,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "leaf",
+          "map_name": "icebox",
+          "side": "defense",
+          "n_samples": 228,
+          "positions": [
+            {
+              "x": -6382.530173333332,
+              "y": 3486.9774425438586,
+              "weight": 1.0,
+              "std_x": 1238.7855643481032,
+              "std_y": 773.044798104961
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "trent": {
+      "lotus": {
+        "attack": {
+          "player": "trent",
+          "map_name": "lotus",
+          "side": "attack",
+          "n_samples": 197,
+          "positions": [
+            {
+              "x": 4584.402595898476,
+              "y": -1664.377348571573,
+              "weight": 1.0,
+              "std_x": 2235.5572232719396,
+              "std_y": 3245.0181873916276
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "trent",
+          "map_name": "lotus",
+          "side": "defense",
+          "n_samples": 224,
+          "positions": [
+            {
+              "x": 6823.218103973216,
+              "y": 3692.4664648540174,
+              "weight": 1.0,
+              "std_x": 1860.5920070752964,
+              "std_y": 1889.4595502842928
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "ascent": {
+        "attack": {
+          "player": "trent",
+          "map_name": "ascent",
+          "side": "attack",
+          "n_samples": 112,
+          "positions": [
+            {
+              "x": 402.6929582946428,
+              "y": -2624.3125395714283,
+              "weight": 1.0,
+              "std_x": 2668.3473216654784,
+              "std_y": 3647.3242605238947
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "trent",
+          "map_name": "ascent",
+          "side": "defense",
+          "n_samples": 383,
+          "positions": [
+            {
+              "x": 4762.672940618799,
+              "y": -7567.31959778068,
+              "weight": 1.0,
+              "std_x": 2465.834981531832,
+              "std_y": 1214.3474198801268
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "icebox": {
+        "attack": {
+          "player": "trent",
+          "map_name": "icebox",
+          "side": "attack",
+          "n_samples": 51,
+          "positions": [
+            {
+              "x": -3969.9440983921572,
+              "y": -2340.8646057254905,
+              "weight": 1.0,
+              "std_x": 2165.9760156489206,
+              "std_y": 2701.047138883448
+            }
+          ],
+          "confidence": 0.755,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "trent",
+          "map_name": "icebox",
+          "side": "defense",
+          "n_samples": 228,
+          "positions": [
+            {
+              "x": -6909.038511359649,
+              "y": 3281.7583597017547,
+              "weight": 1.0,
+              "std_x": 1759.0856923191484,
+              "std_y": 919.8459118636206
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "JonahP": {
+      "lotus": {
+        "attack": {
+          "player": "JonahP",
+          "map_name": "lotus",
+          "side": "attack",
+          "n_samples": 197,
+          "positions": [
+            {
+              "x": 2322.9814339796953,
+              "y": 638.3262641624365,
+              "weight": 1.0,
+              "std_x": 2037.4964406131455,
+              "std_y": 1777.5670470437317
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "JonahP",
+          "map_name": "lotus",
+          "side": "defense",
+          "n_samples": 224,
+          "positions": [
+            {
+              "x": 6541.927433258928,
+              "y": 3229.631027669643,
+              "weight": 1.0,
+              "std_x": 1973.7905986763021,
+              "std_y": 1994.8847047995625
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "ascent": {
+        "attack": {
+          "player": "JonahP",
+          "map_name": "ascent",
+          "side": "attack",
+          "n_samples": 112,
+          "positions": [
+            {
+              "x": 278.6134305982144,
+              "y": -2520.661292196429,
+              "weight": 1.0,
+              "std_x": 2331.960006121703,
+              "std_y": 3411.900959824661
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "JonahP",
+          "map_name": "ascent",
+          "side": "defense",
+          "n_samples": 383,
+          "positions": [
+            {
+              "x": 3645.3985958798953,
+              "y": -7416.64399451697,
+              "weight": 1.0,
+              "std_x": 2457.326644942607,
+              "std_y": 2014.145136942561
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "icebox": {
+        "attack": {
+          "player": "JonahP",
+          "map_name": "icebox",
+          "side": "attack",
+          "n_samples": 51,
+          "positions": [
+            {
+              "x": -3514.539909294117,
+              "y": -2398.087936386274,
+              "weight": 1.0,
+              "std_x": 1621.1647040465703,
+              "std_y": 2512.955483757097
+            }
+          ],
+          "confidence": 0.755,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "JonahP",
+          "map_name": "icebox",
+          "side": "defense",
+          "n_samples": 228,
+          "positions": [
+            {
+              "x": -4082.8857699999985,
+              "y": 3205.937142754386,
+              "weight": 1.0,
+              "std_x": 1346.0606703908618,
+              "std_y": 991.593241599021
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "valyn": {
+      "lotus": {
+        "attack": {
+          "player": "valyn",
+          "map_name": "lotus",
+          "side": "attack",
+          "n_samples": 197,
+          "positions": [
+            {
+              "x": 3491.630914030456,
+              "y": 3539.96954381066,
+              "weight": 1.0,
+              "std_x": 1826.528543442412,
+              "std_y": 2312.0707629194926
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "valyn",
+          "map_name": "lotus",
+          "side": "defense",
+          "n_samples": 224,
+          "positions": [
+            {
+              "x": 6514.325761473214,
+              "y": 3948.915517540178,
+              "weight": 1.0,
+              "std_x": 2056.972141773561,
+              "std_y": 2521.291349003262
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "ascent": {
+        "attack": {
+          "player": "valyn",
+          "map_name": "ascent",
+          "side": "attack",
+          "n_samples": 112,
+          "positions": [
+            {
+              "x": 1186.590012125,
+              "y": -2322.7555000625002,
+              "weight": 1.0,
+              "std_x": 2602.7569051819005,
+              "std_y": 3473.657589568076
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "valyn",
+          "map_name": "ascent",
+          "side": "defense",
+          "n_samples": 383,
+          "positions": [
+            {
+              "x": 3890.4225602088777,
+              "y": -6953.034608146215,
+              "weight": 1.0,
+              "std_x": 1858.7586790623964,
+              "std_y": 1713.2547423713634
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "icebox": {
+        "attack": {
+          "player": "valyn",
+          "map_name": "icebox",
+          "side": "attack",
+          "n_samples": 51,
+          "positions": [
+            {
+              "x": -4181.769740117647,
+              "y": -2262.266491352941,
+              "weight": 1.0,
+              "std_x": 2695.3985510468074,
+              "std_y": 2806.913841945157
+            }
+          ],
+          "confidence": 0.755,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "valyn",
+          "map_name": "icebox",
+          "side": "defense",
+          "n_samples": 228,
+          "positions": [
+            {
+              "x": -5348.63621636842,
+              "y": 4029.6087765789484,
+              "weight": 1.0,
+              "std_x": 1007.982569511044,
+              "std_y": 723.6073413995513
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    }
+  }
+}

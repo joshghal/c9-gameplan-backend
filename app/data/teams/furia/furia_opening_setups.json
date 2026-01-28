@@ -1,0 +1,351 @@
+{
+  "metadata": {
+    "team": "FURIA",
+    "description": "FURIA opening positions extracted from VCT data",
+    "methodology": "Mean/std clustering from GRID position data",
+    "min_samples": 30,
+    "n_players": 8
+  },
+  "setups": {
+    "Palla": {
+      "haven": {
+        "defense": {
+          "player": "Palla",
+          "map_name": "haven",
+          "side": "defense",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 2450.7625657771932,
+              "y": -10694.465127017544,
+              "weight": 1.0,
+              "std_x": 2025.5460894762086,
+              "std_y": 2477.128014947222
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "Palla",
+          "map_name": "haven",
+          "side": "attack",
+          "n_samples": 113,
+          "positions": [
+            {
+              "x": 5163.4279306902645,
+              "y": -7794.672477345136,
+              "weight": 1.0,
+              "std_x": 2144.247526316367,
+              "std_y": 2423.491643707918
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "Khalil": {
+      "ascent": {
+        "attack": {
+          "player": "Khalil",
+          "map_name": "ascent",
+          "side": "attack",
+          "n_samples": 60,
+          "positions": [
+            {
+              "x": 1435.1123657499998,
+              "y": -2963.816321716667,
+              "weight": 1.0,
+              "std_x": 2557.402767238592,
+              "std_y": 3599.6783982512748
+            }
+          ],
+          "confidence": 0.8,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "Khalil",
+          "map_name": "ascent",
+          "side": "defense",
+          "n_samples": 193,
+          "positions": [
+            {
+              "x": -1629.581429507772,
+              "y": -8606.151460932642,
+              "weight": 1.0,
+              "std_x": 1124.5705965417096,
+              "std_y": 513.8692366953399
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "adverso": {
+      "haven": {
+        "defense": {
+          "player": "adverso",
+          "map_name": "haven",
+          "side": "defense",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 3590.3502959508774,
+              "y": -10794.686151578946,
+              "weight": 1.0,
+              "std_x": 2443.0286108265664,
+              "std_y": 2471.8776287184905
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "adverso",
+          "map_name": "haven",
+          "side": "attack",
+          "n_samples": 113,
+          "positions": [
+            {
+              "x": 5410.508196902654,
+              "y": -7516.715934247788,
+              "weight": 1.0,
+              "std_x": 2297.146371049489,
+              "std_y": 2349.852246797966
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "kon4n": {
+      "ascent": {
+        "attack": {
+          "player": "kon4n",
+          "map_name": "ascent",
+          "side": "attack",
+          "n_samples": 60,
+          "positions": [
+            {
+              "x": 1269.2961648333333,
+              "y": -3246.650106966666,
+              "weight": 1.0,
+              "std_x": 3125.0648712950956,
+              "std_y": 3816.6310527932797
+            }
+          ],
+          "confidence": 0.8,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "kon4n",
+          "map_name": "ascent",
+          "side": "defense",
+          "n_samples": 193,
+          "positions": [
+            {
+              "x": -1858.305984041451,
+              "y": -5861.634903575131,
+              "weight": 1.0,
+              "std_x": 1217.997609176993,
+              "std_y": 863.6232122067096
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "havoc": {
+      "ascent": {
+        "attack": {
+          "player": "havoc",
+          "map_name": "ascent",
+          "side": "attack",
+          "n_samples": 60,
+          "positions": [
+            {
+              "x": -253.83697128666662,
+              "y": -2868.7631180000003,
+              "weight": 1.0,
+              "std_x": 2319.7381289805503,
+              "std_y": 3338.0149273158536
+            }
+          ],
+          "confidence": 0.8,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "havoc",
+          "map_name": "ascent",
+          "side": "defense",
+          "n_samples": 193,
+          "positions": [
+            {
+              "x": -2882.6135495595845,
+              "y": -7451.89041103627,
+              "weight": 1.0,
+              "std_x": 1162.1812558692804,
+              "std_y": 573.1287109534654
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "lotus": {
+        "defense": {
+          "player": "havoc",
+          "map_name": "lotus",
+          "side": "defense",
+          "n_samples": 71,
+          "positions": [
+            {
+              "x": 8243.494512676056,
+              "y": 1066.3269276056333,
+              "weight": 1.0,
+              "std_x": 2363.331191903758,
+              "std_y": 2994.8596956814085
+            }
+          ],
+          "confidence": 0.855,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "havoc",
+          "map_name": "lotus",
+          "side": "attack",
+          "n_samples": 144,
+          "positions": [
+            {
+              "x": 5507.683025541667,
+              "y": 2754.9790665680553,
+              "weight": 1.0,
+              "std_x": 2878.4200862319976,
+              "std_y": 2907.079298628014
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "mwzera": {
+      "ascent": {
+        "attack": {
+          "player": "mwzera",
+          "map_name": "ascent",
+          "side": "attack",
+          "n_samples": 60,
+          "positions": [
+            {
+              "x": 1178.8761312999998,
+              "y": -3113.876751733333,
+              "weight": 1.0,
+              "std_x": 2939.106403514291,
+              "std_y": 3665.5957459584115
+            }
+          ],
+          "confidence": 0.8,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "mwzera",
+          "map_name": "ascent",
+          "side": "defense",
+          "n_samples": 193,
+          "positions": [
+            {
+              "x": 427.43872041450777,
+              "y": -4256.727777590675,
+              "weight": 1.0,
+              "std_x": 590.7057098111158,
+              "std_y": 1176.7951244069766
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "raafa": {
+      "lotus": {
+        "defense": {
+          "player": "raafa",
+          "map_name": "lotus",
+          "side": "defense",
+          "n_samples": 71,
+          "positions": [
+            {
+              "x": 8354.442360140842,
+              "y": 821.3644586323941,
+              "weight": 1.0,
+              "std_x": 2260.7775722188962,
+              "std_y": 2716.930779796526
+            }
+          ],
+          "confidence": 0.855,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "raafa",
+          "map_name": "lotus",
+          "side": "attack",
+          "n_samples": 144,
+          "positions": [
+            {
+              "x": 5356.852281152776,
+              "y": 2473.0782603263888,
+              "weight": 1.0,
+              "std_x": 2916.7710174544527,
+              "std_y": 2770.918696416924
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "Urango": {
+      "haven": {
+        "defense": {
+          "player": "Urango",
+          "map_name": "haven",
+          "side": "defense",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 904.046384140351,
+              "y": -10502.168100350878,
+              "weight": 1.0,
+              "std_x": 2372.8459401030386,
+              "std_y": 2725.808715632901
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "Urango",
+          "map_name": "haven",
+          "side": "attack",
+          "n_samples": 113,
+          "positions": [
+            {
+              "x": 4698.233139477877,
+              "y": -6979.296904247789,
+              "weight": 1.0,
+              "std_x": 1991.7070267858223,
+              "std_y": 2023.0051014024127
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    }
+  }
+}

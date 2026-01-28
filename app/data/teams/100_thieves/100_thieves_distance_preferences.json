@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "team": "100 Thieves",
+    "description": "100 Thieves engagement distance preferences from VCT data",
+    "methodology": "Estimated from position variance",
+    "n_players": 7
+  },
+  "preferences": {
+    "Kess": {
+      "player": "Kess",
+      "n_samples": 232,
+      "mean_distance": 2028.2,
+      "std_distance": 304.2,
+      "ci_lower": 1431.9,
+      "ci_upper": 2624.5
+    },
+    "Asuna": {
+      "player": "Asuna",
+      "n_samples": 407,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "bang": {
+      "player": "bang",
+      "n_samples": 923,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Boostio": {
+      "player": "Boostio",
+      "n_samples": 175,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "eeiu": {
+      "player": "eeiu",
+      "n_samples": 407,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Zander": {
+      "player": "Zander",
+      "n_samples": 232,
+      "mean_distance": 2194.4,
+      "std_distance": 329.2,
+      "ci_lower": 1549.3,
+      "ci_upper": 2839.6
+    },
+    "Cryo": {
+      "player": "Cryo",
+      "n_samples": 407,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    }
+  }
+}

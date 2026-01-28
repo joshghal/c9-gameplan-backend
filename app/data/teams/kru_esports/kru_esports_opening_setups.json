@@ -1,0 +1,381 @@
+{
+  "metadata": {
+    "team": "KR\u00dc Esports",
+    "description": "KR\u00dc Esports opening positions extracted from VCT data",
+    "methodology": "Mean/std clustering from GRID position data",
+    "min_samples": 30,
+    "n_players": 5
+  },
+  "setups": {
+    "mta": {
+      "icebox": {
+        "attack": {
+          "player": "mta",
+          "map_name": "icebox",
+          "side": "attack",
+          "n_samples": 60,
+          "positions": [
+            {
+              "x": -3494.283612343333,
+              "y": -1423.85232777,
+              "weight": 1.0,
+              "std_x": 3145.3690803101217,
+              "std_y": 3178.6281894559456
+            }
+          ],
+          "confidence": 0.8,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "mta",
+          "map_name": "icebox",
+          "side": "defense",
+          "n_samples": 145,
+          "positions": [
+            {
+              "x": -6612.020888758621,
+              "y": 4292.1084878,
+              "weight": 1.0,
+              "std_x": 1825.2790851733578,
+              "std_y": 963.1856363365058
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "abyss": {
+        "attack": {
+          "player": "mta",
+          "map_name": "abyss",
+          "side": "attack",
+          "n_samples": 59,
+          "positions": [
+            {
+              "x": 5.695152576271185,
+              "y": 2672.0525369950847,
+              "weight": 1.0,
+              "std_x": 3131.595590039811,
+              "std_y": 2789.612325651867
+            }
+          ],
+          "confidence": 0.7949999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "mta",
+          "map_name": "abyss",
+          "side": "defense",
+          "n_samples": 265,
+          "positions": [
+            {
+              "x": -4564.2671688981145,
+              "y": -1492.4589437999996,
+              "weight": 1.0,
+              "std_x": 2533.697421036102,
+              "std_y": 1245.692992166615
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "heat": {
+      "icebox": {
+        "attack": {
+          "player": "heat",
+          "map_name": "icebox",
+          "side": "attack",
+          "n_samples": 60,
+          "positions": [
+            {
+              "x": -3647.779364716667,
+              "y": -1315.1511382,
+              "weight": 1.0,
+              "std_x": 2814.216092740946,
+              "std_y": 3338.0735151651697
+            }
+          ],
+          "confidence": 0.8,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "heat",
+          "map_name": "icebox",
+          "side": "defense",
+          "n_samples": 145,
+          "positions": [
+            {
+              "x": -6767.7033885862065,
+              "y": 4469.070026740688,
+              "weight": 1.0,
+              "std_x": 2091.354721837193,
+              "std_y": 917.0004063440942
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "abyss": {
+        "attack": {
+          "player": "heat",
+          "map_name": "abyss",
+          "side": "attack",
+          "n_samples": 59,
+          "positions": [
+            {
+              "x": 486.53227220338977,
+              "y": 2579.6073869152538,
+              "weight": 1.0,
+              "std_x": 2834.1736509839316,
+              "std_y": 2840.3116779659335
+            }
+          ],
+          "confidence": 0.7949999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "heat",
+          "map_name": "abyss",
+          "side": "defense",
+          "n_samples": 265,
+          "positions": [
+            {
+              "x": -4269.354035856603,
+              "y": -1063.0935734603775,
+              "weight": 1.0,
+              "std_x": 3100.318685165915,
+              "std_y": 1515.793165281487
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "Shyy": {
+      "icebox": {
+        "attack": {
+          "player": "Shyy",
+          "map_name": "icebox",
+          "side": "attack",
+          "n_samples": 60,
+          "positions": [
+            {
+              "x": -4127.016848596,
+              "y": -1704.9841875366667,
+              "weight": 1.0,
+              "std_x": 2549.655015325159,
+              "std_y": 2910.612222326567
+            }
+          ],
+          "confidence": 0.8,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "Shyy",
+          "map_name": "icebox",
+          "side": "defense",
+          "n_samples": 145,
+          "positions": [
+            {
+              "x": -6159.564505931034,
+              "y": 3951.3033880000003,
+              "weight": 1.0,
+              "std_x": 1942.6224378904055,
+              "std_y": 1002.7680726430873
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "abyss": {
+        "attack": {
+          "player": "Shyy",
+          "map_name": "abyss",
+          "side": "attack",
+          "n_samples": 59,
+          "positions": [
+            {
+              "x": 357.4161998,
+              "y": 3336.2573256259316,
+              "weight": 1.0,
+              "std_x": 2998.2976674285073,
+              "std_y": 2261.0621919371974
+            }
+          ],
+          "confidence": 0.7949999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "Shyy",
+          "map_name": "abyss",
+          "side": "defense",
+          "n_samples": 265,
+          "positions": [
+            {
+              "x": -4774.287522746793,
+              "y": -726.0261072239247,
+              "weight": 1.0,
+              "std_x": 2619.8686998549874,
+              "std_y": 1542.858103035306
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "keznitdeuS": {
+      "icebox": {
+        "attack": {
+          "player": "keznitdeuS",
+          "map_name": "icebox",
+          "side": "attack",
+          "n_samples": 60,
+          "positions": [
+            {
+              "x": -3831.2041978833336,
+              "y": -1334.4791552166669,
+              "weight": 1.0,
+              "std_x": 3168.513822708786,
+              "std_y": 3272.5763467829547
+            }
+          ],
+          "confidence": 0.8,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "keznitdeuS",
+          "map_name": "icebox",
+          "side": "defense",
+          "n_samples": 145,
+          "positions": [
+            {
+              "x": -4845.984127089654,
+              "y": 3720.1804593931033,
+              "weight": 1.0,
+              "std_x": 1645.0359532008106,
+              "std_y": 1299.3300843219606
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "abyss": {
+        "attack": {
+          "player": "keznitdeuS",
+          "map_name": "abyss",
+          "side": "attack",
+          "n_samples": 59,
+          "positions": [
+            {
+              "x": 309.058375220339,
+              "y": 2659.737786774576,
+              "weight": 1.0,
+              "std_x": 3097.1012850523184,
+              "std_y": 2898.022819329888
+            }
+          ],
+          "confidence": 0.7949999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "keznitdeuS",
+          "map_name": "abyss",
+          "side": "defense",
+          "n_samples": 265,
+          "positions": [
+            {
+              "x": -1316.5500653056604,
+              "y": 472.7799483841507,
+              "weight": 1.0,
+              "std_x": 1416.3436251607925,
+              "std_y": 2033.3926321205374
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "Melser": {
+      "icebox": {
+        "attack": {
+          "player": "Melser",
+          "map_name": "icebox",
+          "side": "attack",
+          "n_samples": 60,
+          "positions": [
+            {
+              "x": -2857.181942366667,
+              "y": -1986.3023917833334,
+              "weight": 1.0,
+              "std_x": 2956.8684605180456,
+              "std_y": 2941.0434045604807
+            }
+          ],
+          "confidence": 0.8,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "Melser",
+          "map_name": "icebox",
+          "side": "defense",
+          "n_samples": 145,
+          "positions": [
+            {
+              "x": -6711.114729425517,
+              "y": 2866.5014740689653,
+              "weight": 1.0,
+              "std_x": 2788.4309472178456,
+              "std_y": 1482.5510429377744
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "abyss": {
+        "attack": {
+          "player": "Melser",
+          "map_name": "abyss",
+          "side": "attack",
+          "n_samples": 59,
+          "positions": [
+            {
+              "x": 449.86694101694917,
+              "y": 2795.6068924,
+              "weight": 1.0,
+              "std_x": 2756.533553039951,
+              "std_y": 2710.243144127388
+            }
+          ],
+          "confidence": 0.7949999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "Melser",
+          "map_name": "abyss",
+          "side": "defense",
+          "n_samples": 265,
+          "positions": [
+            {
+              "x": -4468.420525296152,
+              "y": -1205.1253873320757,
+              "weight": 1.0,
+              "std_x": 3059.550543057847,
+              "std_y": 1448.4023531633386
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    }
+  }
+}

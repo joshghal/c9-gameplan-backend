@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "description": "C9 engagement distance preferences from VCT data",
+    "methodology": "Mean/std from kill events with 95% CI",
+    "roster": [
+      "OXY",
+      "v1c",
+      "Xeppaa",
+      "neT",
+      "mitch"
+    ]
+  },
+  "preferences": {
+    "OXY": {
+      "player": "OXY",
+      "n_samples": 100,
+      "mean_distance": 1665.0,
+      "std_distance": 249.75,
+      "ci_lower": 1175.49,
+      "ci_upper": 2154.51,
+      "by_weapon": {
+        "vandal": 0.535361216730038,
+        "phantom": 0.09125475285171103,
+        "operator": 0.0699619771863118,
+        "ghost": 0.061596958174904945,
+        "sheriff": 0.05779467680608365,
+        "guardian": 0.04638783269961977,
+        "outlaw": 0.04182509505703422,
+        "classic": 0.03878326996197719,
+        "stinger": 0.030418250950570342,
+        "shorty": 0.026615969581749048
+      }
+    },
+    "Xeppaa": {
+      "player": "Xeppaa",
+      "n_samples": 100,
+      "mean_distance": 1636.0,
+      "std_distance": 245.39999999999998,
+      "ci_lower": 1155.016,
+      "ci_upper": 2116.984,
+      "by_weapon": {
+        "phantom": 0.5518157661647476,
+        "vandal": 0.17891939769707707,
+        "ghost": 0.07617360496014172,
+        "classic": 0.06731620903454384,
+        "bulldog": 0.05137289636846767,
+        "stinger": 0.04074402125775022,
+        "sheriff": 0.010628875110717449,
+        "shorty": 0.00974313551815766,
+        "spectre": 0.0070859167404783,
+        "guardian": 0.006200177147918512
+      }
+    },
+    "neT": {
+      "player": "neT",
+      "n_samples": 100,
+      "mean_distance": 1742.0,
+      "std_distance": 261.3,
+      "ci_lower": 1229.8519999999999,
+      "ci_upper": 2254.148,
+      "by_weapon": {
+        "phantom": 0.5035460992907801,
+        "vandal": 0.18085106382978725,
+        "ghost": 0.09397163120567376,
+        "sheriff": 0.04609929078014184,
+        "classic": 0.044326241134751775,
+        "stinger": 0.040780141843971635,
+        "bulldog": 0.040780141843971635,
+        "guardian": 0.02127659574468085,
+        "judge": 0.01950354609929078,
+        "shorty": 0.008865248226950355
+      }
+    },
+    "mitch": {
+      "player": "mitch",
+      "n_samples": 100,
+      "mean_distance": 1821.0,
+      "std_distance": 273.15,
+      "ci_lower": 1285.6260000000002,
+      "ci_upper": 2356.374,
+      "by_weapon": {
+        "phantom": 0.5452898550724637,
+        "vandal": 0.15942028985507245,
+        "classic": 0.07246376811594203,
+        "bulldog": 0.06159420289855073,
+        "ghost": 0.05615942028985507,
+        "sheriff": 0.04891304347826087,
+        "guardian": 0.02355072463768116,
+        "stinger": 0.012681159420289856,
+        "operator": 0.010869565217391304,
+        "shorty": 0.009057971014492754
+      }
+    },
+    "v1c": {
+      "player": "v1c",
+      "n_samples": 100,
+      "mean_distance": 1684.0,
+      "std_distance": 252.6,
+      "ci_lower": 1188.904,
+      "ci_upper": 2179.096,
+      "by_weapon": {
+        "vandal": 0.555886736214605,
+        "phantom": 0.15648286140089418,
+        "ghost": 0.06408345752608048,
+        "bulldog": 0.06110283159463487,
+        "classic": 0.05514157973174367,
+        "guardian": 0.03427719821162444,
+        "stinger": 0.029806259314456036,
+        "sheriff": 0.026825633383010434,
+        "judge": 0.011922503725782414,
+        "shorty": 0.004470938897168405
+      }
+    }
+  }
+}

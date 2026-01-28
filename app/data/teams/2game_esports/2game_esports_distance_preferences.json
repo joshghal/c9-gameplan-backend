@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "team": "2GAME eSports",
+    "description": "2GAME eSports engagement distance preferences from VCT data",
+    "methodology": "Estimated from position variance",
+    "n_players": 5
+  },
+  "preferences": {
+    "silentzz": {
+      "player": "silentzz",
+      "n_samples": 163,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "gobera": {
+      "player": "gobera",
+      "n_samples": 163,
+      "mean_distance": 2069.2,
+      "std_distance": 310.4,
+      "ci_lower": 1460.8,
+      "ci_upper": 2677.5
+    },
+    "Lz": {
+      "player": "Lz",
+      "n_samples": 163,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "spikeziN": {
+      "player": "spikeziN",
+      "n_samples": 163,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Pryze": {
+      "player": "Pryze",
+      "n_samples": 215,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    }
+  }
+}

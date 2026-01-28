@@ -1,0 +1,413 @@
+{
+  "teams": {
+    "79": "Cloud9",
+    "3412": "LOUD (1)",
+    "1611": "Leviat\u00e1n Esports",
+    "97": "NRG",
+    "48457": "KR\u00dc Esports",
+    "1079": "Sentinels",
+    "81": "MIBR",
+    "96": "G2 Esports",
+    "53367": "2GAME eSports",
+    "99": "FURIA",
+    "337": "100 Thieves",
+    "281": "Evil Geniuses"
+  },
+  "player_teams": {
+    "saadhak": [
+      "LOUD (1)"
+    ],
+    "runi": [
+      "Cloud9",
+      "Team_79"
+    ],
+    "moose": [
+      "Cloud9",
+      "Team_79"
+    ],
+    "less": [
+      "LOUD (1)"
+    ],
+    "tuyz": [
+      "LOUD (1)",
+      "FURIA"
+    ],
+    "cauanzin": [
+      "LOUD (1)"
+    ],
+    "qck1": [
+      "LOUD (1)"
+    ],
+    "oxy": [
+      "Cloud9",
+      "Team_79"
+    ],
+    "vanity": [
+      "Cloud9",
+      "Team_79"
+    ],
+    "xeppaa": [
+      "Cloud9",
+      "Team_79"
+    ],
+    "mitch": [
+      "Cloud9",
+      "Team_79"
+    ],
+    "tex": [
+      "Leviat\u00e1n Esports"
+    ],
+    "net": [
+      "Cloud9",
+      "Team_79"
+    ],
+    "kingg": [
+      "Leviat\u00e1n Esports"
+    ],
+    "demon1": [
+      "Leviat\u00e1n Esports",
+      "NRG"
+    ],
+    "v1c": [
+      "Cloud9",
+      "Team_79"
+    ],
+    "c0m": [
+      "Leviat\u00e1n Esports"
+    ],
+    "rossy": [
+      "Leviat\u00e1n Esports"
+    ],
+    "fns": [
+      "NRG"
+    ],
+    "mada": [
+      "NRG"
+    ],
+    "brawk": [
+      "NRG"
+    ],
+    "s0m": [
+      "NRG"
+    ],
+    "ethan": [
+      "NRG"
+    ],
+    "keznitdeus": [
+      "KR\u00dc Esports"
+    ],
+    "mta": [
+      "KR\u00dc Esports"
+    ],
+    "heat": [
+      "KR\u00dc Esports",
+      "FURIA"
+    ],
+    "shyy": [
+      "KR\u00dc Esports"
+    ],
+    "melser": [
+      "KR\u00dc Esports"
+    ],
+    "sacy": [
+      "Sentinels"
+    ],
+    "zekken": [
+      "Sentinels"
+    ],
+    "johnqt": [
+      "Sentinels"
+    ],
+    "tenz": [
+      "Sentinels"
+    ],
+    "zellsis": [
+      "Sentinels"
+    ],
+    "verno": [
+      "MIBR (1)",
+      "NRG"
+    ],
+    "wippie": [
+      "Cloud9"
+    ],
+    "crashies": [
+      "NRG"
+    ],
+    "victor": [
+      "NRG"
+    ],
+    "marved": [
+      "NRG"
+    ],
+    "jakee": [
+      "Cloud9"
+    ],
+    "skuba": [
+      "NRG"
+    ],
+    "artzin": [
+      "MIBR (1)",
+      "Team_81",
+      "MIBR"
+    ],
+    "cortezia": [
+      "MIBR (1)",
+      "Team_81"
+    ],
+    "xenom": [
+      "MIBR (1)",
+      "Team_81"
+    ],
+    "aspas": [
+      "Leviat\u00e1n Esports",
+      "MIBR (1)",
+      "Team_81"
+    ],
+    "jzz": [
+      "MIBR (1)",
+      "MIBR"
+    ],
+    "rglmeister": [
+      "MIBR (1)",
+      "MIBR"
+    ],
+    "frz": [
+      "MIBR (1)",
+      "MIBR"
+    ],
+    "mazin": [
+      "MIBR (1)",
+      "MIBR"
+    ],
+    "trent": [
+      "G2 Esports"
+    ],
+    "jawgemo": [
+      "Evil Geniuses",
+      "G2 Esports"
+    ],
+    "leaf": [
+      "G2 Esports"
+    ],
+    "jonahp": [
+      "G2 Esports"
+    ],
+    "valyn": [
+      "G2 Esports"
+    ],
+    "gobera": [
+      "2GAME eSports"
+    ],
+    "pryze": [
+      "2GAME eSports",
+      "FURIA"
+    ],
+    "silentzz": [
+      "2GAME eSports"
+    ],
+    "lz": [
+      "2GAME eSports"
+    ],
+    "spikezin": [
+      "2GAME eSports"
+    ],
+    "khalil": [
+      "FURIA"
+    ],
+    "nzr": [
+      "Team_81",
+      "FURIA"
+    ],
+    "havoc": [
+      "FURIA"
+    ],
+    "kon4n": [
+      "FURIA"
+    ],
+    "mwzera": [
+      "FURIA"
+    ],
+    "asuna": [
+      "100 Thieves"
+    ],
+    "kess": [
+      "100 Thieves"
+    ],
+    "cryo": [
+      "100 Thieves"
+    ],
+    "zander": [
+      "100 Thieves"
+    ],
+    "eeiu": [
+      "100 Thieves"
+    ],
+    "babybay": [
+      "G2 Esports"
+    ],
+    "nature": [
+      "Evil Geniuses"
+    ],
+    "apoth": [
+      "Evil Geniuses"
+    ],
+    "supamen": [
+      "Evil Geniuses"
+    ],
+    "derrek": [
+      "Evil Geniuses"
+    ],
+    "icy": [
+      "Evil Geniuses",
+      "G2 Esports"
+    ],
+    "bang": [
+      "100 Thieves",
+      "Sentinels"
+    ],
+    "boostio": [
+      "100 Thieves"
+    ],
+    "okeanos": [
+      "Leviat\u00e1n Esports"
+    ],
+    "sato": [
+      "Leviat\u00e1n Esports"
+    ],
+    "yay": [
+      "Evil Geniuses"
+    ],
+    "mazino": [
+      "Leviat\u00e1n Esports"
+    ],
+    "raafa": [
+      "FURIA"
+    ],
+    "n4rrate": [
+      "Sentinels"
+    ],
+    "urango": [
+      "FURIA"
+    ],
+    "adverso": [
+      "FURIA"
+    ],
+    "palla": [
+      "FURIA"
+    ]
+  },
+  "team_rosters": {
+    "LOUD (1)": [
+      "tuyz",
+      "cauanzin",
+      "qck1",
+      "saadhak",
+      "less"
+    ],
+    "Cloud9": [
+      "vanity",
+      "moose",
+      "runi",
+      "wippie",
+      "net",
+      "mitch",
+      "xeppaa",
+      "jakee",
+      "v1c",
+      "oxy"
+    ],
+    "Leviat\u00e1n Esports": [
+      "c0m",
+      "demon1",
+      "okeanos",
+      "rossy",
+      "aspas",
+      "mazino",
+      "sato",
+      "kingg",
+      "tex"
+    ],
+    "NRG": [
+      "crashies",
+      "victor",
+      "marved",
+      "skuba",
+      "s0m",
+      "ethan",
+      "mada",
+      "fns",
+      "brawk"
+    ],
+    "KR\u00dc Esports": [
+      "mta",
+      "heat",
+      "shyy",
+      "keznitdeus",
+      "melser"
+    ],
+    "Sentinels": [
+      "sacy",
+      "zekken",
+      "johnqt",
+      "n4rrate",
+      "zellsis",
+      "tenz"
+    ],
+    "MIBR (1)": [
+      "frz",
+      "jzz",
+      "cortezia",
+      "mazin",
+      "rglmeister",
+      "xenom",
+      "verno",
+      "artzin"
+    ],
+    "G2 Esports": [
+      "babybay",
+      "leaf",
+      "trent",
+      "jonahp",
+      "valyn"
+    ],
+    "Evil Geniuses": [
+      "apoth",
+      "yay",
+      "icy",
+      "derrek",
+      "jawgemo",
+      "nature",
+      "supamen"
+    ],
+    "2GAME eSports": [
+      "silentzz",
+      "gobera",
+      "lz",
+      "spikezin",
+      "pryze"
+    ],
+    "FURIA": [
+      "palla",
+      "khalil",
+      "adverso",
+      "kon4n",
+      "havoc",
+      "mwzera",
+      "raafa",
+      "urango"
+    ],
+    "Team_81": [
+      "nzr"
+    ],
+    "100 Thieves": [
+      "kess",
+      "asuna",
+      "bang",
+      "boostio",
+      "eeiu",
+      "zander",
+      "cryo"
+    ]
+  }
+}

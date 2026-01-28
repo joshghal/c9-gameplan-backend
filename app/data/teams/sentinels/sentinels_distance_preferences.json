@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "team": "Sentinels",
+    "description": "Sentinels engagement distance preferences from VCT data",
+    "methodology": "Estimated from position variance",
+    "n_players": 6
+  },
+  "preferences": {
+    "Sacy": {
+      "player": "Sacy",
+      "n_samples": 184,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "zekken": {
+      "player": "zekken",
+      "n_samples": 932,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "johnqt": {
+      "player": "johnqt",
+      "n_samples": 932,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "N4RRATE": {
+      "player": "N4RRATE",
+      "n_samples": 748,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Zellsis": {
+      "player": "Zellsis",
+      "n_samples": 932,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "TenZ": {
+      "player": "TenZ",
+      "n_samples": 184,
+      "mean_distance": 2188.2,
+      "std_distance": 328.2,
+      "ci_lower": 1544.9,
+      "ci_upper": 2831.5
+    }
+  }
+}

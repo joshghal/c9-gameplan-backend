@@ -1,0 +1,635 @@
+{
+  "metadata": {
+    "team": "Sentinels",
+    "description": "Sentinels opening positions extracted from VCT data",
+    "methodology": "Mean/std clustering from GRID position data",
+    "min_samples": 30,
+    "n_players": 6
+  },
+  "setups": {
+    "Sacy": {
+      "haven": {
+        "attack": {
+          "player": "Sacy",
+          "map_name": "haven",
+          "side": "attack",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 2172.622553263158,
+              "y": -4508.12920122807,
+              "weight": 1.0,
+              "std_x": 2148.8859584305046,
+              "std_y": 2589.1339697716394
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "Sacy",
+          "map_name": "haven",
+          "side": "defense",
+          "n_samples": 127,
+          "positions": [
+            {
+              "x": -1485.1005692598417,
+              "y": -9690.168334803147,
+              "weight": 1.0,
+              "std_x": 2746.5877091999273,
+              "std_y": 1386.3529359702206
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "zekken": {
+      "haven": {
+        "attack": {
+          "player": "zekken",
+          "map_name": "haven",
+          "side": "attack",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 2168.960332035088,
+              "y": -4827.550337719299,
+              "weight": 1.0,
+              "std_x": 2505.6215369245883,
+              "std_y": 2829.1915245213663
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "zekken",
+          "map_name": "haven",
+          "side": "defense",
+          "n_samples": 127,
+          "positions": [
+            {
+              "x": -1641.732735984252,
+              "y": -9478.823922913387,
+              "weight": 1.0,
+              "std_x": 2243.9765111887305,
+              "std_y": 1282.7416195346145
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "ascent": {
+        "defense": {
+          "player": "zekken",
+          "map_name": "ascent",
+          "side": "defense",
+          "n_samples": 53,
+          "positions": [
+            {
+              "x": 1307.909890037736,
+              "y": -8484.264831509432,
+              "weight": 1.0,
+              "std_x": 1914.419617902491,
+              "std_y": 1933.5012326626602
+            }
+          ],
+          "confidence": 0.765,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "zekken",
+          "map_name": "ascent",
+          "side": "attack",
+          "n_samples": 160,
+          "positions": [
+            {
+              "x": 4346.6999484975,
+              "y": -5819.3389537375,
+              "weight": 1.0,
+              "std_x": 3183.1583097062025,
+              "std_y": 2715.934528287233
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "lotus": {
+        "defense": {
+          "player": "zekken",
+          "map_name": "lotus",
+          "side": "defense",
+          "n_samples": 61,
+          "positions": [
+            {
+              "x": 8507.8862247541,
+              "y": 1538.2457778901637,
+              "weight": 1.0,
+              "std_x": 2214.2057648728173,
+              "std_y": 2436.645123565915
+            }
+          ],
+          "confidence": 0.8049999999999999,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "zekken",
+          "map_name": "lotus",
+          "side": "attack",
+          "n_samples": 142,
+          "positions": [
+            {
+              "x": 5613.218636239435,
+              "y": 1966.7997167253527,
+              "weight": 1.0,
+              "std_x": 1599.8957721979925,
+              "std_y": 1150.7029929593511
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "corrode": {
+        "attack": {
+          "player": "zekken",
+          "map_name": "corrode",
+          "side": "attack",
+          "n_samples": 56,
+          "positions": [
+            {
+              "x": 272.6707759888322,
+              "y": 2261.2231457142857,
+              "weight": 1.0,
+              "std_x": 2289.388319777553,
+              "std_y": 3523.7323717858826
+            }
+          ],
+          "confidence": 0.78,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "zekken",
+          "map_name": "corrode",
+          "side": "defense",
+          "n_samples": 276,
+          "positions": [
+            {
+              "x": -2388.102359411521,
+              "y": -1495.1827323949271,
+              "weight": 1.0,
+              "std_x": 1352.037580492819,
+              "std_y": 1428.8821361981463
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "johnqt": {
+      "haven": {
+        "attack": {
+          "player": "johnqt",
+          "map_name": "haven",
+          "side": "attack",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 2146.4084401052633,
+              "y": -5011.141812631579,
+              "weight": 1.0,
+              "std_x": 2139.1287634586492,
+              "std_y": 2957.177595196738
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "johnqt",
+          "map_name": "haven",
+          "side": "defense",
+          "n_samples": 127,
+          "positions": [
+            {
+              "x": 229.09254492913385,
+              "y": -9290.774588267717,
+              "weight": 1.0,
+              "std_x": 1175.0415739522737,
+              "std_y": 1322.024421642025
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "ascent": {
+        "defense": {
+          "player": "johnqt",
+          "map_name": "ascent",
+          "side": "defense",
+          "n_samples": 53,
+          "positions": [
+            {
+              "x": 2107.4536376377355,
+              "y": -8807.783212264152,
+              "weight": 1.0,
+              "std_x": 2297.126176093218,
+              "std_y": 1729.027098003009
+            }
+          ],
+          "confidence": 0.765,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "johnqt",
+          "map_name": "ascent",
+          "side": "attack",
+          "n_samples": 160,
+          "positions": [
+            {
+              "x": 4159.918266400624,
+              "y": -6520.484540574999,
+              "weight": 1.0,
+              "std_x": 2843.4438962633253,
+              "std_y": 3161.8282184740096
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "lotus": {
+        "defense": {
+          "player": "johnqt",
+          "map_name": "lotus",
+          "side": "defense",
+          "n_samples": 61,
+          "positions": [
+            {
+              "x": 8674.306838524593,
+              "y": 242.01347865573786,
+              "weight": 1.0,
+              "std_x": 2053.002416421592,
+              "std_y": 2780.9389594588847
+            }
+          ],
+          "confidence": 0.8049999999999999,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "johnqt",
+          "map_name": "lotus",
+          "side": "attack",
+          "n_samples": 142,
+          "positions": [
+            {
+              "x": 6031.907316478872,
+              "y": -299.56257473943674,
+              "weight": 1.0,
+              "std_x": 1817.907869837689,
+              "std_y": 1575.588593021104
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "corrode": {
+        "attack": {
+          "player": "johnqt",
+          "map_name": "corrode",
+          "side": "attack",
+          "n_samples": 56,
+          "positions": [
+            {
+              "x": 516.3434785535716,
+              "y": 2446.3760821250003,
+              "weight": 1.0,
+              "std_x": 2698.076230114495,
+              "std_y": 3446.194378943841
+            }
+          ],
+          "confidence": 0.78,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "johnqt",
+          "map_name": "corrode",
+          "side": "defense",
+          "n_samples": 276,
+          "positions": [
+            {
+              "x": -2355.180765002049,
+              "y": -1372.3172910724636,
+              "weight": 1.0,
+              "std_x": 1231.0709192013478,
+              "std_y": 1444.7262997703356
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "N4RRATE": {
+      "ascent": {
+        "defense": {
+          "player": "N4RRATE",
+          "map_name": "ascent",
+          "side": "defense",
+          "n_samples": 53,
+          "positions": [
+            {
+              "x": 2507.562489849057,
+              "y": -8094.3231324528315,
+              "weight": 1.0,
+              "std_x": 2226.2742988142268,
+              "std_y": 2284.7041729798275
+            }
+          ],
+          "confidence": 0.765,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "N4RRATE",
+          "map_name": "ascent",
+          "side": "attack",
+          "n_samples": 160,
+          "positions": [
+            {
+              "x": -677.5909778325,
+              "y": -5485.658003887499,
+              "weight": 1.0,
+              "std_x": 1009.6749963363715,
+              "std_y": 2586.955620684276
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "lotus": {
+        "defense": {
+          "player": "N4RRATE",
+          "map_name": "lotus",
+          "side": "defense",
+          "n_samples": 61,
+          "positions": [
+            {
+              "x": 8793.875569016393,
+              "y": 2358.8369638688523,
+              "weight": 1.0,
+              "std_x": 1862.1971766345032,
+              "std_y": 1820.886715710873
+            }
+          ],
+          "confidence": 0.8049999999999999,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "N4RRATE",
+          "map_name": "lotus",
+          "side": "attack",
+          "n_samples": 142,
+          "positions": [
+            {
+              "x": 5426.797817647886,
+              "y": 1386.2799121971832,
+              "weight": 1.0,
+              "std_x": 1559.9094660287578,
+              "std_y": 1092.920485223304
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "corrode": {
+        "attack": {
+          "player": "N4RRATE",
+          "map_name": "corrode",
+          "side": "attack",
+          "n_samples": 56,
+          "positions": [
+            {
+              "x": 412.2515206458143,
+              "y": 2472.3041825535715,
+              "weight": 1.0,
+              "std_x": 2016.3459637297335,
+              "std_y": 3344.105668244047
+            }
+          ],
+          "confidence": 0.78,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "N4RRATE",
+          "map_name": "corrode",
+          "side": "defense",
+          "n_samples": 276,
+          "positions": [
+            {
+              "x": -4399.19582732451,
+              "y": -2945.4872712688402,
+              "weight": 1.0,
+              "std_x": 2371.868179732057,
+              "std_y": 973.632796440404
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "Zellsis": {
+      "haven": {
+        "attack": {
+          "player": "Zellsis",
+          "map_name": "haven",
+          "side": "attack",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 2384.8691969473684,
+              "y": -4825.29185245614,
+              "weight": 1.0,
+              "std_x": 2253.0602434226435,
+              "std_y": 2700.5993087175952
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "Zellsis",
+          "map_name": "haven",
+          "side": "defense",
+          "n_samples": 127,
+          "positions": [
+            {
+              "x": -1378.1171804409457,
+              "y": -9906.557914251967,
+              "weight": 1.0,
+              "std_x": 2324.4234600722098,
+              "std_y": 1177.294740319819
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "ascent": {
+        "defense": {
+          "player": "Zellsis",
+          "map_name": "ascent",
+          "side": "defense",
+          "n_samples": 53,
+          "positions": [
+            {
+              "x": 1457.6483308490567,
+              "y": -8580.030615471698,
+              "weight": 1.0,
+              "std_x": 2262.166055453893,
+              "std_y": 1986.1405324391421
+            }
+          ],
+          "confidence": 0.765,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "Zellsis",
+          "map_name": "ascent",
+          "side": "attack",
+          "n_samples": 160,
+          "positions": [
+            {
+              "x": 4722.3615947875005,
+              "y": -5804.2214315125,
+              "weight": 1.0,
+              "std_x": 3392.716573153116,
+              "std_y": 2757.6099034075814
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "lotus": {
+        "defense": {
+          "player": "Zellsis",
+          "map_name": "lotus",
+          "side": "defense",
+          "n_samples": 61,
+          "positions": [
+            {
+              "x": 8342.923844098359,
+              "y": 1127.9295172245902,
+              "weight": 1.0,
+              "std_x": 2415.34382619629,
+              "std_y": 2900.8189773510053
+            }
+          ],
+          "confidence": 0.8049999999999999,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "Zellsis",
+          "map_name": "lotus",
+          "side": "attack",
+          "n_samples": 142,
+          "positions": [
+            {
+              "x": 5911.7326509788745,
+              "y": 1087.0466991126762,
+              "weight": 1.0,
+              "std_x": 1894.8764889793276,
+              "std_y": 1056.6581580935497
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "corrode": {
+        "attack": {
+          "player": "Zellsis",
+          "map_name": "corrode",
+          "side": "attack",
+          "n_samples": 56,
+          "positions": [
+            {
+              "x": -304.0482022870782,
+              "y": 2863.6028597500003,
+              "weight": 1.0,
+              "std_x": 2351.1058600498236,
+              "std_y": 3086.056582300956
+            }
+          ],
+          "confidence": 0.78,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "Zellsis",
+          "map_name": "corrode",
+          "side": "defense",
+          "n_samples": 276,
+          "positions": [
+            {
+              "x": -4753.792064776742,
+              "y": -3555.654807108695,
+              "weight": 1.0,
+              "std_x": 2411.2703890181506,
+              "std_y": 997.5092320321329
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "TenZ": {
+      "haven": {
+        "attack": {
+          "player": "TenZ",
+          "map_name": "haven",
+          "side": "attack",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 2375.999934649123,
+              "y": -4729.779358947369,
+              "weight": 1.0,
+              "std_x": 2154.9886039826306,
+              "std_y": 2856.193610879038
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "TenZ",
+          "map_name": "haven",
+          "side": "defense",
+          "n_samples": 127,
+          "positions": [
+            {
+              "x": -1487.7747568897644,
+              "y": -8837.357750078741,
+              "weight": 1.0,
+              "std_x": 2117.454471180005,
+              "std_y": 1556.133457180726
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    }
+  }
+}

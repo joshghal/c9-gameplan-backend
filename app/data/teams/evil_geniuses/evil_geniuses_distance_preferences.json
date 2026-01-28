@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "team": "Evil Geniuses",
+    "description": "Evil Geniuses engagement distance preferences from VCT data",
+    "methodology": "Estimated from position variance",
+    "n_players": 7
+  },
+  "preferences": {
+    "Apoth": {
+      "player": "Apoth",
+      "n_samples": 282,
+      "mean_distance": 2066.6,
+      "std_distance": 310.0,
+      "ci_lower": 1459.0,
+      "ci_upper": 2674.2
+    },
+    "yay": {
+      "player": "yay",
+      "n_samples": 453,
+      "mean_distance": 2065.0,
+      "std_distance": 309.7,
+      "ci_lower": 1457.9,
+      "ci_upper": 2672.1
+    },
+    "icy": {
+      "player": "icy",
+      "n_samples": 965,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Derrek": {
+      "player": "Derrek",
+      "n_samples": 735,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "JAWGEMO": {
+      "player": "JAWGEMO",
+      "n_samples": 965,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "NaturE": {
+      "player": "NaturE",
+      "n_samples": 735,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "supamen": {
+      "player": "supamen",
+      "n_samples": 735,
+      "mean_distance": 2119.7,
+      "std_distance": 317.9,
+      "ci_lower": 1496.5,
+      "ci_upper": 2742.8
+    }
+  }
+}

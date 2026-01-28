@@ -516,7 +516,7 @@ class EngagementParams:
     EARLY_ROUND_RATE: float = 0.0040   # VCT: engagement_likelihood=0.30
     MID_ROUND_RATE: float = 0.0100     # VCT: engagement_likelihood=0.60
     LATE_ROUND_RATE: float = 0.0130    # VCT: engagement_likelihood=0.80
-    POST_PLANT_RATE: float = 0.0110    # Interpolated between mid and late
+    POST_PLANT_RATE: float = 0.0180    # TUNED: Defenders MUST engage to defuse
 
     # ❌ ESTIMATED - Flash impact on engagement
     # No VCT data on flash effectiveness
@@ -673,11 +673,12 @@ class RoundPacingParams:
 
     # ❌ ESTIMATED - Defuse attempt probability
     # Logic: Based on time remaining on spike fuse (45s)
-    # Tuned to produce ~31% defuse rate (matching VCT)
-    DEFUSE_PROB_SAFE: float = 0.002    # >30s remaining - ESTIMATED
-    DEFUSE_PROB_MODERATE: float = 0.005  # 15-30s remaining - ESTIMATED
-    DEFUSE_PROB_URGENT: float = 0.015   # 7-15s remaining - ESTIMATED
-    DEFUSE_PROB_CRITICAL: float = 0.030  # <7s remaining - ESTIMATED
+    # TUNED: Increased significantly - defenders near spike MUST attempt defuse
+    # Note: Gets multiplied by 0.2 if attackers nearby, so base needs to be high
+    DEFUSE_PROB_SAFE: float = 0.010    # >30s remaining - can wait for teammates
+    DEFUSE_PROB_MODERATE: float = 0.030  # 15-30s remaining - should start trying
+    DEFUSE_PROB_URGENT: float = 0.080   # 7-15s remaining - must attempt
+    DEFUSE_PROB_CRITICAL: float = 0.150  # <7s remaining - no choice, tap spike
 
 
 # =============================================================================
@@ -888,14 +889,13 @@ class RoundPhaseParams:
     # Per-tick engagement probabilities
     # These control how often fights can happen in each phase
     # At 128 tick (7.8ms/tick), probability scales accordingly
-    # Tuned to produce: 15% early kills, 55% mid kills, 30% late kills
-    # Target: 7.5 kills/round average, 47% attack win rate, 18% wipe rate
-    # Save behavior reduces these significantly when disadvantaged
-    ENGAGEMENT_RATE_SETUP: float = 0.002      # ❌ ESTIMATED: Early kills (15% target)
-    ENGAGEMENT_RATE_CONTROL: float = 0.0015   # ❌ ESTIMATED: Info fights
-    ENGAGEMENT_RATE_EXECUTE: float = 0.003    # ❌ ESTIMATED: Main combat - faster execute
-    ENGAGEMENT_RATE_POST_PLANT: float = 0.003 # ❌ ESTIMATED: Post-plant fights (modifiers apply)
-    ENGAGEMENT_RATE_CLUTCH: float = 0.003     # ❌ ESTIMATED: Faster clutch resolution
+    # TUNED: Increased rates to ensure defenders contest before plants
+    # Target: 6-9 kills/round average, 53% attack win rate
+    ENGAGEMENT_RATE_SETUP: float = 0.003      # ⚠️ TUNED: Increased for early fights
+    ENGAGEMENT_RATE_CONTROL: float = 0.0025   # ⚠️ TUNED: Increased for info fights
+    ENGAGEMENT_RATE_EXECUTE: float = 0.005    # ⚠️ TUNED: Higher for site contests
+    ENGAGEMENT_RATE_POST_PLANT: float = 0.004 # ⚠️ TUNED: Retake fights
+    ENGAGEMENT_RATE_CLUTCH: float = 0.004     # ⚠️ TUNED: Clutch resolution
 
     # Trade parameters
     # VCT data: 25% trade rate, avg 1720ms trade time

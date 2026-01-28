@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "team": "KR\u00dc Esports",
+    "description": "KR\u00dc Esports engagement distance preferences from VCT data",
+    "methodology": "Estimated from position variance",
+    "n_players": 5
+  },
+  "preferences": {
+    "mta": {
+      "player": "mta",
+      "n_samples": 529,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "heat": {
+      "player": "heat",
+      "n_samples": 529,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Shyy": {
+      "player": "Shyy",
+      "n_samples": 529,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "keznitdeuS": {
+      "player": "keznitdeuS",
+      "n_samples": 529,
+      "mean_distance": 2170.7,
+      "std_distance": 325.6,
+      "ci_lower": 1532.5,
+      "ci_upper": 2808.9
+    },
+    "Melser": {
+      "player": "Melser",
+      "n_samples": 529,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "team": "Cloud9",
+    "description": "Cloud9 engagement distance preferences from VCT data",
+    "methodology": "Estimated from position variance",
+    "n_players": 10
+  },
+  "preferences": {
+    "vanity": {
+      "player": "vanity",
+      "n_samples": 3665,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "moose": {
+      "player": "moose",
+      "n_samples": 3128,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Runi": {
+      "player": "Runi",
+      "n_samples": 3128,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "wippie": {
+      "player": "wippie",
+      "n_samples": 537,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "neT": {
+      "player": "neT",
+      "n_samples": 4696,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "mitch": {
+      "player": "mitch",
+      "n_samples": 4696,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "xeppaa": {
+      "player": "xeppaa",
+      "n_samples": 537,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "Jakee": {
+      "player": "Jakee",
+      "n_samples": 319,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "v1c": {
+      "player": "v1c",
+      "n_samples": 4696,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "OXY": {
+      "player": "OXY",
+      "n_samples": 8361,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    }
+  }
+}

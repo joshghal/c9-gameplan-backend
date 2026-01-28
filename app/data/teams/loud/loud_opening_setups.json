@@ -1,0 +1,237 @@
+{
+  "metadata": {
+    "team": "LOUD (1)",
+    "description": "LOUD (1) opening positions extracted from VCT data",
+    "methodology": "Mean/std clustering from GRID position data",
+    "min_samples": 30,
+    "n_players": 5
+  },
+  "setups": {
+    "tuyz": {
+      "bind": {
+        "attack": {
+          "player": "tuyz",
+          "map_name": "bind",
+          "side": "attack",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 5430.423277017544,
+              "y": -1140.1110344456138,
+              "weight": 1.0,
+              "std_x": 4189.390590776461,
+              "std_y": 2934.961618569544
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "tuyz",
+          "map_name": "bind",
+          "side": "defense",
+          "n_samples": 239,
+          "positions": [
+            {
+              "x": 11605.929659665273,
+              "y": 943.1557566443512,
+              "weight": 1.0,
+              "std_x": 1424.0049923267418,
+              "std_y": 1622.776567454419
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      },
+      "haven": {
+        "defense": {
+          "player": "tuyz",
+          "map_name": "haven",
+          "side": "defense",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 3120.1889466789476,
+              "y": -10724.881663157894,
+              "weight": 1.0,
+              "std_x": 2002.625119831903,
+              "std_y": 2402.4338937339476
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "attack": {
+          "player": "tuyz",
+          "map_name": "haven",
+          "side": "attack",
+          "n_samples": 113,
+          "positions": [
+            {
+              "x": 5209.361514637169,
+              "y": -7532.645839734514,
+              "weight": 1.0,
+              "std_x": 2288.749853145797,
+              "std_y": 2270.0072894092477
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "cauanzin": {
+      "bind": {
+        "attack": {
+          "player": "cauanzin",
+          "map_name": "bind",
+          "side": "attack",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 5123.13926522807,
+              "y": 289.3279815087719,
+              "weight": 1.0,
+              "std_x": 4058.9972455658494,
+              "std_y": 2737.795026059623
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "cauanzin",
+          "map_name": "bind",
+          "side": "defense",
+          "n_samples": 239,
+          "positions": [
+            {
+              "x": 10396.71083129707,
+              "y": 1738.1734267112965,
+              "weight": 1.0,
+              "std_x": 1660.2324900692556,
+              "std_y": 1274.8337577206605
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "qck1": {
+      "bind": {
+        "attack": {
+          "player": "qck1",
+          "map_name": "bind",
+          "side": "attack",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 5283.889848561403,
+              "y": -645.5690004456139,
+              "weight": 1.0,
+              "std_x": 4052.607190147286,
+              "std_y": 2878.462386962005
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "qck1",
+          "map_name": "bind",
+          "side": "defense",
+          "n_samples": 239,
+          "positions": [
+            {
+              "x": 11244.03178313807,
+              "y": -166.50466733054392,
+              "weight": 1.0,
+              "std_x": 1496.1054774382822,
+              "std_y": 1170.0818624171852
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "Saadhak": {
+      "bind": {
+        "attack": {
+          "player": "Saadhak",
+          "map_name": "bind",
+          "side": "attack",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 5385.021818210526,
+              "y": -841.6186967368421,
+              "weight": 1.0,
+              "std_x": 4184.668668843035,
+              "std_y": 2546.763965783396
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "Saadhak",
+          "map_name": "bind",
+          "side": "defense",
+          "n_samples": 239,
+          "positions": [
+            {
+              "x": 11926.201572887026,
+              "y": 829.3902729748954,
+              "weight": 1.0,
+              "std_x": 1296.913392763821,
+              "std_y": 1984.9492660018066
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    },
+    "Less": {
+      "bind": {
+        "attack": {
+          "player": "Less",
+          "map_name": "bind",
+          "side": "attack",
+          "n_samples": 57,
+          "positions": [
+            {
+              "x": 5496.149512280703,
+              "y": -406.552639122807,
+              "weight": 1.0,
+              "std_x": 4156.303653953066,
+              "std_y": 2134.577115828226
+            }
+          ],
+          "confidence": 0.7849999999999999,
+          "method": "simple"
+        },
+        "defense": {
+          "player": "Less",
+          "map_name": "bind",
+          "side": "defense",
+          "n_samples": 239,
+          "positions": [
+            {
+              "x": 12189.518612928872,
+              "y": 2151.8203521799164,
+              "weight": 1.0,
+              "std_x": 1461.4112317839345,
+              "std_y": 2595.6811674377605
+            }
+          ],
+          "confidence": 0.95,
+          "method": "simple"
+        }
+      }
+    }
+  }
+}

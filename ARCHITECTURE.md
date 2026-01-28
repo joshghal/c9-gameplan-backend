@@ -1,7 +1,8 @@
 # C9 Tactical Vision - Architecture Overview
 
-**Last Updated**: January 2026
+**Last Updated**: January 21, 2026
 **Simulation Accuracy**: 86% (12/14 scenarios)
+**Average Kills/Round**: 5.7 (VCT target: ~7.5)
 
 ---
 
@@ -306,6 +307,70 @@ Key settings in `app/config.py`:
 | `simulation_tick_rate` | 128ms | Tick duration |
 | `max_simulation_time` | 120000ms | 2 min round limit |
 | `pattern_similarity_threshold` | 0.85 | Pattern matching tolerance |
+
+---
+
+## Recent Updates (January 2026)
+
+### VCT-Calibrated Combat Detection
+
+Fixed "players walk past each other" bug using VCT engagement distance data (1,837 kills analyzed):
+
+| Distance | Normalized | Engagement |
+|----------|------------|------------|
+| Point-blank (<500u) | <0.05 | **FORCED** - always fight |
+| Close (500-1000u) | 0.05-0.10 | 50% per tick |
+| Medium (1000-2000u) | 0.10-0.20 | 15% per tick |
+| Long (2000+u) | >0.20 | Phase-based probability |
+
+### Player Facing Direction
+
+- **Schema**: Added `facing_angle` (radians) and `has_spike` to `PlayerPosition`
+- **Initialization**: Players face toward their opening position at spawn
+  - Attackers: face toward sites (not right)
+  - Defenders: face toward attacker spawn
+- **Updates**: Facing tracked during movement and holding
+
+### Spike Site Detection
+
+- Fixed: Now finds **nearest** site to planter position
+- Previously: Defaulted to 'A' site when no match within radius
+
+### Retake Pathing
+
+- Stronger override: Clears `hold_position` and `is_holding_angle`
+- Defenders on-site face toward site center
+- Vision system now uses `player.facing_angle` consistently
+
+### Defender Position Validation
+
+- Added bounds check (0.08-0.92) for VCT opening positions
+- Invalid positions (e.g., Haven x=0.05 bug) fall back to site-based distribution
+- 3-site maps: 2-2-1 distribution across A, B, C
+
+### Visualization (`scripts/visualize.py`)
+
+| Feature | Change |
+|---------|--------|
+| **Dot size** | C9: 7→4px, Opponents: 6→3px |
+| **Vision cones** | 90° FOV, proper alpha compositing |
+| **Player names** | First 6 chars displayed |
+| **Spike marker** | Yellow diamond at exact plant location |
+| **Off-map detection** | Magenta border for invalid positions |
+| **Legend** | Two-row layout with all indicators |
+
+---
+
+## Stress Test Results (Jan 2026)
+
+120 rounds across 12 maps:
+
+| Metric | Value |
+|--------|-------|
+| Overall C9 Win Rate | 57% |
+| Attack Win Rate | 84% |
+| Defense Win Rate | 46% |
+| Average Kills/Round | 5.7 |
 
 ---
 

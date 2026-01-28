@@ -6,6 +6,7 @@ Loads v4 walkable masks and provides:
 - Navigation grids for pathfinding
 - Obstacle detection
 - Position validation
+- Line-of-sight checks (using dilated masks for better LOS)
 """
 
 import json
@@ -14,8 +15,17 @@ from pathlib import Path
 from typing import Dict, Optional, Tuple, List
 from functools import lru_cache
 
+try:
+    from scipy import ndimage
+    HAS_SCIPY = True
+except ImportError:
+    HAS_SCIPY = False
+
 DATA_DIR = Path(__file__).parent.parent / "data"
 MASK_FILE = DATA_DIR / "figma_masks" / "walkable_masks_v4.json"
+
+# LOS mask dilation iterations - allows sightlines through corridors
+LOS_DILATION_ITERATIONS = 8
 
 
 class MapContext:
@@ -23,6 +33,7 @@ class MapContext:
 
     _instance: Optional['MapContext'] = None
     _masks_cache: Dict = {}
+    _los_masks_cache: Dict = {}  # Dilated masks for LOS checks
 
     def __new__(cls):
         """Singleton pattern - one instance shared across simulation."""
@@ -38,15 +49,38 @@ class MapContext:
         self._initialized = True
 
     def _load_masks(self):
-        """Load all v4 masks from JSON."""
+        """Load all v4 masks from JSON and create dilated LOS masks."""
         if MASK_FILE.exists():
             with open(MASK_FILE, 'r') as f:
                 data = json.load(f)
                 self._masks_cache = data.get('maps', {})
+
+            # Create dilated masks for LOS checks
+            self._create_los_masks()
+
             print(f"MapContext: Loaded {len(self._masks_cache)} map masks")
         else:
             print(f"MapContext: Warning - mask file not found at {MASK_FILE}")
             self._masks_cache = {}
+
+    def _create_los_masks(self):
+        """Create dilated masks for line-of-sight checks.
+
+        Map-derived masks are geometrically accurate but too restrictive for LOS.
+        Dilating allows sightlines through corridors while keeping positioning accurate.
+        """
+        if not HAS_SCIPY:
+            print("MapContext: scipy not available, LOS will use original masks")
+            return
+
+        struct = ndimage.generate_binary_structure(2, 2)  # 8-connectivity
+
+        for map_name, data in self._masks_cache.items():
+            walkable = np.array(data['walkable_mask'], dtype=np.uint8)
+            # Dilate walkable area for LOS (invert obstacle check)
+            dilated = ndimage.binary_dilation(walkable, struct, iterations=LOS_DILATION_ITERATIONS)
+            # Store as obstacle mask (inverted)
+            self._los_masks_cache[map_name] = 1 - dilated.astype(np.uint8)
 
     def get_map_data(self, map_name: str) -> Optional[Dict]:
         """Get raw mask data for a map."""
@@ -190,12 +224,19 @@ class MapContext:
         """Check if there's line of sight between two positions.
 
         Uses Bresenham's algorithm to trace the line and check for obstacles.
+        Uses dilated LOS mask for more permissive sightlines through corridors.
         """
-        data = self.get_map_data(map_name)
-        if data is None:
-            return True
+        map_key = map_name.lower()
 
-        obstacle_mask = np.array(data['obstacle_mask'])
+        # Use dilated LOS mask if available
+        if map_key in self._los_masks_cache:
+            obstacle_mask = self._los_masks_cache[map_key]
+        else:
+            data = self.get_map_data(map_name)
+            if data is None:
+                return True
+            obstacle_mask = np.array(data['obstacle_mask'])
+
         grid_size = obstacle_mask.shape[0]
 
         # Convert to grid coordinates

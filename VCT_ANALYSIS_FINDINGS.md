@@ -15,6 +15,41 @@ From 33 VCT matches with 1739 rounds:
 
 ---
 
+## Key Finding: VCT Engagement Distance Analysis (NEW - Jan 2026)
+
+### Kill Distance Distribution (1,837 VCT kills analyzed)
+
+| Metric | Value |
+|--------|-------|
+| Mean distance | 1,794 units |
+| Median distance | 1,642 units |
+| Standard deviation | ~800 units |
+
+### Distance Breakdown
+
+| Range | Units | % of Kills | Implication |
+|-------|-------|------------|-------------|
+| **Point-blank** | 0-500 | 5% | Must force combat |
+| **Close** | 500-1000 | 16% | High engagement rate |
+| **Medium** | 1000-2000 | 42% | Standard combat |
+| **Long** | 2000-3000 | 26% | Probabilistic |
+| **Very long** | 3000+ | 11% | Low probability |
+
+### Implementation (Jan 2026)
+
+VCT-calibrated combat thresholds now in `simulation_engine.py`:
+
+```python
+VCT_POINTBLANK = 0.05   # <500 units - FORCE combat
+VCT_CLOSE = 0.10        # 500-1000 units - 50% per tick
+VCT_MEDIUM = 0.20       # 1000-2000 units - 15% per tick
+# Long range: phase-based probability (existing logic)
+```
+
+**Key Fix**: Players within point-blank range (~5% of map) with LOS now ALWAYS engage. This prevents the "walk past each other" bug.
+
+---
+
 ## Key Finding: Post-Plant Behavior Analysis
 
 ### Attacker Clustering (Post-Plant)

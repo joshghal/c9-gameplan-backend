@@ -28,6 +28,10 @@ class PlayerPosition(BaseModel):
     # NEW: Role assignment
     role: Optional[str] = None  # 'entry', 'support', 'lurk', 'anchor', 'flex'
 
+    # VCT-derived: Facing direction and spike status
+    facing_angle: Optional[float] = None  # Radians (0 = right, pi/2 = down)
+    has_spike: bool = False
+
 
 class SimulationEvent(BaseModel):
     timestamp_ms: int

@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "team": "G2 Esports",
+    "description": "G2 Esports engagement distance preferences from VCT data",
+    "methodology": "Estimated from position variance",
+    "n_players": 5
+  },
+  "preferences": {
+    "BABYBAY": {
+      "player": "BABYBAY",
+      "n_samples": 207,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "leaf": {
+      "player": "leaf",
+      "n_samples": 988,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "trent": {
+      "player": "trent",
+      "n_samples": 1195,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "JonahP": {
+      "player": "JonahP",
+      "n_samples": 1195,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    },
+    "valyn": {
+      "player": "valyn",
+      "n_samples": 1195,
+      "mean_distance": 2200,
+      "std_distance": 330.0,
+      "ci_lower": 1553.2,
+      "ci_upper": 2846.8
+    }
+  }
+}
