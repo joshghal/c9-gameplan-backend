@@ -17,6 +17,7 @@ __pycache__/
 app/data/position_trajectories.json
 
 # Generated outputs
+output/
 round_panels_*.png
 *.png
 !app/data/**/*.png
