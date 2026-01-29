@@ -702,6 +702,7 @@ class RealisticCombatModel:
                 b_next_shot = current_time + weapon_b.ms_between_shots
 
         # Determine winner
+        winner_profile = None
         if b_health <= 0 and a_health > 0:
             winner_id = player_a_id
             loser_id = player_b_id
@@ -709,6 +710,7 @@ class RealisticCombatModel:
             loser_damage = b_damage
             winner_shots = a_shots
             loser_shots = b_shots
+            winner_profile = player_a_profile
         elif a_health <= 0 and b_health > 0:
             winner_id = player_b_id
             loser_id = player_a_id
@@ -716,7 +718,7 @@ class RealisticCombatModel:
             loser_damage = a_damage
             winner_shots = b_shots
             loser_shots = a_shots
-            headshot_kill = headshot_kill and b_health > 0
+            winner_profile = player_b_profile
         else:
             # Both alive (timeout) or both dead - whoever has more health wins
             if a_health >= b_health:
@@ -726,6 +728,7 @@ class RealisticCombatModel:
                 loser_damage = b_damage
                 winner_shots = a_shots
                 loser_shots = b_shots
+                winner_profile = player_a_profile
             else:
                 winner_id = player_b_id
                 loser_id = player_a_id
@@ -733,6 +736,12 @@ class RealisticCombatModel:
                 loser_damage = a_damage
                 winner_shots = b_shots
                 loser_shots = a_shots
+                winner_profile = player_b_profile
+
+        # FIX: Determine headshot_kill based on winner's actual headshot_rate statistic
+        # This directly models "X% of this player's kills are headshots" from VCT data
+        # rather than simulating aim mechanics which compound over multiple shots
+        final_headshot = random.random() < winner_profile.headshot_rate if winner_profile else headshot_kill
 
         return CombatResult(
             winner_id=winner_id,
@@ -740,7 +749,7 @@ class RealisticCombatModel:
             time_to_kill_ms=current_time,
             shots_fired_winner=winner_shots,
             shots_fired_loser=loser_shots,
-            headshot_kill=headshot_kill and (a_health <= 0 or b_health <= 0),
+            headshot_kill=final_headshot and (a_health <= 0 or b_health <= 0),
             damage_dealt_winner=winner_damage,
             damage_dealt_loser=loser_damage,
             was_trade=engagement_type == EngagementType.TRADE,
