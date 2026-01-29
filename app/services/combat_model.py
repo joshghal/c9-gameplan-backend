@@ -649,10 +649,12 @@ class RealisticCombatModel:
                 if a_is_flashed:
                     acc_mod *= 0.1
 
-                # Shoot
+                # Shoot - use player's headshot_rate to determine aim point
+                # FIX: Not all shots should aim for head, use profile's headshot_rate
+                aim_for_head_a = random.random() < player_a_profile.headshot_rate
                 hit, region = self.calculate_hit_probability(
                     weapon_a, player_a_profile, distance_meters,
-                    a_shots, acc_mod, aiming_for_head=True
+                    a_shots, acc_mod, aiming_for_head=aim_for_head_a
                 )
 
                 if hit:
@@ -678,9 +680,11 @@ class RealisticCombatModel:
                 if b_is_flashed:
                     acc_mod *= 0.1
 
+                # FIX: Use player B's headshot_rate to determine aim point
+                aim_for_head_b = random.random() < player_b_profile.headshot_rate
                 hit, region = self.calculate_hit_probability(
                     weapon_b, player_b_profile, distance_meters,
-                    b_shots, acc_mod, aiming_for_head=True
+                    b_shots, acc_mod, aiming_for_head=aim_for_head_b
                 )
 
                 if hit:

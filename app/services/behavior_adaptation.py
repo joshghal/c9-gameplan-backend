@@ -155,8 +155,8 @@ class BehaviorAdapter:
     # VCT shows 4v5 → ~35% win for disadvantaged, 3v5 → ~15% win
     # Outnumbered players should be VERY passive to avoid crossfire deaths
     MAN_ADVANTAGE_AGGRESSION = {
-        2: 0.40,   # +2 players = very aggressive, hunt them down
-        1: 0.25,   # +1 player = aggressive, take map control
+        2: 0.30,   # +2 players = aggressive but controlled hunt
+        1: 0.15,   # +1 player = slight aggression, take map control
         0: 0.0,    # Even = neutral
         -1: -0.35, # -1 player = passive, avoid multi-enemy fights
         -2: -0.55, # -2 players = very passive, isolate fights or save
@@ -166,10 +166,10 @@ class BehaviorAdapter:
 
     # Post-plant behavior
     POST_PLANT_ATTACK_AGGRESSION = -0.30  # Hold angles, play passive
-    POST_PLANT_DEFENSE_AGGRESSION = 0.40  # Must retake, aggressive
+    POST_PLANT_DEFENSE_AGGRESSION = 0.25  # Must retake, urgent but not frantic
 
     # Trade window behavior
-    TRADE_WINDOW_AGGRESSION = 0.50  # Push for trade
+    TRADE_WINDOW_AGGRESSION = 0.30  # Push for trade but don't suicide
     TRADE_WINDOW_SPEED = 1.3  # Move faster to trade
 
     # Time pressure modifiers (for attack without plant)
@@ -292,11 +292,27 @@ class BehaviorAdapter:
                 modifiers.peek_willingness = 0.2  # Don't peek, let them come
             else:
                 modifiers.aggression += cls.POST_PLANT_DEFENSE_AGGRESSION
-                modifiers.movement_speed = 1.4  # Fast rotation to site
+                modifiers.movement_speed = 1.2  # Urgent rotation but not sprinting
                 modifiers.rotation_urgency = 0.9  # Very urgent
                 modifiers.peek_willingness = 0.7  # Need to clear angles
 
         else:
+            # Opening phase: Defenders sprint to positions
+            # FIX: Extended speed periods so defenders can reach positions before attackers
+            if not is_attack:
+                if time_ms < 20000:
+                    # Sprint to position - defenders need to reach sites before attackers
+                    # Extended from 15s to 20s to allow full setup
+                    modifiers.movement_speed = 1.5  # Faster movement to reach position
+                    modifiers.rotation_urgency = 0.8
+                elif time_ms < 35000:
+                    # Slowing down, getting into position
+                    # Extended from 25s to 35s
+                    modifiers.movement_speed = 1.1
+                else:
+                    # In position, hold angles
+                    modifiers.movement_speed = 0.7
+
             # Time pressure for attack (need to plant)
             if is_attack:
                 for threshold, mod in cls.TIME_PRESSURE_THRESHOLDS:
@@ -338,7 +354,11 @@ class BehaviorAdapter:
                 modifiers.peek_willingness = 0.7
 
         # Clamp aggression to valid range
-        modifiers.aggression = max(-1.0, min(1.0, modifiers.aggression))
+        # Defenders cap lower — even in retakes, pros play controlled
+        if not is_attack:
+            modifiers.aggression = max(-1.0, min(0.6, modifiers.aggression))
+        else:
+            modifiers.aggression = max(-1.0, min(1.0, modifiers.aggression))
 
         return modifiers
 

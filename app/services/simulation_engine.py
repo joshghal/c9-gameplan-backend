@@ -337,149 +337,127 @@ class SimulationEngine:
     # Source: vct_map_data/vct_positions_*.png showing player position heatmaps
     MAP_DATA = {
         # === 2-SITE MAPS ===
+        # Site coordinates visually verified against map images (olive/green markers)
         'ascent': {
             'sites': {
-                'A': {'center': (0.30, 0.20), 'radius': 0.08},  # A site top-left
-                'B': {'center': (0.50, 0.20), 'radius': 0.08},  # B site top-middle
+                'A': {'center': (0.29, 0.15), 'radius': 0.08},  # A site top-left
+                'B': {'center': (0.27, 0.79), 'radius': 0.08},  # B site bottom-left
             },
             'spawns': {
-                # VCT: Attackers spawn bottom-right ~(0.85, 0.58)
                 'attack': [(0.85, 0.58), (0.83, 0.55), (0.87, 0.55), (0.82, 0.60), (0.88, 0.60)],
-                # VCT: Defenders spawn left ~(0.15, 0.42)
                 'defense': [(0.15, 0.42), (0.13, 0.40), (0.17, 0.40), (0.12, 0.44), (0.18, 0.44)],
             },
         },
         'bind': {
             'sites': {
-                'A': {'center': (0.25, 0.35), 'radius': 0.08},  # A site left
-                'B': {'center': (0.75, 0.35), 'radius': 0.08},  # B site right
+                'A': {'center': (0.29, 0.27), 'radius': 0.08},  # A site upper-left
+                'B': {'center': (0.73, 0.33), 'radius': 0.08},  # B site upper-right
             },
             'spawns': {
-                # VCT: Attackers spawn bottom-center ~(0.55, 0.90)
                 'attack': [(0.55, 0.90), (0.52, 0.88), (0.58, 0.88), (0.50, 0.92), (0.60, 0.92)],
-                # VCT: Defenders spawn top-center ~(0.55, 0.15)
                 'defense': [(0.55, 0.15), (0.52, 0.13), (0.58, 0.13), (0.50, 0.17), (0.60, 0.17)],
             },
         },
         'split': {
             'sites': {
-                'A': {'center': (0.30, 0.20), 'radius': 0.08},  # A site
-                'B': {'center': (0.50, 0.20), 'radius': 0.08},  # B site
+                'A': {'center': (0.33, 0.09), 'radius': 0.08},  # A site top
+                'B': {'center': (0.32, 0.82), 'radius': 0.08},  # B site bottom
             },
             'spawns': {
-                # VCT: Attackers spawn right ~(0.82, 0.55)
                 'attack': [(0.82, 0.55), (0.80, 0.52), (0.84, 0.52), (0.79, 0.58), (0.85, 0.58)],
-                # VCT: Defenders spawn left ~(0.15, 0.55)
                 'defense': [(0.15, 0.55), (0.13, 0.52), (0.17, 0.52), (0.12, 0.58), (0.18, 0.58)],
             },
         },
         'icebox': {
             'sites': {
-                'A': {'center': (0.55, 0.15), 'radius': 0.08},  # A site top
-                'B': {'center': (0.60, 0.80), 'radius': 0.10},  # B site bottom
+                'A': {'center': (0.61, 0.21), 'radius': 0.08},  # A site upper-right
+                'B': {'center': (0.71, 0.81), 'radius': 0.10},  # B site lower-right
             },
             'spawns': {
-                # VCT: Attackers spawn left ~(0.12, 0.58)
                 'attack': [(0.12, 0.58), (0.10, 0.55), (0.14, 0.55), (0.09, 0.61), (0.15, 0.61)],
-                # VCT: Defenders spawn right ~(0.92, 0.55)
                 'defense': [(0.92, 0.55), (0.90, 0.52), (0.94, 0.52), (0.89, 0.58), (0.95, 0.58)],
             },
         },
         'breeze': {
             'sites': {
-                'A': {'center': (0.18, 0.25), 'radius': 0.09},  # A site (pyramid area)
-                'B': {'center': (0.82, 0.28), 'radius': 0.08},  # B site
+                'A': {'center': (0.15, 0.29), 'radius': 0.09},  # A site left
+                'B': {'center': (0.87, 0.45), 'radius': 0.08},  # B site right
             },
             'spawns': {
-                # No VCT data for breeze, using estimated positions
                 'attack': [(0.50, 0.85), (0.47, 0.82), (0.53, 0.82), (0.45, 0.88), (0.55, 0.88)],
                 'defense': [(0.50, 0.20), (0.25, 0.22), (0.75, 0.22), (0.30, 0.25), (0.70, 0.25)],
             },
         },
         'fracture': {
             'sites': {
-                'A': {'center': (0.20, 0.45), 'radius': 0.08},  # A site (left side)
-                'B': {'center': (0.80, 0.45), 'radius': 0.08},  # B site (right side)
+                'A': {'center': (0.08, 0.45), 'radius': 0.08},  # A site far-left
+                'B': {'center': (0.92, 0.45), 'radius': 0.08},  # B site far-right
             },
             'spawns': {
-                # VCT: Attackers spawn bottom-center ~(0.48, 0.87)
                 'attack': [(0.48, 0.87), (0.45, 0.85), (0.51, 0.85), (0.43, 0.89), (0.53, 0.89)],
-                # VCT: Defenders spawn middle ~(0.60, 0.42) - unique central spawn
                 'defense': [(0.60, 0.42), (0.57, 0.40), (0.63, 0.40), (0.55, 0.44), (0.65, 0.44)],
             },
         },
         'pearl': {
             'sites': {
-                'A': {'center': (0.20, 0.35), 'radius': 0.08},  # A site
-                'B': {'center': (0.80, 0.35), 'radius': 0.08},  # B site
+                'A': {'center': (0.18, 0.40), 'radius': 0.08},  # A site left
+                'B': {'center': (0.85, 0.31), 'radius': 0.08},  # B site upper-right
             },
             'spawns': {
-                # VCT: Attackers spawn bottom-center ~(0.52, 0.90)
                 'attack': [(0.52, 0.90), (0.49, 0.88), (0.55, 0.88), (0.47, 0.92), (0.57, 0.92)],
-                # VCT: Defenders spawn top-center ~(0.52, 0.10)
                 'defense': [(0.52, 0.10), (0.49, 0.08), (0.55, 0.08), (0.47, 0.12), (0.57, 0.12)],
             },
         },
         'sunset': {
             'sites': {
-                'A': {'center': (0.20, 0.35), 'radius': 0.08},  # A site
-                'B': {'center': (0.80, 0.35), 'radius': 0.08},  # B site
+                'A': {'center': (0.08, 0.40), 'radius': 0.08},  # A site far-left
+                'B': {'center': (0.82, 0.38), 'radius': 0.08},  # B site right
             },
             'spawns': {
-                # VCT: Attackers spawn bottom-center ~(0.55, 0.93)
                 'attack': [(0.55, 0.93), (0.52, 0.91), (0.58, 0.91), (0.50, 0.95), (0.60, 0.95)],
-                # VCT: Defenders spawn top-center ~(0.55, 0.12)
                 'defense': [(0.55, 0.12), (0.52, 0.10), (0.58, 0.10), (0.50, 0.14), (0.60, 0.14)],
             },
         },
         'abyss': {
             'sites': {
-                'A': {'center': (0.35, 0.15), 'radius': 0.08},  # A site top
-                'B': {'center': (0.55, 0.25), 'radius': 0.08},  # B site
+                'A': {'center': (0.40, 0.19), 'radius': 0.08},  # A site top
+                'B': {'center': (0.40, 0.77), 'radius': 0.08},  # B site bottom
             },
             'spawns': {
-                # VCT: Attackers spawn right ~(0.88, 0.42)
                 'attack': [(0.88, 0.42), (0.86, 0.40), (0.90, 0.40), (0.85, 0.44), (0.91, 0.44)],
-                # VCT: Defenders spawn left ~(0.12, 0.45)
                 'defense': [(0.12, 0.45), (0.10, 0.43), (0.14, 0.43), (0.09, 0.47), (0.15, 0.47)],
             },
         },
         'corrode': {
             'sites': {
-                'A': {'center': (0.30, 0.25), 'radius': 0.08},  # A site
-                'B': {'center': (0.45, 0.45), 'radius': 0.08},  # B site
+                'A': {'center': (0.40, 0.19), 'radius': 0.08},  # A site top
+                'B': {'center': (0.40, 0.77), 'radius': 0.08},  # B site bottom
             },
             'spawns': {
-                # VCT: Attackers spawn right ~(0.85, 0.50)
                 'attack': [(0.85, 0.50), (0.83, 0.48), (0.87, 0.48), (0.82, 0.52), (0.88, 0.52)],
-                # VCT: Defenders spawn left ~(0.10, 0.50)
                 'defense': [(0.10, 0.50), (0.08, 0.48), (0.12, 0.48), (0.07, 0.52), (0.13, 0.52)],
             },
         },
         # === 3-SITE MAPS ===
         'haven': {
             'sites': {
-                'A': {'center': (0.25, 0.20), 'radius': 0.07},  # A site (left)
-                'B': {'center': (0.45, 0.40), 'radius': 0.07},  # B site (middle)
-                'C': {'center': (0.70, 0.20), 'radius': 0.07},  # C site (right)
+                'A': {'center': (0.38, 0.14), 'radius': 0.07},  # A site top
+                'B': {'center': (0.40, 0.50), 'radius': 0.07},  # B site middle
+                'C': {'center': (0.36, 0.84), 'radius': 0.07},  # C site bottom
             },
             'spawns': {
-                # VCT: Attackers spawn right ~(0.87, 0.55)
                 'attack': [(0.87, 0.55), (0.85, 0.52), (0.89, 0.52), (0.84, 0.58), (0.90, 0.58)],
-                # VCT: Defenders spawn left ~(0.12, 0.40)
                 'defense': [(0.12, 0.40), (0.10, 0.38), (0.14, 0.38), (0.09, 0.42), (0.15, 0.42)],
             },
         },
         'lotus': {
             'sites': {
-                'A': {'center': (0.20, 0.45), 'radius': 0.07},  # A site (left)
-                'B': {'center': (0.50, 0.40), 'radius': 0.07},  # B site (middle)
-                'C': {'center': (0.80, 0.35), 'radius': 0.07},  # C site (right)
+                'A': {'center': (0.10, 0.45), 'radius': 0.07},  # A site left
+                'B': {'center': (0.47, 0.42), 'radius': 0.07},  # B site middle
+                'C': {'center': (0.87, 0.32), 'radius': 0.07},  # C site right
             },
             'spawns': {
-                # VCT: Attackers spawn bottom-center ~(0.50, 0.85)
                 'attack': [(0.50, 0.85), (0.47, 0.83), (0.53, 0.83), (0.45, 0.87), (0.55, 0.87)],
-                # VCT: Defenders spawn top-center ~(0.55, 0.15)
                 'defense': [(0.55, 0.15), (0.52, 0.13), (0.58, 0.13), (0.50, 0.17), (0.60, 0.17)],
             },
         },
@@ -523,9 +501,9 @@ class SimulationEngine:
             return 'sentinel'
         return 'initiator'  # Default to initiator for unknown agents
 
-    def __init__(self, db: AsyncSession):
+    def __init__(self, db: Optional[AsyncSession] = None):
         self.db = db
-        self.pattern_matcher = PatternMatcher(db)
+        self.pattern_matcher = PatternMatcher(db) if db else None
         self.pathfinder = AStarPathfinder()
 
         # Simulation state
@@ -536,6 +514,9 @@ class SimulationEngine:
         self.spike_site: Optional[str] = None
         self.spike_plant_time: Optional[int] = None
         self.map_name: str = 'ascent'  # P1 FIX: Track current map for site positions
+        # Dropped spike tracking (spike falls at death position, must be picked up)
+        self.dropped_spike_position: Optional[Tuple[float, float]] = None
+        self.dropped_spike_time: Optional[int] = None
 
         # NEW: System instances
         self.round_state = RoundState()
@@ -858,6 +839,9 @@ class SimulationEngine:
         self.snapshots = []
         self.spike_planted = False
         self.spike_site = None
+        # Reset dropped spike state
+        self.dropped_spike_position = None
+        self.dropped_spike_time = None
 
         # SPIKE FLOW FIX: Reset site execute state
         self.site_execute_active = False
@@ -950,7 +934,55 @@ class SimulationEngine:
                     self.players[player_id].role = assignment.role
 
     async def _load_team(self, team_id: str) -> Dict[str, Any]:
-        """Load team with players from database."""
+        """Load team with players from database or use defaults."""
+        # Default team roster with pro-style agent compositions
+        DEFAULT_TEAMS = {
+            'cloud9': {
+                'id': 'cloud9', 'name': 'Cloud9',
+                'players': [
+                    {'id': 'c9_1', 'name': 'Jakee', 'agent': 'jett'},
+                    {'id': 'c9_2', 'name': 'Zellsis', 'agent': 'raze'},
+                    {'id': 'c9_3', 'name': 'leaf', 'agent': 'omen'},
+                    {'id': 'c9_4', 'name': 'Xeppaa', 'agent': 'sova'},
+                    {'id': 'c9_5', 'name': 'vanity', 'agent': 'killjoy'},
+                ]
+            },
+            'sentinels': {
+                'id': 'sentinels', 'name': 'Sentinels',
+                'players': [
+                    {'id': 'sen_1', 'name': 'TenZ', 'agent': 'jett'},
+                    {'id': 'sen_2', 'name': 'zekken', 'agent': 'raze'},
+                    {'id': 'sen_3', 'name': 'Sacy', 'agent': 'fade'},
+                    {'id': 'sen_4', 'name': 'johnqt', 'agent': 'omen'},
+                    {'id': 'sen_5', 'name': 'pANcada', 'agent': 'killjoy'},
+                ]
+            },
+            'g2': {
+                'id': 'g2', 'name': 'G2 Esports',
+                'players': [
+                    {'id': 'g2_1', 'name': 'Cryocells', 'agent': 'jett'},
+                    {'id': 'g2_2', 'name': 'Leaf', 'agent': 'omen'},
+                    {'id': 'g2_3', 'name': 'valyn', 'agent': 'sova'},
+                    {'id': 'g2_4', 'name': 'JonahP', 'agent': 'raze'},
+                    {'id': 'g2_5', 'name': 'neT', 'agent': 'cypher'},
+                ]
+            },
+        }
+
+        # Return default if no database
+        if not self.db:
+            team_lower = team_id.lower()
+            if team_lower in DEFAULT_TEAMS:
+                return DEFAULT_TEAMS[team_lower]
+            return {
+                'id': team_id,
+                'name': team_id.title(),
+                'players': [
+                    {'id': f'{team_id}_player_{i}', 'name': f'Player {i}', 'agent': agent}
+                    for i, agent in enumerate(['jett', 'raze', 'omen', 'sova', 'killjoy'])
+                ]
+            }
+
         result = await self.db.execute(
             select(Team)
             .options(selectinload(Team.players))
@@ -959,6 +991,9 @@ class SimulationEngine:
         team = result.scalar_one_or_none()
         if not team:
             # Return default team structure
+            team_lower = team_id.lower()
+            if team_lower in DEFAULT_TEAMS:
+                return DEFAULT_TEAMS[team_lower]
             return {
                 'id': team_id,
                 'name': team_id,
@@ -978,7 +1013,9 @@ class SimulationEngine:
         }
 
     async def _load_map_config(self, map_name: str) -> Optional[MapConfig]:
-        """Load map configuration from database."""
+        """Load map configuration from database or return None for default handling."""
+        if not self.db:
+            return None  # Use MAP_DATA defaults
         result = await self.db.execute(
             select(MapConfig).where(MapConfig.map_name == map_name)
         )
@@ -998,6 +1035,149 @@ class SimulationEngine:
         """
         map_data = self.MAP_DATA.get(self.map_name, self.DEFAULT_MAP_DATA)
         return map_data['sites']
+
+    def _get_player_site(self, player: 'SimulatedPlayer') -> Optional[str]:
+        """Determine which site a player is closest to.
+
+        Returns site name ('A', 'B', 'C') if player is within range of a site,
+        otherwise None if player is in a neutral area (mid, spawn, etc).
+        """
+        sites = self._get_map_sites()
+        closest_site = None
+        closest_dist = float('inf')
+        for site_name, site_data in sites.items():
+            center = site_data['center']
+            dist = math.sqrt((player.x - center[0])**2 + (player.y - center[1])**2)
+            if dist < closest_dist:
+                closest_dist = dist
+                closest_site = site_name
+        # Only return site if within reasonable distance (20% of map)
+        return closest_site if closest_dist < 0.20 else None
+
+    def _get_spike_site(self, spike_x: float, spike_y: float) -> Optional[str]:
+        """Determine which site the dropped spike is near.
+
+        Returns site name if spike is within range of a site, otherwise None.
+        """
+        sites = self._get_map_sites()
+        for site_name, site_data in sites.items():
+            site_center = site_data['center']
+            dist = math.sqrt((spike_x - site_center[0])**2 + (spike_y - site_center[1])**2)
+            if dist < 0.15:  # Spike is near this site
+                return site_name
+        return None
+
+    def _generate_approach_points(self, site_center: Tuple[float, float], radius: float) -> List[Tuple[float, float]]:
+        """Generate approach points around site for tactical retake.
+
+        Creates 4 approach positions around the site so defenders approach from
+        multiple angles rather than all beelining to the same spot.
+        """
+        approach_dist = radius + 0.12  # Approach from outside site radius
+        angles = [0, math.pi / 2, math.pi, 3 * math.pi / 2]  # Cardinal directions
+        return [
+            (site_center[0] + math.cos(a) * approach_dist,
+             site_center[1] + math.sin(a) * approach_dist)
+            for a in angles
+        ]
+
+    def _get_closest_approach_point(self, player: 'SimulatedPlayer', points: List[Tuple[float, float]]) -> Tuple[float, float]:
+        """Get closest approach point to player's current position.
+
+        Assigns each defender to a different approach angle based on their position.
+        """
+        return min(points, key=lambda p:
+                   math.sqrt((player.x - p[0])**2 + (player.y - p[1])**2))
+
+    def _validate_position(
+        self, x: float, y: float, prev_x: float, prev_y: float
+    ) -> Tuple[float, float]:
+        """Validate and correct position to be within bounds and walkable.
+
+        This prevents players from:
+        1. Moving off the map (coordinates outside 0-1 range)
+        2. Moving through walls (non-walkable areas)
+
+        Args:
+            x: New X coordinate (0-1 normalized)
+            y: New Y coordinate (0-1 normalized)
+            prev_x: Previous X coordinate (fallback if invalid)
+            prev_y: Previous Y coordinate (fallback if invalid)
+
+        Returns:
+            Validated (x, y) tuple that is within bounds and walkable
+        """
+        from .map_context import get_map_context
+
+        # Step 1: Clamp to bounds (2% margin from edges)
+        x = max(0.02, min(0.98, x))
+        y = max(0.02, min(0.98, y))
+
+        # Step 2: Check walkability using map context
+        ctx = get_map_context()
+
+        if ctx.is_walkable(self.map_name, x, y):
+            return (x, y)
+
+        # Step 3: Try to find nearest walkable position
+        nearest = ctx.get_nearest_walkable(self.map_name, x, y)
+
+        # Step 4: If nearest is too far (>0.1), something is wrong - stay put
+        # This prevents teleporting across the map due to mask misalignment
+        dist = math.sqrt((nearest[0] - x) ** 2 + (nearest[1] - y) ** 2)
+        if dist > 0.1:
+            # Clamp previous position too (in case it was also out of bounds)
+            return (max(0.02, min(0.98, prev_x)), max(0.02, min(0.98, prev_y)))
+
+        return nearest
+
+    def _get_next_waypoint(
+        self, player_id: str, current: Tuple[float, float], target: Tuple[float, float], speed: float
+    ) -> Tuple[float, float]:
+        """Get next position using A* pathfinding.
+
+        Instead of moving in a straight line, find a path around obstacles.
+        Returns the next position to move to (one step along the path).
+        """
+        # If very close to target, just go directly
+        dist_to_target = math.sqrt((target[0] - current[0])**2 + (target[1] - current[1])**2)
+        if dist_to_target <= speed * 2:
+            return target
+
+        # Check if we have line of sight to target (no obstacles)
+        if self.pathfinder.has_line_of_sight(current, target):
+            # Direct path is clear, move straight toward target
+            dx = target[0] - current[0]
+            dy = target[1] - current[1]
+            dist = math.sqrt(dx * dx + dy * dy)
+            if dist > speed:
+                return (current[0] + (dx / dist) * speed, current[1] + (dy / dist) * speed)
+            return target
+
+        # Need to pathfind around obstacles
+        path_result = self.pathfinder.find_path(current, target)
+
+        if not path_result.success or len(path_result.path) < 2:
+            # Pathfinding failed, try to move toward target anyway
+            # (will get clamped by _validate_position)
+            dx = target[0] - current[0]
+            dy = target[1] - current[1]
+            dist = math.sqrt(dx * dx + dy * dy)
+            if dist > speed:
+                return (current[0] + (dx / dist) * speed, current[1] + (dy / dist) * speed)
+            return target
+
+        # Get next waypoint on path (skip first point which is current position)
+        next_wp = path_result.path[1] if len(path_result.path) > 1 else path_result.path[0]
+
+        # Move toward next waypoint
+        dx = next_wp[0] - current[0]
+        dy = next_wp[1] - current[1]
+        dist = math.sqrt(dx * dx + dy * dy)
+
+        if dist > speed:
+            return (current[0] + (dx / dist) * speed, current[1] + (dy / dist) * speed)
+        return next_wp
 
     def _get_current_phase(self, time_ms: int) -> str:
         """Determine current game phase based on time.
@@ -1052,6 +1232,9 @@ class SimulationEngine:
 
             # Update player positions
             await self._update_positions(session, current_time, phase)
+
+            # Check for spike pickup (attacker walks over dropped spike)
+            self._check_spike_pickup(current_time)
 
             # Apply ability effects (flash, smoke damage, etc.)
             self._apply_ability_effects(current_time)
@@ -1337,26 +1520,36 @@ class SimulationEngine:
             if time_ms < 2000:  # SPAWN phase
                 # Minimal random jitter to show "alive" state
                 if random.random() < 0.1:  # 10% chance per tick
-                    player.x += random.gauss(0, 0.001)
-                    player.y += random.gauss(0, 0.001)
+                    new_x = player.x + random.gauss(0, 0.001)
+                    new_y = player.y + random.gauss(0, 0.001)
+                    player.x, player.y = self._validate_position(
+                        new_x, new_y, player.x, player.y
+                    )
                 player.moved_this_tick = True
                 continue  # Skip all other movement logic
 
             elif time_ms < 15000 and player.opening_position:  # SETUP phase
-                # Move toward opening position
+                # Move toward opening position using pathfinding
                 target_x, target_y = player.opening_position
-                dx = target_x - player.x
-                dy = target_y - player.y
-                dist = math.sqrt(dx * dx + dy * dy)
+                dist = math.sqrt((target_x - player.x)**2 + (target_y - player.y)**2)
 
                 if dist > 0.005:  # Not at opening position yet
                     # Speed: reach opening in ~10-12 seconds (reasonable setup time)
-                    move_speed = 0.003  # Units per tick (100ms)
-                    if dist > 0:
-                        move_x = (dx / dist) * min(move_speed, dist)
-                        move_y = (dy / dist) * min(move_speed, dist)
-                        player.x += move_x
-                        player.y += move_y
+                    # FIX: Apply behavior modifiers so defenders' 1.4x speed is used
+                    base_setup_speed = 0.003  # Base units per tick (100ms)
+                    behavior = player.behavior_modifiers
+                    speed_modifier = behavior.movement_speed if behavior else 1.0
+                    move_speed = base_setup_speed * speed_modifier
+                    # Use pathfinding to navigate around obstacles
+                    next_pos = self._get_next_waypoint(
+                        player.player_id,
+                        (player.x, player.y),
+                        (target_x, target_y),
+                        move_speed
+                    )
+                    player.x, player.y = self._validate_position(
+                        next_pos[0], next_pos[1], player.x, player.y
+                    )
                     player.moved_this_tick = True
                     continue  # Skip other movement during setup
                 else:
@@ -1364,13 +1557,26 @@ class SimulationEngine:
                     if player.side == 'defense':
                         player.is_holding_angle = True
                         player.hold_position = (player.x, player.y)
+                        player.hold_start_ms = time_ms
 
             # P2 FIX: Defenders holding angles have minimal movement
             if player.is_holding_angle and player.side == 'defense':
+                # Check if returning from a peek
+                peek_return_ms = getattr(player, 'peek_return_ms', None)
+                if peek_return_ms and time_ms >= peek_return_ms:
+                    # Return to hold position after peek
+                    player.peek_return_ms = None
+                    if player.hold_position:
+                        player.x, player.y = self._validate_position(
+                            player.hold_position[0], player.hold_position[1],
+                            player.x, player.y
+                        )
+                    player.hold_start_ms = time_ms  # Reset hold timer
+
                 # Check if should break hold
                 break_hold = False
 
-                # CRITICAL: Always break hold when spike is planted - need to retake!
+                # Break hold when spike is planted — ALL defenders must rotate to retake
                 if self.spike_planted:
                     break_hold = True
 
@@ -1388,37 +1594,218 @@ class SimulationEngine:
                             break_hold = True
                             break
 
+                # Time-based hold break for active play (jiggle-peek)
+                # Skip if already mid-peek (waiting to return to hold)
+                already_peeking = getattr(player, 'peek_return_ms', None) is not None
+                if not break_hold and not self.spike_planted and not already_peeking:
+                    hold_start = getattr(player, 'hold_start_ms', time_ms)
+                    hold_duration = time_ms - hold_start
+
+                    # Map agent class to hold threshold
+                    # player.role is a Role enum (entry/support/lurk/anchor/flex/igl/op)
+                    # Map to agent class using the agent name instead
+                    agent_class = self._get_role_from_agent(getattr(player, 'agent', 'unknown'))
+                    role_hold_threshold = {
+                        'sentinel': 25000, 'controller': 20000,
+                        'initiator': 12000, 'duelist': 10000
+                    }.get(agent_class, 15000)
+
+                    behavior = getattr(player, 'behavior_modifiers', None)
+                    player_aggression = getattr(behavior, 'aggression', 0.0) if behavior else 0.0
+
+                    if hold_duration > role_hold_threshold and player_aggression > -0.2:
+                        # Chance to peek scales with time held and aggression
+                        peek_chance = min(0.15, (hold_duration - role_hold_threshold) / 100000)
+                        peek_chance *= (1.0 + player_aggression)  # More aggressive = more likely
+                        if random.random() < peek_chance:
+                            # Jiggle-peek: move slightly from hold position, then return
+                            peek_dir = random.uniform(0, 2 * math.pi)
+                            peek_dist = random.uniform(0.01, 0.03)
+                            new_x = player.x + math.cos(peek_dir) * peek_dist
+                            new_y = player.y + math.sin(peek_dir) * peek_dist
+                            player.x, player.y = self._validate_position(
+                                new_x, new_y, player.x, player.y
+                            )
+                            player.peek_return_ms = time_ms + random.randint(2000, 4000)
+                            player.moved_this_tick = True
+                            continue
+
                 if not break_hold:
                     # Minimal micro-adjustments only (5% chance per tick)
                     if random.random() < 0.05:
-                        player.x += random.gauss(0, 0.002)
-                        player.y += random.gauss(0, 0.002)
+                        new_x = player.x + random.gauss(0, 0.002)
+                        new_y = player.y + random.gauss(0, 0.002)
+                        player.x, player.y = self._validate_position(
+                            new_x, new_y, player.x, player.y
+                        )
                     player.moved_this_tick = True
                     continue  # Skip normal movement while holding
                 else:
                     player.is_holding_angle = False  # Break hold, enter combat mode
 
+            # Track if this player is retrieving spike (for priority override later)
+            is_spike_retrieval = False
+            spike_retrieval_target = None
+
             # Get target from appropriate strategy coordinator based on side
             if player.side == 'attack':
-                strategy_target = self.strategy_coordinator.get_player_target_position(
-                    player.player_id, time_ms, (player.x, player.y)
-                )
-            else:
-                # OPPONENT REALISM: Use VCT-derived movement for non-C9 defenders
-                opponent_realism = get_opponent_realism()
-                vct_movement = opponent_realism.get_movement_target(
-                    session.map_name, 'defense',
-                    (player.x, player.y), max_move=0.03
-                )
-                if vct_movement:
-                    strategy_target = (vct_movement.x, vct_movement.y)
-                elif hasattr(self, 'defense_coordinator'):
-                    # Fallback to strategy coordinator
-                    strategy_target = self.defense_coordinator.get_player_target_position(
+                # SPIKE RETRIEVAL FIX: Force nearest alive attacker to sprint to dropped spike
+                # The spike MUST be picked up - without it, attackers cannot win
+                if self.dropped_spike_position and not player.has_spike and not self.spike_planted:
+                    spike_x, spike_y = self.dropped_spike_position
+                    dist_to_spike = math.sqrt((player.x - spike_x)**2 + (player.y - spike_y)**2)
+
+                    # Count alive attackers and find closest to spike
+                    alive_attackers = [
+                        p for p in self.players.values()
+                        if p.side == 'attack' and p.is_alive and not p.has_spike
+                    ]
+
+                    # Check if this player is closest alive attacker to spike
+                    is_closest = True
+                    for other in alive_attackers:
+                        if other.player_id != player.player_id:
+                            other_dist = math.sqrt((other.x - spike_x)**2 + (other.y - spike_y)**2)
+                            if other_dist < dist_to_spike:
+                                is_closest = False
+                                break
+
+                    # ALWAYS retrieve if: closest attacker OR only attacker left OR nearby
+                    # Distance is NOT a factor - spike MUST be retrieved regardless of how far
+                    is_only_attacker = len(alive_attackers) == 1
+                    should_retrieve = is_closest or is_only_attacker or dist_to_spike < 0.15
+
+                    if should_retrieve:
+                        # HIGHEST PRIORITY: Must retrieve spike - force sprint
+                        spike_retrieval_target = (spike_x, spike_y)
+                        is_spike_retrieval = True
+                        player.is_running = True  # Sprint to spike!
+                        player.is_holding_angle = False  # Break any holds
+                        player.hold_position = None
+                        strategy_target = spike_retrieval_target
+                    else:
+                        # Not closest - continue normal strategy
+                        strategy_target = self.strategy_coordinator.get_player_target_position(
+                            player.player_id, time_ms, (player.x, player.y)
+                        )
+
+                # POST-PLANT FIX: Attackers should HOLD near planted spike, not wander
+                elif self.spike_planted and self.spike_site:
+                    sites = self._get_map_sites()
+                    if self.spike_site in sites:
+                        site_data = sites[self.spike_site]
+                        site_center = site_data['center']
+                        site_radius = site_data.get('radius', 0.08)
+
+                        # Distance to planted site
+                        dist_to_site = math.sqrt(
+                            (player.x - site_center[0])**2 + (player.y - site_center[1])**2
+                        )
+
+                        # If far from site, move closer (but not ON site - hold angles around it)
+                        if dist_to_site > site_radius * 2.5:
+                            # Move toward site perimeter
+                            dx = site_center[0] - player.x
+                            dy = site_center[1] - player.y
+                            dist = math.sqrt(dx*dx + dy*dy)
+                            if dist > 0:
+                                # Target is site_radius * 2 away from center (hold perimeter)
+                                target_dist = site_radius * 2
+                                strategy_target = (
+                                    site_center[0] - (dx/dist) * target_dist + random.gauss(0, 0.02),
+                                    site_center[1] - (dy/dist) * target_dist + random.gauss(0, 0.02)
+                                )
+                        else:
+                            # Already in position - hold angle, minimal movement
+                            strategy_target = (player.x + random.gauss(0, 0.01), player.y + random.gauss(0, 0.01))
+                            player.is_holding_angle = True
+                    else:
+                        strategy_target = self.strategy_coordinator.get_player_target_position(
+                            player.player_id, time_ms, (player.x, player.y)
+                        )
+                else:
+                    strategy_target = self.strategy_coordinator.get_player_target_position(
                         player.player_id, time_ms, (player.x, player.y)
                     )
+            else:
+                # Track if defender should rotate to dropped spike
+                dropped_spike_rotation_target = None
+
+                # DROPPED SPIKE ROTATION: Defenders rotate toward dropped spike location
+                # This is PRE-PLANT rotation - responds to spike being dropped at a site
+                if self.dropped_spike_position and not self.spike_planted:
+                    spike_x, spike_y = self.dropped_spike_position
+                    spike_site = self._get_spike_site(spike_x, spike_y)
+
+                    if spike_site:
+                        # Check if defender is at a different site
+                        player_site = self._get_player_site(player)
+                        if player_site != spike_site:
+                            # Count how many defenders are already rotating/at spike site
+                            defenders_at_spike_site = 0
+                            for other in self.players.values():
+                                if other.side == 'defense' and other.is_alive and other.player_id != player.player_id:
+                                    other_site = self._get_player_site(other)
+                                    if other_site == spike_site:
+                                        defenders_at_spike_site += 1
+
+                            # Only rotate if we won't leave our site completely empty
+                            # and spike site needs reinforcement
+                            if defenders_at_spike_site < 2:
+                                # ROTATE to dropped spike location
+                                sites = self._get_map_sites()
+                                if spike_site in sites:
+                                    site_center = sites[spike_site]['center']
+                                    # Move toward site perimeter (not directly on spike)
+                                    dropped_spike_rotation_target = (
+                                        site_center[0] + random.uniform(-0.05, 0.05),
+                                        site_center[1] + random.uniform(-0.05, 0.05)
+                                    )
+                                    player.is_holding_angle = False
+                                    player.hold_position = None
+                                    player.is_running = True  # Sprint to rotate
+
+                # EARLY ROUND FIX: Defenders sprint to site positions first
+                # In real VALORANT, defenders run to their spots at round start
+                # BUT if spike is planted, ALL defenders must retake (handled later in retake_target)
+                if dropped_spike_rotation_target:
+                    # Rotation to dropped spike takes priority
+                    strategy_target = dropped_spike_rotation_target
+                elif time_ms < 20000 and not self.spike_planted:
+                    # Assign defenders to sites based on player index
+                    sites = self._get_map_sites()
+                    site_names = list(sites.keys())
+                    defender_idx = list(self.players.keys()).index(player.player_id) % len(self.players)
+                    # First 2-3 defenders go to one site, rest to other
+                    if len(site_names) >= 2:
+                        if defender_idx < 3:
+                            target_site = site_names[0]  # A site
+                        else:
+                            target_site = site_names[1]  # B site
+                    else:
+                        target_site = site_names[0]
+
+                    site_center = sites[target_site]['center']
+                    # Add slight offset so defenders don't stack
+                    offset_x = (defender_idx % 3 - 1) * 0.03
+                    offset_y = (defender_idx // 3 - 1) * 0.02
+                    strategy_target = (site_center[0] + offset_x, site_center[1] + offset_y)
                 else:
-                    strategy_target = None
+                    # Post-plant or after 20s: use VCT patterns (retake_target will override if spike planted)
+                    opponent_realism = get_opponent_realism()
+                    vct_movement = opponent_realism.get_movement_target(
+                        session.map_name, 'defense',
+                        (player.x, player.y), max_move=0.03
+                    )
+                    if vct_movement:
+                        strategy_target = (vct_movement.x, vct_movement.y)
+                    elif hasattr(self, 'defense_coordinator'):
+                        # Fallback to strategy coordinator
+                        strategy_target = self.defense_coordinator.get_player_target_position(
+                            player.player_id, time_ms, (player.x, player.y)
+                        )
+                    else:
+                        strategy_target = None
 
             # C9 REALISM P2: Use KDE-based movement model for C9 players
             c9_realism = get_c9_realism()
@@ -1566,7 +1953,7 @@ class SimulationEngine:
                             site_center[1] + offset_y
                         )
 
-            # VCT FIX: Defenders must push planted site for retake - STRONGER OVERRIDE
+            # VCT FIX: Defenders must push planted site for retake - 3-PHASE TACTICAL APPROACH
             retake_target = None
             retake_should_walk = False  # Walk when close for better combat accuracy
             if player.side == 'defense' and self.spike_planted and self.spike_site:
@@ -1581,23 +1968,42 @@ class SimulationEngine:
                         (player.x - site_center[0])**2 + (player.y - site_center[1])**2
                     )
 
-                    # If not within defuse range, move toward spike position
+                    # If not within defuse range, use 3-phase retake
                     defuse_range = 0.08  # Must be within 8% of map to defuse
                     if dist_to_site > defuse_range:
-                        # Move directly toward spike (site center) to get in defuse range
-                        # Add small variance to avoid all defenders clustering on exact same spot
-                        offset_x = random.gauss(0, 0.02)
-                        offset_y = random.gauss(0, 0.02)
-                        retake_target = (
-                            site_center[0] + offset_x,
-                            site_center[1] + offset_y
-                        )
-                        # VCT FIX: FULL override - clear ALL hold states
-                        player.is_holding_angle = False
-                        player.hold_position = None  # Clear any previous hold target
-                        # Walk when close to site for better combat accuracy
-                        # Run when far (>0.15 map units) to get there faster
-                        retake_should_walk = dist_to_site < 0.15
+                        # Generate approach points around site for tactical entry
+                        approach_points = self._generate_approach_points(site_center, site_radius)
+
+                        # Assign approach point based on player's current position
+                        assigned_approach = self._get_closest_approach_point(player, approach_points)
+
+                        # PHASE 1: Staging (dist > 0.25) - run to approach point
+                        if dist_to_site > 0.25:
+                            retake_target = assigned_approach
+                            retake_should_walk = False  # Full run speed
+
+                        # PHASE 2: Approach (0.15-0.25) - walk toward entry
+                        elif dist_to_site > 0.15:
+                            # Blend between approach point and site center
+                            blend = (0.25 - dist_to_site) / 0.10
+                            retake_target = (
+                                assigned_approach[0] + (site_center[0] - assigned_approach[0]) * blend * 0.5,
+                                assigned_approach[1] + (site_center[1] - assigned_approach[1]) * blend * 0.5
+                            )
+                            retake_should_walk = True
+                            # Clear hold states when approaching
+                            player.is_holding_angle = False
+                            player.hold_position = None
+
+                        # PHASE 3: Clear (< 0.15) - push onto site
+                        else:
+                            retake_target = (
+                                site_center[0] + random.gauss(0, 0.015),
+                                site_center[1] + random.gauss(0, 0.015)
+                            )
+                            retake_should_walk = True
+                            player.is_holding_angle = False
+                            player.hold_position = None
                     else:
                         # Already on site - face toward site center for defenders
                         dx = site_center[0] - player.x
@@ -1613,8 +2019,13 @@ class SimulationEngine:
             target_x, target_y = None, None
             is_retake_movement = False
 
+            # SPIKE RETRIEVAL FIX: Retrieving spike has highest priority for attackers
+            if is_spike_retrieval and spike_retrieval_target:
+                # Spike retrieval is CRITICAL - full override, sprint to spike
+                target_x, target_y = spike_retrieval_target
+                player.is_running = True  # Always sprint for spike
             # RETAKE FIX: Retake target has highest priority for defenders post-plant
-            if retake_target:
+            elif retake_target:
                 # Retake is CRITICAL - full override to push site
                 target_x, target_y = retake_target
                 # Walk when close for better accuracy, run when far to get there fast
@@ -1625,9 +2036,18 @@ class SimulationEngine:
 
                 # SPIKE FLOW FIX: Override target if site execute is active
                 if site_execute_target:
-                    # Heavily weight toward site target during execute
-                    target_x = site_execute_target[0] * 0.8 + target_x * 0.2
-                    target_y = site_execute_target[1] * 0.8 + target_y * 0.2
+                    if player.has_spike:
+                        if self.site_control_achieved:
+                            # Site is clear — carrier rushes to plant zone
+                            target_x, target_y = site_execute_target
+                        else:
+                            # Site not clear — carrier follows but lets teammates lead
+                            target_x = site_execute_target[0] * 0.85 + target_x * 0.15
+                            target_y = site_execute_target[1] * 0.85 + target_y * 0.15
+                    else:
+                        # Non-carrier teammates: strong push toward site to clear it
+                        target_x = site_execute_target[0] * 0.95 + target_x * 0.05
+                        target_y = site_execute_target[1] * 0.95 + target_y * 0.05
 
                 # P3 FIX: Override target if reacting to sound
                 if sound_reaction_target:
@@ -1675,18 +2095,19 @@ class SimulationEngine:
                     # Lower aggression = more likely to walk (quieter, more accurate)
                     player.is_running = behavior.aggression > 0.4 or random.random() > 0.3
 
-                # Move toward target
-                dx = target_x - player.x
-                dy = target_y - player.y
-                dist = math.sqrt(dx * dx + dy * dy)
+                # Move toward target using A* pathfinding
+                next_pos = self._get_next_waypoint(
+                    player.player_id,
+                    (player.x, player.y),
+                    (target_x, target_y),
+                    speed
+                )
+                new_x, new_y = next_pos
 
-                if dist > speed:
-                    # Normalize and scale by speed
-                    player.x += (dx / dist) * speed
-                    player.y += (dy / dist) * speed
-                else:
-                    player.x = target_x
-                    player.y = target_y
+                # Validate position: clamp to bounds and check walkability
+                player.x, player.y = self._validate_position(
+                    new_x, new_y, player.prev_x, player.prev_y
+                )
 
             # P1 FIX: Track if player moved this tick
             move_dist = math.sqrt(
@@ -1719,23 +2140,24 @@ class SimulationEngine:
         #
         # Pattern predictions are computed but NOT blended into final position
         # to avoid the unpredictable drift that was causing issues.
-        attack_data = [
-            {'player_id': p.player_id, 'x': p.x, 'y': p.y, 'is_alive': p.is_alive}
-            for p in alive_attack
-        ]
-        attack_predictions = await self.pattern_matcher.predict_team_positions(
-            attack_data, session.attack_team_id, time_ms,
-            session.map_name, 'attack', phase
-        )
+        if self.pattern_matcher:
+            attack_data = [
+                {'player_id': p.player_id, 'x': p.x, 'y': p.y, 'is_alive': p.is_alive}
+                for p in alive_attack
+            ]
+            attack_predictions = await self.pattern_matcher.predict_team_positions(
+                attack_data, session.attack_team_id, time_ms,
+                session.map_name, 'attack', phase
+            )
 
-        defense_data = [
-            {'player_id': p.player_id, 'x': p.x, 'y': p.y, 'is_alive': p.is_alive}
-            for p in alive_defense
-        ]
-        defense_predictions = await self.pattern_matcher.predict_team_positions(
-            defense_data, session.defense_team_id, time_ms,
-            session.map_name, 'defense', phase
-        )
+            defense_data = [
+                {'player_id': p.player_id, 'x': p.x, 'y': p.y, 'is_alive': p.is_alive}
+                for p in alive_defense
+            ]
+            defense_predictions = await self.pattern_matcher.predict_team_positions(
+                defense_data, session.defense_team_id, time_ms,
+                session.map_name, 'defense', phase
+            )
 
         # P3 FIX: Store predictions for analysis but don't blend into movement
         # This preserves the pattern data for debugging without causing drift
@@ -2905,24 +3327,47 @@ class SimulationEngine:
                 'victim_team': victim.side,  # Team that needs to trade
             }
 
-            # Transfer spike if victim had it
-            if victim.has_spike:
+            # Death callout: victim's teammates learn killer position
+            self.info_manager.notify_kill(
+                killer_id=killer.player_id,
+                victim_id=victim.player_id,
+                victim_team=victim.side,
+                kill_pos=(killer.x, killer.y),  # KILLER position
+                time_ms=time_ms
+            )
+
+            # Propagate gunfire sound — enemies hear the shot
+            all_players_data = [
+                {'id': p.player_id, 'x': p.x, 'y': p.y,
+                 'team': p.side, 'is_alive': p.is_alive}
+                for p in self.players.values()
+            ]
+            self.info_manager.propagate_sound(
+                source_pos=(killer.x, killer.y),
+                sound_type=InfoSource.SOUND_GUNFIRE,
+                source_team=killer.side,
+                all_players=all_players_data,
+                time_ms=time_ms,
+                source_id=killer.player_id
+            )
+
+            # Drop spike if victim had it (realistic - spike falls at death position)
+            # Safety: Don't drop if spike is already planted (has_spike should be cleared on plant)
+            if victim.has_spike and not self.spike_planted:
                 victim.has_spike = False
-                # Find nearest alive attacker to give spike
-                if victim.side == 'attack':
-                    alive_attackers = [
-                        p for p in self.players.values()
-                        if p.side == 'attack' and p.is_alive
-                    ]
-                    if alive_attackers:
-                        # Give to nearest attacker
-                        nearest = min(
-                            alive_attackers,
-                            key=lambda p: math.sqrt(
-                                (p.x - victim.x) ** 2 + (p.y - victim.y) ** 2
-                            )
-                        )
-                        nearest.has_spike = True
+                # Spike drops at victim's death position
+                self.dropped_spike_position = (victim.x, victim.y)
+                self.dropped_spike_time = time_ms
+
+                # Record event for visualization
+                self.events.append(SimulationEvent(
+                    timestamp_ms=time_ms,
+                    event_type='spike_dropped',
+                    player_id=victim.player_id,
+                    position_x=victim.x,
+                    position_y=victim.y,
+                    details={'dropped_by': victim.player_id}
+                ))
 
     def _check_site_execute_decision(self, time_ms: int):
         """SPIKE FLOW FIX: Decide when attackers should execute on a site.
@@ -2970,13 +3415,13 @@ class SimulationEngine:
                 execute_prob = 0.0003
             elif time_ms < 45000:
                 # Early-mid - starting to consider execute
-                execute_prob = 0.0015
+                execute_prob = 0.0012
             elif time_ms < 60000:
                 # Around average plant time - most executes start here
-                execute_prob = 0.0040
+                execute_prob = 0.003
             elif time_ms < 75000:
                 # Late - should execute soon
-                execute_prob = 0.008
+                execute_prob = 0.007
             else:
                 # Very late round - urgent
                 execute_prob = 0.015
@@ -2986,6 +3431,25 @@ class SimulationEngine:
                 execute_prob *= 1.5  # More likely with advantage
             elif alive_attack < alive_defense:
                 execute_prob *= 0.7  # More cautious when down
+
+            # FIX: Spike carrier position boost - trigger execute if carrier is near/on site
+            spike_carrier = next(
+                (p for p in self.players.values()
+                 if p.side == 'attack' and p.is_alive and p.has_spike),
+                None
+            )
+            if spike_carrier:
+                sites = self._get_map_sites()
+                for site_name, site_data in sites.items():
+                    site_center = site_data['center']
+                    site_radius = site_data.get('radius', 0.08)
+                    dist = math.sqrt((spike_carrier.x - site_center[0])**2 +
+                                    (spike_carrier.y - site_center[1])**2)
+
+                    # Carrier is ON site - trigger execute!
+                    if dist < site_radius:
+                        execute_prob = max(execute_prob, 0.05)  # 5% per tick when on site
+                        break  # Found a nearby site
 
             # Decide to execute
             if random.random() < execute_prob:
@@ -3076,10 +3540,12 @@ class SimulationEngine:
                 control_achieved = (
                     # Multiple attackers on site AND no defenders
                     (attackers_on_site >= 2 and defenders_on_site == 0) or
+                    # OR attackers significantly outnumber defenders on site
+                    (attackers_on_site >= 3 and attackers_on_site > defenders_on_site) or
                     # OR more attackers than defenders AND some time has passed (utility cleared)
                     (attackers_on_site > defenders_on_site + 1 and time_since_execute > 5000) or
                     # OR long execute with presence (utility should have cleared by now)
-                    (time_since_execute > 15000 and attackers_on_site >= 1 and defenders_on_site == 0)
+                    (time_since_execute > 12000 and attackers_on_site >= 1 and defenders_on_site == 0)
                 )
 
                 if control_achieved:
@@ -3096,6 +3562,40 @@ class SimulationEngine:
                             'defenders_on_site': defenders_on_site
                         }
                     ))
+
+    def _check_spike_pickup(self, time_ms: int):
+        """Check if any attacker picks up dropped spike.
+
+        In real VALORANT, when the spike carrier dies, the spike drops at their
+        death position. Any attacker can walk over it to pick it up instantly.
+        """
+        if not self.dropped_spike_position or self.spike_planted:
+            return
+
+        spike_x, spike_y = self.dropped_spike_position
+        PICKUP_RANGE = 0.04  # ~4% of map, about 4 meters (increased for reliability)
+
+        for player in self.players.values():
+            if not player.is_alive or player.side != 'attack':
+                continue
+            if player.has_spike:
+                continue
+
+            dist = math.sqrt((player.x - spike_x)**2 + (player.y - spike_y)**2)
+            if dist <= PICKUP_RANGE:
+                player.has_spike = True
+                self.dropped_spike_position = None
+                self.dropped_spike_time = None
+
+                self.events.append(SimulationEvent(
+                    timestamp_ms=time_ms,
+                    event_type='spike_pickup',
+                    player_id=player.player_id,
+                    position_x=spike_x,
+                    position_y=spike_y,
+                    details={'picked_up_by': player.player_id}
+                ))
+                return  # Only one player picks up
 
     def _check_spike_plant(self, time_ms: int):
         """Check spike plant progress - P0 FIX: 4-second duration with immobility.
@@ -3120,6 +3620,7 @@ class SimulationEngine:
                     # Plant complete!
                     player.is_planting = False
                     player.action_start_ms = 0
+                    player.has_spike = False  # Spike is now on site, not on player
                     self.spike_planted = True
                     self.spike_plant_time = time_ms
 
@@ -3140,7 +3641,7 @@ class SimulationEngine:
 
                     self.events.append(SimulationEvent(
                         timestamp_ms=time_ms,
-                        event_type='spike_plant',
+                        event_type='spike_planted',
                         player_id=player.player_id,
                         position_x=player.x,
                         position_y=player.y,
@@ -3162,7 +3663,7 @@ class SimulationEngine:
                 site_x, site_y = site_data['center']
                 site_radius = site_data.get('radius', 0.1)
                 distance = math.sqrt((player.x - site_x) ** 2 + (player.y - site_y) ** 2)
-                if distance < site_radius:  # Within site's plant radius
+                if distance < site_radius * 1.3:  # Within site's plant radius (with buffer)
                     # SPIKE FLOW FIX: Plant probability based on site execute state
                     # Pro statistics: ~35% of rounds end in spike outcomes
                     # Average plant time: 56 seconds
@@ -3174,18 +3675,19 @@ class SimulationEngine:
                     # CASE 2a: Site control achieved - PLANT IMMEDIATELY
                     if self.site_control_achieved and self.target_site == site_name:
                         # Site is clear, plant ASAP
-                        plant_prob = 0.40  # 40% per tick = plant within ~3 ticks
+                        plant_prob = 0.25  # 25% per tick = plant within ~4 ticks
 
                     # CASE 2b: Executing on this site but no control yet
                     elif self.site_execute_active and self.target_site == site_name:
                         # Executing but site not fully clear - risky plant
-                        plant_prob = 0.08  # May try to plant while teammates hold
+                        plant_prob = 0.04  # May try to plant while teammates hold
 
                         # Increase if low on time
                         if time_ms > 70000:
-                            plant_prob = 0.20  # Urgent - plant even if risky
+                            plant_prob = 0.12  # Urgent - plant even if risky
 
                     # CASE 2c: Not executing (default/fallback behavior)
+                    # Without an active execute, planting is opportunistic only
                     else:
                         # Time-based probability using validated parameters
                         if time_ms < 30000:
@@ -3199,18 +3701,27 @@ class SimulationEngine:
                         else:
                             plant_prob = pacing.PLANT_PROB_CRITICAL  # 0.050
 
+                        # Small boost if no defenders nearby (opportunistic)
+                        nearby_defenders = sum(
+                            1 for p in self.players.values()
+                            if p.side == 'defense' and p.is_alive and
+                            math.sqrt((p.x - site_x)**2 + (p.y - site_y)**2) < 0.15
+                        )
+                        if nearby_defenders == 0:
+                            plant_prob *= 3.0  # More likely but not guaranteed
+
                     # Behavior modifier (aggressive players plant faster)
                     behavior = player.behavior_modifiers
                     if behavior and behavior.aggression > 0:
                         plant_prob *= 1.2
 
                     # Check nearby defenders - don't plant with defenders in face
-                    nearby_defenders = sum(
+                    nearby_defenders_close = sum(
                         1 for p in self.players.values()
                         if p.side == 'defense' and p.is_alive and
                         math.sqrt((p.x - player.x)**2 + (p.y - player.y)**2) < 0.10
                     )
-                    if nearby_defenders > 0 and not self.site_control_achieved:
+                    if nearby_defenders_close > 0 and not self.site_control_achieved:
                         plant_prob *= 0.2  # Much less likely with defender nearby
 
                     # Minimum time before first plant (5 seconds for fast exec)
@@ -3811,9 +4322,11 @@ class SimulationEngine:
             if player_id in self.players:
                 player = self.players[player_id]
                 if 'x' in mods:
-                    player.x = mods['x']
+                    # Clamp x to valid bounds (2% margin)
+                    player.x = max(0.02, min(0.98, mods['x']))
                 if 'y' in mods:
-                    player.y = mods['y']
+                    # Clamp y to valid bounds (2% margin)
+                    player.y = max(0.02, min(0.98, mods['y']))
                 if 'is_alive' in mods:
                     player.is_alive = mods['is_alive']
                 if 'health' in mods:
@@ -3957,6 +4470,7 @@ class SimulationEngine:
             events=self.events,
             spike_planted=self.spike_planted,
             spike_site=self.spike_site,
+            dropped_spike_position=list(self.dropped_spike_position) if self.dropped_spike_position else None,
             win_probability=win_prob,
             first_blood_team=self.round_state.first_blood_team,
             first_blood_time_ms=self.round_state.first_blood_time_ms if self.round_state.first_blood_team else None,

@@ -223,6 +223,45 @@ def generate_mask_for_map(map_name: str, preview: bool = False) -> Optional[Dict
     }
 
 
+def _ensure_sites_walkable(json_data: dict, grid_size: int, radius: int = 6):
+    """Post-process: carve walkable areas at site locations so sites are never blocked."""
+    # Site coordinates must match simulation_engine.py MAP_DATA
+    SITE_COORDS = {
+        'ascent': {'A': (0.29, 0.15), 'B': (0.27, 0.79)},
+        'bind': {'A': (0.29, 0.27), 'B': (0.73, 0.33)},
+        'split': {'A': (0.33, 0.09), 'B': (0.32, 0.82)},
+        'icebox': {'A': (0.61, 0.21), 'B': (0.71, 0.81)},
+        'breeze': {'A': (0.15, 0.29), 'B': (0.87, 0.45)},
+        'fracture': {'A': (0.08, 0.45), 'B': (0.92, 0.45)},
+        'pearl': {'A': (0.18, 0.40), 'B': (0.85, 0.31)},
+        'sunset': {'A': (0.08, 0.40), 'B': (0.82, 0.38)},
+        'abyss': {'A': (0.40, 0.19), 'B': (0.40, 0.77)},
+        'corrode': {'A': (0.40, 0.19), 'B': (0.40, 0.77)},
+        'haven': {'A': (0.38, 0.14), 'B': (0.40, 0.50), 'C': (0.36, 0.84)},
+        'lotus': {'A': (0.10, 0.45), 'B': (0.47, 0.42), 'C': (0.87, 0.32)},
+    }
+    for map_name, sites in SITE_COORDS.items():
+        if map_name not in json_data.get('maps', {}):
+            continue
+        mask = json_data['maps'][map_name]['walkable_mask']
+        rows, cols = len(mask), len(mask[0])
+        changed = 0
+        for site_name, (x, y) in sites.items():
+            cr, cc = int(y * rows), int(x * cols)
+            for dr in range(-radius, radius + 1):
+                for dc in range(-radius, radius + 1):
+                    if dr * dr + dc * dc <= radius * radius:
+                        r, c = cr + dr, cc + dc
+                        if 0 <= r < rows and 0 <= c < cols and mask[r][c] == 0:
+                            mask[r][c] = 1
+                            changed += 1
+        if changed > 0:
+            json_data['maps'][map_name]['walkable_cells'] = sum(
+                sum(row) for row in mask
+            )
+            print(f"  Post-process: {map_name} - carved {changed} cells at site locations")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Generate walkable masks from map images")
     parser.add_argument('--preview', action='store_true', help='Generate preview images')
@@ -283,6 +322,9 @@ def main():
             'generated_from': 'map_images',
             'grid_size': GRID_SIZE,
         }
+
+        # Post-process: ensure site locations are walkable
+        _ensure_sites_walkable(json_data, GRID_SIZE)
 
         MASK_JSON_PATH.parent.mkdir(parents=True, exist_ok=True)
         with open(MASK_JSON_PATH, 'w') as f:

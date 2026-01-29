@@ -171,6 +171,9 @@ class PlayerKnowledge:
     def receive_callout(self, enemy_id: str, x: float, y: float,
                         time_ms: int, original_time_ms: int):
         """Receive information from a teammate callout."""
+        # Ignore callouts about confirmed dead enemies
+        if enemy_id in self.confirmed_dead:
+            return
         # Callouts have delay and uncertainty
         if enemy_id not in self.enemies or \
            original_time_ms > self.enemies[enemy_id].last_seen_ms:
@@ -493,17 +496,25 @@ class InformationManager:
             self.pending_callouts.remove(callout)
 
     def notify_kill(self, killer_id: str, victim_id: str,
-                    victim_team: str, kill_pos: Tuple[float, float]):
-        """Notify all players about a kill."""
-        # Everyone on killer's team knows the enemy is dead
-        for pid, knowledge in self.player_knowledge.items():
-            if knowledge.team != victim_team:
-                knowledge.confirm_kill(victim_id)
-
-        # Victim's team might not know immediately (unless they saw it)
-        # But kill feed in game tells everyone, so we'll update all
+                    victim_team: str, kill_pos: Tuple[float, float],
+                    time_ms: int):
+        """Notify all players about a kill. Victim's team gets killer position callout."""
+        # Everyone knows enemy is dead (kill feed)
         for pid, knowledge in self.player_knowledge.items():
             knowledge.confirm_kill(victim_id)
+
+        # Death callout: victim's surviving teammates learn killer position
+        for pid, knowledge in self.player_knowledge.items():
+            if knowledge.team == victim_team and pid != victim_id:
+                self.pending_callouts.append({
+                    'caller_id': victim_id,
+                    'caller_team': victim_team,
+                    'enemy_id': killer_id,
+                    'x': kill_pos[0],
+                    'y': kill_pos[1],
+                    'spotted_time': time_ms,
+                    'deliver_time': time_ms + self.CALLOUT_DELAY_MS
+                })
 
     def notify_spike_plant(self, site: str, plant_pos: Tuple[float, float],
                           time_ms: int):

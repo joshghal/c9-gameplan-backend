@@ -70,6 +70,7 @@ class SimulationState(BaseModel):
     events: List[SimulationEvent]
     spike_planted: bool = False
     spike_site: Optional[str] = None
+    dropped_spike_position: Optional[List[float]] = None  # [x, y] if spike is on ground
 
     # NEW: Win probability tracking
     win_probability: Optional[Dict[str, float]] = None  # {'attack': 0.55, 'defense': 0.45}

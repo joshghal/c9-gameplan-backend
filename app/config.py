@@ -27,6 +27,15 @@ class Settings(BaseSettings):
     min_pattern_samples: int = 5
     pattern_similarity_threshold: float = 0.85
 
+    # LLM/AI Coaching settings
+    llm_provider: str = "asi1"  # "anthropic" or "asi1"
+    anthropic_api_key: str = ""
+    asi1_api_key: str = ""
+    asi1_api_base: str = "https://api.asi1.ai/v1"
+    llm_model: str = "asi1-mini"  # or "claude-3-haiku-20240307" for Anthropic
+    llm_max_tokens: int = 4096
+    llm_temperature: float = 0.7
+
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"

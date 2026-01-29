@@ -34,6 +34,7 @@ class MapContext:
     _instance: Optional['MapContext'] = None
     _masks_cache: Dict = {}
     _los_masks_cache: Dict = {}  # Dilated masks for LOS checks
+    _walkable_cells_cache: Dict = {}  # Cache for walkable cell coordinates
 
     def __new__(cls):
         """Singleton pattern - one instance shared across simulation."""
@@ -182,11 +183,32 @@ class MapContext:
 
     def get_walkable_cells(self, map_name: str) -> List[Tuple[float, float]]:
         """Get list of walkable cell centers (normalized 0-1 coordinates)."""
+        map_key = map_name.lower()
+
+        # Return cached if available
+        if map_key in self._walkable_cells_cache:
+            return self._walkable_cells_cache[map_key]
+
         data = self.get_map_data(map_name)
         if data is None:
             return []
 
-        return data.get('walkable_cells', [])
+        # walkable_cells in JSON is just a count, generate from mask
+        mask = np.array(data['walkable_mask'])
+        grid_size = mask.shape[0]
+
+        cells = []
+        for gy in range(grid_size):
+            for gx in range(grid_size):
+                if mask[gy, gx] == 1:
+                    # Convert to normalized coordinates (cell center)
+                    x = (gx + 0.5) / grid_size
+                    y = (gy + 0.5) / grid_size
+                    cells.append((x, y))
+
+        # Cache for future calls
+        self._walkable_cells_cache[map_key] = cells
+        return cells
 
     def get_random_walkable_position(self, map_name: str) -> Tuple[float, float]:
         """Get a random walkable position on the map."""
