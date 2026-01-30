@@ -1,0 +1,832 @@
+{
+  "8aacfbab-be97-44f9-bc69-da5c6601062a": {
+    "tournament": "VCT Americas - Kickoff 2024 (Groups)",
+    "date": "2024-02-17",
+    "teams": [
+      "MIBR",
+      "Cloud9"
+    ],
+    "series_id": "2629391",
+    "map": "bind"
+  },
+  "e267ddd1-e28f-48e3-8e83-3fb42a27cc63": {
+    "tournament": "VCT Americas - Kickoff 2024 (Groups)",
+    "date": "2024-02-17",
+    "teams": [
+      "MIBR",
+      "Cloud9"
+    ],
+    "series_id": "2629391",
+    "map": "split"
+  },
+  "4a219f17-c477-448a-ad7b-4f77ab033c9c": {
+    "tournament": "VCT Americas - Kickoff 2024 (Groups)",
+    "date": "2024-02-17",
+    "teams": [
+      "MIBR",
+      "Cloud9"
+    ],
+    "series_id": "2629391",
+    "map": "lotus"
+  },
+  "da54a836-dd47-47d1-a79e-6daa504bdb56": {
+    "tournament": "VCT Americas - Kickoff 2024 (Groups)",
+    "date": "2024-02-23",
+    "teams": [
+      "Cloud9",
+      "NRG"
+    ],
+    "series_id": "2629398",
+    "map": "sunset"
+  },
+  "23db92c5-dde1-4110-8ca8-2fb0887baea0": {
+    "tournament": "VCT Americas - Kickoff 2024 (Groups)",
+    "date": "2024-02-23",
+    "teams": [
+      "Cloud9",
+      "NRG"
+    ],
+    "series_id": "2629398",
+    "map": "ascent"
+  },
+  "4643965f-3e18-4a2a-9f89-21bd9858b2da": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-06",
+    "teams": [
+      "Cloud9",
+      "Leviat\u00e1n Esports"
+    ],
+    "series_id": "2653969",
+    "map": "icebox"
+  },
+  "6fead2de-0fb4-470a-8919-95774257f533": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-06",
+    "teams": [
+      "Cloud9",
+      "Leviat\u00e1n Esports"
+    ],
+    "series_id": "2653969",
+    "map": "sunset"
+  },
+  "9ff33c59-9e3e-412a-b015-01881a79eb59": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-06",
+    "teams": [
+      "Cloud9",
+      "Leviat\u00e1n Esports"
+    ],
+    "series_id": "2653969",
+    "map": "ascent"
+  },
+  "8a61c304-f1a9-4773-9111-ab7b6bd406f8": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-15",
+    "teams": [
+      "Cloud9",
+      "Evil Geniuses"
+    ],
+    "series_id": "2653979",
+    "map": "lotus"
+  },
+  "a38b7327-581a-4fde-9cc8-c8b9c41bc5f5": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-15",
+    "teams": [
+      "Cloud9",
+      "Evil Geniuses"
+    ],
+    "series_id": "2653979",
+    "map": "sunset"
+  },
+  "32488820-9b98-428b-928c-0fc640077089": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-15",
+    "teams": [
+      "Cloud9",
+      "Evil Geniuses"
+    ],
+    "series_id": "2653979",
+    "map": "split"
+  },
+  "4d43b00d-bafd-401e-8a2a-a2b9bd516c06": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-20",
+    "teams": [
+      "Cloud9",
+      "LOUD (1)"
+    ],
+    "series_id": "2653981",
+    "map": "bind"
+  },
+  "712fb2e7-6dd2-487c-b20d-91a29fcb7f2b": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-20",
+    "teams": [
+      "Cloud9",
+      "LOUD (1)"
+    ],
+    "series_id": "2653981",
+    "map": "icebox"
+  },
+  "6eb1d3d5-c083-4d95-b13f-4441c628e0a2": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-20",
+    "teams": [
+      "Cloud9",
+      "LOUD (1)"
+    ],
+    "series_id": "2653981",
+    "map": "lotus"
+  },
+  "d10dd165-9ffc-4add-9093-2de0cab3e8b5": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-22",
+    "teams": [
+      "Cloud9",
+      "100 Thieves"
+    ],
+    "series_id": "2653985",
+    "map": "bind"
+  },
+  "a6da2cbb-8bbd-43bf-9225-8edc4ca9fc4a": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-22",
+    "teams": [
+      "Cloud9",
+      "100 Thieves"
+    ],
+    "series_id": "2653985",
+    "map": "ascent"
+  },
+  "20321a46-2e96-4564-bef9-08d110c326f3": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-28",
+    "teams": [
+      "Cloud9",
+      "FURIA"
+    ],
+    "series_id": "2653992",
+    "map": "ascent"
+  },
+  "f43e3dfb-228f-46b9-97e4-655018b94e25": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-28",
+    "teams": [
+      "Cloud9",
+      "FURIA"
+    ],
+    "series_id": "2653992",
+    "map": "lotus"
+  },
+  "00f2bb70-21fe-42fd-93bc-404a92eb4ccf": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-04-28",
+    "teams": [
+      "Cloud9",
+      "FURIA"
+    ],
+    "series_id": "2653992",
+    "map": "bind"
+  },
+  "7100405e-07a0-4785-a3e1-286a646484d6": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-05-05",
+    "teams": [
+      "Cloud9",
+      "MIBR (1)"
+    ],
+    "series_id": "2653998",
+    "map": "icebox"
+  },
+  "2e04faa5-527e-41c8-bf11-df5840551c11": {
+    "tournament": "VCT Americas - Stage 1 2024 (Regular Season: Alpha Group)",
+    "date": "2024-05-05",
+    "teams": [
+      "Cloud9",
+      "MIBR (1)"
+    ],
+    "series_id": "2653998",
+    "map": "sunset"
+  },
+  "cd522dc0-5ec9-41b7-ac8d-f3d7b5c1d279": {
+    "tournament": "VCT Americas - Stage 1 2024 (Playoffs: Playoffs)",
+    "date": "2024-05-08",
+    "teams": [
+      "Cloud9",
+      "G2 Esports"
+    ],
+    "series_id": "2654000",
+    "map": "lotus"
+  },
+  "763e4073-e01e-4a09-8743-6fcbf2c2d9e8": {
+    "tournament": "VCT Americas - Stage 1 2024 (Playoffs: Playoffs)",
+    "date": "2024-05-08",
+    "teams": [
+      "Cloud9",
+      "G2 Esports"
+    ],
+    "series_id": "2654000",
+    "map": "ascent"
+  },
+  "d2d1e2dc-ee7e-4964-b20a-2c8ac4a00c2b": {
+    "tournament": "VCT Americas - Stage 2 2024 (Regular Season: Group B)",
+    "date": "2024-06-24",
+    "teams": [
+      "G2 Esports",
+      "Cloud9"
+    ],
+    "series_id": "2681814",
+    "map": "ascent"
+  },
+  "3bc3cdb6-a082-4fd6-be08-4dcd6f5b6fed": {
+    "tournament": "VCT Americas - Stage 2 2024 (Regular Season: Group B)",
+    "date": "2024-06-24",
+    "teams": [
+      "G2 Esports",
+      "Cloud9"
+    ],
+    "series_id": "2681814",
+    "map": "icebox"
+  },
+  "4ae4d294-7e57-4596-bee9-606198d1b3e2": {
+    "tournament": "VCT Americas - Stage 2 2024 (Regular Season: Group B)",
+    "date": "2024-06-24",
+    "teams": [
+      "G2 Esports",
+      "Cloud9"
+    ],
+    "series_id": "2681814",
+    "map": "lotus"
+  },
+  "a1657dc5-23d0-407a-802b-061028f9338a": {
+    "tournament": "VCT Americas - Stage 2 2024 (Regular Season: Group B)",
+    "date": "2024-07-01",
+    "teams": [
+      "Sentinels",
+      "Cloud9"
+    ],
+    "series_id": "2681822",
+    "map": "haven"
+  },
+  "d1d71309-5bb4-4de7-bd32-cce5677b1986": {
+    "tournament": "VCT Americas - Stage 2 2024 (Regular Season: Group B)",
+    "date": "2024-07-01",
+    "teams": [
+      "Sentinels",
+      "Cloud9"
+    ],
+    "series_id": "2681822",
+    "map": "split"
+  },
+  "ce934f59-12e5-4be1-af6c-21fb4bd6ad61": {
+    "tournament": "VCT Americas - Stage 2 2024 (Regular Season: Group B)",
+    "date": "2024-07-07",
+    "teams": [
+      "NRG",
+      "Cloud9"
+    ],
+    "series_id": "2681832",
+    "map": "ascent"
+  },
+  "d350fad9-4a06-4d77-ada9-ae685c73c669": {
+    "tournament": "VCT Americas - Stage 2 2024 (Regular Season: Group B)",
+    "date": "2024-07-07",
+    "teams": [
+      "NRG",
+      "Cloud9"
+    ],
+    "series_id": "2681832",
+    "map": "icebox"
+  },
+  "5f9b7134-fba1-4dc5-87af-1b4c7ba9416b": {
+    "tournament": "VCT Americas - Stage 2 2024 (Regular Season: Group B)",
+    "date": "2024-07-07",
+    "teams": [
+      "NRG",
+      "Cloud9"
+    ],
+    "series_id": "2681832",
+    "map": "sunset"
+  },
+  "73de9751-6b29-4cc2-b7d5-7e709d8c3624": {
+    "tournament": "VCT Americas - Stage 2 2024 (Regular Season: Group B)",
+    "date": "2024-07-12",
+    "teams": [
+      "Cloud9",
+      "KR\u00dc Esports"
+    ],
+    "series_id": "2681835",
+    "map": "icebox"
+  },
+  "09370f4b-6cdc-4ed0-b5d0-76ca315e1535": {
+    "tournament": "VCT Americas - Stage 2 2024 (Regular Season: Group B)",
+    "date": "2024-07-12",
+    "teams": [
+      "Cloud9",
+      "KR\u00dc Esports"
+    ],
+    "series_id": "2681835",
+    "map": "split"
+  },
+  "6bb6f4c0-8625-4ee0-bfa3-f477bb5d511d": {
+    "tournament": "VCT Americas - Stage 2 2024 (Playoffs: Playoffs)",
+    "date": "2024-07-17",
+    "teams": [
+      "KR\u00dc Esports",
+      "Cloud9"
+    ],
+    "series_id": "2681840",
+    "map": "abyss"
+  },
+  "b5932ad8-88f8-4626-b6de-339c4f7d673e": {
+    "tournament": "VCT Americas - Stage 2 2024 (Playoffs: Playoffs)",
+    "date": "2024-07-17",
+    "teams": [
+      "KR\u00dc Esports",
+      "Cloud9"
+    ],
+    "series_id": "2681840",
+    "map": "lotus"
+  },
+  "67d5b287-174a-46a8-af5c-e6094c786190": {
+    "tournament": "VCT Americas - Stage 2 2024 (Playoffs: Playoffs)",
+    "date": "2024-07-17",
+    "teams": [
+      "KR\u00dc Esports",
+      "Cloud9"
+    ],
+    "series_id": "2681840",
+    "map": "haven"
+  },
+  "7c6d677a-1429-4e83-af6c-539ff3ea762b": {
+    "tournament": "VCT Americas - Kickoff 2025 (Knockouts: Knockouts)",
+    "date": "2025-01-18",
+    "teams": [
+      "NRG",
+      "Cloud9"
+    ],
+    "series_id": "2748746",
+    "map": "fracture"
+  },
+  "67293f23-ec04-4774-a105-9fcb6afdca81": {
+    "tournament": "VCT Americas - Kickoff 2025 (Knockouts: Knockouts)",
+    "date": "2025-01-18",
+    "teams": [
+      "NRG",
+      "Cloud9"
+    ],
+    "series_id": "2748746",
+    "map": "lotus"
+  },
+  "c69a55a2-9c9e-48a9-87db-cbc557a830cd": {
+    "tournament": "VCT Americas - Kickoff 2025 (Knockouts: Knockouts)",
+    "date": "2025-01-20",
+    "teams": [
+      "Cloud9",
+      "G2 Esports"
+    ],
+    "series_id": "2748750",
+    "map": "lotus"
+  },
+  "36bbcd37-1b30-48da-bb7a-a034ccde5b93": {
+    "tournament": "VCT Americas - Kickoff 2025 (Knockouts: Knockouts)",
+    "date": "2025-01-20",
+    "teams": [
+      "Cloud9",
+      "G2 Esports"
+    ],
+    "series_id": "2748750",
+    "map": "abyss"
+  },
+  "fffb6bf4-549b-445a-a680-90eb1a524221": {
+    "tournament": "VCT Americas - Kickoff 2025 (Knockouts: Knockouts)",
+    "date": "2025-01-24",
+    "teams": [
+      "Cloud9",
+      "MIBR (1)"
+    ],
+    "series_id": "2748754",
+    "map": "lotus"
+  },
+  "eaa69e6f-120e-4ae2-8b3d-ff6505901d09": {
+    "tournament": "VCT Americas - Kickoff 2025 (Knockouts: Knockouts)",
+    "date": "2025-01-24",
+    "teams": [
+      "Cloud9",
+      "MIBR (1)"
+    ],
+    "series_id": "2748754",
+    "map": "abyss"
+  },
+  "6dd3463a-1ec3-4be3-aaa2-0058b288b4bd": {
+    "tournament": "VCT Americas - Kickoff 2025 (Knockouts: Knockouts)",
+    "date": "2025-01-24",
+    "teams": [
+      "Cloud9",
+      "MIBR (1)"
+    ],
+    "series_id": "2748754",
+    "map": "pearl"
+  },
+  "8eea6ab2-3dc4-4fe1-9f01-028b0b8589bd": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-03-21",
+    "teams": [
+      "Cloud9",
+      "NRG"
+    ],
+    "series_id": "2775953",
+    "map": "lotus"
+  },
+  "02c3394d-ed48-4aa2-8ada-57cd83872a73": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-03-21",
+    "teams": [
+      "Cloud9",
+      "NRG"
+    ],
+    "series_id": "2775953",
+    "map": "fracture"
+  },
+  "b290b828-6dde-4978-9b99-c0e78ae0c77a": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-03-21",
+    "teams": [
+      "Cloud9",
+      "NRG"
+    ],
+    "series_id": "2775953",
+    "map": "fracture"
+  },
+  "47f8d2db-a64b-4698-b865-c7b790591149": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-03-21",
+    "teams": [
+      "Cloud9",
+      "NRG"
+    ],
+    "series_id": "2775953",
+    "map": "pearl"
+  },
+  "5f27f062-7d66-4598-8ebd-2fe9fef9f7c2": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-03-30",
+    "teams": [
+      "Cloud9",
+      "Leviat\u00e1n Esports"
+    ],
+    "series_id": "2775964",
+    "map": "split"
+  },
+  "fa35f815-092e-4631-bb06-dff91f2217a0": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-03-30",
+    "teams": [
+      "Cloud9",
+      "Leviat\u00e1n Esports"
+    ],
+    "series_id": "2775964",
+    "map": "ascent"
+  },
+  "6230096f-b761-461a-9b4f-805406981e6c": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-04-06",
+    "teams": [
+      "Cloud9",
+      "MIBR (1)"
+    ],
+    "series_id": "2775970",
+    "map": "pearl"
+  },
+  "e7d5c00d-93f9-48e5-abb6-2fee1c70125f": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-04-06",
+    "teams": [
+      "Cloud9",
+      "MIBR (1)"
+    ],
+    "series_id": "2775970",
+    "map": "lotus"
+  },
+  "a416b309-8310-49c2-a2ca-3f8c5be72622": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-04-06",
+    "teams": [
+      "Cloud9",
+      "MIBR (1)"
+    ],
+    "series_id": "2775970",
+    "map": "haven"
+  },
+  "7aed6afc-c5e8-4a5a-b87f-d5659ba7acb0": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-04-12",
+    "teams": [
+      "FURIA",
+      "Cloud9"
+    ],
+    "series_id": "2775973",
+    "map": "lotus"
+  },
+  "2f818e02-6a0f-4516-88e2-25e136a0966e": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-04-12",
+    "teams": [
+      "FURIA",
+      "Cloud9"
+    ],
+    "series_id": "2775973",
+    "map": "pearl"
+  },
+  "24f97577-541c-46ac-a30c-8098635ce529": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-04-18",
+    "teams": [
+      "G2 Esports",
+      "Cloud9"
+    ],
+    "series_id": "2775977",
+    "map": "icebox"
+  },
+  "7bb2e6db-6e6f-40d8-9d93-2706f10d4bb3": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-04-18",
+    "teams": [
+      "G2 Esports",
+      "Cloud9"
+    ],
+    "series_id": "2775977",
+    "map": "haven"
+  },
+  "fe2c0bf3-5c6c-49d4-8206-9d9d7e64891b": {
+    "tournament": "VCT Americas - Stage 1 2025 (Regular Season: Group B)",
+    "date": "2025-04-18",
+    "teams": [
+      "G2 Esports",
+      "Cloud9"
+    ],
+    "series_id": "2775977",
+    "map": "pearl"
+  },
+  "f590dc69-e5fe-4c72-89ff-7735d5b93d9d": {
+    "tournament": "VCT Americas - Stage 1 2025 (Playoffs: Playoffs)",
+    "date": "2025-04-24",
+    "teams": [
+      "Sentinels",
+      "Cloud9"
+    ],
+    "series_id": "2775984",
+    "map": "ascent"
+  },
+  "e9237108-ba35-4ed2-b431-23a43f2b070c": {
+    "tournament": "VCT Americas - Stage 1 2025 (Playoffs: Playoffs)",
+    "date": "2025-04-24",
+    "teams": [
+      "Sentinels",
+      "Cloud9"
+    ],
+    "series_id": "2775984",
+    "map": "pearl"
+  },
+  "721a4466-7ea1-4067-bf01-02be2f4493b4": {
+    "tournament": "VCT Americas - Stage 1 2025 (Playoffs: Playoffs)",
+    "date": "2025-04-25",
+    "teams": [
+      "Cloud9",
+      "Evil Geniuses"
+    ],
+    "series_id": "2775986",
+    "map": "fracture"
+  },
+  "dcf63170-3d1a-4e86-bd97-b33b28deabea": {
+    "tournament": "VCT Americas - Stage 1 2025 (Playoffs: Playoffs)",
+    "date": "2025-04-25",
+    "teams": [
+      "Cloud9",
+      "Evil Geniuses"
+    ],
+    "series_id": "2775986",
+    "map": "icebox"
+  },
+  "df98c550-e20c-499d-b814-d4d32ef5ec9a": {
+    "tournament": "VCT Americas - Stage 2 2025 (Regular Season: Group A)",
+    "date": "2025-07-18",
+    "teams": [
+      "Cloud9",
+      "FURIA"
+    ],
+    "series_id": "2819676",
+    "map": "haven"
+  },
+  "b0614051-7d8f-49ff-8953-12e7c3e1a5d1": {
+    "tournament": "VCT Americas - Stage 2 2025 (Regular Season: Group A)",
+    "date": "2025-07-18",
+    "teams": [
+      "Cloud9",
+      "FURIA"
+    ],
+    "series_id": "2819676",
+    "map": "bind"
+  },
+  "80a0fd03-33ca-4b46-ba71-20cab5e218d6": {
+    "tournament": "VCT Americas - Stage 2 2025 (Regular Season: Group A)",
+    "date": "2025-07-27",
+    "teams": [
+      "Cloud9",
+      "Evil Geniuses"
+    ],
+    "series_id": "2819686",
+    "map": "lotus"
+  },
+  "cd79fb03-6580-4b0d-956f-3ad240ee3067": {
+    "tournament": "VCT Americas - Stage 2 2025 (Regular Season: Group A)",
+    "date": "2025-07-27",
+    "teams": [
+      "Cloud9",
+      "Evil Geniuses"
+    ],
+    "series_id": "2819686",
+    "map": "haven"
+  },
+  "772faf47-ab68-4922-a0d9-87a5495774d5": {
+    "tournament": "VCT Americas - Stage 2 2025 (Regular Season: Group A)",
+    "date": "2025-08-02",
+    "teams": [
+      "Sentinels",
+      "Cloud9"
+    ],
+    "series_id": "2819690",
+    "map": "lotus"
+  },
+  "3cb8cda1-de2b-4aef-be14-bc2d19e2eeb5": {
+    "tournament": "VCT Americas - Stage 2 2025 (Regular Season: Group A)",
+    "date": "2025-08-02",
+    "teams": [
+      "Sentinels",
+      "Cloud9"
+    ],
+    "series_id": "2819690",
+    "map": "lotus"
+  },
+  "f64d079d-68cf-49d5-962a-4b3b9e4c558d": {
+    "tournament": "VCT Americas - Stage 2 2025 (Regular Season: Group A)",
+    "date": "2025-08-02",
+    "teams": [
+      "Sentinels",
+      "Cloud9"
+    ],
+    "series_id": "2819690",
+    "map": "haven"
+  },
+  "06dabf89-9bb2-4c05-b58f-4e678ccebe64": {
+    "tournament": "VCT Americas - Stage 2 2025 (Regular Season: Group A)",
+    "date": "2025-08-08",
+    "teams": [
+      "Cloud9",
+      "2GAME eSports"
+    ],
+    "series_id": "2819694",
+    "map": "bind"
+  },
+  "00b3a00d-beb2-42bd-b9b7-3faf74c7e486": {
+    "tournament": "VCT Americas - Stage 2 2025 (Regular Season: Group A)",
+    "date": "2025-08-08",
+    "teams": [
+      "Cloud9",
+      "2GAME eSports"
+    ],
+    "series_id": "2819694",
+    "map": "lotus"
+  },
+  "2ddfd0cb-b2a8-417e-abaa-b71c4b509491": {
+    "tournament": "VCT Americas - Stage 2 2025 (Regular Season: Group A)",
+    "date": "2025-08-17",
+    "teams": [
+      "G2 Esports",
+      "Cloud9"
+    ],
+    "series_id": "2819704",
+    "map": "ascent"
+  },
+  "1e368244-06e8-4f11-ae2f-d08364f866c9": {
+    "tournament": "VCT Americas - Stage 2 2025 (Regular Season: Group A)",
+    "date": "2025-08-17",
+    "teams": [
+      "G2 Esports",
+      "Cloud9"
+    ],
+    "series_id": "2819704",
+    "map": "lotus"
+  },
+  "1bd3eda3-5917-4daf-978c-84c16b81bfc2": {
+    "tournament": "VCT Americas - Stage 2 2025 (Playoffs: Playoffs)",
+    "date": "2025-08-21",
+    "teams": [
+      "Leviat\u00e1n Esports",
+      "Cloud9"
+    ],
+    "series_id": "2843060",
+    "map": "corrode"
+  },
+  "1b77407a-2782-45ec-98df-0425f189ba6c": {
+    "tournament": "VCT Americas - Stage 2 2025 (Playoffs: Playoffs)",
+    "date": "2025-08-21",
+    "teams": [
+      "Leviat\u00e1n Esports",
+      "Cloud9"
+    ],
+    "series_id": "2843060",
+    "map": "haven"
+  },
+  "84960f38-8a0e-4669-9060-161fb6891d54": {
+    "tournament": "VCT Americas - Stage 2 2025 (Playoffs: Playoffs)",
+    "date": "2025-08-21",
+    "teams": [
+      "Leviat\u00e1n Esports",
+      "Cloud9"
+    ],
+    "series_id": "2843060",
+    "map": "lotus"
+  },
+  "1ae74585-d043-45b3-8a42-451e035446ef": {
+    "tournament": "VCT Americas - Stage 2 2025 (Playoffs: Playoffs)",
+    "date": "2025-08-22",
+    "teams": [
+      "Cloud9",
+      "Sentinels"
+    ],
+    "series_id": "2843062",
+    "map": "corrode"
+  },
+  "3c4b2006-e081-4efb-af65-789495c4fa88": {
+    "tournament": "VCT Americas - Stage 2 2025 (Playoffs: Playoffs)",
+    "date": "2025-08-22",
+    "teams": [
+      "Cloud9",
+      "Sentinels"
+    ],
+    "series_id": "2843062",
+    "map": "icebox"
+  },
+  "e18041ca-9d6a-46cf-a064-ffeafc3c0e32": {
+    "tournament": "VCT Americas - Stage 2 2025 (Playoffs: Playoffs)",
+    "date": "2025-08-22",
+    "teams": [
+      "Cloud9",
+      "Sentinels"
+    ],
+    "series_id": "2843062",
+    "map": "lotus"
+  },
+  "10819cf9-0f16-405d-8016-f8783fc36b0f": {
+    "tournament": "VCT Americas - Stage 2 2025 (Playoffs: Playoffs)",
+    "date": "2025-08-24",
+    "teams": [
+      "Cloud9",
+      "100 Thieves"
+    ],
+    "series_id": "2843066",
+    "map": "haven"
+  },
+  "2d3d6648-b247-41a9-bcad-97c3f2d43f18": {
+    "tournament": "VCT Americas - Stage 2 2025 (Playoffs: Playoffs)",
+    "date": "2025-08-24",
+    "teams": [
+      "Cloud9",
+      "100 Thieves"
+    ],
+    "series_id": "2843066",
+    "map": "icebox"
+  },
+  "3495b77b-68ee-4ea1-acfc-7b9213dd05ff": {
+    "tournament": "VCT Americas - Stage 2 2025 (Playoffs: Playoffs)",
+    "date": "2025-08-29",
+    "teams": [
+      "Cloud9",
+      "NRG"
+    ],
+    "series_id": "2843069",
+    "map": "haven"
+  },
+  "ab6834ac-897d-4ad9-93aa-700b0197676e": {
+    "tournament": "VCT Americas - Stage 2 2025 (Playoffs: Playoffs)",
+    "date": "2025-08-29",
+    "teams": [
+      "Cloud9",
+      "NRG"
+    ],
+    "series_id": "2843069",
+    "map": "corrode"
+  },
+  "876e4568-70c5-48f5-b555-9a4bb688df4a": {
+    "tournament": "VCT Americas - Stage 2 2025 (Playoffs: Playoffs)",
+    "date": "2025-08-29",
+    "teams": [
+      "Cloud9",
+      "NRG"
+    ],
+    "series_id": "2843069",
+    "map": "lotus"
+  }
+}

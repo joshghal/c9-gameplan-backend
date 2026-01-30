@@ -249,9 +249,60 @@ class ToolHandler:
         )
 
     async def _run_what_if(self, params: dict) -> dict:
-        """Placeholder for what-if simulation integration."""
-        return {
-            "message": "What-if simulation would run here",
-            "scenario": params.get("scenario_description"),
-            "status": "pending_implementation",
-        }
+        """Run a what-if simulation with the actual engine."""
+        from ..simulation_engine import SimulationEngine
+        from ...schemas.simulations import WhatIfScenario
+
+        scenario_desc = params.get('scenario_description', '')
+        map_name = params.get('map_name', 'ascent')
+        attack_team = params.get('attack_team', 'cloud9')
+        defense_team = params.get('defense_team', 'g2')
+
+        try:
+            # Create and run a quick simulation
+            engine = SimulationEngine(db=None)
+
+            class _MockSession:
+                def __init__(self):
+                    self.id = 'whatif_tool'
+                    self.attack_team_id = attack_team
+                    self.defense_team_id = defense_team
+                    self.map_name = map_name
+                    self.round_type = 'full'
+                    self.status = 'created'
+                    self.current_time_ms = 0
+                    self.phase = 'opening'
+
+            session = _MockSession()
+            state = await engine.initialize(session, round_type='full')
+
+            # Run to completion
+            for _ in range(200):
+                state = await engine.advance(session, 1)
+                attack_alive = sum(1 for p in state.positions if p.side == 'attack' and p.is_alive)
+                defense_alive = sum(1 for p in state.positions if p.side == 'defense' and p.is_alive)
+                if attack_alive == 0 or defense_alive == 0 or state.current_time_ms >= 100000:
+                    break
+
+            winner = 'attack' if defense_alive == 0 else 'defense'
+            kills = [e for e in state.events if hasattr(e, 'event_type') and e.event_type == 'kill']
+
+            return {
+                "scenario": scenario_desc,
+                "map": map_name,
+                "attack_team": attack_team,
+                "defense_team": defense_team,
+                "winner": winner,
+                "attack_alive": attack_alive,
+                "defense_alive": defense_alive,
+                "duration_ms": state.current_time_ms,
+                "spike_planted": state.spike_planted,
+                "total_kills": len(kills),
+                "status": "completed",
+            }
+        except Exception as e:
+            return {
+                "scenario": scenario_desc,
+                "error": str(e),
+                "status": "error",
+            }

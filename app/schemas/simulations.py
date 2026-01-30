@@ -7,6 +7,7 @@ from uuid import UUID
 class PlayerPosition(BaseModel):
     player_id: str
     team_id: str
+    name: Optional[str] = None
     x: float
     y: float
     is_alive: bool = True
@@ -112,6 +113,9 @@ class WhatIfScenario(BaseModel):
     """Request to run a what-if scenario from a snapshot."""
     snapshot_time_ms: int
     modifications: Dict[str, Any]  # e.g., {"player_1": {"x": 100, "y": 200}}
+    description: Optional[str] = None  # Natural language description
+    round_type_override: Optional[str] = None  # Override buy type for what-if
+    swap_sides: bool = False  # Swap attack/defense
 
 
 class SimulationAnalysis(BaseModel):

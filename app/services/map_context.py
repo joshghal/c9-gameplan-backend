@@ -35,6 +35,8 @@ class MapContext:
     _masks_cache: Dict = {}
     _los_masks_cache: Dict = {}  # Dilated masks for LOS checks
     _walkable_cells_cache: Dict = {}  # Cache for walkable cell coordinates
+    _walkable_128_cache: Dict = {}  # 128x128 walkable masks (aligned with pathfinder)
+    _obstacle_128_cache: Dict = {}  # 128x128 obstacle masks (aligned with pathfinder)
 
     def __new__(cls):
         """Singleton pattern - one instance shared across simulation."""
@@ -56,6 +58,9 @@ class MapContext:
                 data = json.load(f)
                 self._masks_cache = data.get('maps', {})
 
+            # Create 128x128 masks aligned with pathfinder grid
+            self._create_128_masks()
+
             # Create dilated masks for LOS checks
             self._create_los_masks()
 
@@ -63,6 +68,12 @@ class MapContext:
         else:
             print(f"MapContext: Warning - mask file not found at {MASK_FILE}")
             self._masks_cache = {}
+
+    def _create_128_masks(self):
+        """Pre-cache 128x128 walkable/obstacle masks to match pathfinder grid."""
+        for map_name in self._masks_cache:
+            self._walkable_128_cache[map_name] = self.get_walkable_mask(map_name, 128)
+            self._obstacle_128_cache[map_name] = self.get_obstacle_mask(map_name, 128)
 
     def _create_los_masks(self):
         """Create dilated masks for line-of-sight checks.
@@ -154,30 +165,23 @@ class MapContext:
         Returns:
             True if position is walkable
         """
-        data = self.get_map_data(map_name)
-        if data is None:
+        mask = self._walkable_128_cache.get(map_name.lower())
+        if mask is None:
             return True  # Default to walkable if no data
 
-        mask = np.array(data['walkable_mask'])
-        grid_size = mask.shape[0]
-
-        # Convert to grid coordinates
-        gx = min(int(x * grid_size), grid_size - 1)
-        gy = min(int(y * grid_size), grid_size - 1)
+        gx = min(int(x * 128), 127)
+        gy = min(int(y * 128), 127)
 
         return mask[gy, gx] == 1
 
     def is_obstacle(self, map_name: str, x: float, y: float) -> bool:
         """Check if a normalized position (0-1) is an obstacle."""
-        data = self.get_map_data(map_name)
-        if data is None:
+        mask = self._obstacle_128_cache.get(map_name.lower())
+        if mask is None:
             return False
 
-        mask = np.array(data['obstacle_mask'])
-        grid_size = mask.shape[0]
-
-        gx = min(int(x * grid_size), grid_size - 1)
-        gy = min(int(y * grid_size), grid_size - 1)
+        gx = min(int(x * 128), 127)
+        gy = min(int(y * 128), 127)
 
         return mask[gy, gx] == 1
 
@@ -189,19 +193,16 @@ class MapContext:
         if map_key in self._walkable_cells_cache:
             return self._walkable_cells_cache[map_key]
 
-        data = self.get_map_data(map_name)
-        if data is None:
+        mask = self._walkable_128_cache.get(map_key)
+        if mask is None:
             return []
 
-        # walkable_cells in JSON is just a count, generate from mask
-        mask = np.array(data['walkable_mask'])
-        grid_size = mask.shape[0]
-
+        # Generate from 128x128 mask (aligned with pathfinder)
+        grid_size = 128
         cells = []
         for gy in range(grid_size):
             for gx in range(grid_size):
                 if mask[gy, gx] == 1:
-                    # Convert to normalized coordinates (cell center)
                     x = (gx + 0.5) / grid_size
                     y = (gy + 0.5) / grid_size
                     cells.append((x, y))

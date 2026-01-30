@@ -233,3 +233,362 @@ async def quick_team_summary(
     generator = get_scouting_generator()
     summary = await generator.generate_quick_summary(team_name, map_name)
     return {"summary": summary}
+
+
+
+class LiveNarrationRequest(BaseModel):
+    """Request for live per-snapshot narration (Mode A)."""
+    session_id: str
+    snapshot: dict  # Single enriched snapshot
+    previous_narrations: list[str] = []  # Last 5 narrations for context
+    narration_type: str = "key_moment"  # "key_moment" or "transition"
+    map_name: str = "ascent"
+    attack_team: str = "cloud9"
+    defense_team: str = "sentinels"
+
+
+@router.post("/narrate-snapshot")
+async def narrate_single_snapshot(request: LiveNarrationRequest):
+    """Live Mode A: Narrate a single snapshot during simulation.
+
+    Called when auto-snapshot fires (kill, plant, time interval).
+    Simulation pauses until this returns. Returns structured narration step.
+    """
+    import json
+    from ...services.llm import get_anthropic_client, get_coaching_prompt
+
+    client = get_anthropic_client()
+
+    snap = request.snapshot
+    label = snap.get("label", "")
+    time_ms = snap.get("time_ms", 0)
+    players = snap.get("players", [])
+    atk_alive = [p for p in players if p.get("side") == "attack" and p.get("is_alive")]
+    def_alive = [p for p in players if p.get("side") == "defense" and p.get("is_alive")]
+
+    # Build per-player details
+    atk_details = "\n".join(
+        f"  - {p.get('player_id')} ({p.get('agent','?')}) at ({p.get('x',0):.2f},{p.get('y',0):.2f}) HP:{p.get('health',0)}"
+        for p in atk_alive
+    )
+    def_details = "\n".join(
+        f"  - {p.get('player_id')} ({p.get('agent','?')}) at ({p.get('x',0):.2f},{p.get('y',0):.2f}) HP:{p.get('health',0)}"
+        for p in def_alive
+    )
+
+    # Fog of war
+    pk = snap.get("player_knowledge", {})
+    fog_lines = []
+    for pid, info in (pk or {}).items():
+        known = info.get("known_enemies", [])
+        if known:
+            fog_lines.append(f"  {pid} sees {len(known)} enemies: {', '.join(e.get('enemy_id','?') for e in known)}")
+
+    # Decisions
+    decisions = snap.get("decisions", {})
+    dec_lines = []
+    for pid, d in (decisions or {}).items():
+        dec_lines.append(f"  {pid}: {d.get('action','?')} (utility={d.get('utility_score',0):.2f}, reason: {d.get('reason','')})")
+
+    # Round state
+    rs = snap.get("round_state", {})
+    man_adv = rs.get("man_advantage", 0) if rs else 0
+
+    prev_context = ""
+    if request.previous_narrations:
+        prev_context = "\nPrevious narrations (maintain continuity):\n" + "\n".join(
+            f"  [{i+1}] {n}" for i, n in enumerate(request.previous_narrations[-5:])
+        )
+
+    context = f"""You are narrating a LIVE VALORANT simulation on {request.map_name}.
+Attack: {request.attack_team} | Defense: {request.defense_team}
+Current moment: [{time_ms}ms] {label}
+Man advantage: {'ATK +' + str(man_adv) if man_adv > 0 else 'DEF +' + str(abs(man_adv)) if man_adv < 0 else 'Even'}
+Spike: {'Planted at ' + str(snap.get('spike_site','?')) if snap.get('spike_planted') else 'Not planted'}
+
+Attack players ({len(atk_alive)} alive):
+{atk_details or '  (none alive)'}
+
+Defense players ({len(def_alive)} alive):
+{def_details or '  (none alive)'}
+
+Fog of war (what players know):
+{chr(10).join(fog_lines) if fog_lines else '  No confirmed enemy positions'}
+
+AI Decisions this tick:
+{chr(10).join(dec_lines) if dec_lines else '  No decisions recorded'}
+{prev_context}
+
+Respond with a single JSON object:
+{{
+  "focus": {{
+    "team": "attack" or "defense",
+    "players": [{{ "player_id": "...", "x": 0.3, "y": 0.2, "action": "what this player is doing and why" }}]
+  }},
+  "enemy_state": {{
+    "players": [{{ "player_id": "...", "x": 0.5, "y": 0.4, "action": "what the enemy is doing" }}]
+  }},
+  "camera_target": {{ "x": 0.3, "y": 0.2, "zoom": 1.5 }},
+  "narration": "2-4 sentences of tactical commentary explaining what happened and why",
+  "prediction": "1 sentence prediction of what happens next with rough probability"
+}}
+
+Focus on WHY players made decisions (use the fog-of-war and utility data). Be specific about players and positions."""
+
+    system = get_coaching_prompt("coach", context)
+    messages = [{"role": "user", "content": "Narrate this moment."}]
+
+    try:
+        response = await client.chat(
+            messages=messages,
+            system=system,
+            max_tokens=1024,
+            temperature=0.7,
+        )
+        text = response.content[0].text if hasattr(response, 'content') and response.content else "{}"
+        # Try to parse as JSON
+        try:
+            # Strip markdown code fences if present
+            clean = text.strip()
+            if clean.startswith("```"):
+                clean = clean.split("\n", 1)[1] if "\n" in clean else clean[3:]
+                if clean.endswith("```"):
+                    clean = clean[:-3]
+                clean = clean.strip()
+            result = json.loads(clean)
+        except json.JSONDecodeError:
+            result = {
+                "narration": text,
+                "camera_target": {"x": 0.5, "y": 0.5, "zoom": 1.0},
+                "focus": {"team": "attack", "players": []},
+                "enemy_state": {"players": []},
+                "prediction": "",
+            }
+        return result
+    except Exception as e:
+        return {
+            "narration": f"Narration unavailable: {str(e)}",
+            "camera_target": {"x": 0.5, "y": 0.5, "zoom": 1.0},
+            "focus": {"team": "attack", "players": []},
+            "enemy_state": {"players": []},
+            "prediction": "",
+        }
+
+
+class NarrationRequest(BaseModel):
+    """Request for AI narration walkthrough (Mode B: post-sim replay)."""
+    session_id: str
+    snapshots: list[dict]  # Auto-snapshots from completed sim
+    final_state: dict  # Final sim state
+    map_name: str = "ascent"
+    attack_team: str = "cloud9"
+    defense_team: str = "g2"
+
+
+@router.post("/narration/stream")
+async def narration_walkthrough_stream(request: NarrationRequest):
+    """Stream AI narration walkthrough for a completed simulation via SSE.
+
+    The AI narrates each key moment (snapshot) with tactical analysis,
+    returning structured events that drive camera movements and text.
+    """
+    import json
+    from ...services.llm import get_anthropic_client, get_coaching_prompt
+
+    client = get_anthropic_client()
+
+    # Build enriched context from snapshots
+    moments = []
+    for i, snap in enumerate(request.snapshots):
+        label = snap.get("label", "")
+        time_ms = snap.get("time_ms", 0)
+        player_count = snap.get("player_count", {})
+        line = f"Moment {i}: [{time_ms}ms] {label} — ATK {player_count.get('attack', '?')}v{player_count.get('defense', '?')} DEF"
+
+        if snap.get("spike_planted"):
+            line += f" | Spike at {snap.get('spike_site', '?')}"
+
+        # Include round state context
+        rs = snap.get("round_state")
+        if rs:
+            adv = rs.get("man_advantage", 0)
+            if adv != 0:
+                line += f" | {'ATK' if adv > 0 else 'DEF'} has {abs(adv)}-man advantage"
+            if rs.get("trade_window_active"):
+                line += " | Trade window open"
+
+        # Include fog-of-war summary
+        pk = snap.get("player_knowledge")
+        if pk:
+            total_known = sum(len(p.get("known_enemies", [])) for p in pk.values())
+            line += f" | {total_known} enemy positions known across all players"
+
+        # Include AI decision context
+        decisions = snap.get("decisions")
+        if decisions:
+            actions = [f"{pid}: {d.get('action', '?')} (conf={d.get('confidence', 0):.0%})" for pid, d in list(decisions.items())[:3]]
+            line += f" | Decisions: {', '.join(actions)}"
+
+        # Include player positions for camera focus
+        players = snap.get("players", [])
+        alive_positions = [(p.get("x", 0.5), p.get("y", 0.5), p.get("player_id", ""), p.get("side", "")) for p in players if p.get("is_alive")]
+        if alive_positions:
+            line += f"\n  Alive players: {', '.join(f'{pid}({side}) at ({x:.2f},{y:.2f})' for x,y,pid,side in alive_positions)}"
+
+        moments.append(line)
+
+    context = f"""You are an expert VALORANT analyst narrating a completed simulation round on {request.map_name}.
+Attack: {request.attack_team} | Defense: {request.defense_team}
+
+Key moments (auto-snapshots at kills, spike plant, and periodic intervals):
+{chr(10).join(moments)}
+
+Final result: {json.dumps(request.final_state, default=str)[:2000]}
+
+For EACH moment, respond with a JSON object on its own line:
+{{
+  "moment_index": 0,
+  "focus_x": 0.5,
+  "focus_y": 0.5,
+  "zoom": 1.2,
+  "narration": "Tactical analysis...",
+  "highlight_players": ["player_id1"],
+  "focus": {{
+    "team": "attack",
+    "players": [{{ "player_id": "...", "x": 0.3, "y": 0.2, "action": "what and why" }}]
+  }},
+  "enemy_state": {{
+    "players": [{{ "player_id": "...", "x": 0.5, "y": 0.4, "action": "what enemy is doing" }}]
+  }},
+  "prediction": "1-sentence prediction with probability"
+}}
+
+Rules:
+- focus_x/focus_y: normalized 0-1 coordinates of the action center. Use provided player positions.
+- zoom: 1.0 for overview, 1.5-2.0 for close-ups on duels/plants
+- highlight_players: player_ids the camera should highlight
+- focus.players: per-player breakdown of what key players are doing AND WHY (reference fog-of-war, decisions, man-advantage)
+- enemy_state.players: what the opposing team is doing at this moment
+- narration: 2-4 sentences of expert tactical analysis. Explain WHY things happened using the decision/knowledge data.
+- prediction: what happens next with rough % probability
+- Cover every moment provided, in order."""
+
+    async def generate():
+        try:
+            system = get_coaching_prompt("coach", context)
+            messages = [{"role": "user", "content": "Narrate this round moment by moment. One JSON per line."}]
+
+            full_text = ""
+
+            async for chunk in client.stream_chat(
+                messages=messages,
+                system=system,
+                max_tokens=4096,
+                temperature=0.7,
+            ):
+                full_text += chunk
+
+            # Parse complete response for JSON objects using brace balancing
+            brace_depth = 0
+            in_string = False
+            escape_next = False
+            json_start = -1
+            i = 0
+            while i < len(full_text):
+                ch = full_text[i]
+                if escape_next:
+                    escape_next = False
+                    i += 1
+                    continue
+                if ch == '\\' and in_string:
+                    escape_next = True
+                    i += 1
+                    continue
+                if ch == '"':
+                    in_string = not in_string
+                elif not in_string:
+                    if ch == '{':
+                        if brace_depth == 0:
+                            json_start = i
+                        brace_depth += 1
+                    elif ch == '}':
+                        brace_depth -= 1
+                        if brace_depth == 0 and json_start >= 0:
+                            json_str = full_text[json_start:i + 1]
+                            try:
+                                data = json.loads(json_str)
+                                if "moment_index" in data:
+                                    yield f"data: {json.dumps({'type': 'moment', 'data': data})}\n\n"
+                            except json.JSONDecodeError:
+                                pass
+                            json_start = -1
+                i += 1
+
+            yield f"data: {json.dumps({'type': 'done', 'data': ''})}\n\n"
+
+        except Exception as e:
+            yield f"data: {json.dumps({'type': 'error', 'data': str(e)})}\n\n"
+
+    return StreamingResponse(
+        generate(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+        },
+    )
+
+
+class WhatIfExplainRequest(BaseModel):
+    """Request for AI what-if explanation."""
+    original: dict
+    what_if: dict
+    modifications: dict
+    map_name: str = "ascent"
+
+
+@router.post("/what-if/explain")
+async def explain_what_if(request: WhatIfExplainRequest):
+    """Get AI explanation of what-if comparison results."""
+    import json
+    from ...services.llm import get_anthropic_client, get_coaching_prompt
+
+    client = get_anthropic_client()
+
+    context = f"""Analyze this what-if comparison on {request.map_name}:
+
+ORIGINAL OUTCOME:
+- Winner: {request.original.get("winner")}
+- Attack alive: {request.original.get("attack_alive")}, Defense alive: {request.original.get("defense_alive")}
+- Spike planted: {request.original.get("spike_planted")}
+
+WHAT-IF OUTCOME (with modifications):
+- Winner: {request.what_if.get("winner")}
+- Attack alive: {request.what_if.get("attack_alive")}, Defense alive: {request.what_if.get("defense_alive")}
+- Spike planted: {request.what_if.get("spike_planted")}
+
+MODIFICATIONS APPLIED:
+{json.dumps(request.modifications, indent=2)}
+
+Provide a concise tactical analysis explaining:
+1. Why the outcome changed (or didn't)
+2. Key tactical implications
+3. What this tells the coach about this scenario"""
+
+    system = get_coaching_prompt("coach")
+    messages = [{"role": "user", "content": context}]
+
+    response = await client.chat(
+        messages=messages,
+        system=system,
+        max_tokens=1024,
+        temperature=0.7,
+    )
+
+    # Extract text from response
+    if hasattr(response, "content") and response.content:
+        text = response.content[0].text if hasattr(response.content[0], "text") else str(response.content[0])
+    else:
+        text = "Unable to generate explanation."
+
+    return {"explanation": text}

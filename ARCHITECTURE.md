@@ -82,8 +82,6 @@ backend/
 │       ├── [DATA TOOL] grid_parser.py (524 lines)
 │       ├── [DATA TOOL] grid_data_extractor.py (775 lines)
 │       ├── [DATA TOOL] player_profiles.py (433 lines)
-│       ├── [DEAD] coordination_system.py (636 lines)
-│       ├── [DEAD] combat_system_v2.py (697 lines)
 │       └── [EXPERIMENTAL] trade_system.py (391 lines)
 │
 ├── scripts/                    # Analysis and testing
@@ -207,11 +205,9 @@ All from **33 VCT matches with 1,739 rounds**:
 
 | File | Lines | Status | Why |
 |------|-------|--------|-----|
-| `coordination_system.py` | 636 | **FAILED** | Experiment made accuracy worse (50% vs 71%) |
-| `combat_system_v2.py` | 697 | **SUPERSEDED** | Replaced by `combat_model.py` |
 | `trade_system.py` | 391 | **EXPERIMENTAL** | Used only in scenario analysis scripts |
 
-**Recommendation**: Archive or delete these files.
+`coordination_system.py` and `combat_system_v2.py` were deleted (dead code cleanup).
 
 ---
 

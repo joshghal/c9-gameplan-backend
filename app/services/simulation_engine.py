@@ -36,7 +36,7 @@ from .weapon_system import (
 from .economy_engine import EconomyEngine, BuyType, Loadout, TeamEconomy
 from .round_state import RoundState, WinProbabilityCalculator, KillEvent
 from .behavior_adaptation import (
-    BehaviorAdapter, BehaviorModifiers, PlayerTendencies, PositioningAdvisor,
+    BehaviorAdapter, BehaviorModifiers, PlayerTendencies,
     SpikeCarrierTendencies
 )
 from .strategy_coordinator import (
@@ -254,6 +254,10 @@ class SimulationSnapshot:
     events: List[Dict[str, Any]]
     spike_planted: bool
     spike_site: Optional[str]
+    label: str = ""
+    round_state_data: Optional[Dict[str, Any]] = None
+    player_knowledge_data: Optional[Dict[str, Any]] = None
+    decisions_data: Optional[Dict[str, Any]] = None
 
 
 class SimulationEngine:
@@ -567,9 +571,9 @@ class SimulationEngine:
             session: Simulation session configuration
             round_type: Type of buy round ('pistol', 'eco', 'force', 'half', 'full')
         """
-        # Load teams and players
-        attack_team = await self._load_team(session.attack_team_id)
-        defense_team = await self._load_team(session.defense_team_id)
+        # Load teams and players (with map-specific agent overrides)
+        attack_team = await self._load_team(session.attack_team_id, map_name=session.map_name or '')
+        defense_team = await self._load_team(session.defense_team_id, map_name=session.map_name or '')
 
         # P1 FIX: Store map name for site lookups
         self.map_name = session.map_name.lower() if session.map_name else 'ascent'
@@ -933,7 +937,33 @@ class SimulationEngine:
                 if player_id in self.players:
                     self.players[player_id].role = assignment.role
 
-    async def _load_team(self, team_id: str) -> Dict[str, Any]:
+    # Map-specific agent compositions based on VCT tendencies
+    MAP_AGENT_OVERRIDES: Dict[tuple, list] = {
+        ('cloud9', 'bind'): ['neon', 'raze', 'brimstone', 'skye', 'cypher'],
+        ('cloud9', 'haven'): ['jett', 'raze', 'astra', 'sova', 'killjoy'],
+        ('cloud9', 'split'): ['raze', 'phoenix', 'omen', 'breach', 'cypher'],
+        ('cloud9', 'lotus'): ['jett', 'fade', 'omen', 'kayo', 'killjoy'],
+        ('cloud9', 'ascent'): ['jett', 'raze', 'omen', 'sova', 'killjoy'],
+        ('cloud9', 'icebox'): ['jett', 'chamber', 'viper', 'sova', 'killjoy'],
+        ('cloud9', 'breeze'): ['jett', 'cypher', 'viper', 'sova', 'chamber'],
+        ('cloud9', 'fracture'): ['neon', 'raze', 'brimstone', 'breach', 'cypher'],
+        ('cloud9', 'pearl'): ['jett', 'raze', 'astra', 'fade', 'killjoy'],
+        ('cloud9', 'sunset'): ['jett', 'raze', 'omen', 'breach', 'cypher'],
+        ('sentinels', 'bind'): ['raze', 'skye', 'brimstone', 'cypher', 'fade'],
+        ('sentinels', 'haven'): ['jett', 'raze', 'astra', 'sova', 'killjoy'],
+        ('sentinels', 'split'): ['jett', 'raze', 'omen', 'breach', 'cypher'],
+        ('sentinels', 'lotus'): ['jett', 'fade', 'omen', 'kayo', 'killjoy'],
+        ('sentinels', 'ascent'): ['jett', 'raze', 'omen', 'sova', 'killjoy'],
+        ('sentinels', 'icebox'): ['jett', 'chamber', 'viper', 'sova', 'killjoy'],
+        ('g2', 'bind'): ['raze', 'skye', 'brimstone', 'fade', 'cypher'],
+        ('g2', 'haven'): ['jett', 'raze', 'astra', 'sova', 'killjoy'],
+        ('g2', 'split'): ['jett', 'raze', 'omen', 'breach', 'cypher'],
+        ('g2', 'lotus'): ['jett', 'fade', 'omen', 'kayo', 'killjoy'],
+        ('g2', 'ascent'): ['jett', 'raze', 'omen', 'sova', 'cypher'],
+        ('g2', 'icebox'): ['jett', 'chamber', 'viper', 'sova', 'killjoy'],
+    }
+
+    async def _load_team(self, team_id: str, map_name: str = '') -> Dict[str, Any]:
         """Load team with players from database or use defaults."""
         # Default team roster with pro-style agent compositions
         DEFAULT_TEAMS = {
@@ -969,19 +999,30 @@ class SimulationEngine:
             },
         }
 
+        def _apply_map_override(team_data: Dict[str, Any]) -> Dict[str, Any]:
+            """Apply map-specific agent overrides if available."""
+            if not map_name:
+                return team_data
+            key = (team_data['id'].lower(), map_name.lower())
+            if key in self.MAP_AGENT_OVERRIDES:
+                agents = self.MAP_AGENT_OVERRIDES[key]
+                for i, player in enumerate(team_data['players'][:len(agents)]):
+                    player['agent'] = agents[i]
+            return team_data
+
         # Return default if no database
         if not self.db:
             team_lower = team_id.lower()
             if team_lower in DEFAULT_TEAMS:
-                return DEFAULT_TEAMS[team_lower]
-            return {
+                return _apply_map_override(DEFAULT_TEAMS[team_lower])
+            return _apply_map_override({
                 'id': team_id,
                 'name': team_id.title(),
                 'players': [
                     {'id': f'{team_id}_player_{i}', 'name': f'Player {i}', 'agent': agent}
                     for i, agent in enumerate(['jett', 'raze', 'omen', 'sova', 'killjoy'])
                 ]
-            }
+            })
 
         result = await self.db.execute(
             select(Team)
@@ -993,24 +1034,24 @@ class SimulationEngine:
             # Return default team structure
             team_lower = team_id.lower()
             if team_lower in DEFAULT_TEAMS:
-                return DEFAULT_TEAMS[team_lower]
-            return {
+                return _apply_map_override(DEFAULT_TEAMS[team_lower])
+            return _apply_map_override({
                 'id': team_id,
                 'name': team_id,
                 'players': [
                     {'id': f'{team_id}_player_{i}', 'name': f'Player {i}', 'agent': 'unknown'}
                     for i in range(5)
                 ]
-            }
+            })
 
-        return {
+        return _apply_map_override({
             'id': team.id,
             'name': team.name,
             'players': [
                 {'id': p.id, 'name': p.name, 'agent': p.role or 'unknown'}
                 for p in team.players
             ]
-        }
+        })
 
     async def _load_map_config(self, map_name: str) -> Optional[MapConfig]:
         """Load map configuration from database or return None for default handling."""
@@ -1207,6 +1248,8 @@ class SimulationEngine:
         """Advance simulation by specified number of ticks."""
         current_time = session.current_time_ms
 
+        last_periodic_snap = getattr(self, '_last_periodic_snapshot_ms', 0)
+
         for _ in range(ticks):
             current_time += self.TICK_DURATION_MS
 
@@ -1215,6 +1258,12 @@ class SimulationEngine:
                 break
 
             phase = self._get_current_phase(current_time)
+
+            # Periodic snapshot every 10 seconds
+            if current_time - last_periodic_snap >= 10000:
+                self._auto_snapshot(current_time, "periodic", label=f"periodic: {phase} phase at {current_time}ms")
+                last_periodic_snap = current_time
+                self._last_periodic_snapshot_ms = last_periodic_snap
 
             # Update round state trade window
             self.round_state.update_trade_window(current_time)
@@ -2380,6 +2429,7 @@ class SimulationEngine:
             # P3 FIX: Grant ultimate points on trade kill
             trader.grant_ultimate_point("kill")
             target.grant_ultimate_point("death")
+            self._auto_snapshot(time_ms, "kill", label=f"kill: {target.player_id} by {trader.player_id} (trade)")
 
             self.pending_trade = None  # Trade completed
         else:
@@ -2421,6 +2471,7 @@ class SimulationEngine:
             # P3 FIX: Grant ultimate points on failed trade kill
             target.grant_ultimate_point("kill")
             trader.grant_ultimate_point("death")
+            self._auto_snapshot(time_ms, "kill", label=f"kill: {trader.player_id} by {target.player_id} (failed trade)")
             # Don't clear pending_trade - another teammate might try
 
     def _process_sound_cues(self, time_ms: int):
@@ -3294,6 +3345,8 @@ class SimulationEngine:
                 }
             ))
 
+            self._auto_snapshot(time_ms, "kill", label=f"kill: {victim.player_id} by {killer.player_id} ({killer_weapon.name}{', headshot' if is_headshot else ''})")
+
             # P3 FIX: Grant ultimate points on kill/death
             killer_ult_ready = killer.grant_ultimate_point("kill")
             victim_ult_ready = victim.grant_ultimate_point("death")
@@ -3623,6 +3676,7 @@ class SimulationEngine:
                     player.has_spike = False  # Spike is now on site, not on player
                     self.spike_planted = True
                     self.spike_plant_time = time_ms
+                    self._auto_snapshot(time_ms, "spike_plant", label=f"spike_plant: {player.player_id} planting")
 
                     # VCT FIX: Determine which site based on NEAREST to planter position
                     # Don't default to 'A' - find the closest site instead
@@ -4213,6 +4267,124 @@ class SimulationEngine:
 
         return False
 
+    def _auto_snapshot(self, time_ms: int, trigger: str, label: str = ""):
+        """Auto-create enriched snapshot at key moments (kills, spike plant, periodic)."""
+        try:
+            self._auto_snapshot_inner(time_ms, trigger, label)
+        except Exception as e:
+            # Fallback: create a basic snapshot without enriched data
+            try:
+                snapshot = SimulationSnapshot(
+                    id=str(uuid4()),
+                    time_ms=time_ms,
+                    phase=self._get_current_phase(time_ms),
+                    label=label or trigger,
+                    players=[{'player_id': p.player_id, 'side': p.side, 'x': p.x, 'y': p.y,
+                              'is_alive': p.is_alive, 'health': p.health,
+                              'facing_angle': p.facing_angle} for p in self.players.values()],
+                    events=[],
+                    spike_planted=self.spike_planted,
+                    spike_site=self.spike_site,
+                )
+                self.snapshots.append(snapshot)
+            except Exception:
+                pass  # Don't crash simulation for snapshot failures
+
+    def _auto_snapshot_inner(self, time_ms: int, trigger: str, label: str = ""):
+        """Inner snapshot logic with enriched context."""
+        # Build round state context
+        rs = self.round_state
+        round_state_data = {
+            'attack_alive': rs.attack_alive,
+            'defense_alive': rs.defense_alive,
+            'first_blood_team': rs.first_blood_team,
+            'first_blood_time_ms': rs.first_blood_time_ms,
+            'man_advantage': rs.attack_alive - rs.defense_alive,
+            'trade_window_active': rs.potential_trade_window,
+            'total_kills': len(rs.kills),
+            'kills': [
+                {
+                    'killer_id': k.killer_id,
+                    'victim_id': k.victim_id,
+                    'time_ms': k.time_ms,
+                    'weapon': k.weapon,
+                    'is_headshot': k.is_headshot,
+                    'is_first_blood': k.is_first_blood,
+                }
+                for k in rs.kills[-5:]  # last 5 kills for context
+            ],
+        }
+
+        # Build per-player fog-of-war knowledge
+        player_knowledge_data = {}
+        for pid, player in self.players.items():
+            if not player.is_alive:
+                continue
+            knowledge = self.info_manager.get_knowledge(pid)
+            if knowledge:
+                known = []
+                enemies = getattr(knowledge, 'enemies', {})
+                for eid, info in enemies.items():
+                    known.append({
+                        'enemy_id': eid,
+                        'x': getattr(info, 'last_known_x', 0),
+                        'y': getattr(info, 'last_known_y', 0),
+                        'confidence': info.confidence.value if hasattr(info.confidence, 'value') else str(info.confidence),
+                        'age_ms': time_ms - info.last_seen_ms if hasattr(info, 'last_seen_ms') else 0,
+                    })
+                cleared = list(knowledge.cleared_areas.keys()) if knowledge.cleared_areas else []
+                player_knowledge_data[pid] = {
+                    'known_enemies': known,
+                    'cleared_areas': cleared,
+                }
+
+        # Build AI decision context
+        decisions_data = {}
+        if hasattr(self, 'ai_behavior') and hasattr(self.ai_behavior, 'current_decisions'):
+            for pid, decision in self.ai_behavior.current_decisions.items():
+                if pid in self.players and self.players[pid].is_alive:
+                    decisions_data[pid] = {
+                        'action': decision.decision.value if hasattr(decision.decision, 'value') else str(decision.decision),
+                        'utility_score': round(decision.utility, 3),
+                        'confidence': round(decision.confidence, 3),
+                        'reason': decision.reasoning or '',
+                    }
+
+        snapshot = SimulationSnapshot(
+            id=str(uuid4()),
+            time_ms=time_ms,
+            phase=self._get_current_phase(time_ms),
+            label=label or trigger,
+            players=[
+                {
+                    'player_id': p.player_id,
+                    'team_id': p.team_id,
+                    'side': p.side,
+                    'x': p.x,
+                    'y': p.y,
+                    'is_alive': p.is_alive,
+                    'health': p.health,
+                    'shield': p.shield,
+                    'has_spike': p.has_spike,
+                    'weapon_name': getattr(p.weapon, 'name', 'Classic') if p.weapon else 'Classic',
+                    'armor_name': getattr(p.armor, 'name', 'none') if p.armor else 'none',
+                    'loadout_value': p.loadout_value,
+                    'agent': p.agent,
+                    'role': p.role.value if p.role else None,
+                    'name': p.name,
+                    'facing_angle': p.facing_angle,
+                }
+                for p in self.players.values()
+            ],
+            events=[e.model_dump() for e in self.events],
+            spike_planted=self.spike_planted,
+            spike_site=self.spike_site,
+            round_state_data=round_state_data,
+            player_knowledge_data=player_knowledge_data,
+            decisions_data=decisions_data,
+        )
+        self.snapshots.append(snapshot)
+
     async def create_snapshot(self, session: SimulationSession) -> str:
         """Create a snapshot of current state for what-if scenarios."""
         snapshot_id = str(uuid4())
@@ -4317,6 +4489,59 @@ class SimulationEngine:
         self.spike_planted = snapshot.spike_planted
         self.spike_site = snapshot.spike_site
 
+        # Restore round state from enriched snapshot data
+        try:
+            rs_data = getattr(snapshot, 'round_state_data', None)
+            if rs_data and isinstance(rs_data, dict):
+                self.round_state.attack_alive = rs_data.get('attack_alive', self.round_state.attack_alive)
+                self.round_state.defense_alive = rs_data.get('defense_alive', self.round_state.defense_alive)
+                self.round_state.first_blood_team = rs_data.get('first_blood_team', self.round_state.first_blood_team)
+                self.round_state.potential_trade_window = rs_data.get('trade_window_active', False)
+                # Restore kills list from snapshot
+                if 'kills' in rs_data and isinstance(rs_data['kills'], list):
+                    from .round_state import KillEvent
+                    self.round_state.kills = []
+                    for k in rs_data['kills']:
+                        try:
+                            self.round_state.kills.append(KillEvent(
+                                time_ms=k.get('time_ms', 0),
+                                killer_id=k.get('killer_id', ''),
+                                killer_team='',
+                                victim_id=k.get('victim_id', ''),
+                                victim_team='',
+                                position=(0, 0),
+                                weapon=k.get('weapon', ''),
+                                is_headshot=k.get('is_headshot', False),
+                                is_first_blood=k.get('is_first_blood', False),
+                            ))
+                        except Exception:
+                            pass
+        except Exception:
+            pass  # Degrade gracefully if snapshot lacks enriched data
+
+        # Restore player knowledge (fog-of-war)
+        try:
+            pk_data = getattr(snapshot, 'player_knowledge_data', None)
+            if pk_data and isinstance(pk_data, dict):
+                for pid, knowledge_data in pk_data.items():
+                    if pid in self.players:
+                        knowledge = self.info_manager.get_knowledge(pid)
+                        if knowledge and 'known_enemies' in knowledge_data:
+                            for enemy_info in knowledge_data['known_enemies']:
+                                eid = enemy_info.get('enemy_id', '')
+                                if eid:
+                                    knowledge.see_enemy(
+                                        enemy_id=eid,
+                                        x=enemy_info.get('x', 0),
+                                        y=enemy_info.get('y', 0),
+                                        time_ms=snapshot.time_ms,
+                                    )
+                        if knowledge and 'cleared_areas' in knowledge_data:
+                            for area_name in knowledge_data['cleared_areas']:
+                                knowledge.clear_area(area_name, snapshot.time_ms)
+        except Exception:
+            pass  # Degrade gracefully if snapshot lacks knowledge data
+
         # Apply modifications
         for player_id, mods in scenario.modifications.items():
             if player_id in self.players:
@@ -4334,8 +4559,60 @@ class SimulationEngine:
                 if 'shield' in mods:
                     player.shield = mods['shield']
 
-        # Run simulation forward
-        return await self.advance(session, ticks=100)
+        # Swap sides if requested
+        if hasattr(scenario, 'swap_sides') and scenario.swap_sides:
+            for p in self.players.values():
+                p.side = 'defense' if p.side == 'attack' else 'attack'
+
+        # Economy override: re-equip all players with new buy type
+        if hasattr(scenario, 'round_type_override') and scenario.round_type_override:
+            try:
+                from .economy_engine import EconomyEngine, BuyType, TeamEconomy
+                buy_type_map = {
+                    'pistol': BuyType.PISTOL, 'eco': BuyType.ECO, 'force': BuyType.FORCE,
+                    'half': BuyType.HALF, 'full': BuyType.FULL,
+                }
+                bt = buy_type_map.get(scenario.round_type_override.lower(), BuyType.FULL)
+                for side in ['attack', 'defense']:
+                    side_players = [p for p in self.players.values() if p.side == side and p.is_alive]
+                    if side_players:
+                        credit_map = {
+                            BuyType.PISTOL: 800, BuyType.ECO: 2000, BuyType.FORCE: 3500,
+                            BuyType.HALF: 4500, BuyType.FULL: 9000,
+                        }
+                        credits = [credit_map.get(bt, 9000)] * len(side_players)
+                        team_eco = TeamEconomy(credits=credits)
+                        loadouts = EconomyEngine.generate_team_loadout(
+                            team_economy=team_eco,
+                            round_num=1,
+                            side=side,
+                            forced_buy_type=bt,
+                        )
+                        for i, player in enumerate(side_players):
+                            if i < len(loadouts):
+                                loadout = loadouts[i]
+                                if hasattr(loadout, 'weapon'):
+                                    player.weapon = loadout.weapon
+                                if hasattr(loadout, 'armor'):
+                                    player.armor = loadout.armor
+                                if hasattr(loadout, 'shield'):
+                                    player.shield = loadout.shield
+            except Exception:
+                pass  # Economy override is best-effort
+
+
+
+        # Run simulation to completion
+        state = None
+        for _ in range(1000):
+            state = await self.advance(session, ticks=5)
+            session.current_time_ms = state.current_time_ms
+            attack_alive = sum(1 for p in state.positions if p.side == 'attack' and p.is_alive)
+            defense_alive = sum(1 for p in state.positions if p.side == 'defense' and p.is_alive)
+            if attack_alive == 0 or defense_alive == 0 or state.current_time_ms >= 100000:
+                break
+
+        return state
 
     async def analyze(self, session: SimulationSession) -> Dict[str, Any]:
         """Analyze simulation and provide improvement suggestions."""
@@ -4428,6 +4705,7 @@ class SimulationEngine:
             PlayerPosition(
                 player_id=p.player_id,
                 team_id=p.team_id,
+                name=p.name,
                 x=p.x,
                 y=p.y,
                 is_alive=p.is_alive,
