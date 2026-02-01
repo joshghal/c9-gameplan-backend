@@ -100,15 +100,20 @@ class StreamingHandler:
             if not tool_calls:
                 # No more tool calls, stream the final text
                 if text:
-                    # Send text in chunks for streaming effect
-                    words = text.split()
-                    for i, word in enumerate(words):
-                        chunk = word + (" " if i < len(words) - 1 else "")
-                        event = StreamEvent(
-                            event_type=StreamEventType.TEXT,
-                            data=chunk,
-                        )
-                        yield event.to_sse()
+                    # Send text in chunks, preserving newlines for Markdown parsing
+                    # Split by spaces only (not newlines) to keep formatting intact
+                    for line in text.split('\n'):
+                        words = line.split(' ')
+                        for i, word in enumerate(words):
+                            chunk = word + (" " if i < len(words) - 1 else "")
+                            if chunk:
+                                event = StreamEvent(
+                                    event_type=StreamEventType.TEXT,
+                                    data=chunk,
+                                )
+                                yield event.to_sse()
+                        # Emit newline as its own chunk
+                        yield StreamEvent(event_type=StreamEventType.TEXT, data="\n").to_sse()
 
                 done_event = StreamEvent(
                     event_type=StreamEventType.DONE,
@@ -177,9 +182,29 @@ class StreamingHandler:
                 "content": tool_results,
             })
 
-        # Max iterations reached
+        # Max iterations reached — make one final call without tools to get a text response
+        try:
+            final_text, _ = await llm_client.chat_with_tools(
+                messages=current_messages,
+                system=system + "\n\nIMPORTANT: Do NOT use any tools. Respond with text only based on the information you already have.",
+                tools=[],  # No tools available
+            )
+            if final_text:
+                for line in final_text.split('\n'):
+                    words = line.split(' ')
+                    for i, word in enumerate(words):
+                        chunk = word + (" " if i < len(words) - 1 else "")
+                        if chunk:
+                            yield StreamEvent(event_type=StreamEventType.TEXT, data=chunk).to_sse()
+                    yield StreamEvent(event_type=StreamEventType.TEXT, data="\n").to_sse()
+                done_event = StreamEvent(event_type=StreamEventType.DONE, data="")
+                yield done_event.to_sse()
+                return
+        except Exception:
+            pass
+
         error_event = StreamEvent(
             event_type=StreamEventType.ERROR,
-            data="Max tool iterations reached",
+            data="Unable to complete analysis. Try asking a more specific question.",
         )
         yield error_event.to_sse()

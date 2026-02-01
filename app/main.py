@@ -3,14 +3,13 @@
 VALORANT tactical simulation and analysis platform.
 """
 
+import os
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import redis.asyncio as redis
 
 from .config import get_settings
 from .api import api_router
-from .database import async_engine
 
 settings = get_settings()
 
@@ -21,27 +20,41 @@ async def lifespan(app: FastAPI):
     # Startup
     print("Starting C9 Tactical Vision API...")
 
-    # Initialize Redis connection
-    app.state.redis = redis.from_url(
-        settings.redis_url,
-        encoding="utf-8",
-        decode_responses=True
-    )
-
-    # Test database connection
+    # Initialize Redis connection (optional - skip if unavailable)
     try:
-        async with async_engine.connect() as conn:
-            await conn.execute("SELECT 1")
-        print("Database connection successful")
+        import redis.asyncio as redis
+        app.state.redis = redis.from_url(
+            settings.redis_url,
+            encoding="utf-8",
+            decode_responses=True
+        )
+        await app.state.redis.ping()
+        print("Redis connection successful")
     except Exception as e:
-        print(f"Database connection failed: {e}")
+        print(f"Redis unavailable, running without cache: {e}")
+        app.state.redis = None
+
+    # Test database connection (optional - skip if unavailable)
+    try:
+        from .database import async_engine
+        from sqlalchemy import text
+        async with async_engine.connect() as conn:
+            await conn.execute(text("SELECT 1"))
+        print("Database connection successful")
+        app.state.db_available = True
+    except Exception as e:
+        print(f"Database unavailable, running without DB: {e}")
+        app.state.db_available = False
 
     yield
 
     # Shutdown
     print("Shutting down C9 Tactical Vision API...")
-    await app.state.redis.close()
-    await async_engine.dispose()
+    if app.state.redis:
+        await app.state.redis.close()
+    if getattr(app.state, 'db_available', False):
+        from .database import async_engine
+        await async_engine.dispose()
 
 
 # Create FastAPI application
@@ -61,14 +74,21 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# CORS configuration
+# CORS configuration - allow deployed frontend and localhost
+cors_origins = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "http://127.0.0.1:3000",
+]
+
+# Add deployed frontend URL from env var
+frontend_url = os.environ.get("FRONTEND_URL")
+if frontend_url:
+    cors_origins.append(frontend_url)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "http://localhost:3001",
-        "http://127.0.0.1:3000",
-    ],
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -101,6 +121,6 @@ if __name__ == "__main__":
     uvicorn.run(
         "app.main:app",
         host="0.0.0.0",
-        port=8000,
+        port=int(os.environ.get("PORT", 8000)),
         reload=True,
     )

@@ -29,6 +29,7 @@ class ChatRequest(BaseModel):
     map_context: Optional[str] = None
     team_context: Optional[str] = None
     use_tools: bool = True
+    simulation_context: Optional[dict] = None  # Snapshots, events, final state for grounded responses
 
 
 class ChatResponse(BaseModel):
@@ -110,6 +111,12 @@ async def coaching_chat_stream(request: ChatRequest):
             map_name=request.map_context,
             team_name=request.team_context,
         )
+
+    # Store simulation context on session for grounded responses
+    if request.simulation_context:
+        session = coach.get_session(session_id)
+        if session:
+            session.simulation_context = request.simulation_context
 
     async def generate():
         async for event in coach.stream_chat(
@@ -245,6 +252,7 @@ class LiveNarrationRequest(BaseModel):
     map_name: str = "ascent"
     attack_team: str = "cloud9"
     defense_team: str = "sentinels"
+    player_roster: list[dict] = []  # [{id, name, agent, side, team}]
 
 
 @router.post("/narrate-snapshot")
@@ -259,6 +267,14 @@ async def narrate_single_snapshot(request: LiveNarrationRequest):
 
     client = get_anthropic_client()
 
+    # Build player ID → name lookup
+    name_map: dict[str, str] = {}
+    for p in request.player_roster:
+        name_map[p.get("id", "")] = p.get("name", p.get("id", ""))
+
+    def resolve_name(pid: str) -> str:
+        return name_map.get(pid, pid)
+
     snap = request.snapshot
     label = snap.get("label", "")
     time_ms = snap.get("time_ms", 0)
@@ -268,11 +284,11 @@ async def narrate_single_snapshot(request: LiveNarrationRequest):
 
     # Build per-player details
     atk_details = "\n".join(
-        f"  - {p.get('player_id')} ({p.get('agent','?')}) at ({p.get('x',0):.2f},{p.get('y',0):.2f}) HP:{p.get('health',0)}"
+        f"  - {resolve_name(p.get('player_id',''))} ({p.get('agent','?')}) at ({p.get('x',0):.2f},{p.get('y',0):.2f}) HP:{p.get('health',0)}"
         for p in atk_alive
     )
     def_details = "\n".join(
-        f"  - {p.get('player_id')} ({p.get('agent','?')}) at ({p.get('x',0):.2f},{p.get('y',0):.2f}) HP:{p.get('health',0)}"
+        f"  - {resolve_name(p.get('player_id',''))} ({p.get('agent','?')}) at ({p.get('x',0):.2f},{p.get('y',0):.2f}) HP:{p.get('health',0)}"
         for p in def_alive
     )
 
@@ -282,13 +298,13 @@ async def narrate_single_snapshot(request: LiveNarrationRequest):
     for pid, info in (pk or {}).items():
         known = info.get("known_enemies", [])
         if known:
-            fog_lines.append(f"  {pid} sees {len(known)} enemies: {', '.join(e.get('enemy_id','?') for e in known)}")
+            fog_lines.append(f"  {resolve_name(pid)} sees {len(known)} enemies: {', '.join(resolve_name(e.get('enemy_id','?')) for e in known)}")
 
     # Decisions
     decisions = snap.get("decisions", {})
     dec_lines = []
     for pid, d in (decisions or {}).items():
-        dec_lines.append(f"  {pid}: {d.get('action','?')} (utility={d.get('utility_score',0):.2f}, reason: {d.get('reason','')})")
+        dec_lines.append(f"  {resolve_name(pid)}: {d.get('action','?')} (utility={d.get('utility_score',0):.2f}, reason: {d.get('reason','')})")
 
     # Round state
     rs = snap.get("round_state", {})
@@ -300,8 +316,19 @@ async def narrate_single_snapshot(request: LiveNarrationRequest):
             f"  [{i+1}] {n}" for i, n in enumerate(request.previous_narrations[-5:])
         )
 
+    # Roster reference for prompt
+    roster_ref = ""
+    if request.player_roster:
+        roster_ref = "\nPlayer Roster:\n" + "\n".join(
+            f"  - {p.get('name', p.get('id'))} ({p.get('agent', '?')}, {p.get('side', '?')})"
+            for p in request.player_roster
+        ) + "\n"
+
     context = f"""You are narrating a LIVE VALORANT simulation on {request.map_name}.
 Attack: {request.attack_team} | Defense: {request.defense_team}
+{roster_ref}
+IMPORTANT: ALWAYS use real player names — NEVER internal IDs like 'c9_1' or 'g2_2'.
+
 Current moment: [{time_ms}ms] {label}
 Man advantage: {'ATK +' + str(man_adv) if man_adv > 0 else 'DEF +' + str(abs(man_adv)) if man_adv < 0 else 'Even'}
 Spike: {'Planted at ' + str(snap.get('spike_site','?')) if snap.get('spike_planted') else 'Not planted'}
@@ -383,6 +410,7 @@ class NarrationRequest(BaseModel):
     map_name: str = "ascent"
     attack_team: str = "cloud9"
     defense_team: str = "g2"
+    player_roster: list[dict] = []  # [{id, name, agent, side, team}]
 
 
 @router.post("/narration/stream")
@@ -396,6 +424,14 @@ async def narration_walkthrough_stream(request: NarrationRequest):
     from ...services.llm import get_anthropic_client, get_coaching_prompt
 
     client = get_anthropic_client()
+
+    # Build player ID → name lookup from roster
+    name_map: dict[str, str] = {}
+    for p in request.player_roster:
+        name_map[p.get("id", "")] = p.get("name", p.get("id", ""))
+
+    def resolve_name(pid: str) -> str:
+        return name_map.get(pid, pid)
 
     # Build enriched context from snapshots
     moments = []
@@ -426,19 +462,29 @@ async def narration_walkthrough_stream(request: NarrationRequest):
         # Include AI decision context
         decisions = snap.get("decisions")
         if decisions:
-            actions = [f"{pid}: {d.get('action', '?')} (conf={d.get('confidence', 0):.0%})" for pid, d in list(decisions.items())[:3]]
+            actions = [f"{resolve_name(pid)}: {d.get('action', '?')} (conf={d.get('confidence', 0):.0%})" for pid, d in list(decisions.items())[:3]]
             line += f" | Decisions: {', '.join(actions)}"
 
         # Include player positions for camera focus
         players = snap.get("players", [])
-        alive_positions = [(p.get("x", 0.5), p.get("y", 0.5), p.get("player_id", ""), p.get("side", "")) for p in players if p.get("is_alive")]
+        alive_positions = [(p.get("x", 0.5), p.get("y", 0.5), p.get("player_id", ""), p.get("side", ""), p.get("agent", "?")) for p in players if p.get("is_alive")]
         if alive_positions:
-            line += f"\n  Alive players: {', '.join(f'{pid}({side}) at ({x:.2f},{y:.2f})' for x,y,pid,side in alive_positions)}"
+            line += f"\n  Alive players: {', '.join(f'{resolve_name(pid)}({side},{agent}) at ({x:.2f},{y:.2f})' for x,y,pid,side,agent in alive_positions)}"
 
         moments.append(line)
 
+    # Build roster summary for prompt
+    roster_lines = ""
+    if request.player_roster:
+        roster_lines = "\nPlayer Roster:\n" + "\n".join(
+            f"  - {p.get('name', p.get('id'))} ({p.get('agent', '?')}, {p.get('side', '?')}, {p.get('team', '?')})"
+            for p in request.player_roster
+        ) + "\n"
+
     context = f"""You are an expert VALORANT analyst narrating a completed simulation round on {request.map_name}.
 Attack: {request.attack_team} | Defense: {request.defense_team}
+{roster_lines}
+IMPORTANT: ALWAYS use real player names (e.g. 'Jakee', 'leaf', 'Cryocells') — NEVER use internal IDs like 'c9_1' or 'g2_2'.
 
 Key moments (auto-snapshots at kills, spike plant, and periodic intervals):
 {chr(10).join(moments)}

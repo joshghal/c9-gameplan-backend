@@ -29,7 +29,7 @@ class LLMClient:
         messages: list[dict],
         system: str = "",
         max_tokens: int = 4096,
-        temperature: float = 0.7,
+        temperature: float = 0,
         tools: Optional[list] = None,
     ):
         """Send a chat message and get a response."""
@@ -113,7 +113,7 @@ class LLMClient:
         messages: list[dict],
         system: str = "",
         max_tokens: int = 4096,
-        temperature: float = 0.7,
+        temperature: float = 0,
         tools: Optional[list] = None,
     ) -> AsyncGenerator[str, None]:
         """Stream a chat response for real-time display."""

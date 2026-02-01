@@ -5,7 +5,7 @@ from functools import lru_cache
 class Settings(BaseSettings):
     # Application
     app_name: str = "C9 Tactical Vision"
-    debug: bool = True
+    debug: bool = False
     api_version: str = "v1"
 
     # Database

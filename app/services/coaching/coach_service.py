@@ -32,6 +32,7 @@ class CoachingSession:
     created_at: datetime
     map_context: Optional[str] = None
     team_context: Optional[str] = None
+    simulation_context: Optional[dict] = None  # Snapshots, events, final state
 
 
 class CoachService:
@@ -184,6 +185,111 @@ class CoachService:
             team_name=session.team_context,
         )
 
+        # Inject simulation context if available (from Command Center)
+        if session.simulation_context:
+            sim_ctx = session.simulation_context
+            sim_summary = "\n\n## Active Simulation Context\n"
+            sim_summary += "IMPORTANT: You have full simulation data below. For questions about THIS simulation (why a team won, what happened, key moments), answer directly from this data. Do NOT call tools like get_team_patterns — those return historical VCT data, not data about this simulation. Only use tools if the user asks about general team tendencies or patterns unrelated to this specific round.\n"
+            sim_summary += "ALWAYS use real player names (e.g. 'Jakee', 'leaf') — NEVER use internal IDs like 'c9_1' or 'nrg_player_0'.\n\n"
+
+            # Build player ID → name lookup from roster
+            name_map: dict[str, str] = {}
+            roster = sim_ctx.get("player_roster", [])
+            if roster:
+                # Group by team for clarity
+                attack_players = [p for p in roster if p.get("side") == "attack"]
+                defense_players = [p for p in roster if p.get("side") == "defense"]
+                atk_team = sim_ctx.get("attack_team", "Attack")
+                def_team = sim_ctx.get("defense_team", "Defense")
+
+                sim_summary += f"PLAYERS IN THIS SIMULATION (use these names EXACTLY):\n"
+                sim_summary += f"\n  {atk_team} (ATTACK):\n"
+                for p in attack_players:
+                    pid = p.get("id", "")
+                    pname = p.get("name", pid)
+                    name_map[pid] = pname
+                    sim_summary += f"    {pname} — plays {p.get('agent', '?')}\n"
+                sim_summary += f"\n  {def_team} (DEFENSE):\n"
+                for p in defense_players:
+                    pid = p.get("id", "")
+                    pname = p.get("name", pid)
+                    name_map[pid] = pname
+                    sim_summary += f"    {pname} — plays {p.get('agent', '?')}\n"
+
+                # Flat name list for quick lookup
+                all_names = [name_map[pid] for pid in name_map if name_map[pid] != pid]
+                sim_summary += f"\nALL PLAYER NAMES: {', '.join(all_names)}\n"
+                sim_summary += "When the user mentions ANY of these names, that player IS in this simulation. Do not say they are not.\n\n"
+
+            def resolve_name(pid: str) -> str:
+                """Resolve player ID to real name."""
+                return name_map.get(pid, pid)
+
+            if sim_ctx.get("map_name"):
+                sim_summary += f"Map: {sim_ctx['map_name']}"
+                if sim_ctx.get("attack_team"):
+                    sim_summary += f" | ATK: {sim_ctx['attack_team']} vs DEF: {sim_ctx.get('defense_team', '?')}"
+                sim_summary += "\n"
+            if sim_ctx.get("final_state"):
+                fs = sim_ctx["final_state"]
+                sim_summary += f"Result: ATK {fs.get('attack_alive', '?')} alive vs DEF {fs.get('defense_alive', '?')} alive"
+                sim_summary += f" | Spike: {'planted' if fs.get('spike_planted') else 'not planted'}"
+                sim_summary += f" | Duration: {fs.get('duration_ms', 0)}ms | Events: {fs.get('total_events', 0)}\n"
+                # Include player final states
+                positions = fs.get("positions", [])
+                if positions:
+                    sim_summary += "Final player states:\n"
+                    for p in positions:
+                        status = "ALIVE" if p.get("is_alive") else "DEAD"
+                        pname = p.get("name") or resolve_name(p.get("player_id", "?"))
+                        sim_summary += f"  - {pname} ({p.get('side')}, {p.get('agent', '?')}): {status}\n"
+            def resolve_all_ids(text: str) -> str:
+                """Replace all known player IDs with real names in a string."""
+                for pid, pname in name_map.items():
+                    if pid and pid in text:
+                        text = text.replace(pid, pname)
+                return text
+
+            if sim_ctx.get("events"):
+                events_list = sim_ctx["events"][:30]
+                sim_summary += f"\nRound events ({len(events_list)} shown):\n"
+                for ev in events_list:
+                    # Handle both dict formats
+                    time = ev.get("time_ms", ev.get("timestamp_ms", 0))
+                    etype = ev.get("type", ev.get("event_type", "?"))
+                    desc = ev.get("description", "")
+                    if desc:
+                        # Pre-built description may contain raw IDs — resolve them
+                        desc = resolve_all_ids(desc)
+                    else:
+                        # Build description from event fields, resolving IDs to names
+                        if etype == "kill":
+                            killer = resolve_name(ev.get("killer", ev.get("player_id", "?")))
+                            victim = resolve_name(ev.get("victim", ev.get("target_id", "?")))
+                            desc = f"{killer} killed {victim}"
+                            if ev.get("weapon"):
+                                desc += f" with {ev['weapon']}"
+                        elif etype == "spike_plant":
+                            planter = resolve_name(ev.get("player_id", "?"))
+                            desc = f"{planter} planted spike at {ev.get('site', '?')}"
+                        else:
+                            raw = json.dumps({k: v for k, v in ev.items() if k not in ('time_ms', 'timestamp_ms', 'type', 'event_type')})[:120]
+                            desc = resolve_all_ids(raw)
+                    sim_summary += f"  [{time}ms] {etype}: {desc}\n"
+            if sim_ctx.get("snapshots"):
+                snaps = sim_ctx["snapshots"]
+                sim_summary += f"\nKey moments: {len(snaps)} snapshots captured\n"
+                for i, snap in enumerate(snaps[:10]):
+                    pc = snap.get("player_count", {})
+                    sim_summary += f"  Moment {i}: [{snap.get('time_ms', 0)}ms] {snap.get('label', snap.get('phase', '?'))} — ATK {pc.get('attack', '?')}v{pc.get('defense', '?')} DEF"
+                    if snap.get("spike_planted"):
+                        sim_summary += f" | Spike planted"
+                    sim_summary += "\n"
+            # Final pass: resolve any remaining raw player IDs in the entire summary
+            if name_map:
+                sim_summary = resolve_all_ids(sim_summary)
+            context += sim_summary
+
         system_prompt = get_coaching_prompt("coach", context)
 
         # Add user message
@@ -195,6 +301,9 @@ class CoachService:
 
         messages = self._build_messages(session)
 
+        # Accumulate streamed text so we can save it to session history
+        full_response = ""
+
         if use_tools:
             async for event in self.streaming_handler.stream_with_tools(
                 llm_client=self.client,
@@ -203,6 +312,14 @@ class CoachService:
                 tools=COACHING_TOOLS,
                 tool_handler=self.tool_handler,
             ):
+                # Extract text chunks to accumulate full response
+                if '"type": "text"' in event:
+                    try:
+                        payload = json.loads(event.split("data: ", 1)[1].strip())
+                        if payload.get("type") == "text":
+                            full_response += payload.get("data", "")
+                    except (json.JSONDecodeError, IndexError):
+                        pass
                 yield event
         else:
             async for event in self.streaming_handler.stream_response(
@@ -211,7 +328,22 @@ class CoachService:
                     system=system_prompt,
                 )
             ):
+                if '"type": "text"' in event:
+                    try:
+                        payload = json.loads(event.split("data: ", 1)[1].strip())
+                        if payload.get("type") == "text":
+                            full_response += payload.get("data", "")
+                    except (json.JSONDecodeError, IndexError):
+                        pass
                 yield event
+
+        # Save assistant response for conversation continuity
+        if full_response.strip():
+            session.messages.append(CoachingMessage(
+                role="assistant",
+                content=full_response,
+                timestamp=datetime.now(),
+            ))
 
     async def analyze_position(
         self,

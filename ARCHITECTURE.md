@@ -1,6 +1,6 @@
 # C9 Tactical Vision - Architecture Overview
 
-**Last Updated**: January 21, 2026
+**Last Updated**: January 30, 2026
 **Simulation Accuracy**: 86% (12/14 scenarios)
 **Average Kills/Round**: 5.7 (VCT target: ~7.5)
 
@@ -38,6 +38,7 @@ backend/
 │   │
 │   ├── api/routes/             # REST endpoints
 │   │   ├── simulations.py      # Simulation CRUD + execution
+│   │   ├── strategy.py         # Strategy planner + VCT replay
 │   │   ├── matches.py          # Match/Round queries
 │   │   ├── teams.py            # Team/Player management
 │   │   ├── patterns.py         # Movement pattern queries
@@ -53,8 +54,9 @@ backend/
 │   │
 │   ├── schemas/                # Pydantic request/response
 │   │
-│   ├── data/                   # VCT-extracted JSON (8 files)
+│   ├── data/                   # VCT-extracted JSON (10 files)
 │   │   ├── position_trajectories.json (50MB)
+│   │   ├── vct_match_metadata.json
 │   │   ├── trade_patterns.json
 │   │   ├── behavioral_patterns.json
 │   │   ├── hold_angles.json
@@ -79,6 +81,8 @@ backend/
 │       ├── [ACTIVE] ai_decision_system.py (1,187 lines)
 │       ├── [ACTIVE] neural_ai_system.py (860 lines)
 │       ├── [ACTIVE] validated_parameters.py (809 lines)
+│       ├── [ACTIVE] vct_round_service.py        # VCT round data, ghost paths, coord normalization
+│       ├── [ACTIVE] strategy_executor.py        # Pro-anchored strategy simulation
 │       ├── [DATA TOOL] grid_parser.py (524 lines)
 │       ├── [DATA TOOL] grid_data_extractor.py (775 lines)
 │       ├── [DATA TOOL] player_profiles.py (433 lines)
@@ -232,6 +236,12 @@ Every outcome should EMERGE from underlying mechanics, not be hardcoded.
 ---
 
 ## API Endpoints
+
+### Strategy (`/api/v1/strategy`)
+- `GET /rounds` - Get random VCT round setup (map_name, side)
+- `GET /maps` - List available maps
+- `POST /execute` - Execute user strategy against pro-anchored AI
+- `POST /replay` - Replay real VCT round with interpolated trajectories
 
 ### Simulations (`/api/v1/simulations`)
 - `POST /` - Create session

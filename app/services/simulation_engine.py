@@ -997,6 +997,76 @@ class SimulationEngine:
                     {'id': 'g2_5', 'name': 'neT', 'agent': 'cypher'},
                 ]
             },
+            'nrg': {
+                'id': 'nrg', 'name': 'NRG Esports',
+                'players': [
+                    {'id': 'nrg_1', 'name': 's0m', 'agent': 'jett'},
+                    {'id': 'nrg_2', 'name': 'FNS', 'agent': 'omen'},
+                    {'id': 'nrg_3', 'name': 'crashies', 'agent': 'sova'},
+                    {'id': 'nrg_4', 'name': 'Victor', 'agent': 'raze'},
+                    {'id': 'nrg_5', 'name': 'ardiis', 'agent': 'killjoy'},
+                ]
+            },
+            '100t': {
+                'id': '100t', 'name': '100 Thieves',
+                'players': [
+                    {'id': '100t_1', 'name': 'Asuna', 'agent': 'raze'},
+                    {'id': '100t_2', 'name': 'bang', 'agent': 'fade'},
+                    {'id': '100t_3', 'name': 'Cryocells', 'agent': 'jett'},
+                    {'id': '100t_4', 'name': 'Stellar', 'agent': 'omen'},
+                    {'id': '100t_5', 'name': 'Boostio', 'agent': 'killjoy'},
+                ]
+            },
+            'loud': {
+                'id': 'loud', 'name': 'LOUD',
+                'players': [
+                    {'id': 'loud_1', 'name': 'aspas', 'agent': 'jett'},
+                    {'id': 'loud_2', 'name': 'Less', 'agent': 'sova'},
+                    {'id': 'loud_3', 'name': 'tuyz', 'agent': 'omen'},
+                    {'id': 'loud_4', 'name': 'cauanzin', 'agent': 'raze'},
+                    {'id': 'loud_5', 'name': 'saadhak', 'agent': 'fade'},
+                ]
+            },
+            'fnatic': {
+                'id': 'fnatic', 'name': 'Fnatic',
+                'players': [
+                    {'id': 'fnc_1', 'name': 'Derke', 'agent': 'jett'},
+                    {'id': 'fnc_2', 'name': 'Alfajer', 'agent': 'raze'},
+                    {'id': 'fnc_3', 'name': 'Boaster', 'agent': 'omen'},
+                    {'id': 'fnc_4', 'name': 'Chronicle', 'agent': 'sova'},
+                    {'id': 'fnc_5', 'name': 'Leo', 'agent': 'killjoy'},
+                ]
+            },
+            'drx': {
+                'id': 'drx', 'name': 'DRX',
+                'players': [
+                    {'id': 'drx_1', 'name': 'MaKo', 'agent': 'omen'},
+                    {'id': 'drx_2', 'name': 'Rb', 'agent': 'jett'},
+                    {'id': 'drx_3', 'name': 'stax', 'agent': 'sova'},
+                    {'id': 'drx_4', 'name': 'Buzz', 'agent': 'raze'},
+                    {'id': 'drx_5', 'name': 'Foxy9', 'agent': 'killjoy'},
+                ]
+            },
+            'evil_geniuses': {
+                'id': 'evil_geniuses', 'name': 'Evil Geniuses',
+                'players': [
+                    {'id': 'eg_1', 'name': 'jawgemo', 'agent': 'jett'},
+                    {'id': 'eg_2', 'name': 'Boostio', 'agent': 'raze'},
+                    {'id': 'eg_3', 'name': 'C0M', 'agent': 'omen'},
+                    {'id': 'eg_4', 'name': 'Derrek', 'agent': 'sova'},
+                    {'id': 'eg_5', 'name': 'SugarZ3ro', 'agent': 'killjoy'},
+                ]
+            },
+            'paper_rex': {
+                'id': 'paper_rex', 'name': 'Paper Rex',
+                'players': [
+                    {'id': 'prx_1', 'name': 'f0rsakeN', 'agent': 'jett'},
+                    {'id': 'prx_2', 'name': 'Jinggg', 'agent': 'raze'},
+                    {'id': 'prx_3', 'name': 'mindfreak', 'agent': 'omen'},
+                    {'id': 'prx_4', 'name': 'd4v41', 'agent': 'sova'},
+                    {'id': 'prx_5', 'name': 'something', 'agent': 'killjoy'},
+                ]
+            },
         }
 
         def _apply_map_override(team_data: Dict[str, Any]) -> Dict[str, Any]:
@@ -1010,9 +1080,23 @@ class SimulationEngine:
                     player['agent'] = agents[i]
             return team_data
 
+        # Alias mapping for flexible team ID matching
+        TEAM_ALIASES = {
+            'nrg_esports': 'nrg', 'nrg esports': 'nrg',
+            '100thieves': '100t', '100_thieves': '100t',
+            'eg': 'evil_geniuses', 'evil geniuses': 'evil_geniuses',
+            'prx': 'paper_rex', 'paper rex': 'paper_rex', 'paperrex': 'paper_rex',
+            'sen': 'sentinels', 'fnc': 'fnatic',
+            'c9': 'cloud9',
+        }
+
+        def _resolve_team(tid: str) -> str:
+            t = tid.lower().strip()
+            return TEAM_ALIASES.get(t, t)
+
         # Return default if no database
         if not self.db:
-            team_lower = team_id.lower()
+            team_lower = _resolve_team(team_id)
             if team_lower in DEFAULT_TEAMS:
                 return _apply_map_override(DEFAULT_TEAMS[team_lower])
             return _apply_map_override({
@@ -1032,7 +1116,7 @@ class SimulationEngine:
         team = result.scalar_one_or_none()
         if not team:
             # Return default team structure
-            team_lower = team_id.lower()
+            team_lower = _resolve_team(team_id)
             if team_lower in DEFAULT_TEAMS:
                 return _apply_map_override(DEFAULT_TEAMS[team_lower])
             return _apply_map_override({
