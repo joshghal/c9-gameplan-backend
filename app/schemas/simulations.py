@@ -92,6 +92,9 @@ class SimulationState(BaseModel):
     attack_strategy: Optional[str] = None
     defense_strategy: Optional[str] = None
 
+    # Round completion
+    round_over: bool = False
+
 
 class SimulationResponse(BaseModel):
     id: UUID

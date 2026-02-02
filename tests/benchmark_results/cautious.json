@@ -1,0 +1,761 @@
+{
+  "summary": {
+    "label": "cautious",
+    "total_runs": 55,
+    "global_attack_win_rate": 0.436,
+    "global_defense_win_rate": 0.564,
+    "total_attack_wins": 24,
+    "total_defense_wins": 31,
+    "elapsed_seconds": 279.2
+  },
+  "per_map": {
+    "ascent": {
+      "runs": 5,
+      "attack_wins": 2,
+      "defense_wins": 3,
+      "attack_win_rate": 0.4,
+      "defense_win_rate": 0.6,
+      "spike_plant_rate": 0.2,
+      "avg_duration_ms": 40038,
+      "avg_attack_kills": 2.8,
+      "avg_defense_kills": 4.0,
+      "individual_runs": [
+        {
+          "map": "ascent",
+          "winner": "defense",
+          "duration_ms": 20992,
+          "spike_planted": false,
+          "attack_kills": 2,
+          "defense_kills": 5,
+          "total_kills": 7,
+          "attack_alive": 0,
+          "defense_alive": 3
+        },
+        {
+          "map": "ascent",
+          "winner": "attack",
+          "duration_ms": 30080,
+          "spike_planted": false,
+          "attack_kills": 5,
+          "defense_kills": 1,
+          "total_kills": 6,
+          "attack_alive": 4,
+          "defense_alive": 0
+        },
+        {
+          "map": "ascent",
+          "winner": "attack",
+          "duration_ms": 56320,
+          "spike_planted": true,
+          "attack_kills": 5,
+          "defense_kills": 4,
+          "total_kills": 9,
+          "attack_alive": 1,
+          "defense_alive": 0
+        },
+        {
+          "map": "ascent",
+          "winner": "defense",
+          "duration_ms": 29824,
+          "spike_planted": false,
+          "attack_kills": 0,
+          "defense_kills": 5,
+          "total_kills": 5,
+          "attack_alive": 0,
+          "defense_alive": 5
+        },
+        {
+          "map": "ascent",
+          "winner": "defense",
+          "duration_ms": 62976,
+          "spike_planted": false,
+          "attack_kills": 2,
+          "defense_kills": 5,
+          "total_kills": 7,
+          "attack_alive": 0,
+          "defense_alive": 3
+        }
+      ]
+    },
+    "bind": {
+      "runs": 5,
+      "attack_wins": 2,
+      "defense_wins": 3,
+      "attack_win_rate": 0.4,
+      "defense_win_rate": 0.6,
+      "spike_plant_rate": 0.2,
+      "avg_duration_ms": 52122,
+      "avg_attack_kills": 3.2,
+      "avg_defense_kills": 3.8,
+      "individual_runs": [
+        {
+          "map": "bind",
+          "winner": "defense",
+          "duration_ms": 48640,
+          "spike_planted": false,
+          "attack_kills": 3,
+          "defense_kills": 5,
+          "total_kills": 8,
+          "attack_alive": 0,
+          "defense_alive": 2
+        },
+        {
+          "map": "bind",
+          "winner": "defense",
+          "duration_ms": 30336,
+          "spike_planted": false,
+          "attack_kills": 3,
+          "defense_kills": 5,
+          "total_kills": 8,
+          "attack_alive": 0,
+          "defense_alive": 2
+        },
+        {
+          "map": "bind",
+          "winner": "attack",
+          "duration_ms": 100096,
+          "spike_planted": true,
+          "attack_kills": 3,
+          "defense_kills": 3,
+          "total_kills": 6,
+          "attack_alive": 2,
+          "defense_alive": 2
+        },
+        {
+          "map": "bind",
+          "winner": "attack",
+          "duration_ms": 46976,
+          "spike_planted": false,
+          "attack_kills": 5,
+          "defense_kills": 1,
+          "total_kills": 6,
+          "attack_alive": 4,
+          "defense_alive": 0
+        },
+        {
+          "map": "bind",
+          "winner": "defense",
+          "duration_ms": 34560,
+          "spike_planted": false,
+          "attack_kills": 2,
+          "defense_kills": 5,
+          "total_kills": 7,
+          "attack_alive": 0,
+          "defense_alive": 3
+        }
+      ]
+    },
+    "split": {
+      "runs": 5,
+      "attack_wins": 2,
+      "defense_wins": 3,
+      "attack_win_rate": 0.4,
+      "defense_win_rate": 0.6,
+      "spike_plant_rate": 0.4,
+      "avg_duration_ms": 50381,
+      "avg_attack_kills": 2.6,
+      "avg_defense_kills": 4.0,
+      "individual_runs": [
+        {
+          "map": "split",
+          "winner": "defense",
+          "duration_ms": 61952,
+          "spike_planted": false,
+          "attack_kills": 1,
+          "defense_kills": 5,
+          "total_kills": 6,
+          "attack_alive": 0,
+          "defense_alive": 4
+        },
+        {
+          "map": "split",
+          "winner": "defense",
+          "duration_ms": 22656,
+          "spike_planted": false,
+          "attack_kills": 0,
+          "defense_kills": 5,
+          "total_kills": 5,
+          "attack_alive": 0,
+          "defense_alive": 5
+        },
+        {
+          "map": "split",
+          "winner": "defense",
+          "duration_ms": 61056,
+          "spike_planted": false,
+          "attack_kills": 2,
+          "defense_kills": 5,
+          "total_kills": 7,
+          "attack_alive": 0,
+          "defense_alive": 3
+        },
+        {
+          "map": "split",
+          "winner": "attack",
+          "duration_ms": 64000,
+          "spike_planted": true,
+          "attack_kills": 5,
+          "defense_kills": 4,
+          "total_kills": 9,
+          "attack_alive": 1,
+          "defense_alive": 0
+        },
+        {
+          "map": "split",
+          "winner": "attack",
+          "duration_ms": 42240,
+          "spike_planted": true,
+          "attack_kills": 5,
+          "defense_kills": 1,
+          "total_kills": 6,
+          "attack_alive": 4,
+          "defense_alive": 0
+        }
+      ]
+    },
+    "icebox": {
+      "runs": 5,
+      "attack_wins": 1,
+      "defense_wins": 4,
+      "attack_win_rate": 0.2,
+      "defense_win_rate": 0.8,
+      "spike_plant_rate": 0.6,
+      "avg_duration_ms": 47693,
+      "avg_attack_kills": 3.2,
+      "avg_defense_kills": 4.2,
+      "individual_runs": [
+        {
+          "map": "icebox",
+          "winner": "defense",
+          "duration_ms": 60800,
+          "spike_planted": true,
+          "attack_kills": 3,
+          "defense_kills": 5,
+          "total_kills": 8,
+          "attack_alive": 0,
+          "defense_alive": 2
+        },
+        {
+          "map": "icebox",
+          "winner": "defense",
+          "duration_ms": 65664,
+          "spike_planted": true,
+          "attack_kills": 3,
+          "defense_kills": 5,
+          "total_kills": 8,
+          "attack_alive": 0,
+          "defense_alive": 2
+        },
+        {
+          "map": "icebox",
+          "winner": "defense",
+          "duration_ms": 71040,
+          "spike_planted": true,
+          "attack_kills": 4,
+          "defense_kills": 5,
+          "total_kills": 9,
+          "attack_alive": 0,
+          "defense_alive": 1
+        },
+        {
+          "map": "icebox",
+          "winner": "defense",
+          "duration_ms": 18560,
+          "spike_planted": false,
+          "attack_kills": 1,
+          "defense_kills": 5,
+          "total_kills": 6,
+          "attack_alive": 0,
+          "defense_alive": 4
+        },
+        {
+          "map": "icebox",
+          "winner": "attack",
+          "duration_ms": 22400,
+          "spike_planted": false,
+          "attack_kills": 5,
+          "defense_kills": 1,
+          "total_kills": 6,
+          "attack_alive": 4,
+          "defense_alive": 0
+        }
+      ]
+    },
+    "breeze": {
+      "runs": 5,
+      "attack_wins": 2,
+      "defense_wins": 3,
+      "attack_win_rate": 0.4,
+      "defense_win_rate": 0.6,
+      "spike_plant_rate": 0.0,
+      "avg_duration_ms": 24550,
+      "avg_attack_kills": 2.8,
+      "avg_defense_kills": 4.0,
+      "individual_runs": [
+        {
+          "map": "breeze",
+          "winner": "attack",
+          "duration_ms": 51072,
+          "spike_planted": false,
+          "attack_kills": 5,
+          "defense_kills": 2,
+          "total_kills": 7,
+          "attack_alive": 3,
+          "defense_alive": 0
+        },
+        {
+          "map": "breeze",
+          "winner": "defense",
+          "duration_ms": 13696,
+          "spike_planted": false,
+          "attack_kills": 2,
+          "defense_kills": 5,
+          "total_kills": 7,
+          "attack_alive": 0,
+          "defense_alive": 3
+        },
+        {
+          "map": "breeze",
+          "winner": "attack",
+          "duration_ms": 33024,
+          "spike_planted": false,
+          "attack_kills": 5,
+          "defense_kills": 4,
+          "total_kills": 9,
+          "attack_alive": 1,
+          "defense_alive": 0
+        },
+        {
+          "map": "breeze",
+          "winner": "defense",
+          "duration_ms": 14080,
+          "spike_planted": false,
+          "attack_kills": 1,
+          "defense_kills": 5,
+          "total_kills": 6,
+          "attack_alive": 0,
+          "defense_alive": 4
+        },
+        {
+          "map": "breeze",
+          "winner": "defense",
+          "duration_ms": 10880,
+          "spike_planted": false,
+          "attack_kills": 1,
+          "defense_kills": 4,
+          "total_kills": 5,
+          "attack_alive": 0,
+          "defense_alive": 4
+        }
+      ]
+    },
+    "fracture": {
+      "runs": 5,
+      "attack_wins": 1,
+      "defense_wins": 4,
+      "attack_win_rate": 0.2,
+      "defense_win_rate": 0.8,
+      "spike_plant_rate": 0.4,
+      "avg_duration_ms": 59469,
+      "avg_attack_kills": 3.6,
+      "avg_defense_kills": 4.8,
+      "individual_runs": [
+        {
+          "map": "fracture",
+          "winner": "attack",
+          "duration_ms": 61184,
+          "spike_planted": false,
+          "attack_kills": 5,
+          "defense_kills": 4,
+          "total_kills": 9,
+          "attack_alive": 1,
+          "defense_alive": 0
+        },
+        {
+          "map": "fracture",
+          "winner": "defense",
+          "duration_ms": 63872,
+          "spike_planted": false,
+          "attack_kills": 4,
+          "defense_kills": 5,
+          "total_kills": 9,
+          "attack_alive": 0,
+          "defense_alive": 1
+        },
+        {
+          "map": "fracture",
+          "winner": "defense",
+          "duration_ms": 72192,
+          "spike_planted": true,
+          "attack_kills": 3,
+          "defense_kills": 5,
+          "total_kills": 8,
+          "attack_alive": 0,
+          "defense_alive": 2
+        },
+        {
+          "map": "fracture",
+          "winner": "defense",
+          "duration_ms": 54400,
+          "spike_planted": true,
+          "attack_kills": 4,
+          "defense_kills": 5,
+          "total_kills": 9,
+          "attack_alive": 0,
+          "defense_alive": 1
+        },
+        {
+          "map": "fracture",
+          "winner": "defense",
+          "duration_ms": 45696,
+          "spike_planted": false,
+          "attack_kills": 2,
+          "defense_kills": 5,
+          "total_kills": 7,
+          "attack_alive": 0,
+          "defense_alive": 3
+        }
+      ]
+    },
+    "pearl": {
+      "runs": 5,
+      "attack_wins": 3,
+      "defense_wins": 2,
+      "attack_win_rate": 0.6,
+      "defense_win_rate": 0.4,
+      "spike_plant_rate": 0.4,
+      "avg_duration_ms": 69402,
+      "avg_attack_kills": 3.4,
+      "avg_defense_kills": 3.4,
+      "individual_runs": [
+        {
+          "map": "pearl",
+          "winner": "defense",
+          "duration_ms": 59520,
+          "spike_planted": false,
+          "attack_kills": 2,
+          "defense_kills": 5,
+          "total_kills": 7,
+          "attack_alive": 0,
+          "defense_alive": 3
+        },
+        {
+          "map": "pearl",
+          "winner": "defense",
+          "duration_ms": 39296,
+          "spike_planted": false,
+          "attack_kills": 2,
+          "defense_kills": 5,
+          "total_kills": 7,
+          "attack_alive": 0,
+          "defense_alive": 3
+        },
+        {
+          "map": "pearl",
+          "winner": "attack",
+          "duration_ms": 100480,
+          "spike_planted": true,
+          "attack_kills": 4,
+          "defense_kills": 4,
+          "total_kills": 8,
+          "attack_alive": 1,
+          "defense_alive": 1
+        },
+        {
+          "map": "pearl",
+          "winner": "attack",
+          "duration_ms": 100480,
+          "spike_planted": true,
+          "attack_kills": 4,
+          "defense_kills": 3,
+          "total_kills": 7,
+          "attack_alive": 2,
+          "defense_alive": 1
+        },
+        {
+          "map": "pearl",
+          "winner": "attack",
+          "duration_ms": 47232,
+          "spike_planted": false,
+          "attack_kills": 5,
+          "defense_kills": 0,
+          "total_kills": 5,
+          "attack_alive": 5,
+          "defense_alive": 0
+        }
+      ]
+    },
+    "sunset": {
+      "runs": 5,
+      "attack_wins": 3,
+      "defense_wins": 2,
+      "attack_win_rate": 0.6,
+      "defense_win_rate": 0.4,
+      "spike_plant_rate": 0.6,
+      "avg_duration_ms": 72832,
+      "avg_attack_kills": 3.8,
+      "avg_defense_kills": 4.2,
+      "individual_runs": [
+        {
+          "map": "sunset",
+          "winner": "defense",
+          "duration_ms": 58112,
+          "spike_planted": false,
+          "attack_kills": 1,
+          "defense_kills": 5,
+          "total_kills": 6,
+          "attack_alive": 0,
+          "defense_alive": 4
+        },
+        {
+          "map": "sunset",
+          "winner": "attack",
+          "duration_ms": 74752,
+          "spike_planted": true,
+          "attack_kills": 5,
+          "defense_kills": 4,
+          "total_kills": 9,
+          "attack_alive": 1,
+          "defense_alive": 0
+        },
+        {
+          "map": "sunset",
+          "winner": "attack",
+          "duration_ms": 69760,
+          "spike_planted": true,
+          "attack_kills": 5,
+          "defense_kills": 4,
+          "total_kills": 9,
+          "attack_alive": 1,
+          "defense_alive": 0
+        },
+        {
+          "map": "sunset",
+          "winner": "attack",
+          "duration_ms": 100096,
+          "spike_planted": true,
+          "attack_kills": 4,
+          "defense_kills": 3,
+          "total_kills": 7,
+          "attack_alive": 2,
+          "defense_alive": 1
+        },
+        {
+          "map": "sunset",
+          "winner": "defense",
+          "duration_ms": 61440,
+          "spike_planted": false,
+          "attack_kills": 4,
+          "defense_kills": 5,
+          "total_kills": 9,
+          "attack_alive": 0,
+          "defense_alive": 1
+        }
+      ]
+    },
+    "haven": {
+      "runs": 5,
+      "attack_wins": 3,
+      "defense_wins": 2,
+      "attack_win_rate": 0.6,
+      "defense_win_rate": 0.4,
+      "spike_plant_rate": 0.2,
+      "avg_duration_ms": 37325,
+      "avg_attack_kills": 3.8,
+      "avg_defense_kills": 3.6,
+      "individual_runs": [
+        {
+          "map": "haven",
+          "winner": "attack",
+          "duration_ms": 34816,
+          "spike_planted": false,
+          "attack_kills": 4,
+          "defense_kills": 4,
+          "total_kills": 8,
+          "attack_alive": 1,
+          "defense_alive": 0
+        },
+        {
+          "map": "haven",
+          "winner": "attack",
+          "duration_ms": 21760,
+          "spike_planted": false,
+          "attack_kills": 5,
+          "defense_kills": 2,
+          "total_kills": 7,
+          "attack_alive": 3,
+          "defense_alive": 0
+        },
+        {
+          "map": "haven",
+          "winner": "defense",
+          "duration_ms": 40064,
+          "spike_planted": true,
+          "attack_kills": 2,
+          "defense_kills": 5,
+          "total_kills": 7,
+          "attack_alive": 0,
+          "defense_alive": 3
+        },
+        {
+          "map": "haven",
+          "winner": "defense",
+          "duration_ms": 58112,
+          "spike_planted": false,
+          "attack_kills": 3,
+          "defense_kills": 5,
+          "total_kills": 8,
+          "attack_alive": 0,
+          "defense_alive": 2
+        },
+        {
+          "map": "haven",
+          "winner": "attack",
+          "duration_ms": 31872,
+          "spike_planted": false,
+          "attack_kills": 5,
+          "defense_kills": 2,
+          "total_kills": 7,
+          "attack_alive": 3,
+          "defense_alive": 0
+        }
+      ]
+    },
+    "lotus": {
+      "runs": 5,
+      "attack_wins": 2,
+      "defense_wins": 3,
+      "attack_win_rate": 0.4,
+      "defense_win_rate": 0.6,
+      "spike_plant_rate": 0.0,
+      "avg_duration_ms": 25600,
+      "avg_attack_kills": 3.2,
+      "avg_defense_kills": 4.4,
+      "individual_runs": [
+        {
+          "map": "lotus",
+          "winner": "defense",
+          "duration_ms": 24704,
+          "spike_planted": false,
+          "attack_kills": 3,
+          "defense_kills": 5,
+          "total_kills": 8,
+          "attack_alive": 0,
+          "defense_alive": 2
+        },
+        {
+          "map": "lotus",
+          "winner": "defense",
+          "duration_ms": 28416,
+          "spike_planted": false,
+          "attack_kills": 2,
+          "defense_kills": 5,
+          "total_kills": 7,
+          "attack_alive": 0,
+          "defense_alive": 3
+        },
+        {
+          "map": "lotus",
+          "winner": "attack",
+          "duration_ms": 17280,
+          "spike_planted": false,
+          "attack_kills": 5,
+          "defense_kills": 3,
+          "total_kills": 8,
+          "attack_alive": 2,
+          "defense_alive": 0
+        },
+        {
+          "map": "lotus",
+          "winner": "attack",
+          "duration_ms": 43776,
+          "spike_planted": false,
+          "attack_kills": 5,
+          "defense_kills": 4,
+          "total_kills": 9,
+          "attack_alive": 1,
+          "defense_alive": 0
+        },
+        {
+          "map": "lotus",
+          "winner": "defense",
+          "duration_ms": 13824,
+          "spike_planted": false,
+          "attack_kills": 1,
+          "defense_kills": 5,
+          "total_kills": 6,
+          "attack_alive": 0,
+          "defense_alive": 4
+        }
+      ]
+    },
+    "abyss": {
+      "runs": 5,
+      "attack_wins": 3,
+      "defense_wins": 2,
+      "attack_win_rate": 0.6,
+      "defense_win_rate": 0.4,
+      "spike_plant_rate": 0.6,
+      "avg_duration_ms": 79181,
+      "avg_attack_kills": 3.4,
+      "avg_defense_kills": 3.8,
+      "individual_runs": [
+        {
+          "map": "abyss",
+          "winner": "attack",
+          "duration_ms": 62464,
+          "spike_planted": false,
+          "attack_kills": 5,
+          "defense_kills": 3,
+          "total_kills": 8,
+          "attack_alive": 2,
+          "defense_alive": 0
+        },
+        {
+          "map": "abyss",
+          "winner": "attack",
+          "duration_ms": 100480,
+          "spike_planted": true,
+          "attack_kills": 4,
+          "defense_kills": 4,
+          "total_kills": 8,
+          "attack_alive": 1,
+          "defense_alive": 1
+        },
+        {
+          "map": "abyss",
+          "winner": "defense",
+          "duration_ms": 58880,
+          "spike_planted": false,
+          "attack_kills": 2,
+          "defense_kills": 5,
+          "total_kills": 7,
+          "attack_alive": 0,
+          "defense_alive": 3
+        },
+        {
+          "map": "abyss",
+          "winner": "defense",
+          "duration_ms": 73600,
+          "spike_planted": true,
+          "attack_kills": 2,
+          "defense_kills": 5,
+          "total_kills": 7,
+          "attack_alive": 0,
+          "defense_alive": 3
+        },
+        {
+          "map": "abyss",
+          "winner": "attack",
+          "duration_ms": 100480,
+          "spike_planted": true,
+          "attack_kills": 4,
+          "defense_kills": 2,
+          "total_kills": 6,
+          "attack_alive": 3,
+          "defense_alive": 1
+        }
+      ]
+    }
+  }
+}

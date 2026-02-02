@@ -735,6 +735,14 @@ class StrategyExecutor:
                         px, py = pos["x"], pos["y"]
                         if not is_alive and pid in death_positions:
                             px, py = death_positions[pid]
+                        # Compute facing angle from movement direction
+                        facing = None
+                        if is_alive and t_sec > 0 and t_sec - 1 < len(user_positions[pid]):
+                            prev = user_positions[pid][t_sec - 1]
+                            dx = px - prev["x"]
+                            dy = py - prev["y"]
+                            if abs(dx) > 0.0001 or abs(dy) > 0.0001:
+                                facing = round(math.atan2(dy, dx), 4)
                         players.append({
                             "player_id": pid,
                             "x": round(px, 4),
@@ -745,6 +753,7 @@ class StrategyExecutor:
                             "name": info.get("name", pid),
                             "health": max(0, int(user_health[pid])),
                             "team_id": "user",
+                            "facing_angle": facing,
                         })
                 for pid in opponent_positions:
                     pos = opponent_positions[pid][t_sec] if t_sec < len(opponent_positions[pid]) else None
@@ -754,6 +763,14 @@ class StrategyExecutor:
                         px, py = pos["x"], pos["y"]
                         if not is_alive and pid in death_positions:
                             px, py = death_positions[pid]
+                        # Compute facing angle from movement direction
+                        facing = None
+                        if is_alive and t_sec > 0 and t_sec - 1 < len(opponent_positions[pid]):
+                            prev = opponent_positions[pid][t_sec - 1]
+                            dx = px - prev["x"]
+                            dy = py - prev["y"]
+                            if abs(dx) > 0.0001 or abs(dy) > 0.0001:
+                                facing = round(math.atan2(dy, dx), 4)
                         players.append({
                             "player_id": pid,
                             "x": round(px, 4),
@@ -764,6 +781,7 @@ class StrategyExecutor:
                             "name": info.get("name", pid),
                             "health": max(0, int(opp_health[pid])),
                             "team_id": "opponent",
+                            "facing_angle": facing,
                         })
 
                 snapshots.append({
