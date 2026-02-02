@@ -388,6 +388,17 @@ class AStarPathfinder:
             return self.nav_grid[y, x] == 0
         return False
 
+    def _snap_to_walkable_grid(self, gx: int, gy: int, max_radius: int = 20) -> Optional[Tuple[int, int]]:
+        """Find nearest walkable grid cell within radius. Returns (gx, gy) or None."""
+        for radius in range(1, max_radius + 1):
+            for dx in range(-radius, radius + 1):
+                for dy in range(-radius, radius + 1):
+                    if abs(dx) == radius or abs(dy) == radius:  # Only check perimeter
+                        nx, ny = gx + dx, gy + dy
+                        if self.is_walkable(nx, ny):
+                            return (nx, ny)
+        return None
+
     def heuristic(self, a: Tuple[int, int], b: Tuple[int, int]) -> float:
         """Octile distance heuristic (better for 8-directional movement)."""
         dx = abs(a[0] - b[0])
@@ -398,7 +409,8 @@ class AStarPathfinder:
         self,
         start: Tuple[float, float],
         goal: Tuple[float, float],
-        avoid_positions: Optional[List[Tuple[float, float]]] = None
+        avoid_positions: Optional[List[Tuple[float, float]]] = None,
+        simplify: bool = True,
     ) -> PathResult:
         """Find path from start to goal using A*.
 
@@ -413,11 +425,17 @@ class AStarPathfinder:
         start_grid = self.normalized_to_grid(start[0], start[1])
         goal_grid = self.normalized_to_grid(goal[0], goal[1])
 
-        # Check if start/goal are walkable
+        # Snap start/goal to nearest walkable cell if blocked
         if not self.is_walkable(start_grid[0], start_grid[1]):
-            return PathResult([], 0, [], False, "Start position is blocked")
+            snapped = self._snap_to_walkable_grid(start_grid[0], start_grid[1])
+            if snapped is None:
+                return PathResult([], 0, [], False, "Start position is blocked")
+            start_grid = snapped
         if not self.is_walkable(goal_grid[0], goal_grid[1]):
-            return PathResult([], 0, [], False, "Goal position is blocked")
+            snapped = self._snap_to_walkable_grid(goal_grid[0], goal_grid[1])
+            if snapped is None:
+                return PathResult([], 0, [], False, "Goal position is blocked")
+            goal_grid = snapped
 
         # Build avoidance set (positions to avoid)
         avoid_set: Set[Tuple[int, int]] = set()
@@ -456,10 +474,10 @@ class AStarPathfinder:
                 waypoints.reverse()
 
                 # Simplify path by removing collinear points
-                simplified_path = self._simplify_path(path)
+                final_path = self._simplify_path(path) if simplify else path
 
                 return PathResult(
-                    path=simplified_path,
+                    path=final_path,
                     distance=current.g,
                     waypoints=waypoints,
                     success=True

@@ -506,7 +506,12 @@ For EACH moment, respond with a JSON object on its own line:
   "enemy_state": {{
     "players": [{{ "player_id": "...", "x": 0.5, "y": 0.4, "action": "what enemy is doing" }}]
   }},
-  "prediction": "1-sentence prediction with probability"
+  "prediction": "1-sentence prediction with probability",
+  "what_if_questions": [
+    "What if [team/player] had done X instead?",
+    "How would the round change if Y happened?",
+    "Could [team] have won by doing Z?"
+  ]
 }}
 
 Rules:
@@ -517,6 +522,8 @@ Rules:
 - enemy_state.players: what the opposing team is doing at this moment
 - narration: 2-4 sentences of expert tactical analysis. Explain WHY things happened using the decision/knowledge data.
 - prediction: what happens next with rough % probability
+- what_if_questions: EXACTLY 3 short hypothetical questions a coach might ask about this moment. Start each with "What if". Each question MUST be unique to THIS specific moment — reference the specific players, positions, and actions happening at this timestamp. NEVER repeat the same question across different moments.
+- You MUST output EXACTLY {len(moments)} JSON objects — one per moment, no more, no less.
 - Cover every moment provided, in order."""
 
     async def generate():

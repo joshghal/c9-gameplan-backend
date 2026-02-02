@@ -2386,6 +2386,11 @@ class SimulationEngine:
             player.prev_x = player.x
             player.prev_y = player.y
 
+            # TACTICAL: Skip AI movement for guided players (waypoint-controlled)
+            if getattr(player, 'is_guided', False):
+                player.moved_this_tick = True
+                continue
+
             # P0 FIX: Skip movement if player is planting or defusing (immobilized)
             if player.is_in_action:
                 player.moved_this_tick = False

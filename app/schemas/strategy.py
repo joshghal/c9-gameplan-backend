@@ -93,3 +93,55 @@ class StrategyResult(BaseModel):
     events: List[StrategyEvent]
     snapshots: List[StrategySnapshot]
     reveal: StrategyReveal
+
+
+# --- Phase-by-phase tactical execution ---
+
+class PlayerCheckpointSchema(BaseModel):
+    player_id: str
+    x: float
+    y: float
+    side: str
+    is_alive: bool
+    health: int
+    shield: int = 0
+    has_spike: bool = False
+    agent: str = "unknown"
+    name: str = ""
+    kills: int = 0
+    deaths: int = 0
+    facing_angle: float = 0.0
+    is_running: bool = False
+
+
+class PhaseCheckpointSchema(BaseModel):
+    phase_name: str
+    time_ms: int
+    players: List[PlayerCheckpointSchema]
+    spike_planted: bool = False
+    spike_site: Optional[str] = None
+    spike_plant_time_ms: int = 0
+    site_execute_active: bool = False
+    target_site: Optional[str] = None
+
+
+class PhaseResultSchema(BaseModel):
+    phase_name: str
+    winner: Optional[str] = None
+    round_ended: bool = False
+    events: List[StrategyEvent]
+    snapshots: List[StrategySnapshot]
+    checkpoint: PhaseCheckpointSchema
+    end_positions: List[Dict]
+
+
+class PhaseExecuteRequest(BaseModel):
+    round_id: str
+    side: str
+    phase: str  # 'setup', 'mid_round', 'execute', 'post_plant'
+    waypoints: Dict[str, List[Waypoint]]  # player_id → waypoints
+    checkpoint: Optional[PhaseCheckpointSchema] = None
+
+
+class PhaseExecuteResponse(BaseModel):
+    phase_result: PhaseResultSchema

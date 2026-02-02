@@ -250,6 +250,27 @@ class CoachService:
                         text = text.replace(pid, pname)
                 return text
 
+            # Current narration context (from what-if questions)
+            if sim_ctx.get("current_narration"):
+                sim_summary += f"\n## CURRENT MOMENT (Moment {sim_ctx.get('current_moment_index', 0) + 1})\n"
+                sim_summary += f"The user is asking about THIS specific moment in the match:\n"
+                sim_summary += f"\"{sim_ctx['current_narration']}\"\n"
+                sim_summary += "Answer based on this moment's context. You know all the players and teams involved.\n"
+
+            # Match metadata
+            match_ctx = sim_ctx.get("match_context")
+            if match_ctx:
+                teams = match_ctx.get("teams", [])
+                if teams:
+                    sim_summary += f"\nMatch: {' vs '.join(teams)}"
+                if match_ctx.get("tournament"):
+                    sim_summary += f" | Tournament: {match_ctx['tournament']}"
+                if match_ctx.get("date"):
+                    sim_summary += f" | Date: {match_ctx['date']}"
+                if match_ctx.get("round_num"):
+                    sim_summary += f" | Round {match_ctx['round_num']}"
+                sim_summary += "\n"
+
             if sim_ctx.get("events"):
                 events_list = sim_ctx["events"][:30]
                 sim_summary += f"\nRound events ({len(events_list)} shown):\n"

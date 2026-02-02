@@ -234,11 +234,20 @@ class VCTRoundService:
         round_id = f"{map_name}_{round_num}_{round_hash}"
 
         duration = round_data.get("round_duration_s", 100)
+        # VCT-derived phase times for ghost path segmentation (in seconds)
         phase_times = {
             "setup": [0, round(duration * 0.15)],
             "mid_round": [round(duration * 0.15), round(duration * 0.40)],
             "execute": [round(duration * 0.40), round(duration * 0.70)],
             "post_plant": [round(duration * 0.70), duration],
+        }
+        # Tactical phase times aligned with backend TACTICAL_PHASE_RANGES (in seconds)
+        # Frontend uses these for waypoint tick calculation, must match engine simulation time
+        tactical_phase_times = {
+            "setup": [0, 15],
+            "mid_round": [15, 50],
+            "execute": [50, 75],
+            "post_plant": [75, 100],
         }
 
         # Separate players by side, collect trajectories for ghost paths
@@ -375,12 +384,18 @@ class VCTRoundService:
                     a1 = raw_points[ai]
                     a2 = raw_points[ai + 1]
                     if pathfinder:
-                        result = pathfinder.find_path((a1["x"], a1["y"]), (a2["x"], a2["y"]))
+                        result = pathfinder.find_path((a1["x"], a1["y"]), (a2["x"], a2["y"]), simplify=False)
                         if result.success and result.path and len(result.path) > 1:
                             anchor_paths.append(result.path)
                         else:
-                            # A* failed — use direct line (points already snapped to walkable)
-                            anchor_paths.append([(a1["x"], a1["y"]), (a2["x"], a2["y"])])
+                            # A* failed — re-snap endpoints with larger radius and retry
+                            s1 = _snap_to_walkable(pathfinder, a1["x"], a1["y"])
+                            s2 = _snap_to_walkable(pathfinder, a2["x"], a2["y"])
+                            retry = pathfinder.find_path(s1, s2, simplify=False)
+                            if retry.success and retry.path and len(retry.path) > 1:
+                                anchor_paths.append(retry.path)
+                            else:
+                                anchor_paths.append([s1, s2])
                     else:
                         anchor_paths.append([(a1["x"], a1["y"]), (a2["x"], a2["y"])])
 
@@ -392,7 +407,7 @@ class VCTRoundService:
                 spawn_dist = ((spawn_x - first_anchor[0]) ** 2 + (spawn_y - first_anchor[1]) ** 2) ** 0.5
                 if spawn_dist > 0.01 and pathfinder:
                     result = pathfinder.find_path(
-                        (spawn_x, spawn_y), first_anchor,
+                        (spawn_x, spawn_y), first_anchor, simplify=False,
                     )
                     if result.success and result.path:
                         spawn_path = result.path
@@ -489,8 +504,8 @@ class VCTRoundService:
             map_name=map_name,
             user_side=user_side,
             teammates=user_players,
-            phase_times=phase_times,
-            round_duration_s=duration,
+            phase_times=tactical_phase_times,
+            round_duration_s=100,  # Match tactical engine's 100s total
             ghost_paths=ghost_paths,
         )
 
@@ -502,6 +517,37 @@ class VCTRoundService:
     def get_available_maps(self) -> List[str]:
         """Return list of maps that have indexed rounds."""
         return sorted(self._index.keys())
+
+    def list_rounds(self, map_name: str) -> List[Dict]:
+        """List all rounds for a map with match metadata."""
+        results = []
+        seen_ids = set()
+        for side in ['attack', 'defense']:
+            indices = self._index.get(map_name, {}).get(side, [])
+            for idx in indices:
+                rd = self._rounds[idx]
+                round_num = rd.get("round_num", 0)
+                game_id = rd.get("game_id", "")
+                round_hash = hashlib.md5(
+                    f"{map_name}_{round_num}_{game_id}".encode()
+                ).hexdigest()[:8]
+                rid = f"{map_name}_{round_num}_{round_hash}"
+                if rid in seen_ids:
+                    continue
+                seen_ids.add(rid)
+                meta = self.get_match_metadata(game_id)
+                results.append({
+                    "round_id": rid,
+                    "round_num": round_num,
+                    "teams": meta.get("teams", []) if meta else [],
+                    "date": meta.get("date", "") if meta else "",
+                    "tournament": meta.get("tournament", "") if meta else "",
+                    "winner": rd.get("winner_team", ""),
+                    "side": side,
+                    "duration_s": rd.get("round_duration_s", 0),
+                })
+        results.sort(key=lambda r: (r["date"], r["round_num"]), reverse=True)
+        return results
 
     def get_opponent_trajectories(self, round_id: str, user_side: str) -> Optional[Dict[str, List[Dict]]]:
         """Get opponent player trajectories for a round (normalized, filtered).
@@ -583,7 +629,7 @@ def _snap_to_walkable(
     gx, gy = pathfinder.normalized_to_grid(x, y)
     if pathfinder.is_walkable(gx, gy):
         return (x, y)
-    for radius in range(1, 8):
+    for radius in range(1, 20):
         for dx in range(-radius, radius + 1):
             for dy in range(-radius, radius + 1):
                 if pathfinder.is_walkable(gx + dx, gy + dy):

@@ -5,7 +5,15 @@ import uuid
 
 from ...services.vct_round_service import VCTRoundService, SIDE_MAP
 from ...services.strategy_executor import StrategyExecutor
-from ...schemas.strategy import StrategyRound, StrategyExecuteRequest, StrategyReplayRequest, StrategyResult
+from ...services.tactical_simulation_engine import (
+    TacticalSimulationEngine, TacticalWaypoint, PhaseCheckpoint, PlayerCheckpoint,
+)
+from ...schemas.strategy import (
+    StrategyRound, StrategyExecuteRequest, StrategyReplayRequest, StrategyResult,
+    PhaseExecuteRequest, PhaseExecuteResponse, PhaseResultSchema,
+    PhaseCheckpointSchema, PlayerCheckpointSchema,
+    StrategyEvent, StrategySnapshot,
+)
 
 router = APIRouter()
 
@@ -37,6 +45,19 @@ async def get_strategy_round(
         raise HTTPException(status_code=404, detail="No rounds found for this map/side")
 
     return result
+
+
+@router.get("/rounds/list")
+async def list_rounds(
+    map_name: str = Query(..., description="Map name"),
+):
+    """List all available rounds for a map with match metadata."""
+    service = _get_service()
+    available = service.get_available_maps()
+    if map_name.lower() not in available:
+        raise HTTPException(status_code=404, detail=f"Map '{map_name}' not found")
+    rounds = service.list_rounds(map_name.lower())
+    return {"rounds": rounds, "map_name": map_name}
 
 
 @router.get("/maps")
@@ -116,8 +137,11 @@ async def replay_vct_round(request: StrategyReplayRequest):
         for p in points:
             if not p["alive"] and death_time is None:
                 death_time = p["time_s"]
-                death_x, death_y = p["x"], p["y"]
-                filtered.append(p)
+                # Use last alive position as death location (death coords are often extreme/off-map)
+                if filtered:
+                    death_x, death_y = filtered[-1]["x"], filtered[-1]["y"]
+                else:
+                    death_x, death_y = p["x"], p["y"]
                 break
             filtered.append(p)
 
@@ -142,7 +166,7 @@ async def replay_vct_round(request: StrategyReplayRequest):
                 players[victim]["death_x"] = last_pt["x"]
                 players[victim]["death_y"] = last_pt["y"]
 
-    # Interpolate to per-second snapshots
+    # Interpolated position lookup: linearly interpolate between known data points
     def lerp_position(pts, t):
         if not pts:
             return 0.5, 0.5, True
@@ -150,14 +174,16 @@ async def replay_vct_round(request: StrategyReplayRequest):
             return pts[0]["x"], pts[0]["y"], pts[0]["alive"]
         if t >= pts[-1]["time_s"]:
             return pts[-1]["x"], pts[-1]["y"], pts[-1]["alive"]
+        # Find bracketing points
         for i in range(len(pts) - 1):
             if pts[i]["time_s"] <= t <= pts[i + 1]["time_s"]:
                 dt = pts[i + 1]["time_s"] - pts[i]["time_s"]
-                frac = (t - pts[i]["time_s"]) / dt if dt > 0 else 1.0
+                if dt <= 0:
+                    return pts[i]["x"], pts[i]["y"], pts[i]["alive"]
+                frac = (t - pts[i]["time_s"]) / dt
                 x = pts[i]["x"] + (pts[i + 1]["x"] - pts[i]["x"]) * frac
                 y = pts[i]["y"] + (pts[i + 1]["y"] - pts[i]["y"]) * frac
-                alive = pts[i]["alive"]
-                return x, y, alive
+                return x, y, pts[i]["alive"]
         return pts[-1]["x"], pts[-1]["y"], pts[-1]["alive"]
 
     # Build kill events from real GRID data (with fallback to alive→dead inference)
@@ -216,12 +242,59 @@ async def replay_vct_round(request: StrategyReplayRequest):
             })
     events.sort(key=lambda e: e["time_ms"])
 
-    # Build per-second snapshots
+    # Ensure ALL kill event victims are marked dead in the player data.
+    # The cross-reference above may miss victims due to name case mismatches
+    # or missing trajectory data. Use the events we just built as ground truth.
+    for evt in events:
+        if evt["event_type"] != "kill":
+            continue
+        victim_name = evt["details"].get("victim_name", "")
+        kill_time_s = evt["time_ms"] / 1000.0
+        # Try exact match first, then case-insensitive
+        matched = None
+        if victim_name in players:
+            matched = victim_name
+        else:
+            for pname in players:
+                if pname.lower() == victim_name.lower():
+                    matched = pname
+                    break
+        if matched and players[matched]["death_time"] is None:
+            pts = players[matched]["points"]
+            if pts:
+                players[matched]["death_time"] = kill_time_s
+                players[matched]["death_x"] = pts[-1]["x"]
+                players[matched]["death_y"] = pts[-1]["y"]
+            else:
+                players[matched]["death_time"] = kill_time_s
+                players[matched]["death_x"] = 0.5
+                players[matched]["death_y"] = 0.5
+
+    # Build snapshots with interpolated positions at regular intervals for smooth playback.
+    # Include real data timestamps (kills, trajectory points) plus regular 2s samples.
+    all_times = set()
+    for pdata in players.values():
+        for pt in pdata["points"]:
+            all_times.add(pt["time_s"])
+        if pdata["death_time"] is not None:
+            all_times.add(pdata["death_time"])
+    for evt in events:
+        all_times.add(evt["time_ms"] / 1000.0)
+    # Add regular 2-second interval samples for smooth interpolated movement
+    if all_times:
+        t_min, t_max = min(all_times), max(all_times)
+        t = t_min
+        while t <= t_max:
+            all_times.add(round(t, 2))
+            t += 2.0
+    all_times = sorted(all_times)
+    if not all_times:
+        all_times = [0]
+
     snapshots = []
     phase_pcts = [("setup", 0.15), ("mid_round", 0.40), ("execute", 0.70), ("post_plant", 1.0)]
-    for t_sec in range(0, round_duration):
-        # Determine phase
-        frac = t_sec / round_duration if round_duration > 0 else 0
+    for t in all_times:
+        frac = t / round_duration if round_duration > 0 else 0
         phase = "post_plant"
         for pname_phase, pct in phase_pcts:
             if frac < pct:
@@ -230,9 +303,8 @@ async def replay_vct_round(request: StrategyReplayRequest):
 
         snap_players = []
         for i, (pname, pdata) in enumerate(players.items()):
-            x, y, alive = lerp_position(pdata["points"], t_sec)
-            # After death, freeze at death position
-            if pdata["death_time"] is not None and t_sec >= pdata["death_time"]:
+            x, y, alive = lerp_position(pdata["points"], t)
+            if pdata["death_time"] is not None and t >= pdata["death_time"]:
                 x, y, alive = pdata["death_x"], pdata["death_y"], False
 
             snap_players.append({
@@ -248,16 +320,10 @@ async def replay_vct_round(request: StrategyReplayRequest):
             })
 
         snapshots.append({
-            "time_ms": t_sec * 1000,
+            "time_ms": int(t * 1000),
             "phase": phase,
             "players": snap_players,
         })
-
-        # Stop if one side is fully eliminated
-        atk_alive_now = sum(1 for p in snap_players if p["side"] == "attack" and p["is_alive"])
-        def_alive_now = sum(1 for p in snap_players if p["side"] == "defense" and p["is_alive"])
-        if atk_alive_now == 0 or def_alive_now == 0:
-            break
 
     # Teams
     teams_by_side = {"attack": set(), "defense": set()}
@@ -313,3 +379,157 @@ async def replay_vct_round(request: StrategyReplayRequest):
             "match_date": match_meta.get("date", ""),
         },
     }
+
+
+# --- Phase-by-phase tactical execution ---
+
+# Cache active tactical engines per round
+_tactical_engines: dict = {}
+
+
+@router.post("/execute-phase", response_model=PhaseExecuteResponse)
+async def execute_tactical_phase(request: PhaseExecuteRequest):
+    """Execute a single phase of the tactical plan using full SimulationEngine.
+
+    First phase: no checkpoint needed, starts from spawn.
+    Subsequent phases: pass checkpoint from previous phase result.
+    """
+    side = request.side.lower()
+    if side not in ("attack", "defense"):
+        raise HTTPException(status_code=400, detail="side must be 'attack' or 'defense'")
+
+    valid_phases = ("setup", "mid_round", "execute", "post_plant")
+    if request.phase not in valid_phases:
+        raise HTTPException(status_code=400, detail=f"phase must be one of {valid_phases}")
+
+    service = _get_service()
+    round_data = service.get_round_by_id(request.round_id)
+    if not round_data:
+        raise HTTPException(status_code=404, detail=f"Round '{request.round_id}' not found")
+
+    map_name = round_data.get("_map", "")
+
+    # Extract user team players from VCT round data for ID remapping
+    formatted_round = service._format_round(round_data, map_name, side)
+    user_team_players = [
+        {"player_id": t.player_id, "name": t.name, "agent": t.agent}
+        for t in formatted_round.teammates
+    ]
+
+    try:
+        # Create or reuse engine
+        engine_key = f"{request.round_id}_{side}"
+
+        # First phase or no checkpoint: create fresh engine
+        if request.checkpoint is None:
+            engine = TacticalSimulationEngine()
+            await engine.initialize_round(
+                round_id=request.round_id,
+                user_side=side,
+                map_name=map_name,
+                user_team_players=user_team_players,
+            )
+            _tactical_engines[engine_key] = engine
+        else:
+            # Reuse existing engine or create new one
+            engine = _tactical_engines.get(engine_key)
+            if not engine:
+                engine = TacticalSimulationEngine()
+                await engine.initialize_round(
+                    round_id=request.round_id,
+                    user_side=side,
+                    map_name=map_name,
+                    user_team_players=user_team_players,
+                )
+                _tactical_engines[engine_key] = engine
+
+        # Convert waypoints from schema to dataclass
+        waypoints = {}
+        for player_id, wp_list in request.waypoints.items():
+            waypoints[player_id] = [
+                TacticalWaypoint(tick=wp.tick, x=wp.x, y=wp.y, facing=wp.facing)
+                for wp in wp_list
+            ]
+
+        # Convert checkpoint schema to dataclass if provided
+        checkpoint = None
+        if request.checkpoint:
+            cp = request.checkpoint
+            checkpoint = PhaseCheckpoint(
+                phase_name=cp.phase_name,
+                time_ms=cp.time_ms,
+                players=[
+                    PlayerCheckpoint(
+                        player_id=p.player_id, x=p.x, y=p.y, side=p.side,
+                        is_alive=p.is_alive, health=p.health, shield=p.shield,
+                        has_spike=p.has_spike, agent=p.agent, name=p.name,
+                        kills=p.kills, deaths=p.deaths,
+                        facing_angle=p.facing_angle, is_running=p.is_running,
+                    )
+                    for p in cp.players
+                ],
+                spike_planted=cp.spike_planted,
+                spike_site=cp.spike_site,
+                spike_plant_time_ms=cp.spike_plant_time_ms,
+                site_execute_active=cp.site_execute_active,
+                target_site=cp.target_site,
+            )
+
+        # Execute the phase
+        result = await engine.execute_phase(
+            phase_name=request.phase,
+            user_waypoints=waypoints,
+            checkpoint=checkpoint,
+        )
+
+        # Convert dataclass result to schema
+        phase_result = PhaseResultSchema(
+            phase_name=result.phase_name,
+            winner=result.winner,
+            round_ended=result.round_ended,
+            events=[
+                StrategyEvent(
+                    time_ms=e["time_ms"],
+                    event_type=e["event_type"],
+                    player_id=e.get("player_id"),
+                    target_id=e.get("target_id"),
+                    details=e.get("details"),
+                )
+                for e in result.events
+            ],
+            snapshots=[
+                StrategySnapshot(
+                    time_ms=s["time_ms"],
+                    phase=s["phase"],
+                    players=s["players"],
+                )
+                for s in result.snapshots
+            ],
+            checkpoint=PhaseCheckpointSchema(
+                phase_name=result.checkpoint.phase_name,
+                time_ms=result.checkpoint.time_ms,
+                players=[
+                    PlayerCheckpointSchema(
+                        player_id=p.player_id, x=p.x, y=p.y, side=p.side,
+                        is_alive=p.is_alive, health=p.health, shield=p.shield,
+                        has_spike=p.has_spike, agent=p.agent, name=p.name,
+                        kills=p.kills, deaths=p.deaths,
+                        facing_angle=p.facing_angle, is_running=p.is_running,
+                    )
+                    for p in result.checkpoint.players
+                ],
+                spike_planted=result.checkpoint.spike_planted,
+                spike_site=result.checkpoint.spike_site,
+                spike_plant_time_ms=result.checkpoint.spike_plant_time_ms,
+                site_execute_active=result.checkpoint.site_execute_active,
+                target_site=result.checkpoint.target_site,
+            ),
+            end_positions=result.end_positions,
+        )
+
+        return PhaseExecuteResponse(phase_result=phase_result)
+
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
