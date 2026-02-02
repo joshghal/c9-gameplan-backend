@@ -518,34 +518,63 @@ class VCTRoundService:
         """Return list of maps that have indexed rounds."""
         return sorted(self._index.keys())
 
+    def _detect_c9_side(self, round_data: Dict) -> str:
+        """Detect which side Cloud9 played from trajectory data."""
+        c9_keywords = {"cloud9", "c9"}
+        meta = self.get_match_metadata(round_data.get("game_id", ""))
+        teams = meta.get("teams", []) if meta else []
+
+        # Find which team name is C9
+        c9_team = None
+        for t in teams:
+            if any(kw in t.lower() for kw in c9_keywords):
+                c9_team = t
+                break
+
+        # Check player trajectories: find a player whose team matches C9
+        for player_name, traj in round_data.get("player_trajectories", {}).items():
+            if not traj:
+                continue
+            # Trajectory points have "team" (team name) and "side" (attacker/defender)
+            team_field = traj[0].get("team", "") or traj[0].get("team_id", "")
+            raw_side = SIDE_MAP.get(traj[0].get("side", ""), "")
+            if any(kw in team_field.lower() for kw in c9_keywords):
+                return raw_side or "attack"
+
+        return "attack"  # default fallback
+
     def list_rounds(self, map_name: str) -> List[Dict]:
         """List all rounds for a map with match metadata."""
         results = []
         seen_ids = set()
-        for side in ['attack', 'defense']:
-            indices = self._index.get(map_name, {}).get(side, [])
-            for idx in indices:
-                rd = self._rounds[idx]
-                round_num = rd.get("round_num", 0)
-                game_id = rd.get("game_id", "")
-                round_hash = hashlib.md5(
-                    f"{map_name}_{round_num}_{game_id}".encode()
-                ).hexdigest()[:8]
-                rid = f"{map_name}_{round_num}_{round_hash}"
-                if rid in seen_ids:
-                    continue
-                seen_ids.add(rid)
-                meta = self.get_match_metadata(game_id)
-                results.append({
-                    "round_id": rid,
-                    "round_num": round_num,
-                    "teams": meta.get("teams", []) if meta else [],
-                    "date": meta.get("date", "") if meta else "",
-                    "tournament": meta.get("tournament", "") if meta else "",
-                    "winner": rd.get("winner_team", ""),
-                    "side": side,
-                    "duration_s": rd.get("round_duration_s", 0),
-                })
+        # Use attack index only (rounds are indexed under both sides)
+        indices = self._index.get(map_name, {}).get("attack", [])
+        # Also grab defense-only rounds
+        def_indices = self._index.get(map_name, {}).get("defense", [])
+        all_indices = list(set(indices + def_indices))
+        for idx in all_indices:
+            rd = self._rounds[idx]
+            round_num = rd.get("round_num", 0)
+            game_id = rd.get("game_id", "")
+            round_hash = hashlib.md5(
+                f"{map_name}_{round_num}_{game_id}".encode()
+            ).hexdigest()[:8]
+            rid = f"{map_name}_{round_num}_{round_hash}"
+            if rid in seen_ids:
+                continue
+            seen_ids.add(rid)
+            meta = self.get_match_metadata(game_id)
+            c9_side = self._detect_c9_side(rd)
+            results.append({
+                "round_id": rid,
+                "round_num": round_num,
+                "teams": meta.get("teams", []) if meta else [],
+                "date": meta.get("date", "") if meta else "",
+                "tournament": meta.get("tournament", "") if meta else "",
+                "winner": rd.get("winner_team", ""),
+                "side": c9_side,
+                "duration_s": rd.get("round_duration_s", 0),
+            })
         results.sort(key=lambda r: (r["date"], r["round_num"]), reverse=True)
         return results
 
