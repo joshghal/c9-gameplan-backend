@@ -38,3 +38,4 @@ debug_*.json
 
 # Jupyter
 .ipynb_checkpoints/
+app/data/extracted_player_positions.json
