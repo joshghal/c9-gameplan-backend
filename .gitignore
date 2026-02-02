@@ -40,4 +40,4 @@ debug_*.json
 .ipynb_checkpoints/
 app/data/extracted_player_positions.json
 *.md
-\!README.md
+!README.md
